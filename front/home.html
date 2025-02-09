@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-nav-layout="horizontal" data-nav-style="menu-click" data-menu-position="fixed"
+    data-theme-mode="light">
+
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="PHP Bootstrap Responsive Admin Web Dashboard Template">
+    <meta name="Author" content="Spruko Technologies Private Limited">
+    <meta name="keywords"
+        content="dashboard, template dashboard, Bootstrap dashboard, admin panel template, sales dashboard, Bootstrap admin panel, stocks dashboard, crm admin dashboard, ecommerce admin panel, admin template, admin panel dashboard, course dashboard, template ecommerce website, dashboard hrm, admin dashboard">
+
+    <!-- TITLE -->
+    <title>RDA Home Page </title>
+    <link rel="icon" href="../assets/images/brand-logos/favicon.ico" type="image/x-icon">
+    <link id="style" href="../assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/icons.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <link href="../assets/libs/node-waves/waves.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/libs/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="../assets/libs/%40simonwep/pickr/themes/nano.min.css">
+    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
+</head>
+
+<body class="landing-body">
+    <div class="landing-page-wrapper">
+        <header class="app-header">
+            <div class="main-header-container container-fluid">
+                <div class="header-content-left">
+                    <div class="header-element">
+                        <div class="horizontal-logo">
+                            <a href="home.html" class="header-logo">
+                                <img src="../assets/images/img/logo.jfif" alt="logo" class="toggle-logo">
+                                <img src="../assets/images/img/logo.jfif" alt="logo" class="toggle-dark">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-element">
+                        <a href="javascript:void(0);" class="sidemenu-toggle header-link" data-bs-toggle="sidebar">
+                            <span class="open-toggle">
+                                <i class="ri-menu-3-line fs-20"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-content-right">
+
+                    <div class="header-element align-items-center">
+                        <div class="btn-list d-lg-none d-block">
+                            <a href="regist.html" class="btn btn-primary-light">
+                                Testing
+                            </a>
+                            <button class="btn btn-icon btn-success switcher-icon" data-bs-toggle="offcanvas"
+                                data-bs-target="#switcher-canvas">
+                                <i class="ri-settings-3-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <aside class="app-sidebar sticky" id="sidebar">
+            <div class="container-xl">
+                <div class="main-sidebar">
+                    <nav class="main-menu-container nav nav-pills sub-open">
+                        <div class="landing-logo-container">
+                            <div class="horizontal-logo">
+                                <a href="home.html" class="header-logo">
+                                    <img src="../assets/images/img/logo.jfif" alt="logo" class="desktop-logo"
+                                        style="width: 70px;">
+                                    <img src="../assets/images/img/logo.jfif" alt="logo" class="desktop-white"
+                                        style="width: 70px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide-left" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+                                width="24" height="24" viewbox="0 0 24 24">
+                                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                            </svg></div>
+                        <ul class="main-menu">
+                            <li class="slide">
+                                <a class="side-menu__item" href="#home">
+                                    <span class="side-menu__label">হোম</span>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a href="#about" class="side-menu__item">
+                                    <span class="side-menu__label">সম্পর্কিত</span>
+                                </a>
+                            </li>
+                            <li class="slide has-sub">
+                                <a href="javascript:void(0);" class="side-menu__item">
+                                    <span class="side-menu__label me-2">আরও</span>
+
+                                </a>
+                                <ul class="slide-menu child1">
+                                    <li class="slide">
+                                        <a href="#statistics" class="side-menu__item">পরিসংখ্যান</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="#our-mission" class="side-menu__item">আমাদের মিশন</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="#features" class="side-menu__item">বৈশিষ্ট্য</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="#testimonials" class="side-menu__item">প্রশংসাপত্র</a>
+                                    </li>
+                                    <li class="slide has-sub">
+                                        <a href="javascript:void(0);" class="side-menu__item">লেভেল-২
+                                            <i class="fe fe-chevron-right side-menu__angle"></i></a>
+                                        <ul class="slide-menu child2">
+                                            <li class="slide">
+                                                <a href="javascript:void(0);" class="side-menu__item">লেভেল-২-১</a>
+                                            </li>
+                                            <li class="slide has-sub">
+                                                <a href="javascript:void(0);" class="side-menu__item">লেভেল-২-২
+                                                    <i class="fe fe-chevron-right side-menu__angle"></i></a>
+                                                <ul class="slide-menu child3">
+                                                    <li class="slide">
+                                                        <a href="javascript:void(0);"
+                                                            class="side-menu__item">লেভেল-২-২-১</a>
+                                                    </li>
+                                                    <li class="slide has-sub">
+                                                        <a href="javascript:void(0);"
+                                                            class="side-menu__item">লেভেল-২-২-২</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a href="#testimonials" class="side-menu__item">
+                                    <span class="side-menu__label">ক্লায়েন্ট</span>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a href="#team" class="side-menu__item">
+                                    <span class="side-menu__label">টিম</span>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a href="#pricing" class="side-menu__item">
+                                    <span class="side-menu__label">মূল্য নির্ধারণ</span>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a href="#faq" class="side-menu__item">
+                                    <span class="side-menu__label">সাধারণ প্রশ্ন</span>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a href="#contact" class="side-menu__item">
+                                    <span class="side-menu__label">যোগাযোগ</span>
+                                </a>
+                            </li>
+                        </ul>
+
+
+                        <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+                                width="24" height="24" viewbox="0 0 24 24">
+                                <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="d-lg-flex d-none">
+                            <div class="btn-list d-lg-flex d-none mt-lg-0 mt-xl-0 mt-0">
+                                <a href="signu.html" class="btn btn-wave btn-primary">
+                                    Apply
+                                </a>
+                                <!-- <button class="btn btn-wave btn-icon btn-light switcher-icon" data-bs-toggle="offcanvas"
+                                    data-bs-target="#switcher-canvas">
+                                    <i class="ri-settings-3-line"></i>
+                                </button> -->
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+
+        <div class="main-content landing-main">
+            <!-- <div>
+                        <h1>huih</h1>
+                    </div> -->
+
+            <section id="image-slider" class="container my-5 pd-slidebar">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/images/img/front-1.png" class="d-block w-100" alt="Slide 1">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/img/front-1.png" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/img/front-1.png" class="d-block w-100" alt="Slide 3">
+                        </div>
+                    </div>
+                    <!-- Previous & Next Buttons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="section section-bg" id="notice-board">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold text-primary">নোটিশ বোর্ড</h2>
+                        <p class="text-muted">সর্বশেষ আপডেট ও গুরুত্বপূর্ণ তথ্য এখানে পাবেন</p>
+                    </div>
+
+                    <div class="row">
+                        <!-- গণবিজ্ঞপ্তি -->
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <div class="card custom-card shadow-sm border-0">
+                                <div class="card-body">
+                                    <h5 class="fw-semibold text-secondary">📢 গণবিজ্ঞপ্তি</h5>
+                                    <ul class="list-group list-group-flush mt-3">
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">🔹 নতুন
+                                                নীতিমালা
+                                                সংক্রান্ত বিজ্ঞপ্তি</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">🔹 উন্নয়ন
+                                                প্রকল্পের
+                                                অগ্রগতি রিপোর্ট</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">🔹
+                                                নির্ধারিত জমির কর ও
+                                                কর পরিশোধ পদ্ধতি</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">🔹 সরকারি
+                                                সম্পত্তির
+                                                সর্বশেষ তালিকা</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- অফিস আদেশ -->
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <div class="card custom-card shadow-sm border-0">
+                                <div class="card-body">
+                                    <h5 class="fw-semibold text-secondary">📝 অফিস আদেশ</h5>
+                                    <ul class="list-group list-group-flush mt-3">
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">📌 বার্ষিক
+                                                গোপনীয়
+                                                অনুবেদন দাখিল সংক্রান্ত</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">📌
+                                                আন্তঃসংস্থার সমন্বয়ে
+                                                বহুতল ভবন পরিদর্শন</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">📌 বাংলাদেশ
+                                                ন্যাশনাল
+                                                বিল্ডিং কোড (BNBC 2020) হালনাগাদ</a></li>
+                                        <li class="list-group-item"><a href="#" class="text-decoration-none">📌 নিয়োগ
+                                                সংক্রান্ত
+                                                নোটিশ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-bg" id="news-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <div class="card custom-card shadow-sm border-0">
+                                <!-- News Ticker Section -->
+                                <div class="news-ticker-wrapper">
+                                    <ul class="news-ticker-list">
+                                        <li>
+                                            <span class="news-ticker-icon align-items-center">📝</span>
+                                            <a href="/site/news/8cf72912-4f2e-477d-ba46-593ef07f8748/লালমাটিয়া-গুলশান--এবং-মোহাম্মদপুরের-ফ্ল্যাট-বরাদ্দের--আবেদন-ফরম-এবং-প্রসপেক্টাস"
+                                                title="লালমাটিয়া, গুলশান এবং মোহাম্মদপুরের ফ্ল্যাট বরাদ্দের আবেদন ফরম এবং প্রসপেক্টাস">
+                                                লালমাটিয়া, গুলশান এবং মোহাম্মদপুরের ফ্ল্যাট বরাদ্দের আবেদন ফরম এবং
+                                                প্রসপেক্টাস
+                                            </a>
+                                            <!-- <i>(২০১৯-০৯-০৯)</i> -->
+                                        </li>
+                                        <li>
+                                            <span class="news-ticker-icon">🔔</span>
+                                            <a href="/site/news/8cf72912-4f2e-477d-ba46-593ef07f8748/লালমাটিয়া-গুলশান--এবং-মোহাম্মদপুরের-ফ্ল্যাট-বরাদ্দের--আবেদন-ফরম-এবং-প্রসপেক্টাস"
+                                                title="লালমাটিয়া, গুলশান এবং মোহাম্মদপুরের ফ্ল্যাট বরাদ্দের আবেদন ফরম এবং প্রসপেক্টাস">
+                                                2222 লালমাটিয়া, গুলশান এবং মোহাম্মদপুরের ফ্ল্যাট বরাদ্দের আবেদন ফরম এবং
+                                                প্রসপেক্টাস
+                                            </a>
+                                            <!-- <i>(২০১৯-০৯-০৯)</i> -->
+                                        </li>
+                                        <li>
+                                            <span class="news-ticker-icon">📍</span>
+                                            <a href="/site/news/8cf72912-4f2e-477d-ba46-593ef07f8748/লালমাটিয়া-গুলশান--এবং-মোহাম্মদপুরের-ফ্ল্যাট-বরাদ্দের--আবেদন-ফরম-এবং-প্রসপেক্টাস"
+                                                title="লালমাটিয়া, গুলশান এবং মোহাম্মদপুরের ফ্ল্যাট বরাদ্দের আবেদন ফরম এবং প্রসপেক্টাস">
+                                                3333 লালমাটিয়া, গুলশান এবং মোহাম্মদপুরের ফ্ল্যাট বরাদ্দের আবেদন ফরম এবং
+                                                প্রসপেক্টাস
+                                            </a>
+                                            <!-- <i>(২০১৯-০৯-০৯)</i> -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- News ticker end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section section-bg " id="our-mission">
+                <div class="container text-center">
+                    <h2 class="fw-semibold mb-2">Rajshahi Development Authority</h2>
+
+                    <div class="row">
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="card custom-card text-start landing-missions">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <span class="avatar avatar-lg avatar-rounded bg-primary-transparent">
+                                                <img src="../assets/images/img/c8.png" alt="Service Icon"
+                                                    class="service-icon">
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-semibold mb-2 title-text title-clr">
+                                                অনলাইন সেবাসমূহ
+                                            </h6>
+                                            <ul class="service-list">
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন ভূমি ব্যবহারের ছাড়পত্র</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন নকশা অনুমোদন</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">খুলনা ডিটেইল্ড এরিয়া প্ল্যান (মৌজা ও দাগ
+                                                        নাম্বার ভিত্তিক ম্যাপ)</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইনে বৈষয়িক শাখার বিভিন্ন সেবার
+                                                        আবেদন</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="card custom-card text-start landing-missions">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <span class="avatar avatar-lg avatar-rounded bg-primary-transparent">
+                                                <img src="../assets/images/img/c1.png" alt="Service Icon"
+                                                    class="service-icon">
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-semibold mb-2 title-text title-clr">
+                                                অনলাইন সেবাসমূহ
+                                            </h6>
+                                            <ul class="service-list">
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন ভূমি ব্যবহারের
+                                                        ছাড়পত্র</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন নকশা অনুমোদন</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">খুলনা ডিটেইল্ড এরিয়া প্ল্যান
+                                                        (মৌজা ও দাগ
+                                                        নাম্বার ভিত্তিক ম্যাপ)</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইনে বৈষয়িক শাখার বিভিন্ন
+                                                        সেবার
+                                                        আবেদন</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="card custom-card text-start landing-missions">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <span class="avatar avatar-lg avatar-rounded bg-primary-transparent">
+                                                <img src="../assets/images/img/c2.png" alt="Service Icon"
+                                                    class="service-icon">
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-semibold mb-2 title-text title-clr">
+                                                অনলাইন সেবাসমূহ
+                                            </h6>
+                                            <ul class="service-list">
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন ভূমি ব্যবহারের
+                                                        ছাড়পত্র</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন নকশা অনুমোদন</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">খুলনা ডিটেইল্ড এরিয়া প্ল্যান
+                                                        (মৌজা ও দাগ
+                                                        নাম্বার ভিত্তিক ম্যাপ)</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইনে বৈষয়িক শাখার বিভিন্ন
+                                                        সেবার
+                                                        আবেদন</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="card custom-card text-start landing-missions">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <span class="avatar avatar-lg avatar-rounded bg-primary-transparent">
+                                                <img src="../assets/images/img/c3.png" alt="Service Icon"
+                                                    class="service-icon">
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-semibold mb-2 title-text title-clr">
+                                                অনলাইন সেবাসমূহ
+                                            </h6>
+                                            <ul class="service-list">
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন ভূমি ব্যবহারের
+                                                        ছাড়পত্র</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন নকশা অনুমোদন</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">খুলনা ডিটেইল্ড এরিয়া প্ল্যান
+                                                        (মৌজা ও দাগ
+                                                        নাম্বার ভিত্তিক ম্যাপ)</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইনে বৈষয়িক শাখার বিভিন্ন
+                                                        সেবার
+                                                        আবেদন</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="card custom-card text-start landing-missions">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <span class="avatar avatar-lg avatar-rounded bg-primary-transparent">
+                                                <img src="../assets/images/img/c4.png" alt="Service Icon"
+                                                    class="service-icon">
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-semibold mb-2 title-text title-clr">
+                                                অনলাইন সেবাসমূহ
+                                            </h6>
+                                            <ul class="service-list">
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন ভূমি ব্যবহারের
+                                                        ছাড়পত্র</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন নকশা অনুমোদন</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">খুলনা ডিটেইল্ড এরিয়া প্ল্যান
+                                                        (মৌজা ও দাগ
+                                                        নাম্বার ভিত্তিক ম্যাপ)</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইনে বৈষয়িক শাখার বিভিন্ন
+                                                        সেবার
+                                                        আবেদন</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="card custom-card text-start landing-missions">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <span class="avatar avatar-lg avatar-rounded bg-primary-transparent">
+                                                <img src="../assets/images/img/c5.png" alt="Service Icon"
+                                                    class="service-icon">
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-semibold mb-2 title-text title-clr">
+                                                অনলাইন সেবাসমূহ
+                                            </h6>
+                                            <ul class="service-list">
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন ভূমি ব্যবহারের
+                                                        ছাড়পত্র</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন নকশা অনুমোদন</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">খুলনা ডিটেইল্ড এরিয়া প্ল্যান
+                                                        (মৌজা ও দাগ
+                                                        নাম্বার ভিত্তিক ম্যাপ)</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইনে বৈষয়িক শাখার বিভিন্ন
+                                                        সেবার
+                                                        আবেদন</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="card custom-card text-start landing-missions">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <span class="avatar avatar-lg avatar-rounded bg-primary-transparent">
+                                                <img src="../assets/images/img/c6.png" alt="Service Icon"
+                                                    class="service-icon">
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-semibold mb-2 title-text title-clr">
+                                                অনলাইন সেবাসমূহ
+                                            </h6>
+                                            <ul class="service-list">
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন ভূমি ব্যবহারের
+                                                        ছাড়পত্র</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন নকশা অনুমোদন</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">খুলনা ডিটেইল্ড এরিয়া প্ল্যান
+                                                        (মৌজা ও দাগ
+                                                        নাম্বার ভিত্তিক ম্যাপ)</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইনে বৈষয়িক শাখার বিভিন্ন
+                                                        সেবার
+                                                        আবেদন</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="card custom-card text-start landing-missions">
+                                <div class="card-body">
+                                    <div class="align-items-top">
+                                        <div class="mb-2">
+                                            <span class="avatar avatar-lg avatar-rounded bg-primary-transparent">
+                                                <img src="../assets/images/img/c7.png" alt="Service Icon"
+                                                    class="service-icon">
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-semibold mb-2 title-text title-clr">
+                                                অনলাইন সেবাসমূহ
+                                            </h6>
+                                            <ul class="service-list">
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন ভূমি ব্যবহারের
+                                                        ছাড়পত্র</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইন নকশা অনুমোদন</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">খুলনা ডিটেইল্ড এরিয়া প্ল্যান
+                                                        (মৌজা ও দাগ
+                                                        নাম্বার ভিত্তিক ম্যাপ)</a></li>
+                                                <li><span class="check-icon">✔️</span> <a href="#"
+                                                        class="service-link">অনলাইনে বৈষয়িক শাখার বিভিন্ন
+                                                        সেবার
+                                                        আবেদন</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section landing-Features" id="features">
+                <div class="container text-center">
+                    <p class="fs-12 fw-semibold text-success mb-1"><span class="landing-section-heading">প্রকল্পের বৈশিষ্ট্য</span>
+                    </p>
+                    <h2 class="fw-semibold mb-2 text-fixed-white">রাজধানী উন্নয়ন কর্তৃপক্ষ (RDA) প্রকল্পের বৈশিষ্ট্য</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7">
+                            <p class="text-fixed-white op-8 fs-15 mb-3 fw-normal">
+                                এই প্রকল্পের মূল লক্ষ্য রাজধানী উন্নয়নের মাধ্যমে নাগরিক সেবা বৃদ্ধি ও পরিকল্পিত নগরায়ন নিশ্চিত
+                                করা।
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-start">
+                        <div class="justify-content-center">
+                            <div class="feature-logos mt-sm-2 flex-wrap">
+                                <div class="ms-sm-5 ms-2 text-center">
+                                    <img src="../assets/images/img/u2.jfif" alt="নগর পরিকল্পনা"
+                                        class="featur-icon">
+                                    <h6 class="mt-3 text-fixed-white">নগর পরিকল্পনা</h6>
+                                </div>
+                                <div class="ms-sm-5 ms-2 text-center">
+                                    <img src="../assets/images/img/u1.webp" alt="আবাসন উন্নয়ন"
+                                        class="featur-icon">
+                                    <h6 class="mt-3 text-fixed-white">আবাসন উন্নয়ন</h6>
+                                </div>
+                                <!-- <div class="ms-sm-5 ms-2 text-center">
+                                    <img src="../assets/images/img/u2.jfif" alt="পরিবহন ব্যবস্থা"
+                                        class="featur-icon">
+                                    <h6 class="mt-3 text-fixed-white">পরিবহন ব্যবস্থা</h6>
+                                </div> -->
+                                <div class="ms-sm-5 ms-2 text-center">
+                                    <img src="../assets/images/img/u3.jpg" alt="অবকাঠামো উন্নয়ন"
+                                        class="featur-icon">
+                                    <h6 class="mt-3 text-fixed-white">অবকাঠামো উন্নয়ন</h6>
+                                </div>
+                                <div class="ms-sm-5 ms-2 text-center">
+                                    <img src="../assets/images/img/u1.webp" alt="পরিবেশ সংরক্ষণ"
+                                        class="featur-icon">
+                                    <h6 class="mt-3 text-fixed-white">পরিবেশ সংরক্ষণ</h6>
+                                </div>
+                                <div class="ms-sm-5 ms-2 text-center">
+                                    <img src="../assets/images/img/u3.jpg" alt="ডিজিটাল সেবা"
+                                        class="featur-icon">
+                                    <h6 class="mt-3 text-fixed-white">ডিজিটাল সেবা</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination mt-4"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-bg" id="official-info">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold text-primary">অফিসিয়াল তথ্য</h2>
+                        <p class="text-muted">এখানে গুরুত্বপূর্ণ তথ্য এবং লিংক পাবেন</p>
+                    </div>
+
+                <div class="row">
+                    <!-- প্রোফাইল -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card custom-card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/images/img/p1.jfif" class="rounded-circle" alt="মাননীয় উপদেষ্টা"
+                                        style="width: 100px; height: 100px; object-fit: cover; border: 2px solid #ddd;" />
+                                    <div class="ms-3">
+                                        <h5 class="fw-semibold text-secondary">মাননীয় উপদেষ্টা</h5>
+                                        <p class="mb-1">জনাব আদিলুর রহমান খান</p>
+                                        <p class="text-muted">গৃহায়ন ও গণপূর্ত মন্ত্রণালয়</p>
+                                        <a href="#" class="text-decoration-none">বিস্তারিত...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- অফিস আদেশ -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card custom-card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/images/img/p2.jfif" class="rounded-circle" alt="সচিব"
+                                        style="width: 100px; height: 100px; object-fit: cover; border: 2px solid #ddd;" />
+                                    <div class="ms-3">
+                                        <h5 class="fw-semibold text-secondary">সচিব</h5>
+                                        <p class="mb-1">মোঃ হামিদুর রহমান খান</p>
+                                        <p class="text-muted">গৃহায়ন ও গণপূর্ত মন্ত্রণালয়</p>
+                                        <a href="#" class="text-decoration-none">বিস্তারিত...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- চেয়ারম্যান -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card custom-card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/images/img/p3.jfif" class="rounded-circle" alt="চেয়ারম্যান"
+                                        style="width: 100px; height: 100px; object-fit: cover; border: 2px solid #ddd;" />
+                                    <div class="ms-3">
+                                        <h5 class="fw-semibold text-secondary">চেয়ারম্যান</h5>
+                                        <p class="mb-1">মোঃ ছিদ্দিকুর রহমান সরকার (অবঃ)</p>
+                                        <p class="text-muted">রাজধানী উন্নয়ন কর্তৃপক্ষ</p>
+                                        <a href="#" class="text-decoration-none">বিস্তারিত...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- ৪টি গুরুত্বপূর্ণ লিংক -->
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="card custom-card shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="fw-semibold text-secondary">গুরুত্বপূর্ণ লিংক</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><a href="#" class="text-decoration-none">গৃহায়ন ও গণপূর্ত মন্ত্রণালয়</a>
+                                    </li>
+                                    <li class="list-group-item"><a href="#" class="text-decoration-none">সেন্ট্রাল প্রকিউরমেন্ট
+                                            টেকনিক্যাল ইউনিট</a></li>
+                                    <li class="list-group-item"><a href="#" class="text-decoration-none">রাজশাহী উন্নয়ন কর্তৃপক্ষ</a>
+                                    </li>
+                                    <li class="list-group-item"><a href="#" class="text-decoration-none">চট্টগ্রাম উন্নয়ন কর্তৃপক্ষ</a>
+                                    </li>
+                                    <li class="list-group-item"><a href="#" class="text-decoration-none">জাতীয় গৃহায়ন কর্তৃপক্ষ</a>
+                                    </li>
+                                    <li class="list-group-item"><a href="#" class="text-decoration-none">গণপূর্ত অধিদপ্তর</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="card custom-card shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="fw-semibold text-secondary text-center mb-3">ইমেজ গ্যালারি</h5>
+                                <div id="imageGallery" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../assets/images/img/g1.jpg" class="d-block w-100" alt="Gallery Image 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../assets/images/img/g2.jfif" class="d-block w-100" alt="Gallery Image 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../assets/images/img/g3.jfif" class="d-block w-100" alt="Gallery Image 3">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../assets/images/img/g4.jpg" class="d-block w-100" alt="Gallery Image 4">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../assets/images/img/g5.jfif" class="d-block w-100" alt="Gallery Image 5">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </section>
+
+
+
+        
+
+
+        <section class="section landing-footer text-fixed-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12 mb-md-0 mb-3">
+                        <div class="px-4">
+                            <p class="fw-semibold mb-3">
+                                <a href="home.html">
+                                    <img src="../assets/images/img/logo.jfif" alt="RDA Logo" style="height: 52px; width: 127px;">
+                                </a>
+                            </p>
+                            <p class="mb-2 op-6 fw-normal">
+                                রাজধানী উন্নয়ন কর্তৃপক্ষ (RDA) পরিকল্পিত নগরায়নের জন্য কাজ করে যাচ্ছে। আমাদের লক্ষ্য আধুনিক ও
+                                টেকসই নগর উন্নয়ন।
+                            </p>
+                            <p class="mb-0 op-6 fw-normal">আমরা উন্নত অবকাঠামো, পরিবহন ও আবাসন ব্যবস্থার মাধ্যমে শহরকে আরও উন্নত
+                                করতে কাজ করছি।</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-12">
+                        <div class="px-4">
+                            <h6 class="fw-semibold mb-3 text-fixed-white">গুরুত্বপূর্ণ লিংক</h6>
+                            <ul class="list-unstyled op-6 fw-normal landing-footer-list">
+                                <li><a href="#" class="text-fixed-white">হোম</a></li>
+                                <li><a href="#" class="text-fixed-white">আমাদের সম্পর্কে</a></li>
+                                <li><a href="#" class="text-fixed-white">প্রকল্প সমূহ</a></li>
+                                <li><a href="#" class="text-fixed-white">যোগাযোগ</a></li>
+                                <li><a href="#" class="text-fixed-white">সেবা সমূহ</a></li>
+                                <li><a href="#" class="text-fixed-white">শর্তাবলী</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-12">
+                        <div class="px-4">
+                            <h6 class="fw-semibold text-fixed-white">তথ্য</h6>
+                            <ul class="list-unstyled op-6 fw-normal landing-footer-list">
+                                <li><a href="#" class="text-fixed-white">RDA টিম</a></li>
+                                <li><a href="#" class="text-fixed-white">যোগাযোগ</a></li>
+                                <li><a href="#" class="text-fixed-white">সেবা ও কার্যক্রম</a></li>
+                                <li><a href="#" class="text-fixed-white">প্রকল্পের আপডেট</a></li>
+                                <li><a href="#" class="text-fixed-white">ব্লগ</a></li>
+                                <li><a href="#" class="text-fixed-white">প্রাইভেসি পলিসি</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="px-4">
+                            <h6 class="fw-semibold text-fixed-white">যোগাযোগ</h6>
+                            <ul class="list-unstyled fw-normal landing-footer-list">
+                                <li><a href="#" class="text-fixed-white op-6"><i class="ri-home-4-line me-1 align-middle"></i>
+                                        রাজশাহী উন্নয়ন কর্তৃপক্ষ, বাংলাদেশ</a></li>
+                                <li><a href="#" class="text-fixed-white op-6"><i class="ri-mail-line me-1 align-middle"></i>
+                                        info@rda.gov.bd</a></li>
+                                <li><a href="#" class="text-fixed-white op-6"><i class="ri-phone-line me-1 align-middle"></i>
+                                        +৮৮০১৭XXXXXXXX</a></li>
+                                <li class="mt-3">
+                                    <p class="mb-2 fw-semibold op-8">আমাদের অনুসরণ করুন :</p>
+                                    <div class="mb-0">
+                                        <div class="btn-list">
+                                            <button class="btn btn-sm btn-icon btn-primary-light"><i
+                                                    class="ri-facebook-line fw-bold"></i></button>
+                                            <button class="btn btn-sm btn-icon btn-secondary-light"><i
+                                                    class="ri-twitter-line fw-bold"></i></button>
+                                            <button class="btn btn-sm btn-icon btn-warning-light"><i
+                                                    class="ri-instagram-line fw-bold"></i></button>
+                                            <button class="btn btn-sm btn-icon btn-success-light"><i
+                                                    class="ri-linkedin-line fw-bold"></i></button>
+                                            <button class="btn btn-sm btn-icon btn-danger-light"><i
+                                                    class="ri-youtube-line fw-bold"></i></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <footer class="footer mt-auto py-3 bg-white text-center">
+                <div class="container">
+                    <span class="text-muted"> All rights reserved ©<span id="year"></span> <a href="javascript:void(0);"
+                            class="text-dark fw-semibold"></a>rajIT Solutions Ltd.<span class="">Design</span> & Developed
+                        <a href="javascript:void(0);">
+                            <span class="fw-semibold text- text-decoration-underline"> by rajIT Team.</span>
+                        </a>
+                    </span>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="scrollToTop">
+        <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span>
+    </div>
+    <div id="responsive-overlay"></div>
+    <script src="../assets/libs/%40popperjs/core/umd/popper.min.js"></script>
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
+    <script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="../assets/libs/node-waves/waves.min.js"></script>
+    <script src="../assets/js/defaultmenu.js"></script>
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/landing.js"></script>
+    <script src="../assets/js/sticky.js"></script>
+</body>
+
+</html>

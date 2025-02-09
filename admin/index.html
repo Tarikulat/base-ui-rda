@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light"
+    data-menu-styles="dark" data-toggled="close">
+
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Author" content="Spruko Technologies Private Limited">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+    <meta name="Description" content="PHP Bootstrap Responsive Admin Web Dashboard Template">
+    <meta name="keywords"
+        content="dashboard, template dashboard, Bootstrap dashboard, admin panel template, sales dashboard, Bootstrap admin panel, stocks dashboard, crm admin dashboard, ecommerce admin panel, admin template, admin panel dashboard, course dashboard, template ecommerce website, dashboard hrm, admin dashboard">
+
+    <!-- TITLE -->
+    <title> RDA Project</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="../assets/images/brand-logos/favicon.ico" type="image/x-icon">
+    <link id="style" href="../assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/icons.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <script src="../assets/js/main.js"></script>
+    <!-- <link href="../assets/libs/node-waves/waves.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="../assets/libs/simplebar/simplebar.min.css">
+    <link rel="stylesheet" href="../assets/libs/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="../assets/libs/%40simonwep/pickr/themes/nano.min.css">
+    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css"> -->
+    <script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+
+    <!-- Boxicons CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <!-- Remix Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+
+</head>
+
+<body>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="switcher-canvas" aria-labelledby="offcanvasRightLabel">
+
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title text-default" id="offcanvasRightLabel">Switcher</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="border-bottom border-block-end-dashed">
+                <div class="nav nav-tabs nav-justified" id="switcher-main-tab" role="tablist">
+                    <button class="nav-link active" id="switcher-home-tab" data-bs-toggle="tab"
+                        data-bs-target="#switcher-home" type="button" role="tab" aria-controls="switcher-home"
+                        aria-selected="true">Theme Styles</button>
+                    <button class="nav-link" id="switcher-profile-tab" data-bs-toggle="tab"
+                        data-bs-target="#switcher-profile" type="button" role="tab" aria-controls="switcher-profile"
+                        aria-selected="false">Theme Colors</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active border-0" id="switcher-home" role="tabpanel"
+                    aria-labelledby="switcher-home-tab" tabindex="0">
+                    <div class="">
+                        <p class="switcher-style-head">Theme Color Mode:</p>
+                        <div class="row switcher-style gx-0">
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-light-theme">
+                                        Light
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="theme-style"
+                                        id="switcher-light-theme" checked="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-dark-theme">
+                                        Dark
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="theme-style"
+                                        id="switcher-dark-theme">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="">
+                        <p class="switcher-style-head">Directions:</p>
+                        <div class="row switcher-style gx-0">
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-ltr">
+                                        LTR
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="direction" id="switcher-ltr"
+                                        checked="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-rtl">
+                                        RTL
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="direction" id="switcher-rtl">
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="">
+                        <p class="switcher-style-head">Navigation Styles:</p>
+                        <div class="row switcher-style gx-0">
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-vertical">
+                                        Vertical
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="navigation-style"
+                                        id="switcher-vertical" checked="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-horizontal">
+                                        Horizontal
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="navigation-style"
+                                        id="switcher-horizontal">
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="navigation-menu-styles">
+                        <p class="switcher-style-head">Vertical & Horizontal Menu Styles:</p>
+                        <div class="row switcher-style gx-0 pb-2 gy-2">
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-menu-click">
+                                        Menu Click
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="navigation-menu-styles"
+                                        id="switcher-menu-click">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-menu-hover">
+                                        Menu Hover
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="navigation-menu-styles"
+                                        id="switcher-menu-hover">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-icon-click">
+                                        Icon Click
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="navigation-menu-styles"
+                                        id="switcher-icon-click">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-icon-hover">
+                                        Icon Hover
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="navigation-menu-styles"
+                                        id="switcher-icon-hover">
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="sidemenu-layout-styles">
+                        <p class="switcher-style-head">Sidemenu Layout Styles:</p>
+                        <div class="row switcher-style gx-0 pb-2 gy-2">
+                            <div class="col-sm-6">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-default-menu">
+                                        Default Menu
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                        id="switcher-default-menu" checked="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-closed-menu">
+                                        Closed Menu
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                        id="switcher-closed-menu">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-icontext-menu">
+                                        Icon Text
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                        id="switcher-icontext-menu">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-icon-overlay">
+                                        Icon Overlay
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                        id="switcher-icon-overlay">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-detached">
+                                        Detached
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                        id="switcher-detached">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-double-menu">
+                                        Double Menu
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="sidemenu-layout-styles"
+                                        id="switcher-double-menu">
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="">
+                        <p class="switcher-style-head">Page Styles:</p>
+                        <div class="row switcher-style gx-0">
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-regular">
+                                        Regular
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="page-styles"
+                                        id="switcher-regular" checked="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-classic">
+                                        Classic
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="page-styles"
+                                        id="switcher-classic">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-modern">
+                                        Modern
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="page-styles"
+                                        id="switcher-modern">
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="">
+                        <p class="switcher-style-head">Layout Width Styles:</p>
+                        <div class="row switcher-style gx-0">
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-full-width">
+                                        Full Width
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="layout-width"
+                                        id="switcher-full-width" checked="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-boxed">
+                                        Boxed
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="layout-width"
+                                        id="switcher-boxed">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="switcher-style-head">Menu Positions:</p>
+                        <div class="row switcher-style gx-0">
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-menu-fixed">
+                                        Fixed
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="menu-positions"
+                                        id="switcher-menu-fixed" checked="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-menu-scroll">
+                                        Scrollable
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="menu-positions"
+                                        id="switcher-menu-scroll">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="switcher-style-head">Header Positions:</p>
+                        <div class="row switcher-style gx-0">
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-header-fixed">
+                                        Fixed
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="header-positions"
+                                        id="switcher-header-fixed" checked="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-header-scroll">
+                                        Scrollable
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="header-positions"
+                                        id="switcher-header-scroll">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="switcher-style-head">Loader:</p>
+                        <div class="row switcher-style gx-0">
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-loader-enable">
+                                        Enable
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="page-loader"
+                                        id="switcher-loader-enable">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check switch-select">
+                                    <label class="form-check-label" for="switcher-loader-disable">
+                                        Disable
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="page-loader"
+                                        id="switcher-loader-disable" checked="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade border-0" id="switcher-profile" role="tabpanel"
+                    aria-labelledby="switcher-profile-tab" tabindex="0">
+                    <div>
+                        <div class="theme-colors">
+                            <p class="switcher-style-head">Menu Colors:</p>
+                            <div class="d-flex switcher-style pb-2">
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-white" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Light Menu" type="radio" name="menu-colors"
+                                        id="switcher-menu-light">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-dark" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Dark Menu" type="radio" name="menu-colors"
+                                        id="switcher-menu-dark" checked="">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-primary" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Color Menu" type="radio" name="menu-colors"
+                                        id="switcher-menu-primary">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-gradient" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Gradient Menu" type="radio" name="menu-colors"
+                                        id="switcher-menu-gradient">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-transparent"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Transparent Menu"
+                                        type="radio" name="menu-colors" id="switcher-menu-transparent">
+                                </div>
+                            </div>
+                            <div class="px-4 pb-3 text-muted fs-11">Note:If you want to change color Menu dynamically
+                                change from below Theme Primary color picker</div>
+                        </div>
+                        <div class="theme-colors">
+                            <p class="switcher-style-head">Header Colors:</p>
+                            <div class="d-flex switcher-style pb-2">
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-white" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Light Header" type="radio" name="header-colors"
+                                        id="switcher-header-light" checked="">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-dark" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Dark Header" type="radio" name="header-colors"
+                                        id="switcher-header-dark">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-primary" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Color Header" type="radio" name="header-colors"
+                                        id="switcher-header-primary">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-gradient" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Gradient Header" type="radio"
+                                        name="header-colors" id="switcher-header-gradient">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-transparent"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Transparent Header"
+                                        type="radio" name="header-colors" id="switcher-header-transparent">
+                                </div>
+                            </div>
+                            <div class="px-4 pb-3 text-muted fs-11">Note:If you want to change color Header dynamically
+                                change from below Theme Primary color picker</div>
+                        </div>
+                        <div class="theme-colors">
+                            <p class="switcher-style-head">Theme Primary:</p>
+                            <div class="d-flex flex-wrap align-items-center switcher-style">
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-primary-1" type="radio"
+                                        name="theme-primary" id="switcher-primary">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-primary-2" type="radio"
+                                        name="theme-primary" id="switcher-primary1">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-primary-3" type="radio"
+                                        name="theme-primary" id="switcher-primary2">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-primary-4" type="radio"
+                                        name="theme-primary" id="switcher-primary3">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-primary-5" type="radio"
+                                        name="theme-primary" id="switcher-primary4">
+                                </div>
+                                <div class="form-check switch-select ps-0 mt-1 color-primary-light">
+                                    <div class="theme-container-primary"></div>
+                                    <div class="pickr-container-primary"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="theme-colors">
+                            <p class="switcher-style-head">Theme Background:</p>
+                            <div class="d-flex flex-wrap align-items-center switcher-style">
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-bg-1" type="radio"
+                                        name="theme-background" id="switcher-background">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-bg-2" type="radio"
+                                        name="theme-background" id="switcher-background1">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-bg-3" type="radio"
+                                        name="theme-background" id="switcher-background2">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-bg-4" type="radio"
+                                        name="theme-background" id="switcher-background3">
+                                </div>
+                                <div class="form-check switch-select me-3">
+                                    <input class="form-check-input color-input color-bg-5" type="radio"
+                                        name="theme-background" id="switcher-background4">
+                                </div>
+                                <div
+                                    class="form-check switch-select ps-0 mt-1 tooltip-static-demo color-bg-transparent">
+                                    <div class="theme-container-background"></div>
+                                    <div class="pickr-container-background"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-image mb-3">
+                            <p class="switcher-style-head">Menu With Background Image:</p>
+                            <div class="d-flex flex-wrap align-items-center switcher-style">
+                                <div class="form-check switch-select m-2">
+                                    <input class="form-check-input bgimage-input bg-img1" type="radio"
+                                        name="theme-background" id="switcher-bg-img">
+                                </div>
+                                <div class="form-check switch-select m-2">
+                                    <input class="form-check-input bgimage-input bg-img2" type="radio"
+                                        name="theme-background" id="switcher-bg-img1">
+                                </div>
+                                <div class="form-check switch-select m-2">
+                                    <input class="form-check-input bgimage-input bg-img3" type="radio"
+                                        name="theme-background" id="switcher-bg-img2">
+                                </div>
+                                <div class="form-check switch-select m-2">
+                                    <input class="form-check-input bgimage-input bg-img4" type="radio"
+                                        name="theme-background" id="switcher-bg-img3">
+                                </div>
+                                <div class="form-check switch-select m-2">
+                                    <input class="form-check-input bgimage-input bg-img5" type="radio"
+                                        name="theme-background" id="switcher-bg-img4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between canvas-footer flex-wrap">
+                    <a href="https://themeforest.net/item/ynex-php-admin-dashboard-template/48398228"
+                        class="btn btn-primary m-1" target="_blank">Buy Now</a>
+                    <a href="https://themeforest.net/user/spruko/portfolio" class="btn btn-secondary m-1"
+                        target="_blank">Our Portfolio</a>
+                    <a href="javascript:void(0);" id="reset-all" class="btn btn-danger m-1">Reset</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loader">
+        <img src="../assets/images/media/loader.svg" alt="">
+    </div>
+    <!-- <div class="page"> -->
+    <header class="app-header">
+        <div class="main-header-container container-fluid">
+            <div class="header-content-left">
+                <div class="header-element">
+                    <div class="horizontal-logo">
+                        <a href="index.html" class="header-logo" style="width: 70px;">
+                            <img src="../assets/images/img/logo.jfif" alt="logo" class="desktop-logo">
+                            <img src="../assets/images/img/logo.jfif" alt="logo" class="toggle-logo">
+                            <img src="../assets/images/img/logo.jfif" alt="logo" class="desktop-dark">
+                            <img src="../assets/images/img/logo.jfif" alt="logo" class="toggle-dark">
+                            <img src="../assets/images/img/logo.jfif" alt="logo" class="desktop-white">
+                            <img src="../assets/images/img/logo.jfif" alt="logo" class="toggle-white">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-element">
+                    <a aria-label="Hide Sidebar"
+                        class="sidemenu-toggle header-link animated-arrow hor-toggle horizontal-navtoggle"
+                        data-bs-toggle="sidebar" href="javascript:void(0);"><span></span></a>
+                </div>
+            </div>
+            <div class="header-content-right">
+                <div class="header-element header-theme-mode">
+                    <a href="javascript:void(0);" class="header-link layout-setting">
+                        <span class="light-layout">
+                            <i class="bx bx-moon header-link-icon"></i>
+                        </span>
+                        <span class="dark-layout">
+                            <i class="bx bx-sun header-link-icon"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="header-element">
+                    <a href="javascript:void(0);" class="header-link dropdown-toggle" id="mainHeaderProfile"
+                        data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        <div class="d-flex align-items-center">
+                            <div class="me-sm-2 me-0">
+                                <img src="../assets/images/faces/9.jpg" alt="img" width="32" height="32"
+                                    class="rounded-circle">
+                            </div>
+                            <div class="d-sm-block d-none">
+                                <p class="fw-semibold mb-0 lh-1">Raj IT</p>
+                                <span class="op-7 fw-normal d-block fs-11">Author profile</span>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end"
+                        aria-labelledby="mainHeaderProfile">
+                        <li><a class="dropdown-item d-flex" href="profile.php.html"><i
+                                    class="ti ti-user-circle fs-18 me-2 op-7"></i>Update</a></li>
+                        <li><a class="dropdown-item d-flex" href="mail.php.html"><i
+                                    class="ti ti-inbox fs-18 me-2 op-7"></i>Inbox <span
+                                    class="badge bg-success-transparent ms-auto">25</span></a></li>
+                        <li><a class="dropdown-item d-flex" href="signin-cover.php.html">
+                                <i class="ti ti-logout fs-18 me-2 op-7"></i>Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside class="app-sidebar sticky" id="sidebar">
+        <div class="main-sidebar-header">
+            <a href="index.html" class="header-logo" style="width: 70px;">
+                <img src="../assets/images/img/logo.jfif" alt="logo" class="desktop-logo">
+                <img src="../assets/images/img/logo.jfif" alt="logo" class="toggle-logo">
+                <img src="../assets/images/img/logo.jfif" alt="logo" class="desktop-dark" style="width: 70px;">
+                <img src="../assets/images/img/logo.jfif" alt="logo" class="toggle-dark">
+                <img src="../assets/images/img/logo.jfif" alt="logo" class="desktop-white">
+                <img src="../assets/images/img/logo.jfif" alt="logo" class="toggle-white">
+            </a>
+        </div>
+        <div class="main-sidebar" id="sidebar-scroll">
+
+            <nav class="main-menu-container nav nav-pills flex-column sub-open">
+                <!-- <div class="slide-left" id="slide-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewbox="0 0 24 24">
+                        <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                    </svg>
+                </div> -->
+                <ul class="main-menu">
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);" class="side-menu__item">
+                            <i class="bx bx-tachometer side-menu__icon"></i>
+                            <span class="side-menu__label">Dashboards
+                                <span class="badge bg-warning-transparent ms-2"></span>
+                            </span>
+                            <i class="fe fe-chevron-right side-menu__angle"></i>
+                        </a>
+
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1">
+                                <a href="javascript:void(0);">Dashboards</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide__category"><span class="category-name">General</li>
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);" class="side-menu__item">
+                            <i class="bx bx-task side-menu__icon"></i>Role</span>
+                            <i class="fe fe-chevron-right side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu child1">
+                            <li class="slide">
+                                <a href="user.html" class="side-menu__item">Users</a>
+                            </li>
+                            <li class="slide">
+                                <a href="role.html" class="side-menu__item">Roles</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);" class="side-menu__item">
+                            <i class="bx bx-layer side-menu__icon"></i>
+                            <span class="side-menu__label">Applications
+                                <span class="badge bg-secondary-transparent ms-2">New</span>
+                            </span>
+                            <i class="fe fe-chevron-right side-menu__angle"></i>
+                        </a>
+
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1">
+                                <a href="javascript:void(0);">Pages</a>
+                            </li>
+                            <li class="slide">
+                                <a href="application-1.html" class="side-menu__item">আবেদন ফর্ম নং ১</a>
+                            </li>
+                            <li class="slide">
+                                <a href="application-2.html" class="side-menu__item">আবেদন ফর্ম নং ২</a>
+                            </li>
+                            <li class="slide">
+                                <a href="application-3.html" class="side-menu__item">আবেদন ফর্ম নং ৩</a>
+                            </li>
+                            <li class="slide">
+                                <a href="application-4.html" class="side-menu__item">আবেদন ফর্ম নং ৪</a>
+                            </li>
+                            <li class="slide">
+                                <a href="application-5.html" class="side-menu__item">আবেদন ফর্ম নং ৫</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);" class="side-menu__item">
+                            <i class="bx bx-building side-menu__icon"></i>
+                            <span class="side-menu__label">Departments</span>
+                            <i class="fe fe-chevron-right side-menu__angle"></i>
+                        </a>
+
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1">
+                                <a href="javascript:void(0);">Departments</a>
+                            </li>
+                            <li class="slide">
+                                <a href="department.html" class="side-menu__item">Department List</a>
+                            </li>
+                            <li class="slide">
+                                <a href="department-manage.html" class="side-menu__item">Manage Department</a>
+                            </li>
+                            <li class="slide">
+                                <a href="employee.html" class="side-menu__item">Employee View</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);" class="side-menu__item">
+                            <i class="bx bx-file side-menu__icon"></i>
+                            <span class="side-menu__label">NOC</span>
+                            <i class="fe fe-chevron-right side-menu__angle"></i>
+                        </a>
+
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1">
+                                <a href="javascript:void(0);">NOC</a>
+                            </li>
+                            <li class="slide">
+                                <a href="noc.html" class="side-menu__item">Noc List</a>
+                            </li>
+                            <li class="slide">
+                                <a href="noc-dept.html" class="side-menu__item">Noc Department</a>
+                            </li>
+                            <li class="slide">
+                                <a href="noc-user.html" class="side-menu__item">users form</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);" class="side-menu__item">
+                            <i class="bx bx-store side-menu__icon"></i>
+                            <span class="side-menu__label">Market</span>
+                            <i class="fe fe-chevron-right side-menu__angle"></i>
+                        </a>
+
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1">
+                                <a href="javascript:void(0);">Market</a>
+                            </li>
+                            <li class="slide">
+                                <a href="market.html" class="side-menu__item">Market List</a>
+                            </li>
+                            <li class="slide">
+                                <a href="market-manage.html" class="side-menu__item">Manage Market</a>
+                            </li>
+                            <li class="slide">
+                                <a href="shop.html" class="side-menu__item">Shop View</a>
+                            </li>
+                            <li class="slide">
+                                <a href="shop-report.html" class="side-menu__item">Reponts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);" class="side-menu__item">
+                            <i class="bx bx-dollar side-menu__icon"></i>
+                            <span class="side-menu__label">Rent & Billing</span>
+                            <i class="fe fe-chevron-right side-menu__angle"></i>
+                        </a>
+
+                        <ul class="slide-menu child1 mega-menu">
+                            <li class="slide side-menu__label1">
+                                <a href="javascript:void(0);">Rent & Billing</a>
+                            </li>
+                            <li class="slide">
+                                <a href="rent-bill.html" class="side-menu__item">Rent Bills</a>
+                            </li>
+                            <li class="slide">
+                                <a href="payment-reminder.html" class="side-menu__item">Payment Reminders</a>
+                            </li>
+                            <li class="slide">
+                                <a href="late-fees.html" class="side-menu__item">Late Fees</a>
+                            </li>
+                            <li class="slide">
+                                <a href="bill-payment-status.html" class="side-menu__item">Bill Payment Status</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);" class="side-menu__item">
+                            <i class="bx bx-home side-menu__icon"></i>
+                            <span class="side-menu__label">Properties</span>
+                            <i class="fe fe-chevron-right side-menu__angle"></i>
+                        </a>
+
+                        <ul class="slide-menu child1 mega-menu">
+                            <li class="slide side-menu__label1">
+                                <a href="javascript:void(0);">Properties</a>
+                            </li>
+                            <li class="slide">
+                                <a href="property.html" class="side-menu__item">Property List</a>
+                            </li>
+                            <li class="slide">
+                                <a href="property-manage.html" class="side-menu__item">Property Manage</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);" class="side-menu__item">
+                            <i class="bx bx-credit-card side-menu__icon"></i>
+                            <span class="side-menu__label">Payments</span>
+                            <i class="fe fe-chevron-right side-menu__angle"></i>
+                        </a>
+
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1">
+                                <a href="javascript:void(0);">Payments</a>
+                            </li>
+                            <li class="slide">
+                                <a href="payment-history.html" class="side-menu__item">Payment History</a>
+                            </li>
+                            <li class="slide">
+                                <a href="payment-type.html" class="side-menu__item">Payment Types</a>
+                            </li>
+                            <li class="slide">
+                                <a href="payment-report.html" class="side-menu__item">Payment Reports</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);" class="side-menu__item">
+                            <i class="bx bx-chart side-menu__icon"></i>
+                            <span class="side-menu__label">Reports</span>
+                            <i class="fe fe-chevron-right side-menu__angle"></i>
+                        </a>
+
+                        <ul class="slide-menu child1 mega-menu">
+                            <li class="slide side-menu__label1">
+                                <a href="javascript:void(0);">Reports</a>
+                            </li>
+                            <li class="slide">
+                                <a href="report.html" class="side-menu__item">View Reports</a>
+                            </li>
+                            <li class="slide">
+                                <a href="report-category.html" class="side-menu__item">Report Categories</a>
+                            </li>
+                            <li class="slide">
+                                <a href="report-schedule.html" class="side-menu__item">Scheduled Reports</a>
+                            </li>
+                            <li class="slide">
+                                <a href="report-generate.html" class="side-menu__item">Generate Reports</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="slide__category"><span class="category-name">Settings</span></li>
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);" class="side-menu__item">
+                            <i class="bx bx-bell side-menu__icon"></i>
+                            <span class="side-menu__label">Notifications
+                                <span class="badge bg-secondary-transparent ms-2">update</span>
+                            </span>
+                            <i class="fe fe-chevron-right side-menu__angle"></i>
+                        </a>
+
+                        <ul class="slide-menu child2">
+                            <li class="slide">
+                                <a href="notification.html" class="side-menu__item">Send Notifications</a>
+                            </li>
+                            <li class="slide">
+                                <a href="notification-view.html" class="side-menu__item">View Notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);" class="side-menu__item">
+                            <i class="bx bx-cog side-menu__icon"></i>
+                            <span class="side-menu__label">Settings</span>
+                            <i class="fe fe-chevron-right side-menu__angle"></i>
+                        </a>
+
+                        <ul class="slide-menu child2">
+                            <li class="slide">
+                                <a href="settings.html" class="side-menu__item">General Settings</a>
+                            </li>
+                            <li class="slide">
+                                <a href="payment-methods.html" class="side-menu__item">Payment Methods</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+                            width="24" height="24" viewbox="0 0 24 24">
+                            <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                        </svg>
+                    </div> -->
+            </nav>
+        </div>
+    </aside>
+
+    <div class="main-content app-content">
+        <div class="container-fluid">
+            <div class="d-md-flex d-block align-items-center justify-content-between mt-2 mb-2 page-header-breadcrumb">
+                <div>
+                    <p class="fw-semibold fs-18 mb-0">Welcome back, RDA Admin panel!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-9 col-xl-12">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card custom-card crm-highlight-card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <div class="fw-semibold fs-18 text-fixed-white mb-2">Target
+                                                        Progress</div>
+                                                    <span class="d-block fs-12 text-fixed-white"><span class="op-7">You
+                                                            have completed</span> <span
+                                                            class="fw-semibold text-warning">48%</span> <span
+                                                            class="op-7">you can also check
+                                                            your status</span>.</span>
+                                                    <span class="d-block fw-semibold mt-1"><a class="text-fixed-white"
+                                                            href="javascript:void(0);"><u>Click here</u></a>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <div id="crm-main"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card custom-card">
+                                    <div class="card-header  justify-content-between">
+                                        <div class="card-title">
+                                            Pending Applications
+                                        </div>
+                                        <div class="dropdown">
+                                            <a aria-label="anchor" href="javascript:void(0);"
+                                                class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <i class="fe fe-more-vertical"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Week</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Month</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Year</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled crm-top-deals mb-0">
+                                            <li>
+                                                <div class="d-flex align-items-top flex-wrap">
+                                                    <div class="me-2">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="../assets/images/faces/10.jpg" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex-fill">
+                                                        <p class="fw-semibold mb-0">Tanvir Hasan</p>
+                                                        <span class="text-muted fs-12">tanvir@gmail.com</span>
+                                                    </div>
+                                                    <div class="fw-semibold fs-15">3,000</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-top flex-wrap">
+                                                    <div class="me-2">
+                                                        <span
+                                                            class="avatar avatar-sm avatar-rounded bg-warning-transparent fw-semibold">
+                                                            EK
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex-fill">
+                                                        <p class="fw-semibold mb-0">Md Samir</p>
+                                                        <span class="text-muted fs-12">samir@gmail.com</span>
+                                                    </div>
+                                                    <div class="fw-semibold fs-15">5,000</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-top flex-wrap">
+                                                    <div class="me-2">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="../assets/images/faces/12.jpg" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex-fill">
+                                                        <p class="fw-semibold mb-0">Shohan</p>
+                                                        <span class="text-muted fs-12">shohan@gmail.com</span>
+                                                    </div>
+                                                    <div class="fw-semibold fs-15">7,000</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-top flex-wrap">
+                                                    <div class="me-2">
+                                                        <span
+                                                            class="avatar avatar-sm avatar-rounded bg-success-transparent fw-semibold">
+                                                            GP
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex-fill">
+                                                        <p class="fw-semibold mb-0">Shemul</p>
+                                                        <span class="text-muted fs-12">shemul@gmail.com</span>
+                                                    </div>
+                                                    <div class="fw-semibold fs-15">4,000</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-top flex-wrap">
+                                                    <div class="me-2">
+                                                        <span
+                                                            class="avatar avatar-sm avatar-rounded bg-primary-transparent fw-semibold">
+                                                            KA
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex-fill">
+                                                        <p class="fw-semibold mb-0">Redou</p>
+                                                        <span class="text-muted fs-12">redou@gmail.com</span>
+                                                    </div>
+                                                    <div class="fw-semibold fs-15">4,000</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card custom-card">
+                                    <div class="card-header  justify-content-between">
+                                        <div class="card-title">
+                                            Last Property List
+                                        </div>
+                                        <div class="dropdown">
+                                            <a aria-label="anchor" href="javascript:void(0);"
+                                                class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <i class="fe fe-more-vertical"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Week</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Month</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Year</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled crm-top-deals mb-0">
+                                            <li>
+                                                <div class="d-flex align-items-top flex-wrap">
+                                                    <div class="me-2">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="../assets/images/faces/10.jpg" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex-fill">
+                                                        <p class="fw-semibold mb-0">Imran Hosien</p>
+                                                        <span class="text-muted fs-12">imran@gmail.com</span>
+                                                    </div>
+                                                    <div class="fw-semibold fs-15">9,000</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-top flex-wrap">
+                                                    <div class="me-2">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="../assets/images/faces/10.jpg" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex-fill">
+                                                        <p class="fw-semibold mb-0">Imran Hosien</p>
+                                                        <span class="text-muted fs-12">imran@gmail.com</span>
+                                                    </div>
+                                                    <div class="fw-semibold fs-15">9,000</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-top flex-wrap">
+                                                    <div class="me-2">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="../assets/images/faces/10.jpg" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex-fill">
+                                                        <p class="fw-semibold mb-0">Imran Hosien</p>
+                                                        <span class="text-muted fs-12">imran@gmail.com</span>
+                                                    </div>
+                                                    <div class="fw-semibold fs-15">9,000</div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="card custom-card">
+                                        <div class="card-header justify-content-between">
+                                            <div class="card-title">Payments over time</div>
+                                            <div class="dropdown">
+                                                <a href="javascript:void(0);" class="p-2 fs-12 text-muted"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    View All<i
+                                                        class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                                </a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">Today</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">This
+                                                            Week</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">Last
+                                                            Week</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body py-0 ps-0">
+                                            <div id="crm-profits-earned"></div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="row">
+                                <div class="col-xxl-4 col-lg-4 col-md-4">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top justify-content-between">
+                                                <div>
+                                                    <span class="avatar avatar-md avatar-rounded">
+                                                        <img src="../assets/images/img/d1.png" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </span>
+                                                </div>
+
+                                                <div class="flex-fill ms-3">
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between flex-wrap">
+                                                        <div>
+                                                            <p class="text-muted mb-0">Total Users</p>
+                                                            <h4 class="fw-semibold mt-1">5000</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between mt-1">
+                                                        <div>
+                                                            <a class="color-tx" href="javascript:void(0);">View
+                                                                All<i
+                                                                    class="ti ti-arrow-narrow-right ms-2 fw-semibold d-inline-block"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-lg-4 col-md-4">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top justify-content-between">
+                                                <div>
+                                                    <span class="avatar avatar-md avatar-rounded ">
+                                                        <img src="../assets/images/img/d2.webp" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill ms-3">
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between flex-wrap">
+                                                        <div>
+                                                            <p class="text-muted mb-0">Applications</p>
+                                                            <h4 class="fw-semibold mt-1">8000</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between mt-1">
+                                                        <div>
+                                                            <a class="text-warning" href="javascript:void(0);">View
+                                                                All<i
+                                                                    class="ti ti-arrow-narrow-right ms-2 fw-semibold d-inline-block"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-lg-4 col-md-4">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top justify-content-between">
+                                                <div>
+                                                    <span class="avatar avatar-md avatar-rounded">
+                                                        <img src="../assets/images/img/d6.png" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill ms-3">
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between flex-wrap">
+                                                        <div>
+                                                            <p class="text-muted mb-0">Departments</p>
+                                                            <h4 class="fw-semibold mt-1">3,00</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between mt-1">
+                                                        <div>
+                                                            <a class="text-success" href="javascript:void(0);">View
+                                                                All<i
+                                                                    class="ti ti-arrow-narrow-right ms-2 fw-semibold d-inline-block"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-lg-4 col-md-4">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top justify-content-between">
+                                                <div>
+                                                    <span class="avatar avatar-md avatar-rounded">
+                                                        <img src="../assets/images/img/D3.png" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill ms-3">
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between flex-wrap">
+                                                        <div>
+                                                            <p class="text-muted mb-0">Total Payments</p>
+                                                            <h4 class="fw-semibold mt-1">6000</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between mt-1">
+                                                        <div>
+                                                            <a class="text-secondary" href="javascript:void(0);">View
+                                                                All<i
+                                                                    class="ti ti-arrow-narrow-right ms-2 fw-semibold d-inline-block"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-lg-4 col-md-4">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top justify-content-between">
+                                                <div>
+                                                    <span class="avatar avatar-md avatar-rounded">
+                                                        <img src="../assets/images/img/d7.png" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill ms-3">
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between flex-wrap">
+                                                        <div>
+                                                            <p class="text-muted mb-0">Total Rent Due</p>
+                                                            <h4 class="fw-semibold mt-1">2,543</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between mt-1">
+                                                        <div>
+                                                            <a class="color-v" href="javascript:void(0);">View
+                                                                All<i
+                                                                    class="ti ti-arrow-narrow-right ms-2 fw-semibold d-inline-block"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-lg-4 col-md-4">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top justify-content-between">
+                                                <div>
+                                                    <span class="avatar avatar-md avatar-rounded">
+                                                        <img src="../assets/images/img/b2.png" alt="Avatar"
+                                                            class="img-fluid">
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill ms-3">
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between flex-wrap">
+                                                        <div>
+                                                            <p class="text-muted mb-0">Properties</p>
+                                                            <h4 class="fw-semibold mt-1">2,543</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between mt-1">
+                                                        <div>
+                                                            <a class="color-p" href="javascript:void(0);">View
+                                                                All<i
+                                                                    class="ti ti-arrow-narrow-right ms-2 fw-semibold d-inline-block"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="card-header justify-content-between">
+                                            <div class="card-title">
+                                                Revenue Analytics
+                                            </div>
+                                            <div class="dropdown">
+                                                <a href="javascript:void(0);" class="p-2 fs-12 text-muted"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    View All<i
+                                                        class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                                </a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">Today</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">This
+                                                            Week</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">Last
+                                                            Week</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="content-wrapper">
+                                                <div id="crm-revenue-analytics"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="card custom-card">
+                                <div class="card-header justify-content-between">
+                                    <div class="card-title">
+                                        Rent Due Users List
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <div>
+                                            <input class="form-control form-control-sm" type="text"
+                                                placeholder="Search Here" aria-label=".form-control-sm example">
+                                        </div>
+                                        <div class="dropdown">
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-light btn-sm btn-wave waves-effect waves-light"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Sort By<i
+                                                    class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                            </a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">New</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Popular</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Relevant</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table text-nowrap table-hover border table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row" class="ps-4"><input class="form-check-input"
+                                                            type="checkbox" id="checkboxNoLabel1" value=""
+                                                            aria-label="..."></th>
+                                                    <th scope="col">User Name</th>
+                                                    <th scope="col">Department</th>
+                                                    <th scope="col">Mail</th>
+                                                    <th scope="col">Area</th>
+                                                    <th scope="col">Due Date</th>
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="ps-4"><input class="form-check-input"
+                                                            type="checkbox" id="checkboxNoLabel2" value=""
+                                                            aria-label="..."></th>
+                                                    <td>
+                                                        <div class="d-flex align-items-center fw-semibold">
+                                                            <span class="avatar avatar-sm me-2 avatar-rounded">
+                                                                <img src="../assets/images/faces/4.jpg" alt="img">
+                                                            </span>Rabbi Khan
+                                                        </div>
+                                                    </td>
+                                                    <td>Rented Dealer</td>
+                                                    <td>Rabbi@gmail.com</td>
+                                                    <td>
+                                                        <span class="badge bg-info-transparent">RDA</span>
+                                                    </td>
+                                                    <td>Sep 15 - Oct 12, 2025</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a aria-label="anchor" href="javascript:void(0);"
+                                                                class="btn btn-icon btn-wave waves-effect waves-light btn-sm btn-success-light"><i
+                                                                    class="ri-download-2-line"></i></a>
+                                                            <a aria-label="anchor" href="javascript:void(0);"
+                                                                class="btn btn-icon btn-wave waves-effect waves-light btn-sm btn-primary-light"><i
+                                                                    class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="ps-4"><input class="form-check-input"
+                                                            type="checkbox" id="checkboxNoLabel13" value=""
+                                                            aria-label="..." checked=""></th>
+                                                    <td>
+                                                        <div class="d-flex align-items-center fw-semibold">
+                                                            <span class="avatar avatar-sm me-2 avatar-rounded">
+                                                                <img src="../assets/images/faces/15.jpg" alt="img">
+                                                            </span>Dipu
+                                                        </div>
+                                                    </td>
+                                                    <td>Assistant</td>
+                                                    <td>dipu@gmail.com</td>
+                                                    <td>
+                                                        <span class="badge bg-primary-transparent">New Market</span>
+                                                    </td>
+                                                    <td>Apr 10 - Dec 12, 2025</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a aria-label="anchor" href="javascript:void(0);"
+                                                                class="btn btn-icon waves-effect waves-light btn-sm btn-success-light"><i
+                                                                    class="ri-download-2-line"></i></a>
+                                                            <a aria-label="anchor" href="javascript:void(0);"
+                                                                class="btn btn-icon waves-effect waves-light btn-sm btn-primary-light"><i
+                                                                    class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="ps-4"><input class="form-check-input"
+                                                            type="checkbox" id="checkboxNoLabel4" value=""
+                                                            aria-label="..."></th>
+                                                    <td>
+                                                        <div class="d-flex align-items-center fw-semibold">
+                                                            <span class="avatar avatar-sm me-2 avatar-rounded">
+                                                                <img src="../assets/images/faces/11.jpg" alt="img">
+                                                            </span>Topu
+                                                        </div>
+                                                    </td>
+                                                    <td>Developer</td>
+                                                    <td>topu@gmail.com</td>
+                                                    <td>
+                                                        <span class="badge bg-danger-transparent">Benutpur</span>
+                                                    </td>
+                                                    <td>Sep 15 - Oct 12, 2025</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a aria-label="anchor" href="javascript:void(0);"
+                                                                class="btn btn-icon waves-effect waves-light btn-sm btn-success-light"><i
+                                                                    class="ri-download-2-line"></i></a>
+                                                            <a aria-label="anchor" href="javascript:void(0);"
+                                                                class="btn btn-icon waves-effect waves-light btn-sm btn-primary-light"><i
+                                                                    class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="ps-4"><input class="form-check-input"
+                                                            type="checkbox" id="checkboxNoLabel5" value=""
+                                                            aria-label="..." checked=""></th>
+                                                    <td>
+                                                        <div class="d-flex align-items-center fw-semibold">
+                                                            <span class="avatar avatar-sm me-2 avatar-rounded">
+                                                                <img src="../assets/images/faces/8.jpg" alt="img">
+                                                            </span>Robiul
+                                                        </div>
+                                                    </td>
+                                                    <td>Manager</td>
+                                                    <td>robilu@gmail.com</td>
+                                                    <td>
+                                                        <span class="badge bg-warning-transparent">Bogura</span>
+                                                    </td>
+                                                    <td>Apr 14 - Dec 14, 2025</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a aria-label="anchor" href="javascript:void(0);"
+                                                                class="btn btn-icon waves-effect waves-light btn-sm btn-success-light"><i
+                                                                    class="ri-download-2-line"></i></a>
+                                                            <a aria-label="anchor" href="javascript:void(0);"
+                                                                class="btn btn-icon waves-effect waves-light btn-sm btn-primary-light"><i
+                                                                    class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="ps-4"><input class="form-check-input"
+                                                            type="checkbox" id="checkboxNoLabel3" value=""
+                                                            aria-label="..." checked=""></th>
+                                                    <td>
+                                                        <div class="d-flex align-items-center fw-semibold">
+                                                            <span class="avatar avatar-sm me-2 avatar-rounded">
+                                                                <img src="../assets/images/faces/9.jpg" alt="img">
+                                                            </span>Sojibur Rahman
+                                                        </div>
+                                                    </td>
+                                                    <td>Accounts</td>
+                                                    <td>sojib@gmail.com</td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Naogaon</span>
+                                                    </td>
+                                                    <td>Feb 25 - Nov 25, 2025</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a aria-label="anchor" href="javascript:void(0);"
+                                                                class="btn btn-icon waves-effect waves-light btn-sm btn-success-light"><i
+                                                                    class="ri-download-2-line"></i></a>
+                                                            <a aria-label="anchor" href="javascript:void(0);"
+                                                                class="btn btn-icon waves-effect waves-light btn-sm btn-primary-light"><i
+                                                                    class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            Showing 5 Entries <i class="bi bi-arrow-right ms-2 fw-semibold"></i>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <nav aria-label="Page navigation" class="pagination-style-4">
+                                                <ul class="pagination mb-0">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="javascript:void(0);">
+                                                            Prev
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link"
+                                                            href="javascript:void(0);">1</a></li>
+                                                    <li class="page-item"><a class="page-link"
+                                                            href="javascript:void(0);">2</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link text-primary" href="javascript:void(0);">
+                                                            next
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End::row-1 -->
+        </div>
+    </div>
+    <!-- END MAIN-CONTENT -->
+
+    <!-- SEARCH-MODAL -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="input-group">
+                        <a href="javascript:void(0);" class="input-group-text" id="Search-Grid"><i
+                                class="fe fe-search header-link-icon fs-18"></i></a>
+                        <input type="search" class="form-control border-0 px-2" placeholder="Search"
+                            aria-label="Username">
+                        <a href="javascript:void(0);" class="input-group-text" id="voice-search"><i
+                                class="fe fe-mic header-link-icon"></i></a>
+                        <a href="javascript:void(0);" class="btn btn-light btn-icon" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0);">Another action</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0);">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:void(0);">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <p class="font-weight-semibold text-muted mb-2">Are You Looking For...</p>
+                        <span class="search-tags"><i class="fe fe-user me-2"></i>People<a href="javascript:void(0);"
+                                class="tag-addon"><i class="fe fe-x"></i></a></span>
+                        <span class="search-tags"><i class="fe fe-file-text me-2"></i>Pages<a href="javascript:void(0);"
+                                class="tag-addon"><i class="fe fe-x"></i></a></span>
+                        <span class="search-tags"><i class="fe fe-align-left me-2"></i>Articles<a
+                                href="javascript:void(0);" class="tag-addon"><i class="fe fe-x"></i></a></span>
+                        <span class="search-tags"><i class="fe fe-server me-2"></i>Tags<a href="javascript:void(0);"
+                                class="tag-addon"><i class="fe fe-x"></i></a></span>
+                    </div>
+                    <div class="my-4">
+                        <p class="font-weight-semibold text-muted mb-2">Recent Search :</p>
+                        <div class="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert">
+                            <a href="notifications.php.html"><span>Notifications</span></a>
+                            <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert"
+                                aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+                        </div>
+                        <div class="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert">
+                            <a href="alerts.php.html"><span>Alerts</span></a>
+                            <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert"
+                                aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+                        </div>
+                        <div class="p-2 border br-5 d-flex align-items-center text-muted mb-0 alert">
+                            <a href="mail.php.html"><span>Mail</span></a>
+                            <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert"
+                                aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group ms-auto">
+                        <button class="btn btn-sm btn-primary-light">Search</button>
+                        <button class="btn btn-sm btn-primary">Clear Recents</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END SEARCH-MODAL -->
+    <footer class="footer mt-auto py-3 bg-white text-center">
+        <div class="container">
+            <span class="text-muted"> All rights reserved ©<span id="year"></span> <a href="javascript:void(0);"
+                    class="text-dark fw-semibold"></a>rajIT Solutions Ltd.<span class="">Design</span> & Developed
+                <a href="javascript:void(0);">
+                    <span class="fw-semibold text- text-decoration-underline"> by rajIT Team.</span>
+                </a>
+            </span>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    </div>
+    <!-- END PAGE-->
+
+    <!-- SCROLL-TO-TOP -->
+    <!-- <div class="scrollToTop">
+        <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span>
+    </div> -->
+    <div id="responsive-overlay"></div>
+
+    <!-- POPPER JS -->
+    <script src="../assets/libs/%40popperjs/core/umd/popper.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- NODE WAVES JS -->
+    <script src="../assets/libs/node-waves/waves.min.js"></script>
+
+    <!-- SIMPLEBAR JS -->
+    <script src="../assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="../assets/js/simplebar.js"></script>
+
+    <!-- COLOR PICKER JS -->
+    <script src="../assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
+
+    <!-- DEFAULTMENU JS -->
+    <script src="../assets/js/defaultmenu.js"></script>
+
+    <!-- JSVECTOR MAPS JS -->
+    <script src="../assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+    <script src="../assets/libs/jsvectormap/maps/world-merc.js"></script>
+
+    <!-- APEX CHARTS JS -->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- CHARTJS CHART JS -->
+    <script src="../assets/libs/chart.js/chart.min.js"></script>
+
+    <!-- CRM-Dashboard -->
+    <script src="../assets/js/crm-dashboard.js"></script>
+
+    <!-- STICKY JS -->
+    <script src="../assets/js/sticky.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="../assets/js/custom.js"></script>
+
+    <!-- CUSTOM-SWITCHER JS -->
+    <script src="../assets/js/custom-switcher.js"></script>
+
+</body>
+
+</html>

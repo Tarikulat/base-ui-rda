@@ -877,202 +877,203 @@
         </aside>
 
         <!-- tanvir start table -->
-<section class="main-content app-content mt-5">
-    <div class="container-fluid">
-    <div class="container mt-5">
-        <h4 class="text-center mb-4 text-primary">📊 RDA রিপোর্ট সিস্টেম</h4>
-    
-        <!-- সার্চ ইনপুট এবং প্রিন্ট বাটন -->
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <input type="search" class="form-control" placeholder="🔍 সার্চ করুন...">
+        <section class="main-content app-content mt-5">
+            <div class="container-fluid">
+                <div class="container mt-5">
+                    <h4 class="text-center mb-4 text-primary">📊 RDA রিপোর্ট সিস্টেম</h4>
+
+                    <!-- সার্চ ইনপুট এবং প্রিন্ট বাটন -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <input type="search" class="form-control" placeholder="🔍 সার্চ করুন...">
+                        </div>
+                        <div class="col-md-4 text-end">
+                            <button class="btn btn-success no-print" onclick="window.print()">
+                                <i class="fa fa-print"></i> প্রিন্ট করুন
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 1st Table: আবাসিক প্লট রিপোর্ট -->
+                    <div class="table-responsive">
+                        <h5 class="text-primary">🏡 আবাসিক প্লট রিপোর্ট</h5>
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead class="table-dark text-white">
+                                <tr>
+                                    <th>#</th>
+                                    <th>প্রকল্পের নাম</th>
+                                    <th>আবাসিক প্লট সংখ্যা</th>
+                                    <th>বাস্তবায়ন বছর</th>
+                                    <th>মোট জমি (একর)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>১</td>
+                                    <td>পদ্মা আবাসিক এলাকা</td>
+                                    <td>৫৬৫</td>
+                                    <td>১৯৯২</td>
+                                    <td>৫৮.৩২</td>
+                                </tr>
+                                <tr>
+                                    <td>২</td>
+                                    <td>পারিজাত এলাকা</td>
+                                    <td>১০২</td>
+                                    <td>১৯৯৩</td>
+                                    <td>১৫.৪২</td>
+                                </tr>
+                                <tr>
+                                    <td>৩</td>
+                                    <td>ছায়ানীড় আবাসিক এলাকা</td>
+                                    <td>২২৪</td>
+                                    <td>১৯৯৭</td>
+                                    <td>৯.৯০</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 2nd Table: বাণিজ্যিক প্লট রিপোর্ট -->
+                    <div class="table-responsive mt-4">
+                        <h5 class="text-primary">🏢 বাণিজ্যিক প্লট রিপোর্ট</h5>
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead class="table-dark text-white">
+                                <tr>
+                                    <th>#</th>
+                                    <th>প্রকল্পের নাম</th>
+                                    <th>বাণিজ্যিক প্লট সংখ্যা</th>
+                                    <th>বাস্তবায়ন বছর</th>
+                                    <th>মোট জমি (একর)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>১</td>
+                                    <td>বনলতা বাণিজ্যিক এলাকা</td>
+                                    <td>১১৭</td>
+                                    <td>১৯৯৫</td>
+                                    <td>১৬.৬৯</td>
+                                </tr>
+                                <tr>
+                                    <td>২</td>
+                                    <td>মহানন্দা বাণিজ্যিক এলাকা</td>
+                                    <td>৪৫</td>
+                                    <td>২০০৭</td>
+                                    <td>৭.৩২</td>
+                                </tr>
+                                <tr>
+                                    <td>৩</td>
+                                    <td>বারনই বাণিজ্যিক এলাকা</td>
+                                    <td>৮৮</td>
+                                    <td>২০১৯</td>
+                                    <td>১১.৫০</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 3rd Table: সম্মিলিত প্রকল্প রিপোর্ট -->
+                    <div class="table-responsive mt-4">
+                        <h5 class="text-primary">📌 সম্মিলিত প্রকল্প রিপোর্ট</h5>
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead class="table-dark text-white">
+                                <tr>
+                                    <th>#</th>
+                                    <th>প্রকল্পের নাম</th>
+                                    <th>আবাসিক প্লট</th>
+                                    <th>বাণিজ্যিক প্লট</th>
+                                    <th>মোট জমি (একর)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>১</td>
+                                    <td>চন্দ্রিমা এলাকা</td>
+                                    <td>৩৯০</td>
+                                    <td>৯</td>
+                                    <td>১৫.০০</td>
+                                </tr>
+                                <tr>
+                                    <td>২</td>
+                                    <td>প্রান্তিক প্রকল্প</td>
+                                    <td>২৩৯</td>
+                                    <td>৫</td>
+                                    <td>১৯.৭৫</td>
+                                </tr>
+                                <tr>
+                                    <td>৩</td>
+                                    <td>মহানন্দা আবাসিক এলাকা</td>
+                                    <td>৯৭</td>
+                                    <td>১৩</td>
+                                    <td>৭.৪১</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
             </div>
-            <div class="col-md-4 text-end">
-                <button class="btn btn-success no-print" onclick="window.print()">
-                    <i class="fa fa-print"></i> প্রিন্ট করুন
-                </button>
-            </div>
-        </div>
-    
-        <!-- 1st Table: আবাসিক প্লট রিপোর্ট -->
-        <div class="table-responsive">
-            <h5 class="text-primary">🏡 আবাসিক প্লট রিপোর্ট</h5>
-            <table class="table table-bordered table-striped table-hover">
-                <thead class="table-dark text-white">
-                    <tr>
-                        <th>#</th>
-                        <th>প্রকল্পের নাম</th>
-                        <th>আবাসিক প্লট সংখ্যা</th>
-                        <th>বাস্তবায়ন বছর</th>
-                        <th>মোট জমি (একর)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>১</td>
-                        <td>পদ্মা আবাসিক এলাকা</td>
-                        <td>৫৬৫</td>
-                        <td>১৯৯২</td>
-                        <td>৫৮.৩২</td>
-                    </tr>
-                    <tr>
-                        <td>২</td>
-                        <td>পারিজাত এলাকা</td>
-                        <td>১০২</td>
-                        <td>১৯৯৩</td>
-                        <td>১৫.৪২</td>
-                    </tr>
-                    <tr>
-                        <td>৩</td>
-                        <td>ছায়ানীড় আবাসিক এলাকা</td>
-                        <td>২২৪</td>
-                        <td>১৯৯৭</td>
-                        <td>৯.৯০</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    
-        <!-- 2nd Table: বাণিজ্যিক প্লট রিপোর্ট -->
-        <div class="table-responsive mt-4">
-            <h5 class="text-primary">🏢 বাণিজ্যিক প্লট রিপোর্ট</h5>
-            <table class="table table-bordered table-striped table-hover">
-                <thead class="table-dark text-white">
-                    <tr>
-                        <th>#</th>
-                        <th>প্রকল্পের নাম</th>
-                        <th>বাণিজ্যিক প্লট সংখ্যা</th>
-                        <th>বাস্তবায়ন বছর</th>
-                        <th>মোট জমি (একর)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>১</td>
-                        <td>বনলতা বাণিজ্যিক এলাকা</td>
-                        <td>১১৭</td>
-                        <td>১৯৯৫</td>
-                        <td>১৬.৬৯</td>
-                    </tr>
-                    <tr>
-                        <td>২</td>
-                        <td>মহানন্দা বাণিজ্যিক এলাকা</td>
-                        <td>৪৫</td>
-                        <td>২০০৭</td>
-                        <td>৭.৩২</td>
-                    </tr>
-                    <tr>
-                        <td>৩</td>
-                        <td>বারনই বাণিজ্যিক এলাকা</td>
-                        <td>৮৮</td>
-                        <td>২০১৯</td>
-                        <td>১১.৫০</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    
-        <!-- 3rd Table: সম্মিলিত প্রকল্প রিপোর্ট -->
-        <div class="table-responsive mt-4">
-            <h5 class="text-primary">📌 সম্মিলিত প্রকল্প রিপোর্ট</h5>
-            <table class="table table-bordered table-striped table-hover">
-                <thead class="table-dark text-white">
-                    <tr>
-                        <th>#</th>
-                        <th>প্রকল্পের নাম</th>
-                        <th>আবাসিক প্লট</th>
-                        <th>বাণিজ্যিক প্লট</th>
-                        <th>মোট জমি (একর)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>১</td>
-                        <td>চন্দ্রিমা এলাকা</td>
-                        <td>৩৯০</td>
-                        <td>৯</td>
-                        <td>১৫.০০</td>
-                    </tr>
-                    <tr>
-                        <td>২</td>
-                        <td>প্রান্তিক প্রকল্প</td>
-                        <td>২৩৯</td>
-                        <td>৫</td>
-                        <td>১৯.৭৫</td>
-                    </tr>
-                    <tr>
-                        <td>৩</td>
-                        <td>মহানন্দা আবাসিক এলাকা</td>
-                        <td>৯৭</td>
-                        <td>১৩</td>
-                        <td>৭.৪১</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    
-    </div>
-    </div>
+        </section>
     </div>
 
 
-        <!-- end user table form tanvir -->
+    <!-- end user table form tanvir -->
 
-        <!-- END SEARCH-MODAL -->
-        <footer class="footer mt-auto py-3 bg-white text-center">
-            <div class="container">
-                <span class="text-muted"> All rights reserved ©<span id="year"></span> <a href="javascript:void(0);"
-                        class="text-dark fw-semibold"></a>rajIT Solutions
-                    Ltd.<span class="">Design</span> & Developed
-                    <a href="javascript:void(0);">
-                        <span class="fw-semibold text- text-decoration-underline"> by rajIT Team.</span>
-                    </a>
-                </span>
-            </div>
-        </footer>
+    <!-- END SEARCH-MODAL -->
+    <footer class="footer mt-auto py-3 bg-white text-center">
+        <div class="container">
+            <span class="text-muted"> All rights reserved ©<span id="year"></span> <a href="javascript:void(0);"
+                    class="text-dark fw-semibold"></a>rajIT Solutions
+                Ltd.<span class="">Design</span> & Developed
+                <a href="javascript:void(0);">
+                    <span class="fw-semibold text- text-decoration-underline"> by rajIT Team.</span>
+                </a>
+            </span>
+        </div>
+    </footer>
 
-        <div id="responsive-overlay"></div>
+    <div id="responsive-overlay"></div>
 
-        <!-- POPPER JS -->
-        <script src="../assets/libs/%40popperjs/core/umd/popper.min.js"></script>
+    <!-- POPPER JS -->
+    <script src="../assets/libs/%40popperjs/core/umd/popper.min.js"></script>
 
-        <!-- BOOTSTRAP JS -->
-        <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- NODE WAVES JS -->
-        <script src="../assets/libs/node-waves/waves.min.js"></script>
+    <!-- NODE WAVES JS -->
+    <script src="../assets/libs/node-waves/waves.min.js"></script>
 
-        <!-- SIMPLEBAR JS -->
-        <script src="../assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="../assets/js/simplebar.js"></script>
+    <!-- SIMPLEBAR JS -->
+    <script src="../assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="../assets/js/simplebar.js"></script>
 
-        <!-- COLOR PICKER JS -->
-        <script src="../assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
+    <!-- COLOR PICKER JS -->
+    <script src="../assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
 
-        <!-- DEFAULTMENU JS -->
-        <script src="../assets/js/defaultmenu.js"></script>
+    <!-- DEFAULTMENU JS -->
+    <script src="../assets/js/defaultmenu.js"></script>
 
-        <!-- JSVECTOR MAPS JS -->
-        <script src="../assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
-        <script src="../assets/libs/jsvectormap/maps/world-merc.js"></script>
+    <!-- JSVECTOR MAPS JS -->
+    <script src="../assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+    <script src="../assets/libs/jsvectormap/maps/world-merc.js"></script>
 
-        <!-- APEX CHARTS JS -->
-        <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+    <!-- APEX CHARTS JS -->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
 
-        <!-- CHARTJS CHART JS -->
-        <script src="../assets/libs/chart.js/chart.min.js"></script>
+    <!-- CHARTJS CHART JS -->
+    <script src="../assets/libs/chart.js/chart.min.js"></script>
 
-        <!-- CRM-Dashboard -->
-        <script src="../assets/js/crm-dashboard.js"></script>
+    <!-- CRM-Dashboard -->
+    <script src="../assets/js/crm-dashboard.js"></script>
 
-        <!-- STICKY JS -->
-        <script src="../assets/js/sticky.js"></script>
+    <!-- STICKY JS -->
+    <script src="../assets/js/sticky.js"></script>
 
-        <!-- CUSTOM JS -->
-        <script src="../assets/js/custom.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="../assets/js/custom.js"></script>
 
-        <!-- CUSTOM-SWITCHER JS -->
-        <script src="../assets/js/custom-switcher.js"></script>
+    <!-- CUSTOM-SWITCHER JS -->
+    <script src="../assets/js/custom-switcher.js"></script>
 </body>
 
 </html>

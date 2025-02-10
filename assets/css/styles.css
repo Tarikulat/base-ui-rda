@@ -178,6 +178,10 @@
 }
 
 /* start tanvie */
+.form-pd {
+  padding: 0px 30px 0px 30px;
+}
+
 
 .custom-select {
   width: 100%;

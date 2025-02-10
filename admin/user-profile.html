@@ -877,234 +877,67 @@
         </aside>
 
         <!-- tanvir start table -->
-        <!-- Modal -->
-    <div class="modal fade" id="shopFormModal" tabindex="-1" aria-labelledby="shopFormModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content form-pd">
-                <div class="modal-header">
-                    <h5 class="modal-title text-primary" id="shopFormModalLabel">নতুন দোকান সংযোজন ফর্ম</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row gy-3">
-                            <div class="col-md-6">
-                                <label for="shopNumber" class="form-label">দোকানের ক্রমিক নং</label>
-                                <input type="text" class="form-control" id="shopNumber" placeholder="দোকানের ক্রমিক নং">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="shopName" class="form-label">দোকানের নাম</label>
-                                <input type="text" class="form-control" id="shopName" placeholder="দোকানের নাম">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="ownerName" class="form-label">মালিকের নাম</label>
-                                <input type="text" class="form-control" id="ownerName" placeholder="মালিকের নাম">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="shopSize" class="form-label">দোকানের আয়তন</label>
-                                <input type="text" class="form-control" id="shopSize" placeholder="দোকানের আয়তন (বর্গফুট)">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="monthlyRent" class="form-label">মাসিক ভাড়া</label>
-                                <input type="text" class="form-control" id="monthlyRent" placeholder="মাসিক ভাড়া লিখুন">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="previousDue" class="form-label">পূর্বের বকেয়া</label>
-                                <input type="text" class="form-control" id="previousDue" placeholder="পূর্বের বকেয়া">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="payment" class="form-label">আদায়</label>
-                                <input type="text" class="form-control" id="payment" placeholder="আদায়">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="currentDue" class="form-label">বর্তমান বকেয়া</label>
-                                <input type="text" class="form-control" id="currentDue" placeholder="বর্তমান বকেয়া">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="shopStatus" class="form-label">দোকানের স্ট্যাটাস</label>
-                                <select class="form-select" id="shopStatus">
-                                    <option value="active">সক্রিয়</option>
-                                    <option value="inactive">নিষ্ক্রিয়</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="contactNumber" class="form-label">দোকানের যোগাযোগ নম্বর</label>
-                                <input type="text" class="form-control" id="contactNumber" placeholder="যোগাযোগ নম্বর">
-                            </div>
-    
-                            <div class="col-12 text-end">
-                                <button type="submit" class="btn btn-success">সংরক্ষণ করুন</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="main-content app-content mt-5">
-        <div class="container-fluid">
-            <h5 class="mt-4 mb-3 mx-2 pt-2">Rajshahi Development Authority</h5>
+<section class="main-content app-content mt-5">
+    <div class="container-fluid">
+        <header class="bg-light py-3 text-center">
+            <h3 class="text-success pt-4">রাজশাহী উন্নয়ন কর্তৃপক্ষ</h3>
+            <p>ভূমি ব্যবহারের ছাড়পত্রের আবেদন পদ্ধতি (এলএমএস অ্যাপ্লিকেশন সিস্টেম)</p>
+        </header>
+        
+        <div class="container my-4">
             <div class="row">
-                <div class="col-6 text-start pb-2">
-                    <div class="btn btn-light">User List</div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="../assets/images/img/tanvir.jpg" style="width: 80px; height: auto;" class="rounded-circle" alt="User Image">
+                            <h5 class="mt-2">tanvir</h5>
+                            <span class="badge bg-success">আবেদনকারী</span>
+                        </div>
+                    </div>
+                    <ul class="list-group mt-3">
+                        <li class="list-group-item active">আবেদনের তালিকা</li>
+                        <li class="list-group-item">প্রোফাইল সম্পাদনা</li>
+                        <li class="list-group-item">পাসওয়ার্ড</li>
+                        <li class="list-group-item">লগআউট</li>
+                    </ul>
                 </div>
-                <div class="col-6 text-end pb-2">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shopFormModal">
-                        + নতুন আবেদন
-                    </button>
+        
+                <div class="col-md-9">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="text-success">আবেদনের তালিকা</h5>
+                        <button class="btn btn-success">+ আবেদন করুন</button>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th>আবেদন নাম্বার</th>
+                                <th>আবেদনকারীর নাম</th>
+                                <th>আবেদনের ধরন</th>
+                                <th>পেমেন্টের তারিখ</th>
+                                <th>আবেদনের অবস্থা</th>
+                                <th>ডাউনলোড</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12345</td>
+                                <td>মাহমুদ হাসান</td>
+                                <td>ব্যক্তিগত আবেদন</td>
+                                <td>০৯/০২/২০২৫</td>
+                                <td><span class="badge bg-warning text-dark">মুল্যায়ন</span></td>
+                                <td><button class="btn btn-success btn-sm">পিডিএফ</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
-    
-            <div class="table-responsive">
-                <table class="table table-bordered table-hover">
-                    <thead class="table-primary">
-                        <tr>
-                            <th scope="col">ক্র.নং</th>
-                            <th scope="col">দোকানের নাম</th>
-                            <th scope="col">মালিকের নাম</th>
-                            <th scope="col">দোকানের আয়তন</th>
-                            <th scope="col">মাসিক ভাড়া</th>
-                            <th scope="col">পূর্বের বকেয়া</th>
-                            <th scope="col">আদায়</th>
-                            <th scope="col">বর্তমান বকেয়া</th>
-                            <th scope="col">দোকানের স্ট্যাটাস</th>
-                            <th scope="col">অ্যাকশন</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>001</td>
-                            <td>রাজশাহী নিউ মার্কেট</td>
-                            <td>মো. রফিকুল ইসলাম</td>
-                            <td>২০০ বর্গফুট</td>
-                            <td>২৫,০০০ টাকা</td>
-                            <td>৫,০০০ টাকা</td>
-                            <td>২০,০০০ টাকা</td>
-                            <td>৫,০০০ টাকা</td>
-                            <td>সক্রিয়</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>002</td>
-                            <td>রাজশাহী বোয়ালিয়া মার্কেট</td>
-                            <td>মো. জাহিদ হাসান</td>
-                            <td>১৫০ বর্গফুট</td>
-                            <td>১৫,০০০ টাকা</td>
-                            <td>৩,০০০ টাকা</td>
-                            <td>১২,০০০ টাকা</td>
-                            <td>৬,০০০ টাকা</td>
-                            <td>নিষ্ক্রিয়</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>003</td>
-                            <td>রাজশাহী কোর্ট বিল্ডিং মার্কেট</td>
-                            <td>মো. সাইফুল ইসলাম</td>
-                            <td>৩০০ বর্গফুট</td>
-                            <td>৩০,০০০ টাকা</td>
-                            <td>৮,০০০ টাকা</td>
-                            <td>২২,০০০ টাকা</td>
-                            <td>১০,০০০ টাকা</td>
-                            <td>সক্রিয়</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>004</td>
-                            <td>রাজশাহী মল্লিক বাজার</td>
-                            <td>মো. আলমগীর হোসেন</td>
-                            <td>২৫০ বর্গফুট</td>
-                            <td>৪০,০০০ টাকা</td>
-                            <td>১০,০০০ টাকা</td>
-                            <td>৩০,০০০ টাকা</td>
-                            <td>১৫,০০০ টাকা</td>
-                            <td>সক্রিয়</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>005</td>
-                            <td>রাজশাহী কাশিয়াডাঙ্গা বাজার</td>
-                            <td>মো. সোহেল রহমান</td>
-                            <td>১৮০ বর্গফুট</td>
-                            <td>২০,০০০ টাকা</td>
-                            <td>৪,০০০ টাকা</td>
-                            <td>১৬,০০০ টাকা</td>
-                            <td>৭,০০০ টাকা</td>
-                            <td>নিষ্ক্রিয়</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>006</td>
-                            <td>রাজশাহী শালবাগান বাজার</td>
-                            <td>মো. সেলিম আহমেদ</td>
-                            <td>২২০ বর্গফুট</td>
-                            <td>৩৫,০০০ টাকা</td>
-                            <td>৬,০০০ টাকা</td>
-                            <td>২৯,০০০ টাকা</td>
-                            <td>১০,০০০ টাকা</td>
-                            <td>সক্রিয়</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>007</td>
-                            <td>রাজশাহী বড় বাজার</td>
-                            <td>মো. রাব্বি</td>
-                            <td>১৫০ বর্গফুট</td>
-                            <td>১০,০০০ টাকা</td>
-                            <td>২,০০০ টাকা</td>
-                            <td>৮,০০০ টাকা</td>
-                            <td>৪,০০০ টাকা</td>
-                            <td>নিষ্ক্রিয়</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
-    </section>
+        </div>
+</section>
         <!-- end user table form tanvir -->
+
+
+
 
         <!-- END SEARCH-MODAL -->
         <footer class="footer mt-auto py-3 bg-white text-center">

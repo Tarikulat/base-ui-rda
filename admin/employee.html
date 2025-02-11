@@ -21,11 +21,11 @@
     <link href="../assets/css/icons.css" rel="stylesheet">
     <link href="../assets/css/styles.css" rel="stylesheet">
     <script src="../assets/js/main.js"></script>
-    <!-- <link href="../assets/libs/node-waves/waves.min.css" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="../assets/libs/simplebar/simplebar.min.css">
+    <link href="../assets/libs/node-waves/waves.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/libs/simplebar/simplebar.min.css">
     <link rel="stylesheet" href="../assets/libs/flatpickr/flatpickr.min.css">
     <link rel="stylesheet" href="../assets/libs/%40simonwep/pickr/themes/nano.min.css">
-    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css"> -->
+    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css">
     <script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
 
     <!-- Boxicons CDN -->
@@ -879,235 +879,228 @@
         <!-- tanvir start table -->
 
         <!-- Modal -->
-        <div class="modal fade" id="rdaFormModal" tabindex="-1" aria-labelledby="rdaFormModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content form-pd">
-                    <div class="modal-header mt-3">
-                        <h5 class="modal-title text-primary" id="rdaFormModalLabel">Add New Employee Form</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="row gy-3">
-                                <div class="col-md-6">
-                                    <label for="name" class="form-label">নাম</label>
-                                    <input type="text" class="form-control" id="name"
-                                        placeholder="প্রকৌশলী/স্থপতি/ডিপ্লোমা প্রকৌশলী/ডিপ্লেমা স্থপতি">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="professional-id" class="form-label">প্রফেশনাল পরিচিতি নং</label>
-                                    <input type="text" class="form-control" id="professional-id"
-                                        placeholder="প্রফেশনাল আইডি নং">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="permanent-address" class="form-label">স্থায়ী ঠিকানা</label>
-                                    <input type="text" class="form-control" id="permanent-address"
-                                        placeholder="স্থায়ী ঠিকানা লিখুন">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="current-address" class="form-label">বর্তমান ঠিকানা</label>
-                                    <input type="text" class="form-control" id="current-address"
-                                        placeholder="বর্তমান ঠিকানা লিখুন">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="national-id" class="form-label">জাতীয় পরিচয় নং</label>
-                                    <input type="text" class="form-control" id="national-id"
-                                        placeholder="জাতীয় পরিচয় নং">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="phone" class="form-label">ফোন নম্বর</label>
-                                    <input type="text" class="form-control" id="phone" placeholder="ফোন নম্বর">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="email" class="form-label">ই-মেইল</label>
-                                    <input type="email" class="form-control" id="email" placeholder="ই-মেইল লিখুন">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="tax-id" class="form-label">আয়কর পরিচিতি নং</label>
-                                    <input type="text" class="form-control" id="tax-id" placeholder="আয়কর পরিচিতি নং">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="rda-registration-no" class="form-label">আরডিএ তালিকাভুক্তি নং</label>
-                                    <input type="text" class="form-control" id="rda-registration-no"
-                                        placeholder="আরডিএ তালিকাভুক্তি নং">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="professional-membership" class="form-label">প্রফেশনাল মেম্বারশীপ
-                                        নং</label>
-                                    <input type="text" class="form-control" id="professional-membership"
-                                        placeholder="প্রফেশনাল মেম্বারশীপ নং">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="degree" class="form-label">ডিগ্রী / কোর্স</label>
-                                    <input type="text" class="form-control" id="degree" placeholder="ডিগ্রী বা কোর্স">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="specialization" class="form-label">স্পেশালাইজেশন</label>
-                                    <input type="text" class="form-control" id="specialization"
-                                        placeholder="স্পেশালাইজেশন">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="institution" class="form-label">শিক্ষা প্রতিষ্ঠান</label>
-                                    <input type="text" class="form-control" id="institution"
-                                        placeholder="শিক্ষা প্রতিষ্ঠান">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="passing-year" class="form-label">পাশের বছর</label>
-                                    <input type="text" class="form-control" id="passing-year" placeholder="পাশের বছর">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="profile_image" class="form-label">প্রোফাইল ইমেজ</label>
-                                    <input type="file" class="form-control" id="profile_image" accept="image/*">
-                                </div>
+   
+<div class="modal fade" id="departmentCreateFormModal" tabindex="-1" aria-labelledby="departmentCreateFormModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content form-pd">
+            <div class="modal-header mt-3">
+                <h5 class="modal-title text-primary" id="departmentCreateFormModalLabel">কর্মী তৈরি ফর্ম</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <label for="department-name" class="form-label">কর্মীর নাম</label>
+                            <input type="text" class="form-control" id="department-name"
+                                placeholder="কর্মীর নাম লিখুন">
+                        </div>
 
-                                <div class="col-md-6">
-                                    <label for="qualification" class="form-label">অভিজ্ঞতার বিবরণ</label>
-                                    <textarea class="form-control" id="qualification"
-                                        placeholder="অভিজ্ঞতার বিবরণ"></textarea>
-                                </div>
-                                <div class="col-12 text-end">
-                                    <button type="submit" class="btn btn-success">সংরক্ষণ করুন</button>
-                                </div>
-                            </div>
-                        </form>
+                        <div class="col-md-6">
+                            <label for="department-code" class="form-label">কর্মী আইডি</label>
+                            <input type="text" class="form-control" id="department-code"
+                                placeholder="কর্মী আইডিলিখুন">
+                        </div>
+                    <div class="col-md-6">
+                        <label for="department" class="form-label">ডিপার্টমেন্ট</label>
+                        <select class="form-select" id="department">
+                            <option value="hr">এইচআর</option>
+                            <option value="it">আইটি</option>
+                            <option value="marketing">মার্কেটিং</option>
+                            <option value="finance">ফাইন্যান্স</option>
+                            <option value="sales">সেলস</option>
+                        </select>
                     </div>
-                </div>
+                        <div class="col-md-6">
+                            <label for="contact-number" class="form-label">পদবি</label>
+                            <input type="text" class="form-control" id="contact-number" placeholder="পদবি লিখুন">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="department-email" class="form-label">ফোন নম্বর</label>
+                            <input type="email" class="form-control" id="department-email" placeholder="ফোন নম্বর লিখুন">
+                        </div>
+                    <div class="col-md-6">
+                        <label for="joining-date" class="form-label">যোগদানের তারিখ</label>
+                        <input type="date" class="form-control" id="joining-date" placeholder="যোগদানের তারিখ নির্বাচন করুন">
+                    </div>
+                        <div class="col-md-6">
+                            <label for="department-activities" class="form-label">বেতন</label>
+                            <textarea class="form-control" id="department-activities"
+                                placeholder="বেতন লিখুন"></textarea>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="department-facilities" class="form-label">মন্তব্য</label>
+                            <input type="text" class="form-control" id="department-facilities"
+                                placeholder="মন্তব্য লিখুন">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="department-documents" class="form-label">ডিপার্টমেন্ট ডকুমেন্ট</label>
+                            <input type="file" class="form-control" id="department-documents"
+                                accept="application/pdf, .doc, .docx">
+                        </div>
+
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-success">সংরক্ষণ করুন</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="main-content app-content mt-5">
+    <div class="container-fluid">
+        <h5 class="mt-4 mb-3 mx-2 pt-2">কর্মীর তালিকা</h5>
+
+        <div class="row">
+            <div class="col-6 text-start pb-2">
+                <div class="btn btn-light">কর্মীর তালিকা</div>
+            </div>
+            <div class="col-6 text-end pb-2">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#departmentCreateFormModal">
+                    + নতুন কর্মী তৈরি
+                </button>
             </div>
         </div>
 
-        <section class="main-content app-content mt-5">
-            <div class="container-fluid">
-                <h5 class="mt-4 mb-3 mx-2 pt-2">Rajshahi Development Authority</h5>
-
-                <div class="row">
-                    <div class="col-6 text-start pb-2">
-                        <div class="btn btn-light">User List</div>
-                    </div>
-                    <div class="col-6 text-end pb-2">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rdaFormModal">
-                            + নতুন আবেদন
-                        </button>
-                    </div>
+        <div class="table-responsive">
+<table class="table table-bordered table-hover">
+    <thead class="table-primary">
+        <tr>
+            <th>#</th>
+            <th>কর্মীর নাম</th>
+            <th>কর্মী আইডি</th>
+            <th>ডিপার্টমেন্ট</th>
+            <th>পদবি</th>
+            <th>ফোন নম্বর</th>
+            <th>যোগদানের তারিখ</th>
+            <th>বেতন</th>
+            <th>মন্তব্য</th>
+            <th>অ্যাকশন</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>১</td>
+            <td>আবদুল্লাহ আল মামুন</td>
+            <td>EMP-101</td>
+            <td>তথ্য প্রযুক্তি</td>
+            <td>অ্যানালিটিক্স</td>
+            <td>017XXXXXXX</td>
+            <td>10-01-2019</td>
+            <td>৫০,০০০</td>
+            <td>প্রথম শ্রেণির কর্মী</td>
+            <td>
+                <div class="hstack gap-2 fs-15">
+                    <a href="#" class="btn btn-icon btn-sm btn-success"><i class="ri-download-2-line"></i></a>
+                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                    <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-2-line"></i></a>
                 </div>
-
-                <div class="table-responsive">
-                    <table class="table table-bordered table-hover">
-                        <thead class="table-primary">
-                            <tr>
-                                <th>#</th>
-                                <th>নাম</th>
-                                <th>শিক্ষাগত যোগ্যতা</th>
-                                <th>প্রফেশনাল পরিচিতি</th>
-                                <th>ফোন</th>
-                                <th>ঠিকানা</th>
-                                <th>অ্যাকশন</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>১</td>
-                                <td>রফিকুল ইসলাম</td>
-                                <td>BSc in Civil Engineering</td>
-                                <td>CE-101</td>
-                                <td>01712345678</td>
-                                <td>রাজশাহী</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-success"><i class="ri-download-2-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                </div>
-                            </td>
-                            </tr>
-                            <tr>
-                                <td>২</td>
-                                <td>সাইফুল ইসলাম</td>
-                                <td>BSc in Architecture</td>
-                                <td>Ar-202</td>
-                                <td>01823456789</td>
-                                <td>ঢাকা</td>
-                                <td>
-                                    <div class="hstack gap-2 fs-15">
-                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i class="ri-download-2-line"></i></a>
-                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>৩</td>
-                                <td>মাহমুদুল হাসান</td>
-                                <td>MSc in Geotechnical Engineering</td>
-                                <td>DCE-303</td>
-                                <td>01987654321</td>
-                                <td>চট্টগ্রাম</td>
-                                <td>
-                                    <div class="hstack gap-2 fs-15">
-                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i class="ri-download-2-line"></i></a>
-                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>৪</td>
-                                <td>আব্দুল করিম</td>
-                                <td>BSc in Electrical Engineering</td>
-                                <td>EE-404</td>
-                                <td>01698765432</td>
-                                <td>সিলেট</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-success"><i class="ri-download-2-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                </div>
-                            </td>
-                            </tr>
-                            <tr>
-                                <td>৫</td>
-                                <td>মোঃ আমিনুল</td>
-                                <td>BSc in Mechanical Engineering</td>
-                                <td>ME-505</td>
-                                <td>01576543210</td>
-                                <td>খুলনা</td>
-                                <td>
-                                    <div class="hstack gap-2 fs-15">
-                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i class="ri-download-2-line"></i></a>
-                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>৬</td>
-                                <td>রাশেদুল ইসলাম</td>
-                                <td>BSc in Structural Engineering</td>
-                                <td>SE-606</td>
-                                <td>01456789012</td>
-                                <td>বরিশাল</td>
-                                <td>
-                                    <div class="hstack gap-2 fs-15">
-                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i class="ri-download-2-line"></i></a>
-                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>৭</td>
-                                <td>সাবরিনা সুলতানা</td>
-                                <td>BSc in Environmental Engineering</td>
-                                <td>Env-707</td>
-                                <td>01345678901</td>
-                                <td>রংপুর</td>
-                                <td>
-                                    <div class="hstack gap-2 fs-15">
-                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i class="ri-download-2-line"></i></a>
-                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </td>
+        </tr>
+        <tr>
+            <td>২</td>
+            <td>মাহফুজা হক</td>
+            <td>EMP-202</td>
+            <td>শিক্ষা</td>
+            <td>শিক্ষক</td>
+            <td>018XXXXXXX</td>
+            <td>15-03-2020</td>
+            <td>৪০,০০০</td>
+            <td>কর্মঠ</td>
+            <td>
+                <div class="hstack gap-2 fs-15">
+                    <a href="#" class="btn btn-icon btn-sm btn-success"><i class="ri-download-2-line"></i></a>
+                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                    <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-2-line"></i></a>
                 </div>
-            </div>
-        </section>
+            </td>
+        </tr>
+        <tr>
+            <td>৩</td>
+            <td>রুহুল আমিন</td>
+            <td>EMP-303</td>
+            <td>বিপণন</td>
+            <td>সেলস এক্সিকিউটিভ</td>
+            <td>019XXXXXXX</td>
+            <td>01-06-2021</td>
+            <td>৩৫,০০০</td>
+            <td>সক্রিয় কর্মী</td>
+            <td>
+                <div class="hstack gap-2 fs-15">
+                    <a href="#" class="btn btn-icon btn-sm btn-success"><i class="ri-download-2-line"></i></a>
+                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                    <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-2-line"></i></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>৪</td>
+            <td>রাহুল সিকদার</td>
+            <td>EMP-404</td>
+            <td>অর্থনীতি</td>
+            <td>অ্যাকাউন্টেন্ট</td>
+            <td>016XXXXXXX</td>
+            <td>25-07-2018</td>
+            <td>৪৫,০০০</td>
+            <td>বিশ্বস্ত কর্মী</td>
+            <td>
+                <div class="hstack gap-2 fs-15">
+                    <a href="#" class="btn btn-icon btn-sm btn-success"><i class="ri-download-2-line"></i></a>
+                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                    <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-2-line"></i></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>৫</td>
+            <td>কিশোরী চৌধুরী</td>
+            <td>EMP-505</td>
+            <td>স্বাস্থ্য</td>
+            <td>চিকিৎসক</td>
+            <td>017XXXXXXX</td>
+            <td>10-02-2022</td>
+            <td>৫০,০০০</td>
+            <td>অত্যন্ত দক্ষ</td>
+            <td>
+                <div class="hstack gap-2 fs-15">
+                    <a href="#" class="btn btn-icon btn-sm btn-success"><i class="ri-download-2-line"></i></a>
+                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                    <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-2-line"></i></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>৬</td>
+            <td>জয়ন্তি দাস</td>
+            <td>EMP-606</td>
+            <td>কৃষি</td>
+            <td>কৃষি গবেষক</td>
+            <td>015XXXXXXX</td>
+            <td>05-11-2020</td>
+            <td>৩৮,০০০</td>
+            <td>কৃষি উন্নয়ন</td>
+            <td>
+                <div class="hstack gap-2 fs-15">
+                    <a href="#" class="btn btn-icon btn-sm btn-success"><i class="ri-download-2-line"></i></a>
+                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                    <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-2-line"></i></a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
+
+
+        </div>
+    </div>
+</section>
 
         <!-- end user table form tanvir -->
 

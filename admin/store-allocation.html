@@ -878,186 +878,219 @@
 
         <!-- tanvir start table -->
         <!-- Modal -->
-    <div class="modal fade" id="storeAllocationFormModal" tabindex="-1" aria-labelledby="storeAllocationFormModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content form-pd">
-                <div class="modal-header mt-3">
-                    <h5 class="modal-title text-primary" id="storeAllocationFormModalLabel">স্টোর বরাদ্দ ফর্ম</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row gy-3">
-                            <div class="col-md-6">
-                                <label for="allocationNumber" class="form-label">বরাদ্দ ক্রমিক নং</label>
-                                <input type="text" class="form-control" id="allocationNumber"
-                                    placeholder="বরাদ্দ ক্রমিক নং লিখুন">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="storeName" class="form-label">স্টোরের নাম</label>
-                                <input type="text" class="form-control" id="storeName" placeholder="স্টোরের নাম লিখুন">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="allocatedArea" class="form-label">বরাদ্দকৃত এলাকা</label>
-                                <input type="text" class="form-control" id="allocatedArea"
-                                    placeholder="বরাদ্দকৃত এলাকা (বর্গফুট)">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="storeType" class="form-label">স্টোরের ধরন</label>
-                                <select class="form-select" id="storeType">
-                                    <option value="retail">খুচরা</option>
-                                    <option value="wholesale">পাইকারি</option>
-                                    <option value="mixed">মিশ্র</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="allocationDate" class="form-label">বরাদ্দের তারিখ</label>
-                                <input type="date" class="form-control" id="allocationDate">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="allocatedBy" class="form-label">বরাদ্দকারী ব্যক্তির নাম</label>
-                                <input type="text" class="form-control" id="allocatedBy"
-                                    placeholder="বরাদ্দকারী ব্যক্তির নাম লিখুন">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="paymentTerms" class="form-label">পেমেন্ট শর্তাবলী</label>
-                                <textarea class="form-control" id="paymentTerms" rows="3"
-                                    placeholder="পেমেন্ট শর্তাবলী লিখুন"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="storeStatus" class="form-label">স্টোরের স্ট্যাটাস</label>
-                                <select class="form-select" id="storeStatus">
-                                    <option value="active">সক্রিয়</option>
-                                    <option value="inactive">নিষ্ক্রিয়</option>
-                                    <option value="pending">অপেক্ষায়</option>
-                                </select>
-                            </div>
-    
-                            <div class="col-12 text-end">
-                                <button type="submit" class="btn btn-success">সংরক্ষণ করুন</button>
-                            </div>
+<div class="modal fade" id="storeAllocationFormModal" tabindex="-1" aria-labelledby="storeAllocationFormModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content form-pd">
+            <div class="modal-header mt-3">
+                <h5 class="modal-title text-primary" id="storeAllocationFormModalLabel">স্টোর বরাদ্দ ফর্ম</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row gy-3">
+                        <!-- মার্কেটের নাম ড্রপডাউন -->
+                        <div class="col-md-6">
+                            <label for="marketName" class="form-label">মার্কেটের নাম</label>
+                            <select class="form-select" id="marketName">
+                                <option value="rajsahi_new_market">রাজশাহী নিউ মার্কেট</option>
+                                <option value="rajsahi_bowalia_market">রাজশাহী বোয়ালিয়া মার্কেট</option>
+                                <option value="rajsahi_court_building">রাজশাহী কোর্ট বিল্ডিং মার্কেট</option>
+                                <option value="rajsahi_malik_bazar">রাজশাহী মল্লিক বাজার</option>
+                                <option value="rajsahi_kashiadanga">রাজশাহী কাশিয়াডাঙ্গা বাজার</option>
+                            </select>
                         </div>
-                    </form>
-                </div>
+
+                        <!-- স্টোরের ক্রমিক নং ড্রপডাউন -->
+                        <div class="col-md-6">
+                            <label for="storeSerialNumber" class="form-label">স্টোরের ক্রমিক নং</label>
+                            <select class="form-select" id="storeSerialNumber">
+                                <option value="001">001</option>
+                                <option value="002">002</option>
+                                <option value="003">003</option>
+                                <option value="004">004</option>
+                                <option value="005">005</option>
+                            </select>
+                        </div>
+
+                        <!-- অন্যান্য ফিল্ডস -->
+                        <div class="col-md-6">
+                            <label for="allocationNumber" class="form-label">বরাদ্দ ক্রমিক নং</label>
+                            <input type="text" class="form-control" id="allocationNumber"
+                                placeholder="বরাদ্দ ক্রমিক নং লিখুন">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="storeName" class="form-label">স্টোরের নাম</label>
+                            <input type="text" class="form-control" id="storeName" placeholder="স্টোরের নাম লিখুন">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="allocatedArea" class="form-label">বরাদ্দকৃত এলাকা</label>
+                            <input type="text" class="form-control" id="allocatedArea"
+                                placeholder="বরাদ্দকৃত এলাকা (বর্গফুট)">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="storeType" class="form-label">স্টোরের ধরন</label>
+                            <select class="form-select" id="storeType">
+                                <option value="retail">খুচরা</option>
+                                <option value="wholesale">পাইকারি</option>
+                                <option value="mixed">মিশ্র</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="allocationDate" class="form-label">বরাদ্দের তারিখ</label>
+                            <input type="date" class="form-control" id="allocationDate">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="allocatedBy" class="form-label">বরাদ্দকারী ব্যক্তির নাম</label>
+                            <input type="text" class="form-control" id="allocatedBy"
+                                placeholder="বরাদ্দকারী ব্যক্তির নাম লিখুন">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="paymentTerms" class="form-label">পেমেন্ট শর্তাবলী</label>
+                            <textarea class="form-control" id="paymentTerms" rows="3"
+                                placeholder="পেমেন্ট শর্তাবলী লিখুন"></textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="storeStatus" class="form-label">স্টোরের স্ট্যাটাস</label>
+                            <select class="form-select" id="storeStatus">
+                                <option value="active">সক্রিয়</option>
+                                <option value="inactive">নিষ্ক্রিয়</option>
+                                <option value="pending">অপেক্ষায়</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-success">সংরক্ষণ করুন</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+</div>
 
-    <section class="main-content app-content mt-5">
-        <div class="container-fluid">
-            <h5 class="mt-4 mb-3 mx-2 pt-2">স্টোর বরাদ্দ তালিকা</h5>
-            <div class="row">
-                <div class="col-6 text-start pb-2">
-                    <div class="btn btn-light">স্টোর বরাদ্দ তালিকা</div>
-                </div>
-                <div class="col-6 text-end pb-2">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#storeAllocationFormModal">
-                        + নতুন বরাদ্দ
-                    </button>
-                </div>
+
+<section class="main-content app-content mt-5">
+    <div class="container-fluid">
+        <h5 class="mt-4 mb-3 mx-2 pt-2">স্টোর বরাদ্দ তালিকা</h5>
+        <div class="row">
+            <div class="col-6 text-start pb-2">
+                <div class="btn btn-light">স্টোর বরাদ্দ তালিকা</div>
             </div>
-    
-            <div class="table-responsive">
-                <table class="table table-bordered table-hover">
-                    <thead class="table-primary">
-                        <tr>
-                            <th scope="col">বরাদ্দ ক্রমিক নং</th>
-                            <th scope="col">স্টোরের নাম</th>
-                            <th scope="col">বরাদ্দকৃত এলাকা</th>
-                            <th scope="col">স্টোরের ধরন</th>
-                            <th scope="col">বরাদ্দের তারিখ</th>
-                            <th scope="col">বরাদ্দকারী ব্যক্তির নাম</th>
-                            <th scope="col">স্টোরের স্ট্যাটাস</th>
-                            <th scope="col">অ্যাকশন</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>001</td>
-                            <td>রাজশাহী নিউ মার্কেট</td>
-                            <td>২০০ বর্গফুট</td>
-                            <td>খুচরা</td>
-                            <td>2025-02-10</td>
-                            <td>মো. রফিকুল ইসলাম</td>
-                            <td>সক্রিয়</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-danger"><i
-                                            class="ri-delete-bin-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>002</td>
-                            <td>রাজশাহী বোয়ালিয়া মার্কেট</td>
-                            <td>১৫০ বর্গফুট</td>
-                            <td>পাইকারি</td>
-                            <td>2025-02-05</td>
-                            <td>মো. জাহিদ হাসান</td>
-                            <td>নিষ্ক্রিয়</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-danger"><i
-                                            class="ri-delete-bin-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>003</td>
-                            <td>রাজশাহী কোর্ট বিল্ডিং মার্কেট</td>
-                            <td>৩০০ বর্গফুট</td>
-                            <td>মিশ্র</td>
-                            <td>2025-02-08</td>
-                            <td>মো. সাইফুল ইসলাম</td>
-                            <td>অপেক্ষায়</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-danger"><i
-                                            class="ri-delete-bin-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>004</td>
-                            <td>রাজশাহী মল্লিক বাজার</td>
-                            <td>২৫০ বর্গফুট</td>
-                            <td>খুচরা</td>
-                            <td>2025-02-07</td>
-                            <td>মো. আলমগীর হোসেন</td>
-                            <td>সক্রিয়</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-danger"><i
-                                            class="ri-delete-bin-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>005</td>
-                            <td>রাজশাহী কাশিয়াডাঙ্গা বাজার</td>
-                            <td>১৮০ বর্গফুট</td>
-                            <td>পাইকারি</td>
-                            <td>2025-02-06</td>
-                            <td>মো. সোহেল রহমান</td>
-                            <td>নিষ্ক্রিয়</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-danger"><i
-                                            class="ri-delete-bin-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-6 text-end pb-2">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#storeAllocationFormModal">
+                    + নতুন বরাদ্দ
+                </button>
             </div>
         </div>
-    </section>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="table-primary">
+                    <tr>
+                        <th scope="col">মার্কেটের নাম</th>
+                        <th scope="col">স্টোরের ক্রমিক নং</th>
+                        <th scope="col">স্টোরের নাম</th>
+                        <th scope="col">বরাদ্দ</th>
+                        <th scope="col">স্টোরের ধরন</th>
+                        <th scope="col">বরাদ্দের তারিখ</th>
+                        <th scope="col">বরাদ্দকারী ব্যক্তির নাম</th>
+                        <th scope="col">স্ট্যাটাস</th>
+                        <th scope="col">অ্যাকশন</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>রাজশাহী নিউ মার্কেট</td>
+                        <td>001</td>
+                        <td>রাজশাহী নিউ মার্কেট</td>
+                        <td>২০০ বর্গফুট</td>
+                        <td>খুচরা</td>
+                        <td>2025-02-10</td>
+                        <td>মো. রফিকুল ইসলাম</td>
+                        <td>সক্রিয়</td>
+                        <td>
+                            <div class="hstack gap-2 fs-15">
+                                <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                <a href="#" class="btn btn-icon btn-sm btn-danger"><i
+                                        class="ri-delete-bin-line"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>রাজশাহী বোয়ালিয়া মার্কেট</td>
+                        <td>002</td>
+                        <td>রাজশাহী বোয়ালিয়া মার্কেট</td>
+                        <td>১৫০ বর্গফুট</td>
+                        <td>পাইকারি</td>
+                        <td>2025-02-05</td>
+                        <td>মো. জাহিদ হাসান</td>
+                        <td>নিষ্ক্রিয়</td>
+                        <td>
+                            <div class="hstack gap-2 fs-15">
+                                <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                <a href="#" class="btn btn-icon btn-sm btn-danger"><i
+                                        class="ri-delete-bin-line"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>রাজশাহী কোর্ট বিল্ডিং মার্কেট</td>
+                        <td>003</td>
+                        <td>রাজশাহী কোর্ট বিল্ডিং মার্কেট</td>
+                        <td>৩০০ বর্গফুট</td>
+                        <td>মিশ্র</td>
+                        <td>2025-02-08</td>
+                        <td>মো. সাইফুল ইসলাম</td>
+                        <td>অপেক্ষায়</td>
+                        <td>
+                            <div class="hstack gap-2 fs-15">
+                                <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                <a href="#" class="btn btn-icon btn-sm btn-danger"><i
+                                        class="ri-delete-bin-line"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>রাজশাহী মল্লিক বাজার</td>
+                        <td>004</td>
+                        <td>রাজশাহী মল্লিক বাজার</td>
+                        <td>২৫০ বর্গফুট</td>
+                        <td>খুচরা</td>
+                        <td>2025-02-07</td>
+                        <td>মো. আলমগীর হোসেন</td>
+                        <td>সক্রিয়</td>
+                        <td>
+                            <div class="hstack gap-2 fs-15">
+                                <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                <a href="#" class="btn btn-icon btn-sm btn-danger"><i
+                                        class="ri-delete-bin-line"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>রাজশাহী কাশিয়াডাঙ্গা বাজার</td>
+                        <td>005</td>
+                        <td>রাজশাহী কাশিয়াডাঙ্গা বাজার</td>
+                        <td>১৮০ বর্গফুট</td>
+                        <td>পাইকারি</td>
+                        <td>2025-02-06</td>
+                        <td>মো. সোহেল রহমান</td>
+                        <td>নিষ্ক্রিয়</td>
+                        <td>
+                            <div class="hstack gap-2 fs-15">
+                                <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                <a href="#" class="btn btn-icon btn-sm btn-danger"><i
+                                        class="ri-delete-bin-line"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
 
         <!-- end user table form tanvir -->
 

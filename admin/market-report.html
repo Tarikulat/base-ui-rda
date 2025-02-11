@@ -21,11 +21,11 @@
     <link href="../assets/css/icons.css" rel="stylesheet">
     <link href="../assets/css/styles.css" rel="stylesheet">
     <script src="../assets/js/main.js"></script>
-    <!-- <link href="../assets/libs/node-waves/waves.min.css" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="../assets/libs/simplebar/simplebar.min.css">
+    <link href="../assets/libs/node-waves/waves.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/libs/simplebar/simplebar.min.css">
     <link rel="stylesheet" href="../assets/libs/flatpickr/flatpickr.min.css">
     <link rel="stylesheet" href="../assets/libs/%40simonwep/pickr/themes/nano.min.css">
-    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css"> -->
+    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css">
     <script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
 
     <!-- Boxicons CDN -->
@@ -883,9 +883,21 @@
 
                     <!-- সার্চ ইনপুট এবং প্রিন্ট বাটন -->
                     <div class="row mb-3">
-                        <div class="col-md-6">
-                            <input type="search" class="form-control" placeholder="🔍 সার্চ করুন...">
+                        <div class="col-md-3">
+                            <input type="search" class="form-control" placeholder="🔍 সার্চ করুন মার্কেট...">
                         </div>
+                        <div class="col-md-3">
+                          
+                            <input type="search" class="form-control" placeholder="🔍 সার্চ করুন দোকান...">
+                        </div>
+
+                        <!-- Download Button -->
+                        <div class="col-md-2 text-end">
+                            <button class="btn btn-primary no-print" id="downloadButton">
+                                <i class="fa fa-download"></i> ডাউনলোড করুন
+                            </button>
+                        </div>
+
                         <div class="col-md-4 text-end">
                             <button class="btn btn-success no-print" onclick="window.print()">
                                 <i class="fa fa-print"></i> প্রিন্ট করুন
@@ -918,7 +930,10 @@
                                     <td>৫,০০০</td>
                                     <td>১০,০০০</td>
                                     <td>৪,০০০</td>
-                                    <td><button class="btn btn-info">বিস্তারিত</button></td>
+                                    <td><div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-line"></i></a>
+                                    </div></td>
                                 </tr>
                                 <tr>
                                     <td>২</td>
@@ -928,7 +943,10 @@
                                     <td>৭,০০০</td>
                                     <td>১২,০০০</td>
                                     <td>৫,০০০</td>
-                                    <td><button class="btn btn-info">বিস্তারিত</button></td>
+                                    <td><div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-line"></i></a>
+                                    </div></td>
                                 </tr>
                                 <tr>
                                     <td>৩</td>
@@ -938,7 +956,10 @@
                                     <td>৮,০০০</td>
                                     <td>২০,০০০</td>
                                     <td>১০,০০০</td>
-                                    <td><button class="btn btn-info">বিস্তারিত</button></td>
+                                    <td><div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-line"></i></a>
+                                    </div></td>
                                 </tr>
                                 <tr>
                                     <td>৪</td>
@@ -948,7 +969,10 @@
                                     <td>১০,০০০</td>
                                     <td>১৫,০০০</td>
                                     <td>৫,০০০</td>
-                                    <td><button class="btn btn-info">বিস্তারিত</button></td>
+                                    <td><div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-line"></i></a>
+                                    </div></td>
                                 </tr>
                                 <tr>
                                     <td>৫</td>
@@ -958,7 +982,10 @@
                                     <td>৩,০০০</td>
                                     <td>৮,০০০</td>
                                     <td>৫,০০০</td>
-                                    <td><button class="btn btn-info">বিস্তারিত</button></td>
+                                    <td><div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-line"></i></a>
+                                    </div></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -970,8 +997,8 @@
         
         <section class="main-content app-content mt-5">
             <div class="container-fluid">
-                <div class="container mt-5">
-                    <h4 class="text-center mb-4 text-primary">📋 দোকান এর রিপোর্ট সমূহ</h4>
+                <div class="container mt-2">
+                    <!-- <h4 class="text-center mb-4 text-primary">📋 দোকান এর রিপোর্ট সমূহ</h4> -->
                     <div class="table-responsive mt-4">
                         <h5 class="text-primary">📊 দোকান রিপোর্ট</h5>
                         <table class="table table-bordered table-striped table-hover">
@@ -1000,7 +1027,10 @@
                                     <td>২০,০০০ টাকা</td>
                                     <td>৫,০০০ টাকা</td>
                                     <td>সক্রিয়</td>
-                                    <td><button class="btn btn-info">বিস্তারিত</button></td>
+                                    <td><div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-line"></i></a>
+                                    </div></td>
                                 </tr>
                                 <tr>
                                     <td>২</td>
@@ -1012,7 +1042,10 @@
                                     <td>১২,০০০ টাকা</td>
                                     <td>৬,০০০ টাকা</td>
                                     <td>নিষ্ক্রিয়</td>
-                                    <td><button class="btn btn-info">বিস্তারিত</button></td>
+                                    <td><div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-line"></i></a>
+                                    </div></td>
                                 </tr>
                                 <tr>
                                     <td>৩</td>
@@ -1024,7 +1057,10 @@
                                     <td>২২,০০০ টাকা</td>
                                     <td>১০,০০০ টাকা</td>
                                     <td>সক্রিয়</td>
-                                    <td><button class="btn btn-info">বিস্তারিত</button></td>
+                                    <td><div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-line"></i></a>
+                                    </div></td>
                                 </tr>
                                 <tr>
                                     <td>৪</td>
@@ -1036,7 +1072,10 @@
                                     <td>৩০,০০০ টাকা</td>
                                     <td>১৫,০০০ টাকা</td>
                                     <td>সক্রিয়</td>
-                                    <td><button class="btn btn-info">বিস্তারিত</button></td>
+                                    <td><div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-line"></i></a>
+                                    </div></td>
                                 </tr>
                                 <tr>
                                     <td>৫</td>
@@ -1048,7 +1087,10 @@
                                     <td>১৬,০০০ টাকা</td>
                                     <td>৭,০০০ টাকা</td>
                                     <td>নিষ্ক্রিয়</td>
-                                    <td><button class="btn btn-info">বিস্তারিত</button></td>
+                                    <td><div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-line"></i></a>
+                                    </div></td>
                                 </tr>
                             </tbody>
                         </table>

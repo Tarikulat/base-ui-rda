@@ -878,72 +878,17 @@
 
         <!-- tanvir start table -->
 
-        <!-- Modal -->
-        <div class="modal fade" id="rdaFormModal" tabindex="-1" aria-labelledby="rdaFormModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content form-pd">
-                    <div class="modal-header mt-3">
-                        <h5 class="modal-title text-primary" id="rdaFormModalLabel">RDA প্রকল্পের তথ্য</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="projectName" class="form-label">প্রকল্পের নাম</label>
-                                    <input type="text" class="form-control" id="projectName" placeholder="প্রকল্পের নাম লিখুন" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="residentialPlots" class="form-label">আবাসিক প্লট সংখ্যা</label>
-                                    <input type="number" class="form-control" id="residentialPlots" placeholder="আবাসিক প্লট সংখ্যা" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="commercialPlots" class="form-label">বাণিজ্যিক প্লট সংখ্যা</label>
-                                    <input type="number" class="form-control" id="commercialPlots" placeholder="বাণিজ্যিক প্লট সংখ্যা">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="authority" class="form-label">কর্তৃপক্ষের নাম</label>
-                                    <input type="text" class="form-control" id="authority" value="রাজশাহী উন্নয়ন কর্তৃপক্ষ" readonly>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="facilities" class="form-label">সুবিধাসমূহ</label>
-                                    <textarea class="form-control" id="facilities" rows="2"
-                                        placeholder="মাঠ, স্কুল, মার্কেট ইত্যাদি"></textarea>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="implementationYear" class="form-label">বাস্তবায়ন বছর</label>
-                                    <input type="text" class="form-control" id="implementationYear" placeholder="প্রকল্প বাস্তবায়নের বছর"
-                                        required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="landArea" class="form-label">মোট জমির পরিমাণ (একর)</label>
-                                    <input type="text" class="form-control" id="landArea" placeholder="একরে জমির পরিমাণ" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="additionalNotes" class="form-label">অতিরিক্ত মন্তব্য</label>
-                                    <textarea class="form-control" id="additionalNotes" rows="2" placeholder="যদি থাকে"></textarea>
-                                </div>
-                                <div class="col-12 text-end">
-                                    <button type="submit" class="btn btn-success">সংরক্ষণ করুন</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     <section class="main-content app-content mt-5">
         <div class="container-fluid">
-            <h5 class="mt-4 mb-3 mx-2 pt-2">Rajshahi Development Authority (RDA) প্রকল্পের তথ্য</h5>
+            <h5 class="mt-4 mb-3 mx-2 pt-2">Rajshahi Development Authority - Rent Collection</h5>
     
             <div class="row">
                 <div class="col-6 text-start pb-2">
-                    <div class="btn btn-light">প্রকল্প তালিকা</div>
+                    <div class="btn btn-light">Rent List</div>
                 </div>
                 <div class="col-6 text-end pb-2">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rdaFormModal">
-                        + নতুন প্রকল্প সংযোজন
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rentCollectionModal">
+                        + নতুন সংগ্রহ
                     </button>
                 </div>
             </div>
@@ -952,141 +897,109 @@
                 <table class="table table-bordered table-hover">
                     <thead class="table-primary">
                         <tr>
-                            <th>#</th>
-                            <th>প্রকল্পের নাম</th>
-                            <th>আবাসিক প্লট সংখ্যা</th>
-                            <th>বাণিজ্যিক প্লট সংখ্যা</th>
-                            <th>বাস্তবায়ন বছর</th>
-                            <th>মোট জমি (একর)</th>
-                            <th>সুবিধাসমূহ</th>
-                            <th>অ্যাকশন</th>
+                            <th scope="col">ক্রমিক নং</th>
+                            <th scope="col">মার্কেটের নাম</th>
+                            <th scope="col">মালিকের নাম</th>
+                            <th scope="col">মাসিক ভাড়া</th>
+                            <th scope="col">পূর্বের বকেয়া</th>
+                            <th scope="col">আদায়</th>
+                            <th scope="col">বর্তমান বকেয়া</th>
+                            <th scope="col">অ্যাকশন</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>১</td>
-                            <td>পদ্মা আবাসিক এলাকা প্রকল্প</td>
-                            <td>৫৬৫</td>
-                            <td>৮</td>
-                            <td>১৯৯২</td>
-                            <td>৫৮.৩২</td>
-                            <td>স্কুল, মার্কেট, মসজিদ</td>
+                            <td>001</td>
+                            <td>রাজশাহী নিউ মার্কেট</td>
+                            <td>মো. রফিকুল ইসলাম</td>
+                            <td>২৫,০০০ টাকা</td>
+                            <td>৫,০০০ টাকা</td>
+                            <td>২০,০০০ টাকা</td>
+                            <td>৫,০০০ টাকা</td>
                             <td>
                                 <div class="hstack gap-2 fs-15">
                                     <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
+                                            class="ri-money-dollar-circle-line"></i></a>
                                     <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>২</td>
-                            <td>পারিজাত আবাসিক এলাকা</td>
-                            <td>৫৬</td>
-                            <td>০</td>
-                            <td>১৯৯৩</td>
-                            <td>১০.১৩</td>
-                            <td>কমিউনিটি সেন্টার, মসজিদ</td>
+                            <td>002</td>
+                            <td>রাজশাহী বোয়ালিয়া মার্কেট</td>
+                            <td>আব্দুল করিম</td>
+                            <td>৩০,০০০ টাকা</td>
+                            <td>১০,০০০ টাকা</td>
+                            <td>২০,০০০ টাকা</td>
+                            <td>১০,০০০ টাকা</td>
                             <td>
                                 <div class="hstack gap-2 fs-15">
                                     <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
+                                            class="ri-money-dollar-circle-line"></i></a>
                                     <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>৩</td>
-                            <td>বনলতা বাণিজ্যিক এলাকা প্রকল্প</td>
-                            <td>১১৭</td>
-                            <td>১১৭</td>
-                            <td>১৯৯৫</td>
-                            <td>১৬.৬৯</td>
-                            <td>মার্কেট, পার্ক</td>
+                            <td>003</td>
+                            <td>সাহেববাজার প্লাজা</td>
+                            <td>সৈয়দ হোসেন</td>
+                            <td>২২,০০০ টাকা</td>
+                            <td>৩,০০০ টাকা</td>
+                            <td>১৯,০০০ টাকা</td>
+                            <td>৩,০০০ টাকা</td>
                             <td>
                                 <div class="hstack gap-2 fs-15">
                                     <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
+                                            class="ri-money-dollar-circle-line"></i></a>
                                     <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>৪</td>
-                            <td>ছায়ানীড় আবাসিক এলাকা</td>
-                            <td>২২৪</td>
-                            <td>০</td>
-                            <td>১৯৯৭</td>
-                            <td>৯.৯০</td>
-                            <td>কমিউনিটি স্পেস, মসজিদ</td>
+                            <td>004</td>
+                            <td>রাণীবাজার শপিং কমপ্লেক্স</td>
+                            <td>ফরিদ আহমেদ</td>
+                            <td>১৮,০০০ টাকা</td>
+                            <td>২,০০০ টাকা</td>
+                            <td>১৬,০০০ টাকা</td>
+                            <td>২,০০০ টাকা</td>
                             <td>
                                 <div class="hstack gap-2 fs-15">
                                     <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
+                                            class="ri-money-dollar-circle-line"></i></a>
                                     <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>৫</td>
-                            <td>চন্দ্রিমা আবাসিক এলাকা</td>
-                            <td>৩৯০</td>
-                            <td>৯</td>
-                            <td>২০০৬</td>
-                            <td>১৫.০০</td>
-                            <td>স্কুল, খেলার মাঠ</td>
+                            <td>005</td>
+                            <td>উপশহর নিউ মার্কেট</td>
+                            <td>কামরুল হাসান</td>
+                            <td>২৮,০০০ টাকা</td>
+                            <td>৬,০০০ টাকা</td>
+                            <td>২২,০০০ টাকা</td>
+                            <td>৬,০০০ টাকা</td>
                             <td>
                                 <div class="hstack gap-2 fs-15">
                                     <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
+                                            class="ri-money-dollar-circle-line"></i></a>
                                     <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>৬</td>
-                            <td>মহানন্দা আবাসিক এলাকা</td>
-                            <td>৯৭</td>
-                            <td>১৩</td>
-                            <td>২০১০</td>
-                            <td>৭.৪১</td>
-                            <td>মার্কেট, মসজিদ</td>
+                            <td>006</td>
+                            <td>গোলজার প্লাজা</td>
+                            <td>মনিরুজ্জামান</td>
+                            <td>২০,০০০ টাকা</td>
+                            <td>৪,০০০ টাকা</td>
+                            <td>১৬,০০০ টাকা</td>
+                            <td>৪,০০০ টাকা</td>
                             <td>
                                 <div class="hstack gap-2 fs-15">
                                     <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>৭</td>
-                            <td>বারনই আবাসিক এলাকা</td>
-                            <td>১৮৯</td>
-                            <td>৮</td>
-                            <td>২০১৯</td>
-                            <td>১০.৫০</td>
-                            <td>খেলার মাঠ, মসজিদ</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
-                                    <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>৮</td>
-                            <td>প্রান্তিক আবাসিক এলাকা</td>
-                            <td>২৩৯</td>
-                            <td>৫</td>
-                            <td>২০২৪</td>
-                            <td>১৯.৭৫</td>
-                            <td>পুকুর, দোকান, মসজিদ</td>
-                            <td>
-                                <div class="hstack gap-2 fs-15">
-                                    <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                            class="ri-download-2-line"></i></a>
+                                            class="ri-money-dollar-circle-line"></i></a>
                                     <a href="#" class="btn btn-icon btn-sm btn-info"><i class="ri-edit-line"></i></a>
                                 </div>
                             </td>
@@ -1096,6 +1009,65 @@
             </div>
         </div>
     </section>
+
+        
+        <!-- Rent Collection Modal -->
+    <div class="modal fade" id="rentCollectionModal" tabindex="-1" aria-labelledby="rentCollectionModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rentCollectionModalLabel">নতুন ভাড়া সংগ্রহ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">মার্কেটের নাম</label>
+                                <select class="form-control">
+                                    <option>রাজশাহী নিউ মার্কেট</option>
+                                    <option>রাজশাহী বোয়ালিয়া মার্কেট</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">ভাড়াটিয়ার নাম</label>
+                                <input type="text" class="form-control" placeholder="ভাড়াটিয়ার নাম লিখুন">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">পরিশোধিত পরিমাণ</label>
+                                <input type="number" class="form-control" placeholder="পরিমাণ লিখুন">
+                            </div>
+                        </div>
+                
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">দোকান নম্বর</label>
+                                <input type="text" class="form-control" placeholder="দোকান নম্বর লিখুন">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">মাসিক ভাড়া</label>
+                                <input type="text" class="form-control" value="২৫,০০০ টাকা" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">পরিশোধের তারিখ</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">বন্ধ করুন</button>
+                        <button type="submit" class="btn btn-primary">সংরক্ষণ করুন</button>
+                    </div>
+                </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
         <!-- end user table form tanvir -->
 

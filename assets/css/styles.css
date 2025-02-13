@@ -179,6 +179,21 @@
 
 /* start tanvie */
 
+.card-mtop {
+  margin-top: 90px;
+}
+ .authentication {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .custom-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
 .pd-a {
   padding-right: 135px;
 }

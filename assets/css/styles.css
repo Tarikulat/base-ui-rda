@@ -179,9 +179,11 @@
 
 /* start tanvie */
 
+
 .card-mtop {
-  margin-top: 90px;
+  margin-top: 90px ;
 }
+
  .authentication {
             height: 100vh;
             display: flex;
@@ -192,7 +194,6 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
 
 .pd-a {
   padding-right: 135px;
@@ -261,20 +262,15 @@
   border-radius: 10px;
   object-fit: cover;
   height: 260px;
-  /* প্রয়োজন অনুসারে উচ্চতা নির্ধারণ করুন */
 }
 
 .news-ticker-wrapper {
   position: relative;
   height: 40px;
-  /* Height for the ticker */
   overflow: hidden;
   background-color: #f8f9fa;
-  /* Light background */
   border: 1px solid #ddd;
-  /* Border for the container */
   padding: 0 15px;
-  /* Add padding for better spacing */
 }
 
 .news-ticker-list {
@@ -284,7 +280,6 @@
   position: absolute;
   width: 100%;
   display: flex;
-  /* Use flex for better item alignment */
   animation: ticker 50s linear infinite;
 }
 
@@ -292,33 +287,27 @@
   display: flex;
   align-items: center;
   margin-right: 30px;
-  /* Space between each news item */
 }
 
 .news-ticker-icon {
   margin-right: 10px;
   font-size: 1.8em;
-  /* Icon size */
 }
 
 .news-ticker-list li a {
   text-decoration: none;
   color: #06062e;
-  /* Blue color for the links */
   font-weight: bold;
   font-size: 1em;
 }
 
 .news-ticker-list li a:hover {
   text-decoration: underline;
-  /* Hover effect */
 }
 
 .news-ticker-list li i {
   font-size: 0.9em;
-  /* Smaller font for the date */
   color: #888;
-  /* Light gray color for the date */
 }
 
 @keyframes ticker {
@@ -334,16 +323,12 @@
 @media (max-width: 768px) {
   .news-ticker-wrapper {
     height: 35px;
-    /* Adjust height for smaller screens */
   }
 
   .news-ticker-list li {
     font-size: 0.9em;
-    /* Smaller font for mobile */
   }
 }
-
-
 
 .title-clr {
   color: #111c43;
@@ -355,19 +340,12 @@
   margin: 0;
 }
 
-/* List Item Styling */
 .service-list li {
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 6px;
 }
-
-/* Check Mark Styling */
-/* .check-icon {
-    color: #28a745;
-    font-size: 18px;
-} */
 
 /* Link Styling */
 .service-link {

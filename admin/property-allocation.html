@@ -758,13 +758,35 @@
                                     <a href="property.html" class="side-menu__item">Property List</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="property-allocation.html" class="side-menu__item">Property Allocation</a>
-                                </li>
-                                <li class="slide">
                                     <a href="property-manage.html" class="side-menu__item">Property Manage</a>
                                 </li>
                             </ul>
                         </li>
+                        <!-- <li class="slide has-sub">
+                                <a href="javascript:void(0);" class="side-menu__item">
+                                    <i class="bx bx-dollar side-menu__icon"></i>
+                                    <span class="side-menu__label">Rent & Billing</span>
+                                    <i class="fe fe-chevron-right side-menu__angle"></i>
+                                </a>
+        
+                                <ul class="slide-menu child1 mega-menu">
+                                    <li class="slide side-menu__label1">
+                                        <a href="javascript:void(0);">Rent & Billing</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="rent-bill.html" class="side-menu__item">Rent Bills</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="payment-reminder.html" class="side-menu__item">Payment Reminders</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="late-fees.html" class="side-menu__item">Late Fees</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="bill-payment-status.html" class="side-menu__item">Bill Payment Status</a>
+                                    </li>
+                                </ul>
+                            </li> -->
 
                         <li class="slide has-sub">
                             <a href="javascript:void(0);" class="side-menu__item">
@@ -856,112 +878,230 @@
 
         <!-- tanvir start table -->
 
-        <div class="main-content app-content ">
-            <div class="container-fluid mt-5 mt-4 form-pd">
-                <h2 class="text-center mb-4 text-primary">ভূমি ব্যবহারের ছাড়পত্রের আবেদন</h2>
-                <form>
-                    <div class="mb-3">
-                        <label class="form-label">ব্যক্তি বা প্রতিষ্ঠান *</label>
-                        <select class="form-select" required>
-                            <option selected>ব্যক্তিগত</option>
-                            <option>প্রতিষ্ঠান</option>
-                        </select>
+        <!-- Modal -->
+        <div class="modal fade" id="propertyAllocateModal" tabindex="-1" aria-labelledby="propertyAllocateModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content form-pd">
+                    <div class="modal-header mt-3">
+                        <h5 class="modal-title text-primary" id="propertyAllocateModalLabel">প্রপার্টি বরাদ্দ তথ্য</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">আবেদনকারীর নাম (দলিল মোতাবেক) *</label>
-                        <input type="text" class="form-control" required>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="propertyName" class="form-label">প্রপার্টির নাম</label>
+                                    <select class="form-control" id="propertyName" required>
+                                        <option value="">নির্বাচন করুন</option>
+                                        <option value="property1">পদ্মা আবাসিক এলাকা</option>
+                                        <option value="property2">পারিজাত আবাসিক এলাকা</option>
+                                        <option value="property3">বনলতা বাণিজ্যিক এলাকা</option>
+                                        <option value="property4">ছায়ানীড় আবাসিক এলাকা</option>
+                                        <option value="property5">চন্দ্রিমা আবাসিক এলাকা</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="ownerName" class="form-label">মালিকের নাম</label>
+                                    <input type="text" class="form-control" id="ownerName"
+                                        placeholder="মালিকের নাম লিখুন" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="propertyType" class="form-label">প্রপার্টির ধরন</label>
+                                    <select class="form-control" id="propertyType" required>
+                                        <option value="">নির্বাচন করুন</option>
+                                        <option value="residential">আবাসিক</option>
+                                        <option value="commercial">বাণিজ্যিক</option>
+                                        <option value="industrial">শিল্প</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="allocationDate" class="form-label">বরাদ্দের তারিখ</label>
+                                    <input type="date" class="form-control" id="allocationDate" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="plotNumber" class="form-label">প্লট নম্বর</label>
+                                    <input type="text" class="form-control" id="plotNumber"
+                                        placeholder="প্লট নম্বর লিখুন" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="areaSize" class="form-label">আয়তন (শতক/একর)</label>
+                                    <input type="text" class="form-control" id="areaSize"
+                                        placeholder="আয়তনের পরিমাণ লিখুন" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="price" class="form-label">মূল্য (টাকা)</label>
+                                    <input type="number" class="form-control" id="price" placeholder="মূল্য লিখুন"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="price" class="form-label">ঠিকানা</label>
+                                    <input type="number" class="form-control" id="price" placeholder="ঠিকানা লিখুন"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="paymentStatus" class="form-label">পেমেন্ট স্ট্যাটাস</label>
+                                    <select class="form-control" id="paymentStatus" required>
+                                        <option value="">নির্বাচন করুন</option>
+                                        <option value="paid">পরিশোধিত</option>
+                                        <option value="pending">বকেয়া</option>
+                                        <option value="installment">কিস্তিতে</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="remarks" class="form-label">অতিরিক্ত মন্তব্য</label>
+                                    <textarea class="form-control" id="remarks" rows="2"
+                                        placeholder="যদি থাকে"></textarea>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="fileDocuments" class="form-label">ফাইল ও ডকুমেন্টস</label>
+                                    <input type="file" class="form-control" id="fileDocuments" multiple>
+                                </div>
+                                <div class="col-12 text-end">
+                                    <button type="submit" class="btn btn-success">সংরক্ষণ করুন</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">পিতা / স্বামীর নাম *</label>
-                        <input type="text" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">মাতার নাম *</label>
-                        <input type="text" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">জাতীয় পরিচয়পত্র নম্বর *</label>
-                        <input type="text" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">ঠিকানা *</label>
-                        <textarea class="form-control" rows="3" required></textarea>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">মোবাইল নম্বর *</label>
-                        <input type="text" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">জমির পরিমাণ (বর্গমিটারে) *</label>
-                        <input type="number" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">খতিয়ান নম্বর *</label>
-                        <input type="text" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">দাগ নম্বর *</label>
-                        <input type="text" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">জমির বর্তমান ব্যবহার *</label>
-                        <select class="form-select" required>
-                            <option selected>নির্বাচন করুন</option>
-                            <option value="1">আবাসিক</option>
-                            <option value="2">বাণিজ্যিক</option>
-                            <option value="3">শিল্প</option>
-                            <option value="4">কৃষি</option>
-                            <option value="5">ডোবা/পুকুর</option>
-                            <option value="6">ফাঁকা</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">প্রস্তাবিত ভূমি ব্যবহার *</label>
-                        <select class="form-select" required>
-                            <option selected>নির্বাচন করুন</option>
-                            <option value="1">আবাসিক</option>
-                            <option value="2">বাণিজ্যিক</option>
-                            <option value="3">শিল্প</option>
-                            <option value="4">প্রাতিষ্ঠানিক</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">জাতীয় পরিচয়পত্র / পাসপোর্ট / ড্রাইভিং লাইসেন্স স্ক্যান *</label>
-                        <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">প্রস্তাবিত জমির ছবি *</label>
-                        <input type="file" class="form-control" accept=".jpg,.png" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">প্রস্তাবিত জমিতে যাতায়াতের রাস্তার ছবি *</label>
-                        <input type="file" class="form-control" accept=".jpg,.png" required>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary w-100">আবেদন জমা দিন</button>
-                </form>
+                </div>
             </div>
         </div>
 
 
+        <section class="main-content app-content mt-5">
+            <div class="container-fluid">
+                <h5 class="mt-4 mb-3 mx-2 pt-2">প্রপার্টি বরাদ্দ তথ্য</h5>
+
+                <div class="row">
+                    <div class="col-6 text-start pb-2">
+                        <div class="btn btn-light">প্রপার্টি তালিকা</div>
+                    </div>
+                    <div class="col-6 text-end pb-2">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#propertyAllocateModal">
+                            + নতুন প্রপার্টি বরাদ্দ
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>#</th>
+                                <th>প্রপার্টির নাম</th>
+                                <th>মালিকের নাম</th>
+                                <th>প্রপার্টির ধরন</th>
+                                <th>বরাদ্দের তারিখ</th>
+                                <th>প্লট নম্বর</th>
+                                <th>আয়তন (শতক/একর)</th>
+                                <th>মূল্য (টাকা)</th>
+                                <th>পেমেন্ট স্ট্যাটাস</th>
+                                <th>অ্যাকশন</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>১</td>
+                                <td>পদ্মা আবাসিক এলাকা</td>
+                                <td>জন ডো</td>
+                                <td>আবাসিক</td>
+                                <td>২০২৩-০১-১৫</td>
+                                <td>প্লট ১</td>
+                                <td>১০.০৫</td>
+                                <td>১,৫০,০০০</td>
+                                <td>পরিশোধিত</td>
+                                <td>
+                                    <div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
+                                                class="ri-download-2-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
+                                                class="ri-edit-line"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>২</td>
+                                <td>পারিজাত আবাসিক এলাকা</td>
+                                <td>মহাম্মদ আলী</td>
+                                <td>বাণিজ্যিক</td>
+                                <td>২০২৩-০২-২০</td>
+                                <td>প্লট ২</td>
+                                <td>৫.২৫</td>
+                                <td>২,৩০,০০০</td>
+                                <td>বকেয়া</td>
+                                <td>
+                                    <div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
+                                                class="ri-download-2-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
+                                                class="ri-edit-line"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>৩</td>
+                                <td>বনলতা বাণিজ্যিক এলাকা</td>
+                                <td>শেখ রানা</td>
+                                <td>বাণিজ্যিক</td>
+                                <td>২০২৩-০৩-১০</td>
+                                <td>প্লট ৩</td>
+                                <td>৭.৬৫</td>
+                                <td>৩,০০,০০০</td>
+                                <td>কিস্তিতে</td>
+                                <td>
+                                    <div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
+                                                class="ri-download-2-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
+                                                class="ri-edit-line"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>৪</td>
+                                <td>ছায়ানীড় আবাসিক এলাকা</td>
+                                <td>নাজমুল হাসান</td>
+                                <td>আবাসিক</td>
+                                <td>২০২৩-০৪-২৫</td>
+                                <td>প্লট ৪</td>
+                                <td>১৫.৪২</td>
+                                <td>৪,০০,০০০</td>
+                                <td>পরিশোধিত</td>
+                                <td>
+                                    <div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
+                                                class="ri-download-2-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
+                                                class="ri-edit-line"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>৫</td>
+                                <td>চন্দ্রিমা আবাসিক এলাকা</td>
+                                <td>রহিমা সুলতানা</td>
+                                <td>আবাসিক</td>
+                                <td>২০২৩-০৫-১২</td>
+                                <td>প্লট ৫</td>
+                                <td>২০.১০</td>
+                                <td>৫,০০,০০০</td>
+                                <td>বকেয়া</td>
+                                <td>
+                                    <div class="hstack gap-2 fs-15">
+                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
+                                                class="ri-download-2-line"></i></a>
+                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
+                                                class="ri-edit-line"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
         <!-- end user table form tanvir -->
-
-
-
 
         <!-- END SEARCH-MODAL -->
         <footer class="footer mt-auto py-3 bg-white text-center">

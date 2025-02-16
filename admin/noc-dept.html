@@ -876,7 +876,54 @@
         <!-- tanvir start table -->
 
         <section class="main-content app-content mt-5">
-            <h4 class="text-center mb-4 mt-5">আবেদন প্রক্রিয়া ট্র্যাকিং</h4>
+            <!-- <h4 class="text-center mb-4 mt-5">আবেদন প্রক্রিয়া ট্র্যাকিং</h4> -->
+
+        <h4 class="text-center mb-4 text-primary pt-5">📊 RDA আবেদন প্রক্রিয়া ট্র্যাকিং</h4>
+        
+        <!-- Title and Action Buttons -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="d-flex align-items-center">
+                <h5 class="text-primary me-3">🏡 NOC রিপোর্ট</h5>
+        
+                <!-- Action Buttons -->
+                <button class="btn btn-outline-secondary me-2">
+                    <i class="bi bi-download"></i> ডাউনলোড
+                </button>
+                <button class="btn btn-outline-secondary me-2">
+                    <i class="bi bi-eye"></i> ভিউ
+                </button>
+                <button class="btn btn-outline-secondary me-2">
+                    <i class="bi bi-file-earmark-pdf"></i> PDF
+                </button>
+                <button class="btn btn-outline-secondary me-2">
+                    <i class="bi bi-file-earmark-excel"></i> XL
+                </button>
+                <button class="btn btn-outline-secondary">
+                    <i class="bi bi-file-earmark-image"></i> SVG
+                </button>
+            </div>
+        
+            <!-- Download Button for small screens -->
+            <div class="d-md-none">
+                <button class="btn btn-primary no-print" id="downloadButton">
+                    <i class="fa fa-download"></i> ডাউনলোড করুন
+                </button>
+            </div>
+        </div>
+        
+        <!-- Search Input and Print Button -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="search" class="form-control" placeholder="🔍 সার্চ করুন...">
+            </div>
+            <div class="col-md-6 text-end">
+                <button class="btn btn-success no-print" onclick="window.print()">
+                    <i class="fa fa-print"></i> প্রিন্ট করুন
+                </button>
+            </div>
+        </div>
+
+
             <div class="table-responsive">
                 <table class="table table-bordered text-center">
                     <thead class="table-primary">

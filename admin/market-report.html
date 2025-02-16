@@ -882,32 +882,59 @@
                     <h4 class="text-center mb-4 text-primary">📊 RDA রিপোর্ট সিস্টেম</h4>
 
                     <!-- সার্চ ইনপুট এবং প্রিন্ট বাটন -->
-                    <div class="row mb-3">
-                        <div class="col-md-3">
-                            <input type="search" class="form-control" placeholder="🔍 সার্চ করুন মার্কেট...">
-                        </div>
-                        <div class="col-md-3">
-                          
-                            <input type="search" class="form-control" placeholder="🔍 সার্চ করুন দোকান...">
-                        </div>
-
-                        <!-- Download Button -->
-                        <div class="col-md-2 text-end">
-                            <button class="btn btn-primary no-print" id="downloadButton">
-                                <i class="fa fa-download"></i> ডাউনলোড করুন
-                            </button>
-                        </div>
-
-                        <div class="col-md-4 text-end">
-                            <button class="btn btn-success no-print" onclick="window.print()">
-                                <i class="fa fa-print"></i> প্রিন্ট করুন
-                            </button>
-                        </div>
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <input type="search" class="form-control" placeholder="🔍 সার্চ করুন মার্কেট...">
                     </div>
+                    <div class="col-md-4">
+                        <input type="search" class="form-control" placeholder="🔍 সার্চ করুন দোকান...">
+                    </div>
+                
+                    <div class="col-md-4 text-end">
+                        <button class="btn btn-success no-print" onclick="window.print()">
+                            <i class="fa fa-print"></i> প্রিন্ট করুন
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Action Buttons Row -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex">
+                        <h5 class="text-primary pad-r">🏬 মার্কেট রিপোর্ট</h5>
+                        <!-- Download Button -->
+                        <button class="btn btn-outline-secondary me-2">
+                            <i class="bi bi-download"></i> ডাউনলোড
+                        </button>
+                        <!-- View Button -->
+                        <button class="btn btn-outline-secondary me-2">
+                            <i class="bi bi-eye"></i> ভিউ
+                        </button>
+                        <!-- PDF Button -->
+                        <button class="btn btn-outline-secondary me-2">
+                            <i class="bi bi-file-earmark-pdf"></i> PDF
+                        </button>
+                        <!-- Excel (XL) Button -->
+                        <button class="btn btn-outline-secondary me-2">
+                            <i class="bi bi-file-earmark-excel"></i> XL
+                        </button>
+                        <!-- SVG Button -->
+                        <button class="btn btn-outline-secondary">
+                            <i class="bi bi-file-earmark-image"></i> SVG
+                        </button>
+                    </div>
+                
+                    <!-- Download Button for small screens -->
+                    <div class="d-md-none">
+                        <button class="btn btn-primary no-print" id="downloadButton">
+                            <i class="fa fa-download"></i> ডাউনলোড করুন
+                        </button>
+                    </div>
+                </div>
+
 
                     <!-- 4th Table: মার্কেট রিপোর্ট -->
                     <div class="table-responsive mt-4">
-                        <h5 class="text-primary">🏬 মার্কেট রিপোর্ট</h5>
+                       
                         <table class="table table-bordered table-striped table-hover">
                             <thead class="table-dark text-white">
                                 <tr>

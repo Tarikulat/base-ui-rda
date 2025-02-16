@@ -177,9 +177,11 @@
   --black-9: rgba(255, 255, 255, 0.9);
 }
 
-/* start tanvie */
+/* start tanvir */
 
-
+.pad-r {
+  padding-right: 20px;
+}
 .card-mtop {
   margin-top: 90px ;
 }

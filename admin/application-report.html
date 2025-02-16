@@ -878,111 +878,98 @@
 
         <!-- tanvir start table -->
 
-<section class="main-content app-content mt-5">
-    <div class="container-fluid">
-        <!-- <h5 class="mt-4 mb-3 mx-2 pt-2">আবেদন রিপোর্ট</h5> -->
-        <h4 class="text-center mb-4 text-primary pt-5">📊 RDA আবেদন আবেদন রিপোর্ট</h4>
+        <section class="main-content app-content mt-5">
+            <div class="container-fluid">
+                <h4 class="text-center mb-4 text-primary pt-5">📊 RDA আবেদন আবেদন রিপোর্ট</h4>
+                <div class="mb-3 d-flex align-items-center">
+                    <input type="text" class="form-control me-3" id="searchInput" placeholder="🔍 সার্চ করুন...">
+                    <button class="btn btn-outline-secondary me-2">
+                        <i class="bi bi-download"></i> ডাউনলোড
+                    </button>
+                    <button class="btn btn-outline-secondary me-2">
+                        <i class="bi bi-eye"></i> ভিউ
+                    </button>
+                    <button class="btn btn-outline-secondary me-2">
+                        <i class="bi bi-file-earmark-pdf"></i> PDF
+                    </button>
+                    <button class="btn btn-outline-secondary me-2">
+                        <i class="bi bi-file-earmark-excel"></i> XL
+                    </button>
+                    <button class="btn btn-outline-secondary">
+                        <i class="bi bi-file-earmark-image"></i> SVG
+                    </button>
+                </div>
 
-        <!-- Search Input and Additional Options -->
-        <div class="mb-3 d-flex align-items-center">
-            <input type="text" class="form-control me-3" id="searchInput" placeholder="🔍 সার্চ করুন...">
-
-            <!-- Download Button -->
-            <button class="btn btn-outline-secondary me-2">
-                <i class="bi bi-download"></i> ডাউনলোড
-            </button>
-
-            <!-- View Button -->
-            <button class="btn btn-outline-secondary me-2">
-                <i class="bi bi-eye"></i> ভিউ
-            </button>
-
-            <!-- PDF Button -->
-            <button class="btn btn-outline-secondary me-2">
-                <i class="bi bi-file-earmark-pdf"></i> PDF
-            </button>
-
-            <!-- Excel (XL) Button -->
-            <button class="btn btn-outline-secondary me-2">
-                <i class="bi bi-file-earmark-excel"></i> XL
-            </button>
-
-            <!-- SVG Button -->
-            <button class="btn btn-outline-secondary">
-                <i class="bi bi-file-earmark-image"></i> SVG
-            </button>
-        </div>
-
-        <div class="table-responsive">
-            <table class="table table-bordered table-hover">
-                <thead class="table-primary">
-                    <tr>
-                        <th>#</th>
-                        <th>নাম</th>
-                        <th>প্রফেশনাল পরিচিতি</th>
-                        <th>আবেদন টাইপ</th>
-                        <th>সাবমিটের তারিখ</th>
-                        <th>স্ট্যাটাস</th>
-                        <th>প্রসেসিং অফিসার</th>
-                        <th>অফিসার প্রোফাইল</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>১</td>
-                        <td>রফিকুল ইসলাম</td>
-                        <td>CE-101</td>
-                        <td>নতুন নিবন্ধন</td>
-                        <td>২০২৫-০২-১৬</td>
-                        <td><span class="badge bg-warning">Pending</span></td>
-                        <td>জনি রহমান</td>
-                        <td><a href="#" class="btn btn-info btn-sm">View Profile</a></td>
-                    </tr>
-                    <tr>
-                        <td>২</td>
-                        <td>সাইফুল ইসলাম</td>
-                        <td>Ar-202</td>
-                        <td>পরিবর্তন অনুরোধ</td>
-                        <td>২০২৫-০২-১৩</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                        <td>সাবিনা আক্তার</td>
-                        <td><a href="#" class="btn btn-info btn-sm">View Profile</a></td>
-                    </tr>
-                    <tr>
-                        <td>৩</td>
-                        <td>মাহমুদুল হাসান</td>
-                        <td>DCE-303</td>
-                        <td>নতুন নিবন্ধন</td>
-                        <td>২০২৫-০২-১১</td>
-                        <td><span class="badge bg-danger">Rejected</span></td>
-                        <td>মোঃ সোহেল</td>
-                        <td><a href="#" class="btn btn-info btn-sm">View Profile</a></td>
-                    </tr>
-                    <tr>
-                        <td>৪</td>
-                        <td>আব্দুল করিম</td>
-                        <td>EE-404</td>
-                        <td>ডাটা সংশোধন</td>
-                        <td>২০২৫-০২-০৯</td>
-                        <td><span class="badge bg-info">In Review</span></td>
-                        <td>রেবেকা সুলতানা</td>
-                        <td><a href="#" class="btn btn-info btn-sm">View Profile</a></td>
-                    </tr>
-                    <tr>
-                        <td>৫</td>
-                        <td>মোঃ আমিনুল</td>
-                        <td>ME-505</td>
-                        <td>নতুন নিবন্ধন</td>
-                        <td>২০২৫-০২-০৬</td>
-                        <td><span class="badge bg-primary">Completed</span></td>
-                        <td>মুনিরা বেগম</td>
-                        <td><a href="#" class="btn btn-info btn-sm">View Profile</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>#</th>
+                                <th>নাম</th>
+                                <th>প্রফেশনাল পরিচিতি</th>
+                                <th>আবেদন টাইপ</th>
+                                <th>সাবমিটের তারিখ</th>
+                                <th>স্ট্যাটাস</th>
+                                <th>প্রসেসিং অফিসার</th>
+                                <th>অফিসার প্রোফাইল</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>১</td>
+                                <td>রফিকুল ইসলাম</td>
+                                <td>CE-101</td>
+                                <td>নতুন নিবন্ধন</td>
+                                <td>২০২৫-০২-১৬</td>
+                                <td><span class="badge bg-warning">Pending</span></td>
+                                <td>জনি রহমান</td>
+                                <td><a href="#" class="btn btn-info btn-sm">View Profile</a></td>
+                            </tr>
+                            <tr>
+                                <td>২</td>
+                                <td>সাইফুল ইসলাম</td>
+                                <td>Ar-202</td>
+                                <td>পরিবর্তন অনুরোধ</td>
+                                <td>২০২৫-০২-১৩</td>
+                                <td><span class="badge bg-success">Approved</span></td>
+                                <td>সাবিনা আক্তার</td>
+                                <td><a href="#" class="btn btn-info btn-sm">View Profile</a></td>
+                            </tr>
+                            <tr>
+                                <td>৩</td>
+                                <td>মাহমুদুল হাসান</td>
+                                <td>DCE-303</td>
+                                <td>নতুন নিবন্ধন</td>
+                                <td>২০২৫-০২-১১</td>
+                                <td><span class="badge bg-danger">Rejected</span></td>
+                                <td>মোঃ সোহেল</td>
+                                <td><a href="#" class="btn btn-info btn-sm">View Profile</a></td>
+                            </tr>
+                            <tr>
+                                <td>৪</td>
+                                <td>আব্দুল করিম</td>
+                                <td>EE-404</td>
+                                <td>ডাটা সংশোধন</td>
+                                <td>২০২৫-০২-০৯</td>
+                                <td><span class="badge bg-info">In Review</span></td>
+                                <td>রেবেকা সুলতানা</td>
+                                <td><a href="#" class="btn btn-info btn-sm">View Profile</a></td>
+                            </tr>
+                            <tr>
+                                <td>৫</td>
+                                <td>মোঃ আমিনুল</td>
+                                <td>ME-505</td>
+                                <td>নতুন নিবন্ধন</td>
+                                <td>২০২৫-০২-০৬</td>
+                                <td><span class="badge bg-primary">Completed</span></td>
+                                <td>মুনিরা বেগম</td>
+                                <td><a href="#" class="btn btn-info btn-sm">View Profile</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
 
         <!-- end user table form tanvir -->
 

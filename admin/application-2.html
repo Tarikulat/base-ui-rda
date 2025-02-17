@@ -878,13 +878,12 @@
 
         <!-- tanvir start table -->
 
-        <!-- Modal -->
     <!-- Modal -->
     <div class="modal fade" id="rdaFormModal" tabindex="-1" aria-labelledby="rdaFormModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content form-pd">
                 <div class="modal-header mt-3">
-                    <h5 class="modal-title text-primary" id="rdaFormModalLabel">আরডিএ প্রফেশনাল নিবন্ধন ফর্ম</h5>
+                    <h5 class="modal-title text-primary" id="rdaFormModalLabel">RDA Professional Registration Form</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -946,16 +945,31 @@
             <div class="container-fluid">
                 <h5 class="mt-4 mb-3 mx-2 pt-2">Rajshahi Development Authority</h5>
 
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-6 text-start pb-2">
-                        <div class="btn btn-light">User List</div>
+                        <div class="btn btn-light">Applicants List</div>
                     </div>
                     <div class="col-6 text-end pb-2">
                         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rdaFormModal">
-                            + নতুন আবেদন
+                            + Add New
+                        </button>
+                    </div>
+                </div> -->
+
+                <div class="row align-items-center pb-2">
+                    <div class="col-md-4 col-12 text-start mb-2 mb-md-0">
+                        <button class="btn btn-light w-100 w-md-auto">Total Register List</button>
+                    </div>
+                    <div class="col-md-6 col-12 pb-2">
+                        <input type="search" class="form-control text-center" placeholder="🔍 সার্চ করুন..." aria-label="Search">
+                    </div>
+                    <div class="col-md-2 col-12 text-end">
+                        <button class="btn btn-primary w-100 w-md-auto" data-bs-toggle="modal" data-bs-target="#rdaFormModal">
+                            + Add New
                         </button>
                     </div>
                 </div>
+
 
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover">

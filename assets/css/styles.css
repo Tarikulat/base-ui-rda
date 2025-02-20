@@ -179,6 +179,129 @@
 
 /* start tanvir */
 
+
+.email-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-left: 5px solid #007bff;
+}
+
+.email-header h3 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.email-header p {
+    margin-bottom: 20px;
+}
+
+.email-header input {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.email-header input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.email-body {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.email-body p {
+    margin-bottom: 20px;
+}
+
+.email-body input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.email-body input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.text-end {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    margin-right: 15px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+
+            .editor-container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(238, 5, 5, 0.1);
+        }
+        .editor-toolbar {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .editor-content {
+            min-height: 200px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .editor-content:focus {
+            outline: none;
+        }
+
+
 .pad-r {
   padding-right: 20px;
 }

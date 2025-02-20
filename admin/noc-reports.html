@@ -572,7 +572,7 @@
                             data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                             <div class="d-flex align-items-center">
                                 <div class="me-sm-2 me-0">
-                                    <img src="../assets/images/faces/9.jpg" alt="img" width="32" height="32"
+                                    <img src="../assets/images/img/profile.jfif" alt="img" width="32" height="32"
                                         class="rounded-circle">
                                 </div>
                                 <div class="d-sm-block d-none">
@@ -1066,6 +1066,99 @@
                     </div>
 
                 </div> <!-- End Main Content -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-content app-content mt-2">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="editor-container">
+                <h4>📝 নতুন অনুচ্ছেদ</h4>
+
+                <div class="editor-toolbar d-flex flex-wrap gap-2">
+                    <button class="btn btn-light"><b>B</b></button>
+                    <button class="btn btn-light"><i>I</i></button>
+                    <button class="btn btn-light"><u>U</u></button>
+                    <button class="btn btn-light">⬅</button>
+                    <button class="btn btn-light">⬛</button>
+                    <button class="btn btn-light">➡</button>
+
+                    <select class="form-select form-select-sm w-auto">
+                        <option selected>Font Size</option>
+                        <option value="12px">Small</option>
+                        <option value="16px">Normal</option>
+                        <option value="20px">Large</option>
+                        <option value="24px">Extra Large</option>
+                    </select>
+
+                    <input type="color" class="form-control form-control-color" title="Font Color">
+                    <button class="btn btn-light">🖍 Highlight</button>
+                    <button class="btn btn-light">• Bullet List</button>
+                    <button class="btn btn-light">1. Number List</button>
+
+                    <!-- Forward Button with Dropdown -->
+                    <div class="btn-group">
+                        <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            ➡️ Forward
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">রাজশাহী কর্তৃপক্ষ</a></li>
+                            <li><a class="dropdown-item" href="#">নির্বাচন কমিশন</a></li>
+                            <li><a class="dropdown-item" href="#">বাংলাদেশ ব্যাংক</a></li>
+                            <li><a class="dropdown-item" href="#">প্রকৌশল বিশ্ববিদ্যালয়</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="editor-content" contenteditable="true"></div>
+
+                <div class="mt-3 text-end">
+                    <button class="btn btn-success">সংরক্ষণ করুন</button>
+                    <button class="btn btn-danger">বাতিল করুন</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="main-content app-content mt-2 mb-3">
+    <div class="container-fluid">
+        <div class="email-container p-4">
+            <div class="email-header text-center mb-4">
+                <h3>📧 একটি পত্র লিখ</h3>
+                
+                <div class="d-flex justify-content-between">
+                    <p class="text-start p-1">প্রাপক: <input type="email" class="form-control w-45" placeholder="প্রাপকের নাম"></p>
+                    <p class="text-start p-1">প্রেরক: <input type="email" class="form-control w-45" placeholder="আপনার নাম"></p>
+
+                    <p class="text-start p-1">তারিখ: <input type="date" class="form-control w-45" placeholder="তারিখ"></p>
+                </div>
+                <p class="text-start">বিষয়: <input type="text" class="form-control" placeholder="পত্র বিষয় লিখুন"></p>
+            </div>
+
+            <div class="email-body" contenteditable="true" class="form-control">
+                <p> [নাম],</p>
+                <p>
+                আমি রাজশাহী উন্নয়ন কর্তৃপক্ষ (RDA) এর [প্রকল্পের নাম বা বিবরণ] এর অংশ হিসেবে কাজ করার জন্য আবেদন করতে চাই। এই প্রকল্পে অংশগ্রহণের জন্য আমি
+                একটি নো অবজেকশন সার্টিফিকেট (NOC)।
+                
+                অনুগ্রহ করে আমাকে প্রয়োজনীয় NOC প্রদান করার ব্যবস্থা করবেন। আমি এই প্রকল্পে অংশগ্রহণ করতে আন্তরিকভাবে আগ্রহী এবং আমি
+                নিশ্চিত যে আমার অংশগ্রহণ প্রকল্পটির সাফল্যে সহায়ক হবে।
+                
+                আপনার মূল্যবান সময়ের জন্য ধন্যবাদ এবং আপনার প্রতিক্রিয়া পাওয়ার অপেক্ষায় রইলাম।
+                </p>
+                <p>
+                    আপনার বিশ্বস্ত,<br>
+                    <input type="text" class="form-control" placeholder="আপনার নাম">
+                </p>
+            </div>
+
+            <div class="text-end mt-4">
+                <button class="btn btn-success">📩 পাঠান</button>
+                <button class="btn btn-danger">❌ বাতিল</button>
             </div>
         </div>
     </div>

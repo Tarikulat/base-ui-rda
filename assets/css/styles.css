@@ -179,6 +179,58 @@
 
 /* start tanvir */
 
+.file-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-left: 5px solid #007bff;
+}
+
+h3 {
+    color: #007bff;
+    font-size: 1.8em;
+}
+
+.file-upload {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload label {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.file-upload label:hover {
+    background-color: #0056b3;
+}
+
+.file-name {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.file-name p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.pdf-preview {
+    margin-top: 20px;
+    display: none;
+}
+
 
 .email-container {
     background-color: white;

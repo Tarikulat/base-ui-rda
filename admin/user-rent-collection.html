@@ -653,27 +653,14 @@
                             <a href="user-application-1.html" class="side-menu__item">Membership Reg</a>
                         </li>
                         <li class="slide">
-                            <a href="user-application-1.html" class="side-menu__item">Applications Reports</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="slide has-sub">
-                    <a href="javascript:void(0);" class="side-menu__item">
-                        <i class="bx bx-file side-menu__icon"></i>
-                        <span class="side-menu__label">NOC</span>
-                        <i class="fe fe-chevron-right side-menu__angle"></i>
-                    </a>
-
-                    <ul class="slide-menu child1">
-                        <li class="slide side-menu__label1">
-                            <a href="javascript:void(0);">NOC</a>
+                            <a href="user-application-1.html" class="side-menu__item">Applications Form</a>
                         </li>
                         <li class="slide">
-                            <a href="user-noc-registration.html" class="side-menu__item">Noc Registration</a>
+                            <a href="user-noc-registration.html" class="side-menu__item">NOC Reg</a>
                         </li>
                     </ul>
                 </li>
+
                 <li class="slide has-sub">
                     <a href="javascript:void(0);" class="side-menu__item">
                         <i class="bx bx-store side-menu__icon"></i>
@@ -715,18 +702,24 @@
         <div class="container-fluid">
             <h5 class="mt-4 mb-3 mx-2 pt-2">Rajshahi Development Authority</h5>
 
-            <div class="d-flex justify-content-between align-items-center pb-2">
-                <div class="btn btn-light">Rent List</div>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rentCollectionModal">
+        <div class="d-flex justify-content-between align-items-center pb-2">
+            <div class="btn btn-light p-1">Rent List</div>
+            <div class="d-flex align-items-center p-1">
+                <div><input type="text" class="form-control me-2 p-1" placeholder="Search your shop id..." id="rentSearch">
+                </div>
+                <button class="btn btn-primary p-2 ms-2" data-bs-toggle="modal" data-bs-target="#rentCollectionModal">
                     + Payment
                 </button>
             </div>
-
+        </div>
+    
             <div class="table-responsive">
                 <table class="table table-bordered table-hover">
                     <thead class="table-primary">
                         <tr>
                             <th scope="col">ক্রমিক নং</th>
+                            <th scope="col">দোকান নাম</th> 
+                            <th scope="col">দোকান আইডি</th> 
                             <th scope="col">মাসের নাম</th>
                             <th scope="col">মাসিক ভাড়া</th>
                             <th scope="col">পরিশোধিত পরিমাণ</th>
@@ -738,7 +731,9 @@
                     <tbody>
                         <tr>
                             <td>001</td>
-                            <td>জানুয়ারি ২০২৫</td>
+                            <td>দোকান ১</td> 
+                            <td>101</td> 
+                            <td>জানুয়ারি</td>
                             <td>২৫,০০০ টাকা</td>
                             <td>২৫,০০০ টাকা</td>
                             <td>০ টাকা</td>
@@ -747,7 +742,9 @@
                         </tr>
                         <tr>
                             <td>002</td>
-                            <td>ফেব্রুয়ারি ২০২৫</td>
+                            <td>দোকান ২</td> 
+                            <td>102</td> 
+                            <td>ফেব্রুয়ারি </td>
                             <td>৩০,০০০ টাকা</td>
                             <td>২০,০০০ টাকা</td>
                             <td>১০,০০০ টাকা</td>
@@ -756,7 +753,9 @@
                         </tr>
                         <tr>
                             <td>003</td>
-                            <td>মার্চ ২০২৫</td>
+                            <td>দোকান ৩</td> 
+                            <td>103</td> 
+                            <td>মার্চ</td>
                             <td>২২,০০০ টাকা</td>
                             <td>১০,০০০ টাকা</td>
                             <td>১২,০০০ টাকা</td>
@@ -765,7 +764,9 @@
                         </tr>
                         <tr>
                             <td>004</td>
-                            <td>এপ্রিল ২০২৫</td>
+                            <td>দোকান ৪</td> 
+                            <td>104</td> 
+                            <td>এপ্রিল</td>
                             <td>১৮,০০০ টাকা</td>
                             <td>১৮,০০০ টাকা</td>
                             <td>০ টাকা</td>
@@ -774,7 +775,9 @@
                         </tr>
                         <tr>
                             <td>005</td>
-                            <td>মে ২০২৫</td>
+                            <td>দোকান ৫</td> 
+                            <td>105</td> 
+                            <td>মে</td>
                             <td>২৮,০০০ টাকা</td>
                             <td>২৫,০০০ টাকা</td>
                             <td>৩,০০০ টাকা</td>
@@ -783,7 +786,9 @@
                         </tr>
                         <tr>
                             <td>006</td>
-                            <td>জুন ২০২৫</td>
+                            <td>দোকান ৬</td> 
+                            <td>106</td> 
+                            <td>জুন</td>
                             <td>২০,০০০ টাকা</td>
                             <td>১৫,০০০ টাকা</td>
                             <td>৫,০০০ টাকা</td>
@@ -797,84 +802,97 @@
     </section>
 
 
-        <!-- Rent Collection Modal -->
-    <div class="modal fade" id="rentCollectionModal" tabindex="-1" aria-labelledby="rentCollectionModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="rentCollectionModalLabel mt-2">Rental Fee Payment Form</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body form-pd">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label class="form-label">মার্কেটের নাম</label>
-                                    <select class="form-control">
-                                        <option>রাজশাহী নিউ মার্কেট</option>
-                                        <option>রাজশাহী বোয়ালিয়া মার্কেট</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">ভাড়াটিয়ার নাম</label>
-                                    <input type="text" class="form-control" placeholder="ভাড়াটিয়ার নাম লিখুন">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">পরিশোধিত পরিমাণ</label>
-                                    <input type="number" class="form-control" placeholder="পরিমাণ লিখুন">
-                                </div>
+<div class="modal fade" id="rentCollectionModal" tabindex="-1" aria-labelledby="rentCollectionModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-primary" id="rentCollectionModalLabel mt-2 text-primary">Rental Fee Payment Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body form-pd">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">মার্কেটের নাম</label>
+                                <select class="form-control">
+                                    <option>রাজশাহী নিউ মার্কেট</option>
+                                    <option>রাজশাহী বোয়ালিয়া মার্কেট</option>
+                                </select>
                             </div>
-    
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label class="form-label">দোকান নম্বর</label>
-                                    <input type="text" class="form-control" placeholder="দোকান নম্বর লিখুন">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">মাসিক ভাড়া</label>
-                                    <input type="text" class="form-control" value="২৫,০০০ টাকা" readonly>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">পরিশোধের তারিখ</label>
-                                    <input type="date" class="form-control">
-                                </div>
+                            <div class="mb-3">
+                                <label class="form-label">ভাড়াটিয়ার নাম</label>
+                                <input type="text" class="form-control" placeholder="ভাড়াটিয়ার নাম লিখুন">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">পরিশোধিত পরিমাণ</label>
+                                <input type="number" class="form-control" placeholder="পরিমাণ লিখুন">
                             </div>
                         </div>
-    
-                        <!-- New Fields for Mobile Banking or BKash -->
+
+                        <div class="col-md-6">
                         <div class="mb-3">
-                            <label class="form-label">পেমেন্ট মাধ্যম</label>
-                            <select class="form-control">
-                                <option>নগদ</option>
-                                <option>বিকাশ</option>
-                                <option>রকেট</option>
-                                <option>ইসি (Ecash)</option>
-                            </select>
+                            <label class="form-label">দোকান আইডি</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="101" id="shop1">
+                                <label class="form-check-label" for="shop1">দোকান ১ - (ID: 101)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="102" id="shop2">
+                                <label class="form-check-label" for="shop2">দোকান ২ - (ID: 102)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="103" id="shop3">
+                                <label class="form-check-label" for="shop3">দোকান ৩ - (ID: 103)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="104" id="shop4">
+                                <label class="form-check-label" for="shop4">দোকান ৪ - (ID: 104)</label>
+                            </div>
                         </div>
-    
-                        <div class="mb-3">
-                            <label class="form-label">ট্রানজেকশন আইডি</label>
-                            <input type="text" class="form-control" placeholder="ট্রানজেকশন আইডি লিখুন">
+
+                            <div class="mb-3">
+                                <label class="form-label">মাসিক ভাড়া</label>
+                                <input type="text" class="form-control" value="২৫,০০০ টাকা" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">পরিশোধের তারিখ</label>
+                                <input type="date" class="form-control">
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">মোবাইল নম্বর (বিকাশ/রকেট/ইসি)</label>
-                            <input type="text" class="form-control" placeholder="মোবাইল নম্বর লিখুন">
-                        </div>
-    
-                        <div class="modal-footer">
-                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">বন্ধ করুন</button> -->
-                            <button type="submit" class="btn btn-primary">সংরক্ষণ করুন</button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+
+                    <!-- Payment Section -->
+                    <div class="mb-3">
+                        <label class="form-label">পেমেন্ট মাধ্যম</label>
+                        <select class="form-control">
+                            <option>নগদ</option>
+                            <option>বিকাশ</option>
+                            <option>রকেট</option>
+                            <option>ইসি (Ecash)</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">ট্রানজেকশন আইডি</label>
+                        <input type="text" class="form-control" placeholder="ট্রানজেকশন আইডি লিখুন">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">মোবাইল নম্বর (বিকাশ/রকেট)</label>
+                        <input type="text" class="form-control" placeholder="মোবাইল নম্বর লিখুন">
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">সংরক্ষণ করুন</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+</div>
 
-
-
+    
         <!-- end user table form tanvir -->
 
         <!-- END SEARCH-MODAL -->

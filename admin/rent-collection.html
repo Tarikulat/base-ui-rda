@@ -885,17 +885,13 @@
         <div class="container-fluid">
             <h5 class="mt-4 mb-3 mx-2 pt-2">Rajshahi Development Authority - Rent Collection</h5>
     
-            <div class="row">
-                <div class="col-6 text-start pb-2">
-                    <div class="btn btn-light">List of Rent Collection</div>
-                </div>
-                <div class="col-6 text-end pb-2">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rentCollectionModal">
-                        + Add New
-                    </button>
-                </div>
-            </div>
-    
+        <div class="d-flex justify-content-between align-items-center pb-2">
+            <div class="btn btn-light">List of Rent Collection</div>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rentCollectionModal">
+                + Add New
+            </button>
+        </div>
+
             <div class="table-responsive">
                 <table class="table table-bordered table-hover">
                     <thead class="table-primary">
@@ -1015,15 +1011,15 @@
 
         
         <!-- Rent Collection Modal -->
-    <div class="modal fade" id="rentCollectionModal" tabindex="-1" aria-labelledby="rentCollectionModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="rentCollectionModalLabel">নতুন ভাড়া সংগ্রহ</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
+<div class="modal fade" id="rentCollectionModal" tabindex="-1" aria-labelledby="rentCollectionModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="rentCollectionModalLabel">Rental Fee Payment Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
                 <form>
                     <div class="row">
                         <div class="col-md-6">
@@ -1043,7 +1039,7 @@
                                 <input type="number" class="form-control" placeholder="পরিমাণ লিখুন">
                             </div>
                         </div>
-                
+
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label class="form-label">দোকান নম্বর</label>
@@ -1059,17 +1055,37 @@
                             </div>
                         </div>
                     </div>
-                
+
+                    <!-- New Fields for Mobile Banking or BKash -->
+                    <div class="mb-3">
+                        <label class="form-label">পেমেন্ট মাধ্যম</label>
+                        <select class="form-control">
+                            <option>নগদ</option>
+                            <option>বিকাশ</option>
+                            <option>রকেট</option>
+                            <option>ইসি (Ecash)</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">ট্রানজেকশন আইডি</label>
+                        <input type="text" class="form-control" placeholder="ট্রানজেকশন আইডি লিখুন">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">মোবাইল নম্বর (বিকাশ/রকেট/ইসি)</label>
+                        <input type="text" class="form-control" placeholder="মোবাইল নম্বর লিখুন">
+                    </div>
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">বন্ধ করুন</button>
                         <button type="submit" class="btn btn-primary">সংরক্ষণ করুন</button>
                     </div>
                 </form>
-
-                </div>
             </div>
         </div>
     </div>
+</div>
+
 
 
         <!-- end user table form tanvir -->

@@ -746,7 +746,254 @@
 
         <!-- tanvir start table -->
 
-        <section class="main-content app-content mt-5 mb-3">
+<section class="main-content app-content mt-4 mb-3">
+    <div class="container-fluid mt-5">
+        <!-- Header Section -->
+        <header class="bg-light py-4 text-center shadow rounded">
+            <h3 class="text-success pt-3 fw-bold">রাজশাহী উন্নয়ন কর্তৃপক্ষ</h3>
+            <!-- <p class="text-muted">Welcome back officer panel</p> -->
+        </header>
+
+        <!-- Topbar Section -->
+        <header class="bg-light py-4 text-center shadow rounded mt-4">
+            <div class="topbar d-flex justify-content-between align-items-center">
+
+                <div>
+                    <a href="officer-noc-reports.html">
+                        <button class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="tabler-icon tabler-icon-mail">
+                                <path d="M3 8l9 6 9-6"></path>
+                                <path d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2"></path>
+                                <path d="M3 8v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8"></path>
+                            </svg> ডাক ১৩
+                        </button>
+                    </a>
+                    <a href="officer-noc-reports-2.html">
+                        <button class="btn btn-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="tabler-icon tabler-icon-file">
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                                <path d="M5 7V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7z"></path>
+                            </svg> নথি ৬
+                        </button>
+                    </a>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" class="form-control" placeholder="Search here.......">
+                </div>
+                <div>
+                    <!-- <span class="ms-2">back to your profile</span> -->
+                    <a href="noc-reports.html">
+                        <button class="btn btn-light ms-2">
+                            Profile
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <section class="mt-3">
+            <div class="d-flex">
+                <div class="sidebar me-3">
+                    <h4 class="text-success">ডাক সার্চ</h4>
+                    <a href="#">📬 আগত ডাক (১৩)</a>
+                    <a href="#">📤 প্রেরিত ডাক</a>
+                    <a href="#">📜 নথিতে উপস্থাপিত ডাক</a>
+                    <a href="#">📑 নথিজাত ডাক</a>
+                    <a href="#">📁 আর্কাইভকৃত ডাক</a>
+                    <a href="#">📤 ডাক আপলোড</a>
+                    <a href="#">📝 খসড়া ডাক</a>
+                    <a href="#">📂 ফোল্ডার</a>
+                    <a href="#">🔒 ডাক বন্ধ শেয়ারিং</a>
+                    <a href="#">📚 নিবন্ধন বই</a>
+                </div>
+
+                <!-- Content -->
+                <div class="container mt-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h4 class="mb-0">📜 নথি তালিকা</h4>
+                        <button class="btn btn-primary mb-3">নোট তালিকা</button>
+                    </div>
+
+
+                      <div class="card mb-3 form-pd">
+                    <div class="card-body mt-3">
+                        <div style="display: flex; align-items: center; flex-wrap: wrap;">
+                            <h5 class="card-title pb-1" style="margin-right: 10px; font-size: 18px;">নথিসমূহ:</h5>
+                        </div>
+                        <h5 class="card-text mb-1" style="margin: 0; font-size: 18px; font-weight: normal;">
+                            একশন: নথিতে উপস্থাপন বিষয়: "Government Office Solutions With Google Tools"
+                            শীর্ষক প্রশিক্ষণ (নবম)...
+                        </h5>
+
+                        <div class="d-flex justify-content-between align-items-center border p-3">
+                            <div class="dropdown">
+                                <button class="btn btn-outline-primary dropdown-toggle text-start" type="button"
+                                    id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    সকল নথি 📑</button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">প্রশাসনিক নথি</a></li>
+                                    <li><a class="dropdown-item" href="#">প্রকল্প নথি</a></li>
+                                    <li><a class="dropdown-item" href="#">আর্থিক নথি</a></li>
+                                    <li><a class="dropdown-item" href="#">অনুমোদন নথি</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-success">📝 নতুন নথি তৈরি</button>
+                        </div>
+
+                        <div class="d-flex flex-column border mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex flex-column align-items-start">
+                                    <p class="card-text mb-1"><strong>নথি:</strong> অ্যাডহোক কমিটি</p>
+                                    <p class="card-text mb-1"><strong>নথি নম্বর:</strong> ৩৭.১০.০০০০.০০০.৩১.০০১.২৪</p>
+                                    <p class="card-text mb-1"><strong>শাখা:</strong> কম্পিউটার সেল
+                                        <button class="btn btn-sm text-white rounded-pill shadow-sm"
+                                            style="background-color: #ff1493;">নতুন</button>
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column align-items-end text-end">
+                                    <div class="d-flex align-items-center">
+                                        <p class="card-text mb-0 me-2">
+                                            <strong class="text-primary">গ </strong>শ্রেণীর নথি
+                                        </p>
+                                        <button class="btn btn-primary btn-sm rounded-pill shadow-sm">
+                                            নথি তথ্য
+                                        </button>
+                                    </div>
+                                    <p class="card-text mb-0">
+                                        নোটের সর্বশেষ 📅 তারিখঃ ২৬/১১/২৪ ৪:৩৪ অপরাহ্ন
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="d-flex flex-column border mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex flex-column align-items-start">
+                                    <p class="card-text mb-1"><strong>নথি:</strong> কার্যকরী পরিষদ</p>
+                                    <p class="card-text mb-1"><strong>নথি নম্বর:</strong> ৩৭.১০.০০০০.০০০.৩১.০০১.২৪</p>
+                                    <p class="card-text mb-1"><strong>শাখা:</strong> কম্পিউটার সেল
+                                        <button class="btn btn-sm text-white rounded-pill shadow-sm"
+                                            style="background-color: #ff1493;">নতুন</button>
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column align-items-end text-end">
+                                    <div class="d-flex align-items-center">
+                                        <p class="card-text mb-0 me-2">
+                                            <strong class="text-primary">ঘ </strong>শ্রেণীর নথি
+                                        </p>
+                                        <button class="btn btn-primary btn-sm rounded-pill shadow-sm">
+                                            নথি তথ্য
+                                        </button>
+                                    </div>
+                                    <p class="card-text mb-0">
+                                        নোটের সর্বশেষ 📅 তারিখঃ ২৬/১১/২৪ ৪:৩৪ অপরাহ্ন
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column border mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex flex-column align-items-start">
+                                    <p class="card-text mb-1"><strong>নথি:</strong> সাময়িক কমিটি</p>
+                                    <p class="card-text mb-1"><strong>নথি নম্বর:</strong> ৩৭.১০.০০০০.০০০.৩১.০০১.২৪</p>
+                                    <p class="card-text mb-1"><strong>শাখা:</strong> কম্পিউটার সেল
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column align-items-end text-end">
+                                    <div class="d-flex align-items-center">
+                                        <!-- <p class="card-text mb-0 me-2">
+                                            <strong class="text-primary">গ </strong>শ্রেণীর নথি
+                                        </p> -->
+                                        <button class="btn btn-light btn-sm rounded-pill shadow-sm me-2 text-dark fw-bold">
+                                        সর্বমোট নোট: 5
+                                        </button>
+                                        <button class="btn btn-light btn-sm rounded-pill shadow-sm me-2 text-danger bg-info-subtle">
+                                            নথির অনুমোদন পর্যালোচনা করুন
+                                        </button>
+                                        <button class="btn btn-light btn-sm rounded-pill shadow-sm me-2 text-danger bg-info-subtle">
+                                            নথি অনুমোদনের ইতিহাস
+                                        </button>
+                                    </div>
+                                    <p class="card-text mb-0">
+                                        নোটের সর্বশেষ 📅 তারিখঃ ২৬/১১/২৪ ৪:৩৪ অপরাহ্ন
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column border mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex flex-column align-items-start">
+                                    <p class="card-text mb-1"><strong>নথি:</strong> পর্যবেক্ষণ কমিটি</p>
+                                    <p class="card-text mb-1"><strong>নথি নম্বর:</strong> ৩৭.১০.০০০০.০০০.৩১.০০১.২৪</p>
+                                    <p class="card-text mb-1"><strong>শাখা:</strong> কম্পিউটার সেল
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column align-items-end text-end">
+                                    <div class="d-flex align-items-center">
+                                        <!-- <p class="card-text mb-0 me-2">
+                                            <strong class="text-primary">গ </strong>শ্রেণীর নথি
+                                        </p> -->
+                                        <button class="btn btn-light btn-sm rounded-pill shadow-sm me-2 text-dark fw-bold">
+                                        সর্বমোট নোট: 3
+                                        </button>
+                                        <button class="btn btn-light btn-sm rounded-pill shadow-sm me-2 text-danger bg-info-subtle">
+                                            নথির অনুমোদন পর্যালোচনা করুন
+                                        </button>
+                                        <button class="btn btn-light btn-sm rounded-pill shadow-sm me-2 text-danger bg-info-subtle">
+                                            নথি অনুমোদনের ইতিহাস
+                                        </button>
+                                    </div>
+                                    <p class="card-text mb-0">
+                                        নোটের সর্বশেষ 📅 তারিখঃ ২৬/১১/২৪ ৪:৩৪ অপরাহ্ন
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="main-content app-content mt-4 mb-3">>
+        <div class="container-fluid mt-5">
+        <!-- Main Section -->
+        <div class="row">
+            <!-- Letter Section -->
+            <div class="col-md-6">
+                <div class="letter-section">
+                    <h3>পত্রাংশ</h3>
+                    <p>এখানে পত্রের বিষয়বস্তু থাকবে। এটি একটি চিঠি বা পত্রের অংশ, যা প্রেরক থেকে প্রাপককে উদ্দেশ্য করে লেখা
+                        হয়।</p>
+                </div>
+            </div>
+    
+            <!-- Note Section -->
+            <div class="col-md-6">
+                <div class="note-section">
+                    <h3>নোটাংশ</h3>
+                    <p>এখানে নোটের বিষয়বস্তু থাকবে। এটি একটি গুরুত্বপূর্ণ বার্তা, স্মারক বা নোট যা আপনি লিখতে পারেন।</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+</section>
+
+
+
+
+
+        <!-- <section class="main-content app-content mt-5 mb-3">
             <div class="container-fluid mt-4">
                 <header class="bg-light py-4 text-center shadow rounded">
                     <h3 class="text-success pt-3 fw-bold">রাজশাহী উন্নয়ন কর্তৃপক্ষ</h3>
@@ -795,7 +1042,7 @@
                         <div style="display: flex; align-items: center; flex-wrap: wrap;">
                             <h5 class="card-title pb-1" style="margin-right: 10px; font-size: 18px;">নথিসমূহ:</h5>
                         </div>
-                        <h3 class="card-text" style="margin: 0; font-size: 18px; font-weight: normal;">
+                        <h3 class="card-text mb-1" style="margin: 0; font-size: 18px; font-weight: normal;">
                             <strong>একশন:</strong> নথিতে উপস্থাপন বিষয়: "Government Office Solutions With Google Tools"
                             শীর্ষক প্রশিক্ষণ (নবম)...
                         </h3>
@@ -825,48 +1072,27 @@
                                             style="background-color: #ff1493;">নতুন</button>
                                     </p>
                                 </div>
-                                <div class="d-flex flex-column align-items-end">
-                                    <p class="card-text mb-1">শ্রেণীর নথি</p>
-                                    <button class="btn btn-primary btn-sm rounded-pill shadow-sm">
-                                        📄 নথি তথ্য
-                                    </button>
+                                <div class="d-flex flex-column align-items-end text-end">
+                                    <div class="d-flex align-items-center">
+                                        <p class="card-text mb-0 me-2">
+                                            <strong class="text-primary">গ </strong>শ্রেণীর নথি
+                                        </p>
+                                        <button class="btn btn-primary btn-sm rounded-pill shadow-sm">
+                                            নথি তথ্য
+                                        </button>
+                                    </div>
+                                    <p class="card-text mb-0">
+                                        নোটের সর্বশেষ তারিখঃ ২৬/১১/২৪ ৪:৩৪ অপরাহ্ন
+                                    </p>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- নিচের লাইন -->
-                        <p class="card-text mt-2 text-end">নোটের সর্বশেষ তারিখঃ ২৬/১১/২৪ ৪:৩৪ অপরাহ্ন</p>
-                        <!-- 2nd Row -->
-                        <p class="card-text"><strong>নথি নাম:</strong> test nothi</p>
-                        <p class="card-text"><strong>সর্বশেষ নোটের তারিখ:</strong> ২৬/১১/২৪ ৪:৩৪ অপরাহ্ন</p>
-                        <p class="card-text"><strong>একশন:</strong> নথিতে উপস্থাপন বিষয়: "Government Office Solutions
-                            With
-                            Google Tools" শীর্ষক প্রশিক্ষণ (নবম)</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <button class="btn btn-primary">নথি বিস্তারিত দেখুন</button>
-                    </div>
-                </div>
-
-                <div class="card mb-3">
-                    <div class="card-header bg-info text-white">
-                        <strong>নথি নম্বর: ৩৭.১০.০০০০.০০০.১০.০০১.২৪</strong>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">নথি শাখা: কম্পিউটার সেল</h5>
-                        <p class="card-text"><strong>নথি:</strong> Test</p>
-                        <p class="card-text"><strong>নথি নাম:</strong> Test</p>
-                        <p class="card-text"><strong>সর্বশেষ নোটের তারিখ:</strong> ২৩/১/২৫ ১০:১৬ পূর্বাহ্ন</p>
-                        <p class="card-text"><strong>একশন:</strong> নথিতে উপস্থাপন বিষয়: "Government Office Solutions
-                            With
-                            Google Tools" শীর্ষক প্রশিক্ষণ</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <button class="btn btn-primary">নথি বিস্তারিত দেখুন</button>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
+
         <!-- end user table form tanvir -->
 
         <!-- END SEARCH-MODAL -->

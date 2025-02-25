@@ -132,6 +132,42 @@
 
 /* start tanvir start*/
 
+
+    .letter-section {
+      padding: 20px;
+      margin-top: 20px;
+      background-color: #d1ecf1;
+      border-radius: 5px;
+    }
+
+    .letter-section h3 {
+      color: #0c5460;
+    }
+
+    .letter-section p {
+      color: #0c5460;
+      font-size: 1.1rem;
+    }
+
+    /* Custom Styling for Note Section */
+    .note-section {
+      padding: 20px;
+      margin-top: 20px;
+      background-color: #f8f9fa;
+      border-radius: 5px;
+    }
+
+    .note-section h3 {
+      color: #6c757d;
+    }
+
+    .note-section p {
+      color: #6c757d;
+      font-size: 1.1rem;
+    }
+
+
+
 .section-header {
   background-color: #007bff;
   color: white;

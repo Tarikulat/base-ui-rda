@@ -756,9 +756,9 @@
                         <div>
                             <a href="officer-noc-reports.html">
                                 <button class="btn btn-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="tabler-icon tabler-icon-mail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="tabler-icon tabler-icon-mail">
                                         <path d="M3 8l9 6 9-6"></path>
                                         <path d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2"></path>
                                         <path d="M3 8v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8"></path>
@@ -767,9 +767,9 @@
                             </a>
                             <a href="officer-noc-reports-2.html">
                                 <button class="btn btn-secondary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="tabler-icon tabler-icon-file">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="tabler-icon tabler-icon-file">
                                         <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
                                         <path d="M5 7V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7z"></path>
                                     </svg> নথি ৬
@@ -780,14 +780,14 @@
                         <div class="search-box">
                             <input type="text" class="form-control" placeholder="Search here.......">
                         </div>
-                    <div>
-                        <!-- <span class="ms-2">back to your profile</span> -->
-                        <a href="noc-reports.html">
-                            <button class="btn btn-light ms-2">
-                                Profile
-                            </button>
-                        </a>
-                    </div>
+                        <div>
+                            <!-- <span class="ms-2">back to your profile</span> -->
+                            <a href="noc-reports.html">
+                                <button class="btn btn-light ms-2">
+                                    Profile
+                                </button>
+                            </a>
+                        </div>
 
                     </div>
                 </header>
@@ -889,7 +889,8 @@
                                                     <!-- Left side checkbox -->
                                                     <div style="margin-right: 15px;">
                                                         <input type="checkbox" id="check1"
-                                                            style="width: 20px; height: 20px;">
+                                                            style="width: 20px; height: 20px;" data-bs-toggle="modal"
+                                                            data-bs-target="#formModal">
                                                     </div>
 
                                                     <!-- Right side content -->
@@ -923,7 +924,8 @@
                                                     <!-- Left side checkbox -->
                                                     <div style="margin-right: 15px;">
                                                         <input type="checkbox" id="check1"
-                                                            style="width: 20px; height: 20px;">
+                                                            style="width: 20px; height: 20px;" data-bs-toggle="modal"
+                                                            data-bs-target="#formModal">
                                                     </div>
 
                                                     <!-- Right side content -->
@@ -960,7 +962,8 @@
                                                     style="display: flex; align-items: center; justify-content: flex-start;">
                                                     <div style="margin-right: 15px;">
                                                         <input type="checkbox" id="check1"
-                                                            style="width: 20px; height: 20px;">
+                                                            style="width: 20px; height: 20px;" data-bs-toggle="modal"
+                                                            data-bs-target="#formModal">
                                                     </div>
 
                                                     <div style="flex-grow: 1;">
@@ -983,9 +986,7 @@
                                                             <button class="btn btn-info btn-sm rounded-pill shadow-sm">
                                                                 পত্রজারি
                                                             </button>
-
                                                         </div>
-
                                                     </div>
                                                 </div>
                                             </div>
@@ -994,65 +995,77 @@
                                 </tbody>
                             </table>
                         </div>
-
                     </div>
                 </section>
             </div>
         </section>
+        <!-- Bootstrap Modal -->
+        <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content form-pd">
+            <div class="modal-header bg-light py-3 px-4 border-bottom">
+                <div>
+                    <p class="text-primary fw-bold mb-1">📩 ডাক প্রেরণ করুন</p>
+                    <p class="modal-title fw-semibold text-dark" id="formModalLabel">
+                    বিষয়ঃ “Government Office Solutions With Google Tools ” শীর্ষক প্রশিক্ষণ (নবম ব্যাচ) কোর্সে প্রশিক্ষণার্থী..
+                    </p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
 
-        <!-- <section class="main-content app-content mt-4 mb-3">
-            <div class="container-fluid">
-                <div class="container mt-5">
-                    <h3 class="text-center">Government Office Solutions With Google Tools (নবম ব্যাচ)</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label for="recipient" class="form-label">প্ৰাপক</label>
-                            <input type="text" class="form-control" id="recipient" placeholder="প্রাপকের নাম লিখুন">
-                        </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient" class="form-label">প্ৰাপক</label>
+                                <input type="text" class="form-control" id="recipient" placeholder="প্রাপকের নাম লিখুন">
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">বিষয়</label>
-                            <input type="text" class="form-control" id="subject" placeholder="বিষয় লিখুন">
-                        </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">বিষয়</label>
+                                <input type="text" class="form-control" id="subject" placeholder="বিষয় লিখুন">
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="priority" class="form-label">অগ্রাধিকার</label>
-                            <select class="form-select" id="priority">
-                                <option value="high">উচ্চ</option>
-                                <option value="medium">মাঝারি</option>
-                                <option value="low">নিম্ন</option>
-                            </select>
-                        </div>
+                            <div class="mb-3">
+                                <label for="priority" class="form-label">অগ্রাধিকার</label>
+                                <select class="form-select" id="priority">
+                                    <option value="high">উচ্চ</option>
+                                    <option value="medium">মাঝারি</option>
+                                    <option value="low">নিম্ন</option>
+                                </select>
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="decision" class="form-label">সিদ্ধান্ত</label>
-                            <textarea class="form-control" id="decision" rows="3"
-                                placeholder="সিদ্ধান্ত লিখুন"></textarea>
-                        </div>
+                            <!-- <div class="mb-3">
+                                <label for="decision" class="form-label">সিদ্ধান্ত</label>
+                                <textarea class="form-control" id="decision" rows="3"
+                                    placeholder="সিদ্ধান্ত লিখুন"></textarea>
+                            </div> -->
 
-                        <div class="mb-3">
-                            <label for="action" class="form-label">বিধি মোতাবেক ব্যবস্থা নিন</label>
-                            <select class="form-select" id="action">
-                                <option value="take-action">ব্যবস্থা নিন</option>
-                                <option value="no-action">কোনো ব্যবস্থা নিন না</option>
-                            </select>
-                        </div>
+                            <div class="mb-3">
+                                <label for="action" class="form-label">সিদ্ধান্ত দিন</label>
+                                <select class="form-select" id="action">
+                                    <option value="take-action">বিধি মোতাবেক ব্যবস্থা নিন</option>
+                                    <option value="no-action">নথিতে উপস্থাপন করুন</option>
+                                    <option value="no-action">নথিজাত করুন</option>
+                                    <option value="no-action">সিদ্ধান্ত নিজে লিখুন</option>
+                                </select>
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="confidentiality" class="form-label">গোপনীয়তা</label>
-                            <select class="form-select" id="confidentiality">
-                                <option value="confidential">গোপনীয়</option>
-                                <option value="non-confidential">অগোপনীয়</option>
-                            </select>
-                        </div>
+                            <div class="mb-3">
+                                <label for="confidentiality" class="form-label">গোপনীয়তা</label>
+                                <select class="form-select" id="confidentiality">
+                                    <option value="confidential">গোপনীয়</option>
+                                    <option value="non-confidential">অগোপনীয়</option>
+                                </select>
+                            </div>
 
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">সাবমিট করুন</button>
-                        </div>
-                    </form>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary">সাবমিট করুন</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </section> -->
+        </div>
         <!-- end user table form tanvir -->
 
         <!-- END SEARCH-MODAL -->

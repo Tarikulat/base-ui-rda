@@ -747,87 +747,98 @@
 
         <section class="main-content app-content mt-5">
             <div class="container-fluid">
-                <h5 class="mt-4 mb-3 mx-2 pt-2">Rajshahi Development Authority - Rent Collection</h5>
+                <div class="container my-4">
+                    <div class="row">
+                        <!-- <h5 class="mt-4 mb-3 mx-2 pt-2">Rajshahi Development Authority - Rent Collection</h5> -->
 
-                <div class="d-flex justify-content-between align-items-center pb-2">
-                    <div class="btn btn-light">List of Rent Collection</div>
-                    <input type="text" id="searchInput" class="form-control w-25"
-                        placeholder="Search by store number...">
+                        <div class="col-md-12">
+                            <div class="card shadow-sm border-0 p-3 mt-3">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="ps-3">Rent Collection List</h5>
+                                    <div class="input-group w-25">
+                                        <input type="text" class="form-control" placeholder="Search by id..."
+                                            id="search-input">
+                                        <button class="btn btn-outline-secondary" type="button" id="search-button">
+                                            <i class="ri-search-line"></i>
+                                        </button>
+                                    </div>
+                                </div>
 
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover">
+                                        <thead class="table-primary">
+                                            <tr>
+                                                <th scope="col">স্টোরের নং</th>
+                                                <th scope="col">মার্কেটের নাম</th>
+                                                <th scope="col">মালিকের নাম</th>
+                                                <th scope="col">মাসিক ভাড়া</th>
+                                                <th scope="col">পূর্বের বকেয়া</th>
+                                                <th scope="col">আদায়</th>
+                                                <th scope="col">বর্তমান বকেয়া</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>004531</td>
+                                                <td>রাজশাহী নিউ মার্কেট</td>
+                                                <td>মো. রফিকুল ইসলাম</td>
+                                                <td>২৫,০০০ টাকা</td>
+                                                <td>৫,০০০ টাকা</td>
+                                                <td>২০,০০০ টাকা</td>
+                                                <td>৫,০০০ টাকা</td>
 
-                </div>
-
-                <div class="table-responsive">
-                    <table class="table table-bordered table-hover">
-                        <thead class="table-primary">
-                            <tr>
-                                <th scope="col">স্টোরের নং</th>
-                                <th scope="col">মার্কেটের নাম</th>
-                                <th scope="col">মালিকের নাম</th>
-                                <th scope="col">মাসিক ভাড়া</th>
-                                <th scope="col">পূর্বের বকেয়া</th>
-                                <th scope="col">আদায়</th>
-                                <th scope="col">বর্তমান বকেয়া</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>004531</td>
-                                <td>রাজশাহী নিউ মার্কেট</td>
-                                <td>মো. রফিকুল ইসলাম</td>
-                                <td>২৫,০০০ টাকা</td>
-                                <td>৫,০০০ টাকা</td>
-                                <td>২০,০০০ টাকা</td>
-                                <td>৫,০০০ টাকা</td>
-
-                            </tr>
-                            <tr>
-                                <td>003532</td>
-                                <td>রাজশাহী বোয়ালিয়া মার্কেট</td>
-                                <td>আব্দুল করিম</td>
-                                <td>৩০,০০০ টাকা</td>
-                                <td>১০,০০০ টাকা</td>
-                                <td>২০,০০০ টাকা</td>
-                                <td>১০,০০০ টাকা</td>
-                            </tr>
-                            <tr>
-                                <td>003352</td>
-                                <td>সাহেববাজার প্লাজা</td>
-                                <td>সৈয়দ হোসেন</td>
-                                <td>২২,০০০ টাকা</td>
-                                <td>৩,০০০ টাকা</td>
-                                <td>১৯,০০০ টাকা</td>
-                                <td>৩,০০০ টাকা</td>
-                            </tr>
-                            <tr>
-                                <td>00435</td>
-                                <td>রাণীবাজার শপিং কমপ্লেক্স</td>
-                                <td>ফরিদ আহমেদ</td>
-                                <td>১৮,০০০ টাকা</td>
-                                <td>২,০০০ টাকা</td>
-                                <td>১৬,০০০ টাকা</td>
-                                <td>২,০০০ টাকা</td>
-                            </tr>
-                            <tr>
-                                <td>00535</td>
-                                <td>উপশহর নিউ মার্কেট</td>
-                                <td>কামরুল হাসান</td>
-                                <td>২৮,০০০ টাকা</td>
-                                <td>৬,০০০ টাকা</td>
-                                <td>২২,০০০ টাকা</td>
-                                <td>৬,০০০ টাকা</td>
-                            </tr>
-                            <tr>
-                                <td>006433</td>
-                                <td>গোলজার প্লাজা</td>
-                                <td>মনিরুজ্জামান</td>
-                                <td>২০,০০০ টাকা</td>
-                                <td>৪,০০০ টাকা</td>
-                                <td>১৬,০০০ টাকা</td>
-                                <td>৪,০০০ টাকা</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                            </tr>
+                                            <tr>
+                                                <td>003532</td>
+                                                <td>রাজশাহী বোয়ালিয়া মার্কেট</td>
+                                                <td>আব্দুল করিম</td>
+                                                <td>৩০,০০০ টাকা</td>
+                                                <td>১০,০০০ টাকা</td>
+                                                <td>২০,০০০ টাকা</td>
+                                                <td>১০,০০০ টাকা</td>
+                                            </tr>
+                                            <tr>
+                                                <td>003352</td>
+                                                <td>সাহেববাজার প্লাজা</td>
+                                                <td>সৈয়দ হোসেন</td>
+                                                <td>২২,০০০ টাকা</td>
+                                                <td>৩,০০০ টাকা</td>
+                                                <td>১৯,০০০ টাকা</td>
+                                                <td>৩,০০০ টাকা</td>
+                                            </tr>
+                                            <tr>
+                                                <td>00435</td>
+                                                <td>রাণীবাজার শপিং কমপ্লেক্স</td>
+                                                <td>ফরিদ আহমেদ</td>
+                                                <td>১৮,০০০ টাকা</td>
+                                                <td>২,০০০ টাকা</td>
+                                                <td>১৬,০০০ টাকা</td>
+                                                <td>২,০০০ টাকা</td>
+                                            </tr>
+                                            <tr>
+                                                <td>00535</td>
+                                                <td>উপশহর নিউ মার্কেট</td>
+                                                <td>কামরুল হাসান</td>
+                                                <td>২৮,০০০ টাকা</td>
+                                                <td>৬,০০০ টাকা</td>
+                                                <td>২২,০০০ টাকা</td>
+                                                <td>৬,০০০ টাকা</td>
+                                            </tr>
+                                            <tr>
+                                                <td>006433</td>
+                                                <td>গোলজার প্লাজা</td>
+                                                <td>মনিরুজ্জামান</td>
+                                                <td>২০,০০০ টাকা</td>
+                                                <td>৪,০০০ টাকা</td>
+                                                <td>১৬,০০০ টাকা</td>
+                                                <td>৪,০০০ টাকা</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -909,8 +920,6 @@
                 </div>
             </div>
         </div>
-
-
 
         <!-- end user table form tanvir -->
 

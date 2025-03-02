@@ -980,195 +980,200 @@
 
         <section class="main-content app-content mt-5">
             <div class="container-fluid">
-                <h5 class="mt-4 mb-3 mx-2 pt-2">Rajshahi Development Authority</h5>
+                <div class="container my-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card shadow-sm border-0 p-3 mt-3">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h6 class="ps-3 ">Applications List</h6>
+                                <div class="d-flex align-items-center gap-2 w-50">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search by id..." id="search-input">
+                                        <button class="btn btn-outline-secondary" type="button" id="search-button">
+                                            <i class="ri-search-line"></i>
+                                        </button>
+                                    
+                                    <button class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#rdaFormModal">
+                                        + Add New
+                                    </button>
+                                    </div>
+                                </div>
+                                </div>
 
-                <div class="row align-items-center pb-0">
-                    <div class="col-md-4 col-12 text-start mb-2 mb-md-0">
-                        <button class="btn btn-light w-100 w-md-auto">
-                            Total List
-                        </button>
-                    </div>
-                    <div class="col-md-6 col-12 mb-1 mb-md-0">
-                        <input type="search" class="form-control text-center" placeholder="🔍 সার্চ করুন..."
-                            aria-label="Search">
-                    </div>
-                    <div class="col-md-2 col-12 text-end pb-4">
-                        <button class="btn btn-primary w-100 w-md-auto mb-2" data-bs-toggle="modal"
-                            data-bs-target="#rdaFormModal">
-                            + Add New
-                        </button>
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover">
+                                        <thead class="table-primary">
+                                            <tr>
+                                                <th>#</th>
+                                                <th>নাম</th>
+                                                <th>জাতীয় নং</th>
+                                                <th>আরডিএ তালিকাভুক্তি নং</th>
+                                                <th>শিক্ষা প্রতিষ্ঠান</th>
+                                                <th>পাশের বছর</th>
+                                                <th>স্পেশালাইজেশন</th>
+                                                <th>ডিগ্রী / কোর্স</th>
+                                                <th>অ্যাকশন</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>১</td>
+                                                <td>আলমগীর হোসেন</td>
+                                                <td>1234567890</td>
+                                                <td>RDA-001</td>
+                                                <td>ঢাকা বিশ্ববিদ্যালয়</td>
+                                                <td>২০১৫</td>
+                                                <td>Structural Engineering</td>
+                                                <td>BSc in Civil Engineering</td>
+                                                <td>
+                                                    <div class="hstack gap-2 fs-15">
+                                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
+                                                                class="ri-download-2-line"></i></a>
+                                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
+                                                                class="ri-edit-line"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>২</td>
+                                                <td>সালমান খালিদ</td>
+                                                <td>2345678901</td>
+                                                <td>RDA-002</td>
+                                                <td>বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়</td>
+                                                <td>২০১৬</td>
+                                                <td>Urban Planning</td>
+                                                <td>BSc in Architecture</td>
+                                                <td>
+                                                    <div class="hstack gap-2 fs-15">
+                                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
+                                                                class="ri-download-2-line"></i></a>
+                                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
+                                                                class="ri-edit-line"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>৩</td>
+                                                <td>তানভীর হাসান</td>
+                                                <td>3456789012</td>
+                                                <td>RDA-003</td>
+                                                <td>চট্টগ্রাম প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়</td>
+                                                <td>২০১৭</td>
+                                                <td>Soil Mechanics</td>
+                                                <td>MSc in Geotechnical Engineering</td>
+                                                <td>
+                                                    <div class="hstack gap-2 fs-15">
+                                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
+                                                                class="ri-download-2-line"></i></a>
+                                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
+                                                                class="ri-edit-line"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>৪</td>
+                                                <td>জাকির হোসেন</td>
+                                                <td>4567890123</td>
+                                                <td>RDA-004</td>
+                                                <td>রাজশাহী বিশ্ববিদ্যালয়</td>
+                                                <td>২০১৮</td>
+                                                <td>Power Systems</td>
+                                                <td>BSc in Electrical Engineering</td>
+                                                <td>
+                                                    <div class="hstack gap-2 fs-15">
+                                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
+                                                                class="ri-download-2-line"></i></a>
+                                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
+                                                                class="ri-edit-line"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>৫</td>
+                                                <td>মাহিন ইসলাম</td>
+                                                <td>5678901234</td>
+                                                <td>RDA-005</td>
+                                                <td>খুলনা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়</td>
+                                                <td>২০১৯</td>
+                                                <td>Thermal Engineering</td>
+                                                <td>BSc in Mechanical Engineering</td>
+                                                <td>
+                                                    <div class="hstack gap-2 fs-15">
+                                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
+                                                                class="ri-download-2-line"></i></a>
+                                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
+                                                                class="ri-edit-line"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="table-responsive">
-                    <table class="table table-bordered table-hover">
-                        <thead class="table-primary">
-                            <tr>
-                                <th>#</th>
-                                <th>নাম</th>
-                                <th>জাতীয় পরিচয় নং</th>
-                                <th>আরডিএ তালিকাভুক্তি নং</th>
-                                <th>শিক্ষা প্রতিষ্ঠান</th>
-                                <th>পাশের বছর</th>
-                                <th>স্পেশালাইজেশন</th>
-                                <th>ডিগ্রী / কোর্স</th>
-                                <th>অ্যাকশন</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>১</td>
-                                <td>আলমগীর হোসেন</td>
-                                <td>1234567890</td>
-                                <td>RDA-001</td>
-                                <td>ঢাকা বিশ্ববিদ্যালয়</td>
-                                <td>২০১৫</td>
-                                <td>Structural Engineering</td>
-                                <td>BSc in Civil Engineering</td>
-                                <td>
-                                    <div class="hstack gap-2 fs-15">
-                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                                class="ri-download-2-line"></i></a>
-                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
-                                                class="ri-edit-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>২</td>
-                                <td>সালমান খালিদ</td>
-                                <td>2345678901</td>
-                                <td>RDA-002</td>
-                                <td>বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়</td>
-                                <td>২০১৬</td>
-                                <td>Urban Planning</td>
-                                <td>BSc in Architecture</td>
-                                <td>
-                                    <div class="hstack gap-2 fs-15">
-                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                                class="ri-download-2-line"></i></a>
-                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
-                                                class="ri-edit-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>৩</td>
-                                <td>তানভীর হাসান</td>
-                                <td>3456789012</td>
-                                <td>RDA-003</td>
-                                <td>চট্টগ্রাম প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়</td>
-                                <td>২০১৭</td>
-                                <td>Soil Mechanics</td>
-                                <td>MSc in Geotechnical Engineering</td>
-                                <td>
-                                    <div class="hstack gap-2 fs-15">
-                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                                class="ri-download-2-line"></i></a>
-                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
-                                                class="ri-edit-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>৪</td>
-                                <td>জাকির হোসেন</td>
-                                <td>4567890123</td>
-                                <td>RDA-004</td>
-                                <td>রাজশাহী বিশ্ববিদ্যালয়</td>
-                                <td>২০১৮</td>
-                                <td>Power Systems</td>
-                                <td>BSc in Electrical Engineering</td>
-                                <td>
-                                    <div class="hstack gap-2 fs-15">
-                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                                class="ri-download-2-line"></i></a>
-                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
-                                                class="ri-edit-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>৫</td>
-                                <td>মাহিন ইসলাম</td>
-                                <td>5678901234</td>
-                                <td>RDA-005</td>
-                                <td>খুলনা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়</td>
-                                <td>২০১৯</td>
-                                <td>Thermal Engineering</td>
-                                <td>BSc in Mechanical Engineering</td>
-                                <td>
-                                    <div class="hstack gap-2 fs-15">
-                                        <a href="#" class="btn btn-icon btn-sm btn-success"><i
-                                                class="ri-download-2-line"></i></a>
-                                        <a href="#" class="btn btn-icon btn-sm btn-info"><i
-                                                class="ri-edit-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-                </div>
             </div>
-        </section>
-        <!-- end user table form tanvir -->
+        </div>
+    </section>
+    <!-- end user table form tanvir -->
 
-        <!-- END SEARCH-MODAL -->
-        <footer class="footer mt-auto py-3 bg-white text-center">
-            <div class="container">
-                <span class="text-muted"> All rights reserved ©<span id="year"></span> <a href="javascript:void(0);"
-                        class="text-dark fw-semibold"></a>rajIT Solutions
-                    Ltd.<span class="">Design</span> & Developed
-                    <a href="javascript:void(0);">
-                        <span class="fw-semibold text- text-decoration-underline"> by rajIT Team.</span>
-                    </a>
-                </span>
-            </div>
-        </footer>
+    <!-- END SEARCH-MODAL -->
+    <footer class="footer mt-auto py-3 bg-white text-center">
+        <div class="container">
+            <span class="text-muted"> All rights reserved ©<span id="year"></span> <a href="javascript:void(0);"
+                    class="text-dark fw-semibold"></a>rajIT Solutions
+                Ltd.<span class="">Design</span> & Developed
+                <a href="javascript:void(0);">
+                    <span class="fw-semibold text- text-decoration-underline"> by rajIT Team.</span>
+                </a>
+            </span>
+        </div>
+    </footer>
 
-        <div id="responsive-overlay"></div>
+    <div id="responsive-overlay"></div>
 
-        <!-- POPPER JS -->
-        <script src="../assets/libs/%40popperjs/core/umd/popper.min.js"></script>
+    <!-- POPPER JS -->
+    <script src="../assets/libs/%40popperjs/core/umd/popper.min.js"></script>
 
-        <!-- BOOTSTRAP JS -->
-        <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- NODE WAVES JS -->
-        <script src="../assets/libs/node-waves/waves.min.js"></script>
+    <!-- NODE WAVES JS -->
+    <script src="../assets/libs/node-waves/waves.min.js"></script>
 
-        <!-- SIMPLEBAR JS -->
-        <script src="../assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="../assets/js/simplebar.js"></script>
+    <!-- SIMPLEBAR JS -->
+    <script src="../assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="../assets/js/simplebar.js"></script>
 
-        <!-- COLOR PICKER JS -->
-        <script src="../assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
+    <!-- COLOR PICKER JS -->
+    <script src="../assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
 
-        <!-- DEFAULTMENU JS -->
-        <script src="../assets/js/defaultmenu.js"></script>
+    <!-- DEFAULTMENU JS -->
+    <script src="../assets/js/defaultmenu.js"></script>
 
-        <!-- JSVECTOR MAPS JS -->
-        <script src="../assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
-        <script src="../assets/libs/jsvectormap/maps/world-merc.js"></script>
+    <!-- JSVECTOR MAPS JS -->
+    <script src="../assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+    <script src="../assets/libs/jsvectormap/maps/world-merc.js"></script>
 
-        <!-- APEX CHARTS JS -->
-        <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+    <!-- APEX CHARTS JS -->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
 
-        <!-- CHARTJS CHART JS -->
-        <script src="../assets/libs/chart.js/chart.min.js"></script>
+    <!-- CHARTJS CHART JS -->
+    <script src="../assets/libs/chart.js/chart.min.js"></script>
 
-        <!-- CRM-Dashboard -->
-        <script src="../assets/js/crm-dashboard.js"></script>
+    <!-- CRM-Dashboard -->
+    <script src="../assets/js/crm-dashboard.js"></script>
 
-        <!-- STICKY JS -->
-        <script src="../assets/js/sticky.js"></script>
+    <!-- STICKY JS -->
+    <script src="../assets/js/sticky.js"></script>
 
-        <!-- CUSTOM JS -->
-        <script src="../assets/js/custom.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="../assets/js/custom.js"></script>
 
-        <!-- CUSTOM-SWITCHER JS -->
-        <script src="../assets/js/custom-switcher.js"></script>
+    <!-- CUSTOM-SWITCHER JS -->
+    <script src="../assets/js/custom-switcher.js"></script>
 </body>
 
 </html>

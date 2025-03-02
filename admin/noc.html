@@ -977,14 +977,27 @@
 
         <section class="main-content app-content mt-5">
             <div class="container-fluid">
-                <h5 class="mt-4 mb-3 mx-2 pt-2">Rajshahi Development Authority</h5>
-
-            <div class="d-flex justify-content-between align-items-center pb-2">
-                <div class="btn btn-light">List of Applicants</div>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rdaFormModal">
-                    + Add New
-                </button>
-            </div>
+                <div class="container my-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card shadow-sm border-0 p-3 mt-3">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h6 class="ps-3 ">NOC Application List</h6>
+                                    <div class="d-flex align-items-center gap-2 w-50">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search by name or id..."
+                                                id="search-input">
+                                            <button class="btn btn-outline-secondary" type="button" id="search-button">
+                                                <i class="ri-search-line"></i>
+                                            </button>
+        
+                                            <button class="btn btn-primary me-2" data-bs-toggle="modal"
+                                                data-bs-target="#rdaFormModal">
+                                                + Add New
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
             
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover">
@@ -1106,6 +1119,11 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
             </div>
         </section>
         <!-- end user table form tanvir -->

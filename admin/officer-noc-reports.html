@@ -787,18 +787,13 @@
     <section class="mt-4">
         <div class="container mt-3">
             <table class="table table-bordered table-striped">
-                <!-- <thead class="bg-primary text-white">
-                    <tr>
-                        <th colspan="4" class="p-3 text-center">ফরম বিস্তারিত</th>
-                    </tr>
-                </thead> -->
                 <tbody class="ps-4">
                     <tr class="border">
                         <td colspan="4" class="p-3 bg-light rounded">
                             <div class="d-flex align-items-center">
                                 <div class="flex-grow-1">
                                     <strong>ID No :</strong> 33456342 <br>
-                                    <strong>Applicant:</strong> ফারহান হোসেন |<br>
+                                    <strong>Applicant Name:</strong> ফারহান হোসেন |<br>
                                     <strong>Subject:</strong> সরকারি সফটওয়্যার ব্যবস্থাপনা <br>
                                     <strong>Decision:</strong> পরবর্তী মিটিংয়ে আলোচনা করুন<br>
                                     <strong>Sender:</strong> শামীম আহমেদ |
@@ -826,7 +821,7 @@
                             <div class="flex-grow-1">
                                 <div>
                                     <strong>ID No :</strong> 56789123 <br>
-                                    <strong>Applicant :</strong> সোহেল রানা <br>
+                                    <strong>Applicant Name :</strong> সোহেল রানা <br>
                                     <strong>Department :</strong> NOC (Land Use Approval Department) <br>
                                     <strong>Subject :</strong> জমি ব্যবহার অনুমোদন প্রক্রিয়া সংক্রান্ত <br>
                                 </div>
@@ -837,9 +832,11 @@
                                 <button class="btn btn-info btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#formModal">
                                     <i class="fas fa-paperclip"></i> ফরওয়ার্ড
                                 </button>
+                            <a href="officer-noc-reports-3.html">
                                 <button class="btn btn-primary btn-sm ms-2">
                                     <i class="fas fa-eye"></i> দেখুন
                                 </button>
+                            </a>
                             </div>
                         </div>
                     </td>
@@ -850,7 +847,7 @@
                             <div class="flex-grow-1">
                                 <div>
                                     <strong>ID No :</strong> 89012345 <br>
-                                    <strong>Applicant :</strong> আমিনুল ইসলাম <br>
+                                    <strong>Applicant Name :</strong> আমিনুল ইসলাম <br>
                                     <strong>Department :</strong> NOC (Land Use Approval Department) <br>
                                     <strong>Subject :</strong> প্রকল্পের জন্য জমি ব্যবহারের আবেদন <br>
                                 </div>
@@ -859,11 +856,13 @@
                             <div class="text-end mt-2">
                                 <strong>Date:</strong> ২০/০৩/২৫
                                 <button class="btn btn-info btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#formModal">
-                                    <i class="fas fa-paperclip"></i> ফরওয়ার্ড
+                                    <i class="fas fa-share"></i> ফরওয়ার্ড
                                 </button>
+                            <a href="officer-noc-reports-3.html">
                                 <button class="btn btn-primary btn-sm ms-2">
                                     <i class="fas fa-eye"></i> দেখুন
                                 </button>
+                            </a>
                             </div>
                         </div>
                     </td>
@@ -874,7 +873,7 @@
                             <div class="flex-grow-1">
                                 <div>
                                     <strong>ID No :</strong> 33456789 <br>
-                                    <strong>Applicant :</strong> রাহাত আলী <br>
+                                    <strong>Applicant Name :</strong> রাহাত আলী <br>
                                     <strong>Department :</strong> NOC (Land Use Approval Department) <br>
                                     <strong>Subject :</strong> জমি উন্নয়ন ও নির্মাণ কার্যক্রমের জন্য আবেদন <br>
                                 </div>
@@ -885,16 +884,16 @@
                                 <button class="btn btn-info btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#formModal">
                                     <i class="fas fa-paperclip"></i> ফরওয়ার্ড
                                 </button>
+                            <a href="officer-noc-reports-3.html">
                                 <button class="btn btn-primary btn-sm ms-2">
                                     <i class="fas fa-eye"></i> দেখুন
                                 </button>
+                            </a>
                             </div>
                         </div>
                     </td>
                 </tr>
 
-
-                   
                 </tbody>
             </table>
         </div>
@@ -985,7 +984,7 @@
 </div>
 
 
-        <!-- Bootstrap Modal -->
+        <!-- application Modal -->
         <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content form-pd">
@@ -997,20 +996,25 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="subject" class="form-label">বিষয়</label>
-                                <input type="text" class="form-control" id="subject" placeholder="বিষয় লিখুন">
+                                <label for="subject" class="form-label">জ্ঞাতার্থে</label>
+                                <input type="text" class="form-control" id="subject" placeholder="জ্ঞাতার্থে  লিখুন">
                             </div>
 
                             <div class="mb-3">
+                                <label for="subject" class="form-label">দৃষ্টি আকর্ষ</label>
+                                <input type="text" class="form-control" id="subject" placeholder=" লিখুন">
+                            </div>
+
+                            <!-- <div class="mb-3">
                                 <label for="priority" class="form-label">অগ্রাধিকার</label>
                                 <select class="form-select" id="priority">
                                     <option value="high">উচ্চ</option>
                                     <option value="medium">মাঝারি</option>
                                     <option value="low">নিম্ন</option>
                                 </select>
-                            </div>
+                            </div> -->
 
-                        <div class="mb-3">
+                        <!-- <div class="mb-3">
                             <label for="action" class="form-label">সিদ্ধান্ত দিন</label>
                             <select class="form-select" id="action">
                                 <option value="take-action">বিধি মোতাবেক ব্যবস্থা নিন</option>
@@ -1018,15 +1022,15 @@
                                 <option value="approve">অনুমোদন করুন</option>
                                 <option value="review">পুনঃমূল্যায়ন করুন</option>
                             </select>
-                        </div>
+                        </div> -->
 
-                            <div class="mb-3">
+                            <!-- <div class="mb-3">
                                 <label for="confidentiality" class="form-label">গোপনীয়তা</label>
                                 <select class="form-select" id="confidentiality">
                                     <option value="confidential">গোপনীয়</option>
                                     <option value="non-confidential">অগোপনীয়</option>
                                 </select>
-                            </div>
+                            </div> -->
 
                             <div class="text-end">
                                 <button type="submit" class="btn btn-primary">সাবমিট করুন</button>

@@ -747,139 +747,89 @@
         <!-- tanvir start table -->
 
         <section class="main-content app-content mt-4 mb-3">
-            <div class="container-fluid mt-5">
-
-                <!-- Topbar Section -->
-                <!-- <header class="bg-light py-4 text-center shadow rounded mt-4">
-                    <div class="topbar d-flex justify-content-between align-items-center">
-
-                        <div>
-                            <a href="officer-noc-reports.html">
-                                <button class="btn btn-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="tabler-icon tabler-icon-mail">
-                                        <path d="M3 8l9 6 9-6"></path>
-                                        <path d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2"></path>
-                                        <path d="M3 8v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8"></path>
-                                    </svg> ডাক ১৩
-                                </button>
-                            </a>
-                            <a href="officer-noc-reports-2.html">
-                                <button class="btn btn-secondary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="tabler-icon tabler-icon-file">
-                                        <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
-                                        <path d="M5 7V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7z"></path>
-                                    </svg> নথি ৬
-                                </button>
-                            </a>
-                        </div>
-
-                        <div class="search-box">
-                            <input type="text" class="form-control" placeholder="Search here.......">
-                        </div>
-                        <div>
-                            <a href="noc-reports.html">
-                                <button class="btn btn-light ms-2">
-                                    Profile
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </header> -->
-
-                <!-- Main Content Section -->
-                <section class="mt-3">
-                    <div class="d-flex">
-                        <div class="sidebar me-3">
-                            <input type="text" class="form-control mb-2" placeholder="🔍 নোটাংশ/অনুচ্ছেদ খুঁজুন" id="searchInput">
-                            <a href="#">📩 নতুন নোট (৮)</a>
-                            <a href="#">📤 সকল নোট (৫)</a>
-                            <a href="#">📜 প্রশাসনিক ভবন</a>
-                            <a href="#">📝 ২ আপনার ডে..</a>
-                        </div>
-                        <!-- Content -->
-                        <div class="container mt-4">
-                            <div class="card mb-3">
-                            <div>
-                                <p class="text-primary p-3 mb-0"> পূর্ববর্তীশাখা: কম্পিউটার সেল, মাধ্যমিক ও উচ্চ মাধ্যমিক শিক্ষা বোর্ড, রাজশাহী; নথি নম্বর:
-                                    ৩৭.১০.০০০০.০০০.৩০.০০১.২২;
-                                    বিষয়: প্রশাসনিক ভবনের ৫ম তলায় ও ৬ষ্ঠ তলায় নেটওয়ার্ক সংযোগ প্রদান</p>
-                            </div>
-                                <div class="d-flex justify-content-between border p-3">
-                                   
-                                    <div class="col-6 ">
-                                        <button class="btn btn-light w-100 text-start me-3">📜 নোটাংশ</button>
-                                    </div>
-                                    <div class="col-6">
-                                        <button class="btn btn-light w-100 text-start me-3">✉️ পত্রাংশ</button>
-                                         <!-- <input type="text" class="form-control w-100 me-3" placeholder="🔍পত্রাংশ অনুসন্ধান করুন"> -->
+            <div class="d-flex container-fluid mt-5">
+                <div class="container mt-4">
+                    <div class="card mb-3">
+                        <div class="d-flex flex-column border mb-3">
+                            <div class="d-flex justify-content-between p-3">
+                                <!-- Left Side Content -->
+                                <div class="d-flex flex-column align-items-start w-75 p-3 mb-3"
+                                    style="border-right: 1px solid #ddd;">
+                                    <!-- Application Information Section -->
+                                    <div class="mb-3 w-100">
+                                        <h5 class="fw-bold text-primary mb-3">আবেদনকারীর তথ্য</h5>
+                                        <div class="card p-3 shadow-sm">
+                                            <div class="row mb-3">
+                                                <div class="col-6">
+                                                    <p><strong>আবেদন নাম্বার:</strong> 56789</p>
+                                                    <p><strong>আবেদনকারীর নাম:</strong> রফিকুল ইসলাম</p>
+                                                    <p><strong>পিতা / স্বামীর নাম:</strong> আব্দুল মালেক</p>
+                                                    <p><strong>মাতার নাম:</strong> রোকেয়া বেগম</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p><strong>জাতীয় পরিচয়পত্র নম্বর:</strong> 1234567890</p>
+                                                    <p><strong>আবেদনের ধরন:</strong> ব্যক্তিগত</p>
+                                                    <p><strong>জমার তারিখ:</strong> ১৫/০২/২০২৫</p>
+                                                    <p><strong>স্ট্যাটাস:</strong> <span
+                                                            class="badge bg-warning text-dark">Processing</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-6">
+                                                    <p><strong>ঠিকানা:</strong> ঢাকা, বাংলাদেশ</p>
+                                                    <p><strong>মোবাইল নম্বর:</strong> ০১৭XXXXXXXX</p>
+                                                    <p><strong>জমির বর্তমান ব্যবহার:</strong> আবাসিক</p>
+                                                    <p><strong>প্রস্তাবিত ভূমি ব্যবহার:</strong> বাণিজ্যিক</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p><strong>জমির পরিমাণ:</strong> ৫০০ বর্গমিটার</p>
+                                                    <p><strong>খতিয়ান নম্বর:</strong> ১২৩৪৫৬</p>
+                                                    <p><strong>দাগ নম্বর:</strong> ৭৮৯০</p>
+                                                    <p><strong>আবেদনের ফি:</strong> ২০০০ টাকা</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="d-flex flex-column border mb-3">
-                                    <div class="d-flex justify-content-between p-3">
-                                        <!-- Left side content -->
-                                        <div class="d-flex flex-column align-items-start w-100 p-3 mb-3">
-                                            <p class="card-text mb-1"><button class="btn btn-light text-primary">🗒️নোট:
-                                                    3 ↗️ ✖️</button> কার্যকরী পরিষদ
-                                            </p>
-                                            <p class="card-text mb-1"><strong>বিষয়:</strong> প্রশাসনিক ভবনের ৫ম ও ৬ষ্ঠ তলায় নেটওয়ার্ক সংযোগ প্রদান <strong
-                                                    class="text-primary">৮/৯/২২ ২:৩৩ অপরাহ্ন</strong> 🔜</p>
-                                            <p><button class="me-2">📚 নতুন অনুচ্ছেদ</button>
-                                                <button class="me-2">✉ প্রেরণ</button>
-                                            </p>
-                                            <p class="card-text mb-1"><strong>🖊️ অনুচ্ছেদ ১.০ (মো: রুহুল আমিন ৪/৯/২২৩:৩৫ অপরাহ্ন)</strong></p><br>
-                                            <div><p class="card-text mb-1 bg-light"><strong> অনুচ্ছেদ ১.০ (৪/৯/22 3:৩৫ অপরাহ্ন)</strong></p></div> <br>
-
-                                            <p class="card-text mb-1"><strong>রাজশাহী শিক্ষা বোর্ডের জেএসসি, এসএসসি, এইচএসসি পরীক্ষার ফলাফল প্রক্রিয়াকরনের জন্য অত্র বোর্ডের কম্পিউটার শাখায় এডিটিং
-                                            রুমে নেটওয়ার্ক এবং স্ক্যানিং রুমে নেটওয়ার্কিং পোর্ট সংযোগ দেওয়ার জন্য নথি উপস্থাপন করা হ'ল।</strong></p>
-                                          
-                                            <!-- <textarea class="form-control mt-3" rows="5"
-                                                placeholder="এখানে আপনার টেক্সট লিখুন..."></textarea> -->
-                                        </div>
-
-                                        <!-- Right side content -->
-                                        <div class="d-flex flex-column align-items-start w-100 p-3">
-                                            <div class="d-flex align-items-center mb-1">
-                                                <p class="card-text mb-1"><button class="text-primary">ন‌থি: </button>
-                                                    <button class="btn btn-light"> সকল পত্র <strong
-                                                            class="text-success"> 5</strong></button>
-                                                </p>
-                                                <button class="btn btn-light btn-sm rounded-pill shadow-sm mx-2">বিবেচ্য
-                                                    পত্র <strong class="text-success"> 3</strong> টি</button>
-                                            </div>
-                                            <p class="card-text mb-1"><button class=" text-primary bg-red">নোট:
-                                                </button> বিবেচ্য পত্র <strong class="text-success"> 1</strong> টি
-                                            </p>
-                                            <p class="card-text mb-0">নোটের সর্বশেষ 📅 তারিখঃ ২৬/১১/২৪ ৪:৩৪ অপরাহ্ন</p>
-                                            <br>
-                                            <p class="card-text mb-0"><strong>বিষয়:</strong> ভূমি ব্যবস্থাপনা ও প্লট
-                                                সংরক্ষণ সিস্টেম |</p>
-                                            <!-- <textarea class="form-control mt-3" rows="5" placeholder="এখানে আপনার টেক্সট লিখুন..."></textarea> -->
-
-
-                                            <div class="container mt-4">
-                                                <div class="text-center">
-                                                    <h2 class="mb-3">PDF Viewer</h2>
-                                                    <p>নিচে PDF ফাইল লোড হবে:</p>
-                                                </div>
-                                            
-                                                <div class="pdf-container">
-                                                    <iframe src="../assets/images/img/1.pdf"></iframe>
-                                                </div>
-                                            </div>
-
-                                        </div>
+        
+                                <!-- Right Side Content -->
+                                <div class="d-flex flex-column align-items-start w-25 p-3">
+                                    <div class="col-md-12 border-start mb-3">
+                                        <h6 class="fw-bold text-center text-primary">সংযুক্ত ফাইলসমূহ</h6>
+                                        <a href="../assets/images/img/1a.pdf" target="fileViewerFrame"
+                                            class="btn btn-outline-primary text-success w-100  mb-2">
+                                            প্রস্তাবিত জমির (PDF)
+                                        </a>
+                                        <a href="../assets/images/img/a7.jpg" target="fileViewerFrame"
+                                            class="btn btn-outline-primary text-success w-100 mb-2">
+                                            জাতীয় পরিচয়পত্র (PDF)
+                                        </a>
+                                        <a href="../assets/images/img/a2.jpg" target="fileViewerFrame"
+                                            class="btn btn-outline-primary text-success w-100 mb-2">
+                                            জমির দলিল (JPG)
+                                        </a>
+                                        <a href="../assets/images/img/a3.png" target="fileViewerFrame"
+                                            class="btn btn-outline-primary text-success w-100 mb-2">
+                                            প্রস্তাবিত জমির ছবি (PNG)
+                                        </a>
+                                        <a href="../assets/images/img/a4.zip" target="fileViewerFrame"
+                                            class="btn btn-outline-primary text-success w-100 mb-2">
+                                            সাইট প্ল্যান (ZIP)
+                                        </a>
+                                        <a href="../assets/images/img/a5.png" target="fileViewerFrame"
+                                            class="btn btn-outline-primary text-success w-100 mb-2">
+                                            প্রজেক্ট প্রস্তাব (DOCX)
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </section>
+
+
 
         <!-- end user table form tanvir -->
 

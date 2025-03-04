@@ -747,155 +747,244 @@
         <!-- tanvir start table -->
 
         <section class="main-content app-content mt-4 mb-3">
-            <div class="d-flex container-fluid mt-5">
-                <div class="container mt-4">
-                    <div class="card mb-3">
-                        <div class="d-flex flex-column border mb-3">
-                            <div class="d-flex justify-content-between p-3">
-                                <!-- Left Side Content -->
-                                <div class="d-flex flex-column align-items-start w-75 p-3 mb-3"
-                                    style="border-right: 1px solid #ddd;">
-                                    <div class="mb-3 w-100">
-                                        <h5 class="fw-bold text-primary mb-3">আবেদনকারীর তথ্য</h5>
-                                        <div class="card p-3 shadow-sm">
-                                            <div class="row mb-3">
-                                                <div class="col-6">
-                                                    <p><strong>আবেদন নাম্বার:</strong> 56789</p>
-                                                    <p><strong>আবেদনকারীর নাম:</strong> রফিকুল ইসলাম</p>
-                                                    <p><strong>পিতা / স্বামীর নাম:</strong> আব্দুল মালেক</p>
-                                                    <p><strong>মাতার নাম:</strong> রোকেয়া বেগম</p>
-                                                    <p><strong>জন্ম তারিখ:</strong> ১০/০৫/১৯৮০</p>
-                                                    <p><strong>লিঙ্গ:</strong> পুরুষ</p>
-                                                </div>
-                                                <div class="col-6">
-                                                    <p><strong>জাতীয় পরিচয়পত্র নম্বর:</strong> 1234567890</p>
-                                                    <p><strong>আবেদনের ধরন:</strong> ব্যক্তিগত</p>
-                                                    <p><strong>জমার তারিখ:</strong> ১৫/০২/২০২৫</p>
-                                                    <!-- <p><strong>স্ট্যাটাস:</strong> <span class="badge bg-warning text-dark">Processing</span></p> -->
-                                                    <p><strong>অনুমোদিত প্রতিনিধির নাম:</strong> সেলিম রেজা</p>
-                                                    <p><strong>মেল/ফোন নম্বর:</strong> ০১৭XXXXXXXX</p>
-                                                    <p><strong>ইমেইল:</strong> rafikul@example.com</p>
-                                                </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-6">
-                                                    <p><strong>ঠিকানা:</strong> ঢাকা, বাংলাদেশ</p>
-                                                    <p><strong>মোবাইল নম্বর:</strong> ০১৭XXXXXXXX</p>
-                                                    <p><strong>জমির বর্তমান ব্যবহার:</strong> আবাসিক</p>
-                                                    <p><strong>প্রস্তাবিত ভূমি ব্যবহার:</strong> বাণিজ্যিক</p>
-                                                </div>
-                                                <div class="col-6">
-                                                    <p><strong>জমির পরিমাণ:</strong> ৫০০ বর্গমিটার</p>
-                                                    <p><strong>খতিয়ান নম্বর:</strong> ১২৩৪৫৬</p>
-                                                    <p><strong>দাগ নম্বর:</strong> ৭৮৯০</p>
-                                                    <p><strong>আবেদনের ফি:</strong> ২০০০ টাকা</p>
+            <div class="container-fluid mt-5">
+                <!-- Topbar Section -->
+            <header class="bg-white py-3 shadow-sm rounded mt-4 px-4">
+                <div class="topbar d-flex justify-content-between align-items-center">
+            
+                    <!-- Application List Button -->
+                    <div>
+                        <a href="officer-noc-reports.html">
+                            <button class="btn btn-primary d-flex align-items-center gap-2 px-3 py-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="tabler-icon tabler-icon-mail">
+                                    <path d="M3 8l9 6 9-6"></path>
+                                    <path d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2"></path>
+                                    <path d="M3 8v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8"></path>
+                                </svg>
+                                <span>Application List</span>
+                            </button>
+                        </a>
+                    </div>
+                    <!-- Search Box -->
+                    <div class="search-box">
+                        <input type="text" class="form-control rounded-pill px-3 shadow-sm" placeholder="🔍 Search here by applicant name.......">
+                    </div>
+                    <!-- Profile Button -->
+                    <div>
+                        <a href="noc-reports.html">
+                            <button class="btn btn-outline-primary px-4 py-2 shadow-sm">
+                                Profile
+                            </button>
+                        </a>
+                    </div>
+            
+                </div>
+            </header>
 
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="row mb-3">
-                                            <div class="d-flex justify-content-end">
-                                                <button class="btn btn-info btn-sm" data-bs-toggle="modal"
-                                                    data-bs-target="#formModal">
-                                                    <i class="fas fa-share"></i> ফরওয়ার্ড
-                                                </button>
-                                                <!-- <button class="btn btn-secondary btn-sm" id="addNoteBtn"
-                                                    data-bs-toggle="modal" data-bs-target="#noteModal">
-                                                    <i class="fas fa-sticky-note"></i> নোট যোগ করুন
-                                                </button> -->
-                                            </div>
-                                        </div>
-                                    </div>
+    <section class="mt-4">
+        <div class="container mt-3">
+            <table class="table table-bordered table-striped">
+                <tbody class="ps-4">
+                    <tr class="border">
+                        <td colspan="4" class="p-3 bg-light rounded">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1">
+                                    <strong>ID No :</strong> 33456342 <br>
+                                    <strong>Applicant Name:</strong> ফারহান হোসেন |<br>
+                                    <strong>Subject:</strong> সরকারি সফটওয়্যার ব্যবস্থাপনা <br>
+                                    <strong>Decision:</strong> পরবর্তী মিটিংয়ে আলোচনা করুন<br>
+                                    <strong>Sender:</strong> শামীম আহমেদ |
+                                    <strong>📩 Primary Recipient:</strong> আহমেদ <br>
                                 </div>
+                                <div class="text-end mt-2">
+                                    <strong>Date:</strong> ২৫/১২/২৫
+                                    <button class="btn btn-info btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#formModal">
+                                        <i class="fas fa-paperclip"></i> ফরওয়ার্ড
+                                    </button>
+                                <a href="officer-noc-reports-5.html">
+                                    <button class="btn btn-primary btn-sm ms-2">
+                                        <i class="fas fa-eye"></i> দেখুন
+                                    </button>
+                                </a>
 
-                                <!-- Right Side Content -->
-                                <div class="d-flex flex-column align-items-start w-25 p-3">
-                                    <div class="col-md-12 border-start mb-3">
-                                        <h6 class="fw-bold text-left text-primary ps-2">সংযুক্ত ফাইলসমূহ</h6>
-                                        <a href="../assets/images/img/1a.pdf" data-bs-toggle="modal" data-bs-target="#fileViewerModal"
-                                            class="btn btn-outline-primary text-success w-100 mb-2 text-start">
-                                            প্রস্তাবিত জমির (PDF) <i class="fas fa-file-pdf"></i>
-                                        </a>
-                                    
-                                        <!-- NID (WebP) -->
-                                        <a href="../assets/images/img/a7.jpg" data-bs-toggle="modal" data-bs-target="#fileViewerModal"
-                                            class="btn btn-outline-primary text-success w-100 mb-2 text-start">
-                                            জাতীয় পরিচয়পত্র (WEBP) <i class="fas fa-id-card"></i>
-                                        </a>
-                                    
-                                        <!-- জমির দলিল (JPG) -->
-                                        <a href="../assets/images/img/a2.jpg" data-bs-toggle="modal" data-bs-target="#fileViewerModal"
-                                            class="btn btn-outline-primary text-success w-100 mb-2 text-start">
-                                            জমির দলিল (JPG) <i class="fas fa-file-image"></i>
-                                        </a>
-                                    
-                                        <!-- প্রস্তাবিত জমির ছবি (PNG) -->
-                                        <a href="../assets/images/img/a3.png" data-bs-toggle="modal" data-bs-target="#fileViewerModal"
-                                            class="btn btn-outline-primary text-success w-100 mb-2 text-start">
-                                            প্রস্তাবিত জমির ছবি (PNG) <i class="fas fa-image"></i>
-                                        </a>
-                                    
-                                        <!-- সাইট প্ল্যান (ZIP) -->
-                                        <a href="../assets/images/img/a4.zip" data-bs-toggle="modal" data-bs-target="#fileViewerModal"
-                                            class="btn btn-outline-primary text-success w-100 mb-2 text-start">
-                                            সাইট প্ল্যান (ZIP) <i class="fas fa-file-archive"></i>
-                                        </a>
-                                    
-                                        <!-- প্রজেক্ট প্রস্তাব (DOCX) -->
-                                        <a href="../assets/images/img/a5.png" data-bs-toggle="modal" data-bs-target="#fileViewerModal"
-                                            class="btn btn-outline-primary text-success w-100 mb-2 text-start">
-                                            প্রজেক্ট প্রস্তাব (DOCX) <i class="fas fa-file-word"></i>
-                                        </a>
-                                    
-                                        <!-- অফিসারের নোট -->
-                                        <div class="border rounded p-3 mt-3 bg-light">
-                                            <h6 class="fw-bold text-left text-danger">অফিসারের নোট</h6>
-                                            <p class="text-muted"><strong>নোট (01):</strong> জমির বৈধ কাগজপত্র যাচাই করা হয়েছে, তবে মূল দলিলের কপি প্রয়োজন।
-                                            </p>
-                                            <p class="text-muted"><strong>নোট (02):</strong> আবেদনকারীর জাতীয় পরিচয়পত্রের ব্যাকসাইড কপি সংযুক্ত করা হয়নি।
-                                            </p>
-                                            <p class="text-muted"><strong>নোট (03):</strong> জমির ব্যবহার পরিকল্পনা বিস্তারিতভাবে উপস্থাপন করা উচিত।</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <!-- Modal for File Viewer -->
-                                <div class="modal fade" id="fileViewerModal" tabindex="-1"
-                                    aria-labelledby="fileViewerModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content rounded-4 shadow-lg">
-                                            <div class="modal-header border-bottom-0">
-                                                <h5 class="modal-title text-primary" id="fileViewerModalLabel">ফাইল
-                                                    ভিউয়ার</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="text-center">
-                                                    <h2 class="mb-3 text-secondary">নির্বাচিত ফাইল দেখুন</h2>
-                                                </div>
-                                                <div class="pdf-container">
-                                                    <!-- Static iframe for file preview -->
-                                                    <iframe id="fileViewerIframe" width="100%" height="450px"
-                                                        class="border rounded"></iframe>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer border-top-0">
-                                                <button type="button" class="btn btn-outline-secondary"
-                                                    data-bs-dismiss="modal">বন্ধ করুন</button>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
+                        </td>
+                    </tr>
+
+                <tr class="border">
+                    <td colspan="4" class="p-3 bg-light rounded">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <div>
+                                    <strong>ID No :</strong> 56789123 <br>
+                                    <strong>Applicant Name :</strong> সোহেল রানা <br>
+                                    <strong>Department :</strong> NOC (Land Use Approval Department) <br>
+                                    <strong>Subject :</strong> জমি ব্যবহার অনুমোদন প্রক্রিয়া সংক্রান্ত <br>
+                                </div>
+                            </div>
+                            <!-- Right aligned section for Date and buttons -->
+                            <div class="text-end mt-2">
+                                <strong>Date:</strong> ১৫/০৩/২৫
+                                <button class="btn btn-info btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#formModal">
+                                    <i class="fas fa-paperclip"></i> ফরওয়ার্ড
+                                </button>
+                            <a href="officer-noc-reports-5.html">
+                                <button class="btn btn-primary btn-sm ms-2">
+                                    <i class="fas fa-eye"></i> দেখুন
+                                </button>
+                            </a>
+                            </div>
                         </div>
+                    </td>
+                </tr>
+                <tr class="border">
+                    <td colspan="4" class="p-3 bg-light rounded">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <div>
+                                    <strong>ID No :</strong> 89012345 <br>
+                                    <strong>Applicant Name :</strong> আমিনুল ইসলাম <br>
+                                    <strong>Department :</strong> NOC (Land Use Approval Department) <br>
+                                    <strong>Subject :</strong> প্রকল্পের জন্য জমি ব্যবহারের আবেদন <br>
+                                </div>
+                            </div>
+                            <!-- Right aligned section for Date and buttons -->
+                            <div class="text-end mt-2">
+                                <strong>Date:</strong> ২০/০৩/২৫
+                                <button class="btn btn-info btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#formModal">
+                                    <i class="fas fa-share"></i> ফরওয়ার্ড
+                                </button>
+                            <a href="officer-noc-reports-5.html">
+                                <button class="btn btn-primary btn-sm ms-2">
+                                    <i class="fas fa-eye"></i> দেখুন
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border">
+                    <td colspan="4" class="p-3 bg-light rounded">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <div>
+                                    <strong>ID No :</strong> 33456789 <br>
+                                    <strong>Applicant Name :</strong> রাহাত আলী <br>
+                                    <strong>Department :</strong> NOC (Land Use Approval Department) <br>
+                                    <strong>Subject :</strong> জমি উন্নয়ন ও নির্মাণ কার্যক্রমের জন্য আবেদন <br>
+                                </div>
+                            </div>
+                            <!-- Right aligned section for Date and buttons -->
+                            <div class="text-end mt-2">
+                                <strong>Date:</strong> ২৫/০৩/২৫
+                                <button class="btn btn-info btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#formModal">
+                                    <i class="fas fa-paperclip"></i> ফরওয়ার্ড
+                                </button>
+                            <a href="officer-noc-reports-5.html">
+                                <button class="btn btn-primary btn-sm ms-2">
+                                    <i class="fas fa-eye"></i> দেখুন
+                                </button>
+                            </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+
+
+<!-- Modal Structure -->
+<div class="modal fade" id="attachmentModal" tabindex="-1" aria-labelledby="attachmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="attachmentModalLabel">NOC আবেদন বিস্তারিত</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Left Side: Application Details -->
+                    <div class="col-md-6">
+                        <h6 class="fw-bold">আবেদনকারীর তথ্য</h6>
+                        <p><strong>আবেদন নাম্বার:</strong> 56789</p>
+                        <p><strong>আবেদনকারীর নাম:</strong> রফিকুল ইসলাম</p>
+                        <p><strong>পিতা / স্বামীর নাম:</strong> আব্দুল মালেক</p>
+                        <p><strong>মাতার নাম:</strong> রোকেয়া বেগম</p>
+                        <p><strong>জাতীয় পরিচয়পত্র নম্বর:</strong> 1234567890</p>
+                        <p><strong>আবেদনের ধরন:</strong> ব্যক্তিগত</p>
+                        <p><strong>জমার তারিখ:</strong> ১৫/০২/২০২৫</p>
+                        <p><strong>স্ট্যাটাস:</strong> <span class="badge bg-warning text-dark">Processing</span></p>
+                        <p><strong>ঠিকানা:</strong> ঢাকা, বাংলাদেশ</p>
+                        <p><strong>মোবাইল নম্বর:</strong> ০১৭XXXXXXXX</p>
+                        <p><strong>জমির পরিমাণ:</strong> ৫০০ বর্গমিটার</p>
+                        <p><strong>খতিয়ান নম্বর:</strong> ১২৩৪৫৬</p>
+                        <p><strong>দাগ নম্বর:</strong> ৭৮৯০</p>
+                        <p><strong>জমির বর্তমান ব্যবহার:</strong> আবাসিক</p>
+                        <p><strong>প্রস্তাবিত ভূমি ব্যবহার:</strong> বাণিজ্যিক</p>
+                    </div>
+
+                    <!-- Right Side: Attachments & Viewer -->
+                    <div class="col-md-6 border-start">
+                        <h6 class="fw-bold">সংযুক্ত ফাইলসমূহ</h6>
+                        <a href="../assets/images/img/1.pdf" target="fileViewerFrame"
+                            class="btn btn-outline-primary w-100 mb-2">জাতীয় পরিচয়পত্র (PDF)</a>
+                        <a href="../assets/images/img/land-deed.jpg" target="fileViewerFrame"
+                            class="btn btn-outline-primary w-100 mb-2">জমির দলিল (JPG)</a>
+                        <a href="../assets/images/img/land-photo.png" target="fileViewerFrame"
+                            class="btn btn-outline-primary w-100 mb-2">প্রস্তাবিত জমির ছবি (PNG)</a>
+                    </div>
+                </div>
+
+                <!-- File Viewer Section -->
+                <div class="container mt-4">
+                    <div class="text-center">
+                        <h2 class="mb-3">File Viewer</h2>
+                        <p>নিচে নির্বাচিত ফাইল লোড হবে:</p>
+                    </div>
+                    <div class="pdf-container">
+                        <iframe name="fileViewerFrame" width="100%" height="400px"></iframe>
                     </div>
                 </div>
             </div>
-        </section>
 
+            <div class="modal-footer d-flex flex-column align-items-start">
+                <h6 class="fw-bold w-100">আবেদন ফরোয়ার্ড করুন</h6>
+
+                <div class="w-100 mb-2">
+                    <select class="form-select" required>
+                        <option selected>নির্বাচন করুন</option>
+                        <option value="1">উচ্চতর কর্তৃপক্ষ - মোঃ হাফিজুর রহমান</option>
+                        <option value="2">উচ্চতর কর্তৃপক্ষ - শফিকুল ইসলাম</option>
+                        <option value="3">স্থানীয় প্রশাসন - রিয়াজ উদ্দিন</option>
+                        <option value="4">স্থানীয় প্রশাসন - তানভীর আহমেদ</option>
+                        <option value="5">অন্যান্য বিভাগ - সুমন চৌধুরী</option>
+                        <option value="6">অন্যান্য বিভাগ - মাহমুদ হাসান</option>
+                    </select>
+                </div>
+                <div class="w-100 mb-2">
+                    <textarea class="form-control" placeholder="নোট লিখুন (ঐচ্ছিক)" rows="2"></textarea>
+                </div>
+                <div class="w-100 mb-2">
+                    <input type="file" class="form-control" accept=".pdf,.jpg,.png">
+                </div>
+                <button type="button" class="btn btn-success w-100">ফরোয়ার্ড করুন</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- application Modal -->
         <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content form-pd">
@@ -906,15 +995,43 @@
                                 <input type="text" class="form-control" id="recipient" placeholder="প্রাপকের নাম লিখুন">
                             </div>
 
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">জ্ঞাতার্থে</label>
-                            <input type="text" class="form-control" id="subject" placeholder="জ্ঞাতার্থে  লিখুন">
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">দৃষ্টি আকর্ষ</label>
-                            <input type="text" class="form-control" id="subject" placeholder=" লিখুন">
-                        </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">জ্ঞাতার্থে</label>
+                                <input type="text" class="form-control" id="subject" placeholder="জ্ঞাতার্থে  লিখুন">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">দৃষ্টি আকর্ষ</label>
+                                <input type="text" class="form-control" id="subject" placeholder=" লিখুন">
+                            </div>
+
+                            <!-- <div class="mb-3">
+                                <label for="priority" class="form-label">অগ্রাধিকার</label>
+                                <select class="form-select" id="priority">
+                                    <option value="high">উচ্চ</option>
+                                    <option value="medium">মাঝারি</option>
+                                    <option value="low">নিম্ন</option>
+                                </select>
+                            </div> -->
+
+                        <!-- <div class="mb-3">
+                            <label for="action" class="form-label">সিদ্ধান্ত দিন</label>
+                            <select class="form-select" id="action">
+                                <option value="take-action">বিধি মোতাবেক ব্যবস্থা নিন</option>
+                                <option value="no-action">সিদ্ধান্ত নিজে লিখুন</option>
+                                <option value="approve">অনুমোদন করুন</option>
+                                <option value="review">পুনঃমূল্যায়ন করুন</option>
+                            </select>
+                        </div> -->
+
+                            <!-- <div class="mb-3">
+                                <label for="confidentiality" class="form-label">গোপনীয়তা</label>
+                                <select class="form-select" id="confidentiality">
+                                    <option value="confidential">গোপনীয়</option>
+                                    <option value="non-confidential">অগোপনীয়</option>
+                                </select>
+                            </div> -->
+
                             <div class="text-end">
                                 <button type="submit" class="btn btn-primary">সাবমিট করুন</button>
                             </div>
@@ -923,63 +1040,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Note Modal with Rich Text Editor -->
-        <div class="modal fade" id="noteModal" tabindex="-1" aria-labelledby="noteModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content rounded-3 shadow-lg border-0">
-                    <div class="modal-header bg-primary text-white">
-                        <h5 class="modal-title" id="noteModalLabel"><i class="fa fa-sticky-note"></i> নোট যোগ করুন</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body p-4">
-                        <div class="editor-container">
-                            <div class="toolbar d-flex flex-wrap gap-2 p-2 bg-light rounded">
-                                <button class="btn btn-sm btn-outline-secondary" data-command="undo" title="Undo"><i
-                                        class="fa fa-undo"></i></button>
-                                <button class="btn btn-sm btn-outline-secondary" data-command="redo" title="Redo"><i
-                                        class="fa fa-redo"></i></button>
-                                <button class="btn btn-sm btn-outline-secondary" data-command="removeFormat"
-                                    title="Clear format"><i class="fa fa-eraser"></i></button>
-                                <button class="btn btn-sm btn-outline-dark" data-command="bold" title="Bold"><i
-                                        class="fa fa-bold"></i></button>
-                                <button class="btn btn-sm btn-outline-dark" data-command="italic" title="Italic"><i
-                                        class="fa fa-italic"></i></button>
-                                <button class="btn btn-sm btn-outline-dark" data-command="underline"
-                                    title="Underline"><i class="fa fa-underline"></i></button>
-                                <button class="btn btn-sm btn-outline-dark" data-command="strikeThrough"
-                                    title="Strikethrough"><i class="fa fa-strikethrough"></i></button>
-                                <button class="btn btn-sm btn-outline-dark" data-command="justifyLeft"
-                                    title="Left align"><i class="fa fa-align-left"></i></button>
-                                <button class="btn btn-sm btn-outline-dark" data-command="justifyCenter"
-                                    title="Center align"><i class="fa fa-align-center"></i></button>
-                                <button class="btn btn-sm btn-outline-dark" data-command="justifyRight"
-                                    title="Right align"><i class="fa fa-align-right"></i></button>
-                                <button class="btn btn-sm btn-outline-primary" data-command="insertUnorderedList"
-                                    title="Bullet list"><i class="fa fa-list-ul"></i></button>
-                                <button class="btn btn-sm btn-outline-primary" data-command="insertOrderedList"
-                                    title="Numbered list"><i class="fa fa-list-ol"></i></button>
-                                <button class="btn btn-sm btn-outline-info" data-command="createlink"
-                                    title="Insert link"><i class="fa fa-link"></i></button>
-                                <button class="btn btn-sm btn-outline-success" data-command="insertimage"
-                                    title="Insert image"><i class="fa fa-image"></i></button>
-                            </div>
-                            <div id="editor" class="editorAria border rounded p-3 mt-2" contenteditable="true"
-                                style="min-height: 200px;">
-                                <p class="text-secondary">আপনার নোট লিখুন এবং ফরম্যাট করুন...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer border-0 d-flex justify-content-between">
-                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">❌ বন্ধ
-                            করুন</button>
-                        <button type="button" class="btn btn-success" id="saveNoteBtn">✅ সংরক্ষণ করুন</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- end user table form tanvir -->
 
         <!-- END SEARCH-MODAL -->
@@ -996,8 +1056,7 @@
         </footer>
 
         <div id="responsive-overlay"></div>
-        <!-- tanvir add 1 script below -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
         <!-- POPPER JS -->
         <script src="../assets/libs/%40popperjs/core/umd/popper.min.js"></script>
 

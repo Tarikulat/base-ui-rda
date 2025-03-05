@@ -875,9 +875,147 @@
 
         <!-- tanvir start table -->
 
+        <div class="main-content app-content">
+            <div class="container-fluid mt-5">
+                <div class="text-center mb-4">
+                    <h4 class="text-danger fw-bold">রাজশাহী উন্নয়ন কর্তৃপক্ষ</h4>
+                    <h5 class="text-primary">ভূমি ব্যবহারের ছাড়পত্রের জন্য আবেদনপত্র</h5>
+                    <h6 class="text-secondary">নথি নং: ২৫.80.0000.003</h6>
+                    <p class="text-muted">ফরম ক্রমিক নং: __________</p>
+                </div>
         
+                <h2 class="text-center mb-4 text-primary">ভূমি ব্যবহারের ছাড়পত্রের আবেদন</h2>
+        
+                <form>
+          
+                <div class="mb-3 row">
+                    <div class="col-md-5">
+                        <label class="form-label ps-3">১. আবেদনকারী/ আবেদনকারীগণের নাম *</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <label class="form-label ps-3">২. পিতা/ স্বামীর নাম *</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                
+                    <div class="col-md-3">
+                        <label class="form-label ps-3">(NID) *</label>
+                        <div class="input-group">
+                            <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="main-content app-content">
+        
+                <div class="mb-3 row">
+                    <div class="col-md-6">
+                        <label class="form-label ps-3">৩. ক) বর্তমান ঠিকানা * </label><span>(পত্র যোগাযোগের জন্য):</span>
+                        <input type="text" class="form-control" placeholder="হোল্ডিং নং  (প্রযোজ্য ক্ষেত্রে)" required>
+                        <input type="text" class="form-control mt-2" placeholder="গ্রাম/ মহল্লা" required>
+                        <input type="text" class="form-control mt-2" placeholder="ডাকঘর" required>
+                        <input type="text" class="form-control mt-2" placeholder="উপজেলা/ থানা" required>
+                        <input type="text" class="form-control mt-2" placeholder="জেলা" required>
+                        <input type="text" class="form-control mt-2" placeholder="মোবাইল নম্বর" required>
+                        <input type="text" class="form-control mt-2" placeholder="ই-মেইল আইডি" required>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <label class="form-label ps-3">খ) স্থায়ী ঠিকানা *</label>
+                        <input type="text" class="form-control" placeholder="হোল্ডিং নং (প্রযোজ্য ক্ষেত্রে)" required>
+                        <input type="text" class="form-control mt-2" placeholder="গ্রাম/ মহল্লা" required>
+                        <input type="text" class="form-control mt-2" placeholder="ডাকঘর" required>
+                        <input type="text" class="form-control mt-2" placeholder="উপজেলা/ থানা" required>
+                        <input type="text" class="form-control mt-2" placeholder="জেলা" required>
+                    </div>
+                </div>
+
+        
+      
+                <div class="row">
+                    <!-- Left Side: Land Details Section -->
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label ps-3">৪. যে জমির জন্য ছাড়পত্র পেতে ইচ্ছুক তার তফসীল</label>
+                            <input type="text" class="form-control mt-2" placeholder="(ক) মৌজা/ এলাকার নাম" required>
+                            <input type="text" class="form-control mt-2" placeholder="(খ) জে, এল, নং/ সেক্টর নং" required>
+                            <input type="text" class="form-control mt-2" placeholder="(গ) রাস্তার নাম/ নং (যদি থাকে)" required>
+                            <input type="text" class="form-control mt-2" placeholder="(ঘ) আর, এস, দাগ নং/ প্লট নং" required>
+                            <input type="text" class="form-control mt-2" placeholder="(ঙ) থানার নাম" required>
+                            <input type="text" class="form-control mt-2" placeholder="(চ) জেলার নাম" required>
+                            <input type="text" class="form-control mt-2" placeholder="(ছ) দাখিলকৃত খতিয়ানে উল্লিখিত জমির শ্রেণি"
+                                required>
+                            <input type="number" class="form-control mt-2" placeholder="(জ) জমির পরিমাণ:1:;; এবং-শতাংশ/ শতক" required>
+                        </div>
+                    </div>
+                
+                    <!-- Right Side: Land Use Section -->
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label ps-3">৫. আবেদনকৃত জমি বর্তমানে কি হিসেবে ব্যবহৃত হচ্ছে *</label>
+                            <select class="form-select" required>
+                                <option selected>নির্বাচন করুন</option>
+                                <option>আবাসিক</option>
+                                <option>কৃষি</option>
+                                <option>বাণিজ্যিক</option>
+                                <option>ডোবা/ পুকুর</option>
+                                <option>শিল্প</option>
+                                <option>ফাঁকা</option>
+                                <option>ধর্মীয়</option>
+                            </select>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label class="form-label ps-3">৬. আবেদনকৃত জমি ভবিষ্যতে কি হিসেবে ব্যবহৃত হবে *</label>
+                            <select class="form-select" required>
+                                <option selected>নির্বাচন করুন</option>
+                                <option>আবাসিক</option>
+                                <option>ব্যবসা ও বাণিজ্যিক</option>
+                                <option>মিশ্র</option>
+                                <option>শিল্প ও গুদাম</option>
+                                <option>শিক্ষা ও গবেষণা</option>
+                                <option>এ্যাসেম্বলি (সমাবেশ)</option>
+                                <option>কৃষি</option>
+                                <option>পাবলিক প্রশাসন</option>
+                                <option>পার্ক/ ওপেন স্পেস</option>
+                                <option>স্বাস্থ্য সেবা</option>
+                                <option>পাবলিক ইউটিলিটি</option>
+                                <option>সড়ক</option>
+                                <option>ইটভাটা</option>
+                                <option>জলাশয়</option>
+                                <option>ইনস্টিটিউশন</option>
+                                <option>অন্যান্য</option>
+                            </select>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label class="form-label ps-3">৭. আবেদনের সাথে সংযুক্ত ডকুমেন্টস *</label>
+                            <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
+                            <small class="form-text text-muted">মূল দলিল, খারিজ খতিয়ান, জাতীয় পরিচয়পত্র ইত্যাদি স্ক্যান করুন এবং আপলোড
+                                করুন।</small>
+                        </div>
+                    </div>
+                </div>
+
+        
+             
+                    <div class="mb-3">
+                        <label class="form-label ps-3">৮. পে-অর্ডার/ ব্যাংক ড্রাফট বিবরণ *</label>
+                        <input type="text" class="form-control" placeholder="পে-অর্ডার/ ব্যাংক ড্রাফট নং" required>
+                        <input type="text" class="form-control mt-2" placeholder="ব্যাংকের নাম" required>
+                        <input type="number" class="form-control mt-2" placeholder="টাকার পরিমাণ" required>
+                        <input type="text" class="form-control mt-2" placeholder="এ-চালান নং" required>
+                        <input type="text" class="form-control mt-2" placeholder="ব্যাংকের নাম" required>
+                    </div>
+        
+                  
+                    <button type="submit" class="btn btn-primary w-100">আবেদন জমা দিন</button>
+                </form>
+            </div>
+        </div>
+
+
+                <!-- <div class="main-content app-content">
                     <div class="container-fluid mt-5">
                         <div class="text-center mb-4">
                             <h4 class="text-danger fw-bold">রাজশাহী উন্নয়ন কর্তৃপক্ষ</h4>
@@ -1006,7 +1144,7 @@
                             <button type="submit" class="btn btn-primary w-100">আবেদন জমা দিন</button>
                         </form>
                     </div>
-                </div>
+                </div> -->
 
 
             <!-- <div class="main-content app-content">

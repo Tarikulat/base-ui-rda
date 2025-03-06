@@ -132,7 +132,9 @@
 
 /* start tanvir start*/
 
-
+.attach-pdf {
+  height: 550px;
+}
     .editor {
       position: relative;
       background-color: #fff;

@@ -131,7 +131,9 @@
 }
 
 /* start tanvir start*/
-
+.mrg {
+  margin: 0px !important;
+}
 .attach-pdf {
   height: 550px;
 }

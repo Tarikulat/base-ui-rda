@@ -881,22 +881,22 @@
                 <div class="text-center mb-4">
                     <h4 class="text-danger fw-bold">রাজশাহী উন্নয়ন কর্তৃপক্ষ</h4>
                     <h5 class="text-primary">ভূমি ব্যবহারের ছাড়পত্রের জন্য আবেদনপত্র</h5>
-                    <h6 class="text-secondary">নথি নং: ২৫.80.0000.003</h6>
-                    <p class="text-muted">ফরম ক্রমিক নং: __________</p>
                 </div>
 
-                <form>
+                <form class="mt-5">
                     <div class="mb-3 row">
                         <div class="col-md-6">
-                            <label class="form-label ps-3">১. আবেদনকারী/ আবেদনকারীগণের নাম *</label>
+                            <label class="form-label ps-3 d-flex align-items-center">
+                                ১. আবেদনকারী/ আবেদনকারীগণের নাম *
+                                <button type="button" class="btn btn-info ms-2"
+                                    style="font-size: 10px; padding: 2px 5px;">click +</button>
+                            </label>
                             <input type="text" class="form-control" required>
                         </div>
-
                         <div class="col-md-3">
                             <label class="form-label ps-3">২. পিতা/ স্বামীর নাম *</label>
                             <input type="text" class="form-control" required>
                         </div>
-
                         <div class="col-md-3">
                             <label class="form-label ps-3">(NID) *</label>
                             <div class="input-group">
@@ -929,10 +929,10 @@
                             <label class="form-label ps-3">খ) স্থায়ী ঠিকানা *</label>
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="same_address" onchange="
-                                permanent_holding.disabled = !this.checked;
-                                permanent_village.disabled = !this.checked;
-                                permanent_post.disabled = !this.checked;
-                                permanent_upazila.disabled = !this.checked;
+                                permanent_holding.disabled  = !this.checked;
+                                permanent_village.disabled  = !this.checked;
+                                permanent_post.disabled     = !this.checked;
+                                permanent_upazila.disabled  = !this.checked;
                                 permanent_district.disabled = !this.checked;
                             ">
                                 <label class="form-check-label" for="same_address">বর্তমান ঠিকানার অনুরূপ হলে চেক মার্কে
@@ -954,36 +954,52 @@
 
                     <div class="row">
                         <!-- Left Side: Land Details Section -->
+                        <label class="form-label ps-3">৪. যে জমির জন্য ছাড়পত্র পেতে ইচ্ছুক তার তফসীল</label>
+
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <label class="form-label ps-3">৪. যে জমির জন্য ছাড়পত্র পেতে ইচ্ছুক তার তফসীল</label>
                                 <div class="row">
-                                    <!-- Right Side -->
-                                    <!-- <div class="col-md-5"> -->
-                                    <input type="text" class="form-control mt-2" placeholder="(ক) মৌজা/ এলাকার নাম"
-                                        required>
-                                    <input type="text" class="form-control mt-2" placeholder="(খ) জে, এল, নং/ সেক্টর নং"
-                                        required>
-                                    <input type="text" class="form-control mt-2"
-                                        placeholder="(গ) রাস্তার নাম/ নং (যদি থাকে)" required>
-                                    <input type="text" class="form-control mt-2"
-                                        placeholder="(ঘ) আর, এস, দাগ নং/ প্লট নং" required>
-                                    <!-- </div> -->
-
-                                    <!-- Left Side -->
-                                    <!-- <div class="col-md-7"> -->
-                                    <input type="text" class="form-control mt-2" placeholder="(ঙ) থানার নাম" required>
-                                    <input type="text" class="form-control mt-2" placeholder="(চ) জেলার নাম" required>
-                                    <input type="text" class="form-control mt-2"
-                                        placeholder="(ছ) দাখিলকৃত খতিয়ানে উল্লিখিত জমির শ্রেণি" required>
-                                    <input type="number" class="form-control mt-2"
-                                        placeholder="(জ) জমির পরিমাণ: এবং-শতাংশ/ শতক" required>
-                                    <!-- </div> -->
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control mt-2" placeholder="(ক) মৌজা/ এলাকার নাম"
+                                            required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control mt-2"
+                                            placeholder="(খ) জে, এল, নং/ সেক্টর নং" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control mt-2"
+                                            placeholder="(গ) রাস্তার নাম/ নং (যদি থাকে)" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control mt-2"
+                                            placeholder="(ঘ) আর, এস, দাগ নং/ প্লট নং" required>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Right Side: Land Use Section -->
+                        <div class="col-md-6">
+                            <div>
+                                <input type="text" class="form-control mt-2" placeholder="(ঙ) থানার নাম" required>
+                            </div>
+                            <div>
+                                <input type="text" class="form-control mt-2" placeholder="(চ) জেলার নাম" required>
+                            </div>
+                            <div>
+                                <input type="text" class="form-control mt-2"
+                                    placeholder="(ছ) দাখিলকৃত খতিয়ানে উল্লিখিত জমির শ্রেণি" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="number" class="form-control mt-2"
+                                    placeholder="(জ) জমির পরিমাণ: এবং-শতাংশ/ শতক" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Left Side: Documents Section -->
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label class="form-label ps-3">৫. আবেদনকৃত জমি বর্তমানে কি হিসেবে ব্যবহৃত হচ্ছে
@@ -1023,101 +1039,123 @@
                                 </select>
                             </div>
 
-                            <div class="mb-3">
-                                <label class="form-label ps-3">৭. আবেদনের সাথে সংযুক্ত ডকুমেন্টস *</label>
+                            <div class="mb-2">
+                                <label class="form-label ps-3">৭. মূল দলিল/ সার্টিফাইড মূল দলিল এর স্ক্যান কপি *</label>
                                 <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
-                                <small class="form-text text-muted">
-                                    <ul>
-                                        <div class="row">
-                                            <!-- Right Side -->
-                                            <div class="col-md-6">
-                                                <li>মূল দলিল/ সার্টিফাইড মূল দলিল এর স্ক্যান কপি</li>
-                                                <li>মূল খারিজ খতিয়ান/ নামজারি খতিয়ান এর স্ক্যান কপি</li>
-                                                <li>মূল নামজারির ডুপ্লিকেট কার্বন রশিদ (DCR) এর স্ক্যান কপি</li>
-                                                <li>মূল জাতীয় পরিচয় পত্র (NID)/ জন্ম সনদের স্ক্যান কপি</li>
-                                                <li>মূল হাল খাজনা রশিদ এর স্ক্যান কপি |</li>
-                                            </div>
+                            </div>
 
-                                            <div class="col-md-6">
-                                                <li>মৌজা ম্যাপে আবেদিত দাগে জমির অবস্থান চিহ্নিতকরণ (A4 সাইজ -এ) এর
-                                                    স্ক্যান কপি</li>
-                                                <li>আবেদিত জমির অবস্থান নকশা (Location Map) / হাত নকশা এর স্ক্যান কপি
-                                                </li>
-                                                <li>প্রয়োজনে জমির মালিকানা সংক্রান্ত অথবা চাহিত অন্যান্য সকল তথ্যাদির
-                                                    মূল কপির স্ক্যান কপি</li>
-                                            </div>
-                                        </div>
-                                        <span class="text-danger" style="font-style: italic;">
-                                            ভূমি ব্যবহার ছাড়পত্রের জন্য আবেদিত জমির প্রয়োজনীয় মূল কাগজপত্র / দলিলাদি
-                                            Scan (স্ক্যান) করে আবশ্যিকভাবে PDF
-                                            ফরম্যাটে আবেদনের সাথে জমা প্রদান করতে হবে |
-                                        </span>
-                                    </ul>
-                                </small>
+                            <div class="mb-2">
+                                <label class="form-label ps-3">৮. মূল খারিজ খতিয়ান/ নামজারি খতিয়ান এর স্ক্যান কপি *</label>
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
+                            </div>
+
+                         
+                            <div class="mb-2">
+                                <label class="form-label ps-3">৯. মূল নামজারির ডুপ্লিকেট কার্বন রশিদ (DCR) এর স্ক্যান কপি
+                                    *</label>
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">আবেদন জমা দিন</button>
-                </form>
+
+                        <!-- Right Side: Documents Section -->
+                        <div class="col-md-6">
+                            <div class="mb-2">
+                                <label class="form-label ps-3">১০. মূল হাল খাজনা রশিদ এর স্ক্যান কপি *</label>
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label class="form-label ps-3">১১. মৌজা ম্যাপে আবেদিত দাগে জমির অবস্থান চিহ্নিতকরণ (A4 সাইজ
+                                    -এ) এর স্ক্যান কপি
+                                    *</label>
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label class="form-label ps-3">১২. আবেদিত জমির অবস্থান নকশা (Location Map) / হাত নকশা এর
+                                    স্ক্যান কপি *</label>
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
+                            </div>
+
+                            <div class="mb-2">
+                                <label class="form-label ps-3">১৩. প্রয়োজনে জমির মালিকানা সংক্রান্ত অথবা চাহিত অন্যান্য সকল
+                                    তথ্যাদির মূল কপির
+                                    স্ক্যান কপি *</label>
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <small class="form-text text-muted ">
+                        <span class="text-danger ps-2" style="font-style: italic;">
+                            ভূমি ব্যবহার ছাড়পত্রের জন্য আবেদিত জমির প্রয়োজনীয় মূল কাগজপত্র / দলিলাদি Scan
+                            (স্ক্যান) করে আবশ্যিকভাবে PDF ফরম্যাটে আবেদনের সাথে জমা প্রদান করতে হবে |
+                        </span>
+                    </small>
             </div>
+            <button type="submit" class="btn btn-primary w-100 mt-2">Next</button>
+            </form>
+        </div>]
+        
+    </div>
+
+    <!-- end user table form tanvir -->
+
+    <!-- END SEARCH-MODAL -->
+    <footer class="footer mt-auto py-3 bg-white text-center">
+        <div class="container">
+            <span class="text-muted"> All rights reserved ©<span id="year"></span> <a href="javascript:void(0);"
+                    class="text-dark fw-semibold"></a>rajIT Solutions
+                Ltd.<span class="">Design</span> & Developed
+                <a href="javascript:void(0);">
+                    <span class="fw-semibold text- text-decoration-underline"> by rajIT Team.</span>
+                </a>
+            </span>
         </div>
+    </footer>
 
-        <!-- end user table form tanvir -->
+    <div id="responsive-overlay"></div>
 
-        <!-- END SEARCH-MODAL -->
-        <footer class="footer mt-auto py-3 bg-white text-center">
-            <div class="container">
-                <span class="text-muted"> All rights reserved ©<span id="year"></span> <a href="javascript:void(0);"
-                        class="text-dark fw-semibold"></a>rajIT Solutions
-                    Ltd.<span class="">Design</span> & Developed
-                    <a href="javascript:void(0);">
-                        <span class="fw-semibold text- text-decoration-underline"> by rajIT Team.</span>
-                    </a>
-                </span>
-            </div>
-        </footer>
+    <!-- POPPER JS -->
+    <script src="../assets/libs/%40popperjs/core/umd/popper.min.js"></script>
 
-        <div id="responsive-overlay"></div>
+    <!-- BOOTSTRAP JS -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- POPPER JS -->
-        <script src="../assets/libs/%40popperjs/core/umd/popper.min.js"></script>
+    <!-- NODE WAVES JS -->
+    <script src="../assets/libs/node-waves/waves.min.js"></script>
 
-        <!-- BOOTSTRAP JS -->
-        <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- SIMPLEBAR JS -->
+    <script src="../assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="../assets/js/simplebar.js"></script>
 
-        <!-- NODE WAVES JS -->
-        <script src="../assets/libs/node-waves/waves.min.js"></script>
+    <!-- COLOR PICKER JS -->
+    <script src="../assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
 
-        <!-- SIMPLEBAR JS -->
-        <script src="../assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="../assets/js/simplebar.js"></script>
+    <!-- DEFAULTMENU JS -->
+    <script src="../assets/js/defaultmenu.js"></script>
 
-        <!-- COLOR PICKER JS -->
-        <script src="../assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
+    <!-- JSVECTOR MAPS JS -->
+    <script src="../assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+    <script src="../assets/libs/jsvectormap/maps/world-merc.js"></script>
 
-        <!-- DEFAULTMENU JS -->
-        <script src="../assets/js/defaultmenu.js"></script>
+    <!-- APEX CHARTS JS -->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
 
-        <!-- JSVECTOR MAPS JS -->
-        <script src="../assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
-        <script src="../assets/libs/jsvectormap/maps/world-merc.js"></script>
+    <!-- CHARTJS CHART JS -->
+    <script src="../assets/libs/chart.js/chart.min.js"></script>
 
-        <!-- APEX CHARTS JS -->
-        <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+    <!-- CRM-Dashboard -->
+    <script src="../assets/js/crm-dashboard.js"></script>
 
-        <!-- CHARTJS CHART JS -->
-        <script src="../assets/libs/chart.js/chart.min.js"></script>
+    <!-- STICKY JS -->
+    <script src="../assets/js/sticky.js"></script>
 
-        <!-- CRM-Dashboard -->
-        <script src="../assets/js/crm-dashboard.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="../assets/js/custom.js"></script>
 
-        <!-- STICKY JS -->
-        <script src="../assets/js/sticky.js"></script>
-
-        <!-- CUSTOM JS -->
-        <script src="../assets/js/custom.js"></script>
-
-        <!-- CUSTOM-SWITCHER JS -->
-        <script src="../assets/js/custom-switcher.js"></script>
+    <!-- CUSTOM-SWITCHER JS -->
+    <script src="../assets/js/custom-switcher.js"></script>
 </body>
 
 </html>

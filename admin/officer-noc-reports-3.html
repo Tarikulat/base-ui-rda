@@ -752,143 +752,289 @@
                     <div class="card mb-3">
                         <div class="d-flex flex-column border mb-3">
                             <div class="d-flex justify-content-between p-3">
+
                                 <!-- Left Side Content -->
                                 <div class="d-flex flex-column align-items-start w-75 p-3 mb-3"
                                     style="border-right: 1px solid #ddd;">
+
                                     <div class="mb-3 w-100">
-                                        <h5 class="fw-bold text-primary mb-3">আবেদনকারীর তথ্য</h5>
-                                        <div class="card p-3 shadow-sm">
-                                            <div class="row mb-3">
-                                                <div class="col-6">
-                                                    <p><strong>আবেদন নাম্বার:</strong> 56789</p>
-                                                    <p><strong>আবেদনকারীর নাম:</strong> রফিকুল ইসলাম</p>
-                                                    <p><strong>পিতা / স্বামীর নাম:</strong> আব্দুল মালেক</p>
-                                                    <p><strong>মাতার নাম:</strong> রোকেয়া বেগম</p>
-                                                    <p><strong>জন্ম তারিখ:</strong> ১০/০৫/১৯৮০</p>
-                                                    <p><strong>লিঙ্গ:</strong> পুরুষ</p>
-                                                </div>
-                                                <div class="col-6">
-                                                    <p><strong>জাতীয় পরিচয়পত্র নম্বর:</strong> 1234567890</p>
-                                                    <p><strong>আবেদনের ধরন:</strong> ব্যক্তিগত</p>
-                                                    <p><strong>জমার তারিখ:</strong> ১৫/০২/২০২৫</p>
-                                                    <!-- <p><strong>স্ট্যাটাস:</strong> <span class="badge bg-warning text-dark">Processing</span></p> -->
-                                                    <p><strong>অনুমোদিত প্রতিনিধির নাম:</strong> সেলিম রেজা</p>
-                                                    <p><strong>মেল/ফোন নম্বর:</strong> ০১৭XXXXXXXX</p>
-                                                    <p><strong>ইমেইল:</strong> rafikul@example.com</p>
+                                        <!-- <h5 class="fw-bold text-primary mb-3">আবেদনকারীর তথ্য</h5> -->
+                                        <!-- <p class="fw-bold text-white bg-success text-center p-2 rounded">আবেদনকারীর তথ্য
+                                            সমূহ</p> -->
+                                        <div class="text-center mb-0">
+                                            <h6 class="text-danger fw-bold">রাজশাহী উন্নয়ন কর্তৃপক্ষ</h6>
+                                            <p class="text-primary">ভূমি ব্যবহারের ছাড়পত্রের জন্য আবেদনকারীর তথ্য সমূহ</p>
+
+                                            <div class="row mb-2">
+                                                <div class="d-flex justify-content-end">
+                                                    <button class="btn btn-info btn-sm" data-bs-toggle="modal"
+                                                        data-bs-target="#formModal">
+                                                        <i class="fas fa-share"></i> ফরওয়ার্ড
+                                                    </button>
                                                 </div>
                                             </div>
-                                            <div class="row mb-3">
-                                                <div class="col-6">
-                                                    <p><strong>ঠিকানা:</strong> ঢাকা, বাংলাদেশ</p>
-                                                    <p><strong>মোবাইল নম্বর:</strong> ০১৭XXXXXXXX</p>
-                                                    <p><strong>জমির বর্তমান ব্যবহার:</strong> আবাসিক</p>
-                                                    <p><strong>প্রস্তাবিত ভূমি ব্যবহার:</strong> বাণিজ্যিক</p>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-md-12">
+                                                <div class="card shadow-sm">
+                                                    <div class="card-body p-0">
+                                                        <div class="table-responsive">
+                                                            <table
+                                                                class="table table-bordered table-striped table-hover p-0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th class="bg-light fw-bold">১. আবেদনকারীর নাম
+                                                                        </th>
+                                                                        <td>মোঃ সোহানুর রহমান</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="bg-light fw-bold">২. পিতা/ স্বামীর
+                                                                            নাম</th>
+                                                                        <td>মোঃ আব্দুল করিম</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="bg-light fw-bold">৩. ক) বর্তমান
+                                                                            ঠিকানা</th>
+                                                                        <td>
+                                                                            <strong>হোল্ডিং নং:</strong> ১০১<br>
+                                                                            <strong>গ্রাম/ মহল্লা:</strong> শাহ
+                                                                            মখদুম<br>
+                                                                            <strong>ডাকঘর:</strong> ৬২০০<br>
+                                                                            <strong>উপজেলা/ থানা:</strong> রাজপাড়া<br>
+                                                                            <strong>জেলা:</strong> রাজশাহী<br>
+                                                                            <strong>মোবাইল নম্বর:</strong>
+                                                                            ০১৭xxxxxxxx<br>
+                                                                            <strong>ই-মেইল:</strong> sohan@example.com
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="bg-light fw-bold"> খ) স্থায়ী ঠিকানা
+                                                                        </th>
+                                                                        <td>
+                                                                            <strong>হোল্ডিং নং:</strong> ১০১<br>
+                                                                            <strong>গ্রাম/ মহল্লা:</strong> শাহ
+                                                                            মখদুম<br>
+                                                                            <strong>ডাকঘর:</strong> ৬২০০<br>
+                                                                            <strong>উপজেলা/ থানা:</strong> রাজপাড়া<br>
+                                                                            <strong>জেলা:</strong> রাজশাহী
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col-6">
-                                                    <p><strong>জমির পরিমাণ:</strong> ৫০০ বর্গমিটার</p>
-                                                    <p><strong>খতিয়ান নম্বর:</strong> ১২৩৪৫৬</p>
-                                                    <p><strong>দাগ নম্বর:</strong> ৭৮৯০</p>
-                                                    <p><strong>আবেদনের ফি:</strong> ২০০০ টাকা</p>
+                                            </div>
+                                        </div>
+                                        <!-- জমির তথ্য -->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="fw-bold bg-light p-2 rounded text-start">৪. যে জমির জন্য
+                                                    ছাড়পত্র পেতে ইচ্ছুক তার তফসীল</p>
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped shadow-sm">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="bg-light">মৌজা/ এলাকার নাম</th>
+                                                                <td>বোয়ালিয়া</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">জে, এল, নং/ সেক্টর নং</th>
+                                                                <td>৪৫৬/২২</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">রাস্তার নাম/ নং</th>
+                                                                <td>পদ্মা গার্ডেন রোড</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">আর, এস, দাগ নং/ প্লট নং</th>
+                                                                <td>২০৩/৭৮</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">থানার নাম</th>
+                                                                <td>বোয়ালিয়া মডেল থানা</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">জেলার নাম</th>
+                                                                <td>রাজশাহী</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">দাখিলকৃত খতিয়ানে উল্লিখিত জমির
+                                                                    শ্রেণি</th>
+                                                                <td>আবাসিক জমি</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">জমির পরিমাণ</th>
+                                                                <td>৮ শতক</td>
+                                                            </tr>
 
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="row mb-3">
-                                            <div class="d-flex justify-content-end">
-                                                <button class="btn btn-info btn-sm" data-bs-toggle="modal"
-                                                    data-bs-target="#formModal">
-                                                    <i class="fas fa-share"></i> ফরওয়ার্ড
-                                                </button>
-                                                <!-- <button class="btn btn-secondary btn-sm" id="addNoteBtn"
-                                                    data-bs-toggle="modal" data-bs-target="#noteModal">
-                                                    <i class="fas fa-sticky-note"></i> নোট যোগ করুন
-                                                </button> -->
+                                        <div class="row mt-4">
+                                            <div class="col-md-12">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped shadow-sm">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="bg-light fw-bold">৫. আবেদনকৃত জমি বর্তমানে কি
+                                                                    হিসেবে ব্যবহৃত হচ্ছে *</th>
+                                                                <td>কৃষি জমি</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="row mt-4">
+                                            <div class="col-md-12">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped shadow-sm">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="bg-light fw-bold">৬. আবেদনকৃত জমি ভবিষ্যতে কি
+                                                                    হিসেবে ব্যবহৃত হবে *</th>
+                                                                <td>বাণিজ্যিক প্লট</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                       
                                     </div>
                                 </div>
 
                                 <!-- Right Side Content -->
+                                <!-- ফাইল সেকশন -->
                                 <div class="d-flex flex-column align-items-start w-25 p-3">
                                     <div class="col-md-12 border-start mb-3">
                                         <h6 class="fw-bold text-left text-primary ps-2">সংযুক্ত ফাইলসমূহ</h6>
-                                        <a href="../assets/images/img/1a.pdf" data-bs-toggle="modal" data-bs-target="#fileViewerModal"
-                                            class="btn btn-outline-primary text-success w-100 mb-2 text-start">
-                                            প্রস্তাবিত জমির (PDF) <i class="fas fa-file-pdf"></i>
-                                        </a>
-                                    
-                                        <!-- NID (WebP) -->
-                                        <a href="../assets/images/img/a7.jpg" data-bs-toggle="modal" data-bs-target="#fileViewerModal"
-                                            class="btn btn-outline-primary text-success w-100 mb-2 text-start">
-                                            জাতীয় পরিচয়পত্র (WEBP) <i class="fas fa-id-card"></i>
-                                        </a>
-                                    
-                                        <!-- জমির দলিল (JPG) -->
-                                        <a href="../assets/images/img/a2.jpg" data-bs-toggle="modal" data-bs-target="#fileViewerModal"
-                                            class="btn btn-outline-primary text-success w-100 mb-2 text-start">
-                                            জমির দলিল (JPG) <i class="fas fa-file-image"></i>
-                                        </a>
-                                    
-                                        <!-- প্রস্তাবিত জমির ছবি (PNG) -->
-                                        <a href="../assets/images/img/a3.png" data-bs-toggle="modal" data-bs-target="#fileViewerModal"
-                                            class="btn btn-outline-primary text-success w-100 mb-2 text-start">
-                                            প্রস্তাবিত জমির ছবি (PNG) <i class="fas fa-image"></i>
-                                        </a>
-                                    
-                                        <!-- সাইট প্ল্যান (ZIP) -->
-                                        <a href="../assets/images/img/a4.zip" data-bs-toggle="modal" data-bs-target="#fileViewerModal"
-                                            class="btn btn-outline-primary text-success w-100 mb-2 text-start">
-                                            সাইট প্ল্যান (ZIP) <i class="fas fa-file-archive"></i>
-                                        </a>
-                                    
-                                        <!-- প্রজেক্ট প্রস্তাব (DOCX) -->
-                                        <a href="../assets/images/img/a5.png" data-bs-toggle="modal" data-bs-target="#fileViewerModal"
-                                            class="btn btn-outline-primary text-success w-100 mb-2 text-start">
-                                            প্রজেক্ট প্রস্তাব (DOCX) <i class="fas fa-file-word"></i>
-                                        </a>
-                                    
-                                        <!-- অফিসারের নোট -->
-                                        <div class="border rounded p-3 mt-3 bg-light">
-                                            <h6 class="fw-bold text-left text-danger">অফিসারের নোট</h6>
-                                            <p class="text-muted"><strong>নোট (01):</strong> জমির বৈধ কাগজপত্র যাচাই করা হয়েছে, তবে মূল দলিলের কপি প্রয়োজন।
-                                            </p>
-                                            <p class="text-muted"><strong>নোট (02):</strong> আবেদনকারীর জাতীয় পরিচয়পত্রের ব্যাকসাইড কপি সংযুক্ত করা হয়নি।
-                                            </p>
-                                            <p class="text-muted"><strong>নোট (03):</strong> জমির ব্যবহার পরিকল্পনা বিস্তারিতভাবে উপস্থাপন করা উচিত।</p>
-                                        </div>
-                                    </div>
 
+                                        <!-- Modal Trigger for PDF -->
+                                        <button class="btn btn-outline-primary text-success w-100 mb-2 text-start"
+                                            data-bs-toggle="modal" data-bs-target="#pdfModal">
+                                           খাজনা রশিদ <i class="fas fa-file-pdf"></i>
+                                        </button>
+
+                                        <!-- Modal Trigger for Images -->
+                                        <button class="btn btn-outline-primary text-success w-100 mb-2 text-start"
+                                            data-bs-toggle="modal" data-bs-target="#imageModal1">
+                                            মূল দলিল<i class="fas fa-file-image"></i>
+                                        </button>
+                                        <button class="btn btn-outline-primary text-success w-100 mb-2 text-start"
+                                            data-bs-toggle="modal" data-bs-target="#imageModal2">
+                                            মূল খারিজ খতিয়ান <i class="fas fa-id-card"></i>
+                                        </button>
+                                        <button class="btn btn-outline-primary text-success w-100 mb-2 text-start"
+                                            data-bs-toggle="modal" data-bs-target="#imageModal3">
+                                            জমির অবস্থান নকশা <i class="fas fa-image"></i>
+                                        </button>
+                                        <button class="btn btn-outline-primary text-success w-100 mb-2 text-start"
+                                            data-bs-toggle="modal" data-bs-target="#imageModal4">
+                                            নামজারির কার্বন রশিদ <i class="fas fa-id-card"></i>
+                                        </button>
+                                    </div>
                                 </div>
 
-                                <!-- Modal for File Viewer -->
-                                <div class="modal fade" id="fileViewerModal" tabindex="-1"
-                                    aria-labelledby="fileViewerModalLabel" aria-hidden="true">
+                                <!-- Modal for PDF -->
+                                <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel"
+                                    aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
-                                        <div class="modal-content rounded-4 shadow-lg">
-                                            <div class="modal-header border-bottom-0">
-                                                <h5 class="modal-title text-primary" id="fileViewerModalLabel">ফাইল
-                                                    ভিউয়ার</h5>
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="pdfModalLabel">ফাইল দেখুন</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <div class="text-center">
-                                                    <h2 class="mb-3 text-secondary">নির্বাচিত ফাইল দেখুন</h2>
-                                                </div>
-                                                <div class="pdf-container">
-                                                    <!-- Static iframe for file preview -->
-                                                    <iframe id="fileViewerIframe" width="100%" height="450px"
-                                                        class="border rounded"></iframe>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer border-top-0">
-                                                <button type="button" class="btn btn-outline-secondary"
-                                                    data-bs-dismiss="modal">বন্ধ করুন</button>
+                                                <iframe style="width: 100%; height: 500px;"
+                                                    src="../assets/images/img/d5.pdf" frameborder="0"></iframe>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- Modal for Image 1 -->
+                                <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="imageModalLabel">ফাইল দেখুন</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img style="width: 100%; height: auto;"
+                                                    src="../assets/images/img/a2.jpg" alt="খাজনা রশিদ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal for Image 2 -->
+                                <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="imageModalLabel">ফাইল দেখুন</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img style="width: 100%; height: auto;"
+                                                    src="../assets/images/img/a7.jpg" alt="মূল খারিজ খতিয়ান">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal for Image 3 -->
+                                <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="imageModalLabel">ফাইল দেখুন</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img style="width: 100%; height: auto;"
+                                                    src="../assets/images/img/a3.png" alt="জমির অবস্থান নকশা">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal for Image 4 -->
+                                <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="imageModalLabel">ফাইল দেখুন</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img style="width: 100%; height: auto;"
+                                                    src="../assets/images/img/a7.jpg" alt="নামজারির কার্বন রশিদ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
                             </div>
                         </div>
                     </div>
@@ -896,6 +1042,37 @@
             </div>
         </section>
 
+
+        <!-- Modal for File Viewer -->
+        <!-- <div class="modal fade" id="fileViewerModal" tabindex="-1"
+                                            aria-labelledby="fileViewerModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content rounded-4 shadow-lg">
+                                                    <div class="modal-header border-bottom-0">
+                                                        <h5 class="modal-title text-primary" id="fileViewerModalLabel">ফাইল
+                                                            ভিউয়ার</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="text-center">
+                                                            <h2 class="mb-3 text-secondary">নির্বাচিত ফাইল দেখুন</h2>
+                                                        </div>
+                                                        <div class="pdf-container">
+                                                           
+                                                            <iframe id="fileViewerIframe" width="100%" height="450px"
+                                                                class="border rounded"></iframe>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer border-top-0">
+                                                        <button type="button" class="btn btn-outline-secondary"
+                                                            data-bs-dismiss="modal">বন্ধ করুন</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+        <!-- forowad -->
         <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content form-pd">
@@ -906,19 +1083,20 @@
                                 <input type="text" class="form-control" id="recipient" placeholder="প্রাপকের নাম লিখুন">
                             </div>
 
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">জ্ঞাতার্থে</label>
-                            <input type="text" class="form-control" id="subject" placeholder="জ্ঞাতার্থে  লিখুন">
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">দৃষ্টি আকর্ষ</label>
-                            <input type="text" class="form-control" id="subject" placeholder=" লিখুন">
-                        </div>
-                        <div class="mb-3">
-                            <label for="note" class="form-label">নোট লিখুন</label>
-                            <textarea class="form-control" id="note" rows="3" placeholder="এখানে নোট লিখুন"></textarea>
-                        </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">জ্ঞাতার্থে</label>
+                                <input type="text" class="form-control" id="subject" placeholder="জ্ঞাতার্থে  লিখুন">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">দৃষ্টি আকর্ষ</label>
+                                <input type="text" class="form-control" id="subject" placeholder=" লিখুন">
+                            </div>
+                            <div class="mb-3">
+                                <label for="note" class="form-label">নোট লিখুন</label>
+                                <textarea class="form-control" id="note" rows="3"
+                                    placeholder="এখানে নোট লিখুন"></textarea>
+                            </div>
                             <div class="text-end">
                                 <button type="submit" class="btn btn-primary">সাবমিট করুন</button>
                             </div>

@@ -753,12 +753,12 @@
                     <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
                         <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#noteEditor-1"
                             aria-expanded="false" aria-controls="noteEditor-1">
-                            note
+                            নোটাংশ
                         </button>
-                        <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#noteEditor"
+                        <!-- <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#noteEditor"
                             aria-expanded="false" aria-controls="noteEditor">
                             নোট সম্পাদনা করুন
-                        </button>
+                        </button> -->
                         <button class="btn btn-success btn-sm" data-bs-toggle="collapse" data-bs-target="#letterForm"
                             aria-expanded="false" aria-controls="letterForm">
                             চিঠি তৈরি করুন
@@ -769,11 +769,12 @@
                         </button>
                     </div>
 
-            <div class="collapse" id="noteEditor-1">
-                <div class="tab-pane fade show active" id="tab2" role="tabpanel" aria-labelledby="tab2">
-                    <img src="../assets/images/img/note.JPG" class="border rounded w-100" alt="Note Image" />
-                </div>
-            </div>
+                    <div class="collapse" id="noteEditor-1">
+                        <div class="tab-pane fade show active" id="tab2" role="tabpanel" aria-labelledby="tab2">
+                            <img src="../assets/images/img/sp1.png" class="border rounded w-100" alt="Note Image" />
+                            <img src="../assets/images/img/sp2.png" class="border rounded w-100" alt="Note Image" />
+                        </div>
+                    </div>
 
                     <!-- Note Editor Section -->
                     <div id="noteEditor" class="collapse mt-3">
@@ -859,7 +860,8 @@
                                                     class="btn btn-outline-primary btn-sm w-100 mb-2 text-start text-black">
                                                     <strong>মতামত পত্র</strong>
                                                 </button>
-                                                <button class="btn btn-outline-primary btn-sm w-100 mb-2 text-start text-black">
+                                                <button
+                                                    class="btn btn-outline-primary btn-sm w-100 mb-2 text-start text-black">
                                                     <strong>ভূমি ছাড় পত্র</strong>
                                                 </button>
                                                 <button
@@ -921,11 +923,6 @@
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="card-title text-primary m-0">সংযুক্ত ফাইলসমূহ</p>
-                                <!-- <button class="btn btn-success btn-sm" id="addAttachmentBtn" data-bs-toggle="modal"
-                                    data-bs-target="#attachmentModal">
-                                    <i class="fas fa-paperclip"></i> সংযুক্তি
-                                </button> -->
-
                             </div>
 
                             <ul class="nav nav-pills nav-fill small mt-2" id="fileTabs" role="tablist">
@@ -1045,141 +1042,149 @@
 
 
                                 <!-- Applicant Info Section -->
-                    <div class="tab-pane fade" id="applicantInfo" role="tabpanel">
-                        <div class="card p-0 shadow-lg border-0">
-                            <p class="fw-bold text-white bg-success text-center p-2 rounded">তথ্য সমূহ</p>
-                           
+                                <div class="tab-pane fade" id="applicantInfo" role="tabpanel">
+                                    <div class="card p-0 shadow-lg border-0">
+                                        <p class="fw-bold text-white bg-success text-center p-2 rounded">তথ্য সমূহ</p>
+                                        <div class="text-center mb-0">
+                                            <h6 class="text-danger fw-bold">রাজশাহী উন্নয়ন কর্তৃপক্ষ</h6>
+                                            <p class="text-primary">ভূমি ব্যবহারের ছাড়পত্রের জন্য আবেদনকারীর তথ্য</p>
+                                        </div>
 
-                            <div class="text-center mb-0">
-                                <h6 class="text-danger fw-bold">রাজশাহী উন্নয়ন কর্তৃপক্ষ</h6>
-                                <p class="text-primary">ভূমি ব্যবহারের ছাড়পত্রের জন্য আবেদনকারীর তথ্য</p>
-                            </div>
+                                        <div class="row mt-4">
+                                            <div class="col-md-12">
+                                                <div class="card shadow-sm">
+                                                    <!-- <div class="card-header text-white bg-primary fw-bold text-center">
+                                                     আবেদনকারীর তথ্য
+                                                     </div> -->
+                                                    <div class="card-body p-0">
+                                                        <div class="table-responsive">
+                                                            <table
+                                                                class="table table-bordered table-striped table-hover p-0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th class="bg-light fw-bold">১. আবেদনকারীর নাম
+                                                                        </th>
+                                                                        <td>মোঃ সোহানুর রহমান</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="bg-light fw-bold">২. পিতা/ স্বামীর
+                                                                            নাম</th>
+                                                                        <td>মোঃ আব্দুল করিম</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="bg-light fw-bold">৩. ক) বর্তমান
+                                                                            ঠিকানা</th>
+                                                                        <td>
+                                                                            <strong>হোল্ডিং নং:</strong> ১০১<br>
+                                                                            <strong>গ্রাম/ মহল্লা:</strong> শাহ
+                                                                            মখদুম<br>
+                                                                            <strong>ডাকঘর:</strong> ৬২০০<br>
+                                                                            <strong>উপজেলা/ থানা:</strong> রাজপাড়া<br>
+                                                                            <strong>জেলা:</strong> রাজশাহী<br>
+                                                                            <strong>মোবাইল নম্বর:</strong>
+                                                                            ০১৭xxxxxxxx<br>
+                                                                            <strong>ই-মেইল:</strong> sohan@example.com
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="bg-light fw-bold"> খ) স্থায়ী ঠিকানা
+                                                                        </th>
+                                                                        <td>
+                                                                            <strong>হোল্ডিং নং:</strong> ১০১<br>
+                                                                            <strong>গ্রাম/ মহল্লা:</strong> শাহ
+                                                                            মখদুম<br>
+                                                                            <strong>ডাকঘর:</strong> ৬২০০<br>
+                                                                            <strong>উপজেলা/ থানা:</strong> রাজপাড়া<br>
+                                                                            <strong>জেলা:</strong> রাজশাহী
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- জমির তথ্য -->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="fw-bold bg-light p-2 rounded text-start">৪. যে জমির জন্য
+                                                    ছাড়পত্র পেতে ইচ্ছুক তার তফসীল</p>
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped shadow-sm">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="bg-light">মৌজা/ এলাকার নাম</th>
+                                                                <td>বোয়ালিয়া</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">জে, এল, নং/ সেক্টর নং</th>
+                                                                <td>৪৫৬/২২</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">রাস্তার নাম/ নং</th>
+                                                                <td>পদ্মা গার্ডেন রোড</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">আর, এস, দাগ নং/ প্লট নং</th>
+                                                                <td>২০৩/৭৮</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">থানার নাম</th>
+                                                                <td>বোয়ালিয়া মডেল থানা</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">জেলার নাম</th>
+                                                                <td>রাজশাহী</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">দাখিলকৃত খতিয়ানে উল্লিখিত জমির
+                                                                    শ্রেণি</th>
+                                                                <td>আবাসিক জমি</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="bg-light">জমির পরিমাণ</th>
+                                                                <td>৮ শতক</td>
+                                                            </tr>
 
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                        <div class="row mt-4">
-                            <div class="col-md-12">
-                                <div class="card shadow-sm">
-                                    <!-- <div class="card-header text-white bg-primary fw-bold text-center">
-                                        আবেদনকারীর তথ্য
-                                    </div> -->
-                                    <div class="card-body p-0">
-                                        <div class="table-responsive">
-                                            <table class="table table-bordered table-striped table-hover p-0">
-                                                <tbody>
-                                                    <tr>
-                                                        <th class="bg-light fw-bold">১. আবেদনকারীর নাম</th>
-                                                        <td>মোঃ সোহানুর রহমান</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th class="bg-light fw-bold">২. পিতা/ স্বামীর নাম</th>
-                                                        <td>মোঃ আব্দুল করিম</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th class="bg-light fw-bold">৩. ক) বর্তমান ঠিকানা</th>
-                                                        <td>
-                                                            <strong>হোল্ডিং নং:</strong> ১০১<br>
-                                                            <strong>গ্রাম/ মহল্লা:</strong> শাহ মখদুম<br>
-                                                            <strong>ডাকঘর:</strong> ৬২০০<br>
-                                                            <strong>উপজেলা/ থানা:</strong> রাজপাড়া<br>
-                                                            <strong>জেলা:</strong> রাজশাহী<br>
-                                                            <strong>মোবাইল নম্বর:</strong> ০১৭xxxxxxxx<br>
-                                                            <strong>ই-মেইল:</strong> sohan@example.com
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th class="bg-light fw-bold"> খ) স্থায়ী ঠিকানা</th>
-                                                        <td>
-                                                            <strong>হোল্ডিং নং:</strong> ১০১<br>
-                                                            <strong>গ্রাম/ মহল্লা:</strong> শাহ মখদুম<br>
-                                                            <strong>ডাকঘর:</strong> ৬২০০<br>
-                                                            <strong>উপজেলা/ থানা:</strong> রাজপাড়া<br>
-                                                            <strong>জেলা:</strong> রাজশাহী
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <div class="row mt-4">
+                                            <div class="col-md-12">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped shadow-sm">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="bg-light fw-bold">৫. আবেদনকৃত জমি বর্তমানে কি
+                                                                    হিসেবে ব্যবহৃত হচ্ছে *</th>
+                                                                <td>কৃষি জমি</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-md-12">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped shadow-sm">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="bg-light fw-bold">৬. আবেদনকৃত জমি ভবিষ্যতে কি
+                                                                    হিসেবে ব্যবহৃত হবে *</th>
+                                                                <td>বাণিজ্যিক প্লট</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                            <!-- জমির তথ্য -->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="fw-bold bg-light p-2 rounded text-start">৪. যে জমির জন্য ছাড়পত্র পেতে ইচ্ছুক তার তফসীল</p>
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered table-striped shadow-sm">
-                                            <tbody>
-                                                <tr>
-                                                    <th class="bg-light">মৌজা/ এলাকার নাম</th>
-                                                    <td>বোয়ালিয়া</td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="bg-light">জে, এল, নং/ সেক্টর নং</th>
-                                                    <td>৪৫৬/২২</td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="bg-light">রাস্তার নাম/ নং</th>
-                                                    <td>পদ্মা গার্ডেন রোড</td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="bg-light">আর, এস, দাগ নং/ প্লট নং</th>
-                                                    <td>২০৩/৭৮</td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="bg-light">থানার নাম</th>
-                                                    <td>বোয়ালিয়া মডেল থানা</td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="bg-light">জেলার নাম</th>
-                                                    <td>রাজশাহী</td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="bg-light">দাখিলকৃত খতিয়ানে উল্লিখিত জমির শ্রেণি</th>
-                                                    <td>আবাসিক জমি</td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="bg-light">জমির পরিমাণ</th>
-                                                    <td>৮ শতক</td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row mt-4">
-                                <div class="col-md-12">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered table-striped shadow-sm">
-                                            <tbody>
-                                                <tr>
-                                                    <th class="bg-light fw-bold">৫. আবেদনকৃত জমি বর্তমানে কি হিসেবে ব্যবহৃত হচ্ছে *</th>
-                                                    <td>কৃষি জমি</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt-4">
-                                <div class="col-md-12">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered table-striped shadow-sm">
-                                            <tbody>
-                                                <tr>
-                                                    <th class="bg-light fw-bold">৬. আবেদনকৃত জমি ভবিষ্যতে কি হিসেবে ব্যবহৃত হবে *</th>
-                                                    <td>বাণিজ্যিক প্লট</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
 
 
                             </div>

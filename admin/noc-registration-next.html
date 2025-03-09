@@ -875,335 +875,221 @@
 
         <!-- tanvir start table -->
 
-
-        <div class="main-content app-content">
-            <div class="container-fluid mt-5 form-pd">
-                <div class="text-center mb-4">
-                    <h4 class="text-danger fw-bold">রাজশাহী উন্নয়ন কর্তৃপক্ষ</h4>
-                    <h5 class="text-primary">ভূমি ব্যবহারের ছাড়পত্রের জন্য আবেদনপত্র</h5>
-                </div>
-
-                <form class="mt-5">
-                    <div class="mb-3 row">
-                        <div class="col-md-6">
-                            <label class="form-label ps-3 d-flex align-items-center">
-                                ১. আবেদনকারী/ আবেদনকারীগণের নাম *
-                                <button type="button" class="btn btn-info ms-2"
-                                    style="font-size: 10px; padding: 2px 5px;">+</button>
-                            </label>
-                            <input type="text" class="form-control" required>
+        <div class="main-content app-content mb-4">
+            <div class="container-fluid form-pd">
+                <div class="container mt-4">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white text-center">
+                            <h4 class="mt-3">অনলাইন পেমেন্ট আবেদন ফর্ম</h4>
                         </div>
-                        <div class="col-md-4">
-                            <label class="form-label ps-3">২. পিতা/ স্বামীর নাম *</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-                        <div class="col-md-2">
-                            <label class="form-label ps-3">(NID) *</label>
-                            <div class="input-group">
-                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-3 row">
-                        <div class="col-md-6">
-                            <label class="form-label ps-3">৩. ক) বর্তমান ঠিকানা * </label><span>(পত্র যোগাযোগের
-                                জন্য):</span>
-                            <input type="text" class="form-control" id="current_holding"
-                                placeholder="হোল্ডিং নং (প্রযোজ্য ক্ষেত্রে)" required
-                                oninput="if(same_address.checked) permanent_holding.value = this.value">
-                            <input type="text" class="form-control mt-2" id="current_village"
-                                placeholder="গ্রাম/ মহল্লা" required
-                                oninput="if(same_address.checked) permanent_village.value = this.value">
-                            <input type="text" class="form-control mt-2" id="current_post" placeholder="ডাকঘর" required
-                                oninput="if(same_address.checked) permanent_post.value = this.value">
-                            <input type="text" class="form-control mt-2" id="current_upazila" placeholder="উপজেলা/ থানা"
-                                required oninput="if(same_address.checked) permanent_upazila.value = this.value">
-                            <input type="text" class="form-control mt-2" id="current_district" placeholder="জেলা"
-                                required oninput="if(same_address.checked) permanent_district.value = this.value">
-                            <input type="text" class="form-control mt-2" placeholder="মোবাইল নম্বর" required>
-                            <input type="text" class="form-control mt-2" placeholder="ই-মেইল আইডি" required>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label ps-3">খ) স্থায়ী ঠিকানা *</label>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="same_address" onchange="
-                                permanent_holding.disabled  = !this.checked;
-                                permanent_village.disabled  = !this.checked;
-                                permanent_post.disabled     = !this.checked;
-                                permanent_upazila.disabled  = !this.checked;
-                                permanent_district.disabled = !this.checked;
-                            ">
-                                <label class="form-check-label" for="same_address">বর্তমান ঠিকানার অনুরূপ হলে চেক মার্কে
-                                    ক্লিক করুন</label>
-                            </div>
-                            <input type="text" class="form-control mt-2" id="permanent_holding"
-                                placeholder="হোল্ডিং নং (প্রযোজ্য ক্ষেত্রে)" required disabled>
-                            <input type="text" class="form-control mt-2" id="permanent_village"
-                                placeholder="গ্রাম/ মহল্লা" required disabled>
-                            <input type="text" class="form-control mt-2" id="permanent_post" placeholder="ডাকঘর"
-                                required disabled>
-                            <input type="text" class="form-control mt-2" id="permanent_upazila"
-                                placeholder="উপজেলা/ থানা" required disabled>
-                            <input type="text" class="form-control mt-2" id="permanent_district" placeholder="জেলা"
-                                required disabled>
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <!-- Left Side: Land Details Section -->
-                        <label class="form-label ps-3">৪. যে জমির জন্য ছাড়পত্র পেতে ইচ্ছুক তার তফসীল</label>
-
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <input type="text" class="form-control mt-2" placeholder="(ক) মৌজা/ এলাকার নাম"
-                                            required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="text" class="form-control mt-2"
-                                            placeholder="(খ) জে, এল, নং/ সেক্টর নং" required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="text" class="form-control mt-2"
-                                            placeholder="(গ) রাস্তার নাম/ নং (যদি থাকে)" required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="text" class="form-control mt-2"
-                                            placeholder="(ঘ) আর, এস, দাগ নং/ প্লট নং" required>
-                                    </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">পেমেন্ট মাধ্যম নির্বাচন করুন:</label>
+                                    <select class="form-control">
+                                        <option value="bkash">বিকাশ</option>
+                                        <option value="nagad">নগদ</option>
+                                        <option value="rocket">রকেট</option>
+                                        <option value="card">ডেবিট/ক্রেডিট কার্ড</option>
+                                    </select>
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- Right Side: Land Use Section -->
-                        <div class="col-md-6">
-                            <div>
-                                <input type="text" class="form-control mt-2" placeholder="(ঙ) থানার নাম" required>
-                            </div>
-                            <div>
-                                <input type="text" class="form-control mt-2" placeholder="(চ) জেলার নাম" required>
-                            </div>
-                            <div>
-                                <input type="text" class="form-control mt-2"
-                                    placeholder="(ছ) দাখিলকৃত খতিয়ানে উল্লিখিত জমির শ্রেণি" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="number" class="form-control mt-2"
-                                    placeholder="(জ) জমির পরিমাণ: এবং-শতাংশ/ শতক" required>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <!-- Left Side: Documents Section -->
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label class="form-label ps-3">৫. আবেদনকৃত জমি বর্তমানে কি হিসেবে ব্যবহৃত হচ্ছে
-                                    *</label>
-                                <select class="form-select" required>
-                                    <option selected>নির্বাচন করুন</option>
-                                    <option>আবাসিক</option>
-                                    <option>কৃষি</option>
-                                    <option>বাণিজ্যিক</option>
-                                    <option>ডোবা/ পুকুর</option>
-                                    <option>শিল্প</option>
-                                    <option>ফাঁকা</option>
-                                    <option>ধর্মীয়</option>
-                                </select>
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="form-label ps-3">৬. আবেদনকৃত জমি ভবিষ্যতে কি হিসেবে ব্যবহৃত হবে *</label>
-                                <select class="form-select" required>
-                                    <option selected>নির্বাচন করুন</option>
-                                    <option>আবাসিক</option>
-                                    <option>ব্যবসা ও বাণিজ্যিক</option>
-                                    <option>মিশ্র</option>
-                                    <option>শিল্প ও গুদাম</option>
-                                    <option>শিক্ষা ও গবেষণা</option>
-                                    <option>এ্যাসেম্বলি (সমাবেশ)</option>
-                                    <option>কৃষি</option>
-                                    <option>পাবলিক প্রশাসন</option>
-                                    <option>পার্ক/ ওপেন স্পেস</option>
-                                    <option>স্বাস্থ্য সেবা</option>
-                                    <option>পাবলিক ইউটিলিটি</option>
-                                    <option>সড়ক</option>
-                                    <option>ইটভাটা</option>
-                                    <option>জলাশয়</option>
-                                    <option>ইনস্টিটিউশন</option>
-                                    <option>অন্যান্য</option>
-                                </select>
-                            </div>
-
-                            <div class="mb-2">
-                                <label class="form-label ps-3">৭. মূল দলিল/ সার্টিফাইড মূল দলিল এর স্ক্যান কপি *</label>
-                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
-                            </div>
-
-                            <div class="mb-2">
-                                <label class="form-label ps-3">৮. মূল খারিজ খতিয়ান/ নামজারি খতিয়ান এর স্ক্যান কপি
-                                    *</label>
-                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
-                            </div>
-
-
-                            <div class="mb-2">
-                                <label class="form-label ps-3">৯. মূল নামজারির ডুপ্লিকেট কার্বন রশিদ (DCR) এর স্ক্যান
-                                    কপি
-                                    *</label>
-                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
-                            </div>
-                        </div>
-
-                        <!-- Right Side: Documents Section -->
-                        <div class="col-md-6">
-                            <div class="mb-2">
-                                <label class="form-label ps-3">১০. মূল হাল খাজনা রশিদ এর স্ক্যান কপি *</label>
-                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
-                            </div>
-
-                            <div class="mb-2">
-                                <label class="form-label ps-3">১১. মৌজা ম্যাপে আবেদিত দাগে জমির অবস্থান চিহ্নিতকরণ (A4
-                                    সাইজ
-                                    -এ) এর স্ক্যান কপি
-                                    *</label>
-                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
-                            </div>
-
-                            <div class="mb-2">
-                                <label class="form-label ps-3">১২. আবেদিত জমির অবস্থান নকশা (Location Map) / হাত নকশা এর
-                                    স্ক্যান কপি *</label>
-                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
-                            </div>
-
-                            <div class="mb-2">
-                                <label class="form-label ps-3">১৩. প্রয়োজনে জমির মালিকানা সংক্রান্ত অথবা চাহিত অন্যান্য
-                                    সকল
-                                    তথ্যাদির মূল কপির
-                                    স্ক্যান কপি *</label>
-                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
-                            </div>
+                                <div class="mb-3">
+                                    <label class="form-label">টাকার পরিমাণ ১৫% ভ্যাট হিসেবে:</label>
+                                    <input type="number" class="form-control" placeholder="টাকার পরিমাণ লিখুন">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">লেনদেন আইডি:</label>
+                                    <input type="text" class="form-control" placeholder="লেনদেন আইডি লিখুন">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">পেমেন্ট সম্পন্নের স্ক্রিনশট আপলোড করুন:</label>
+                                    <input type="file" class="form-control">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="declaration">
+                                    <label class="form-check-label" for="declaration">আমি ঘোষণা করছি যে, উপরের সকল তথ্য
+                                        সঠিক</label>
+                                </div>
+                                <button type="button" class="btn btn-success w-100" data-bs-toggle="modal"
+                                    data-bs-target="#successModal">
+                                    জমা দিন
+                                </button>
+                            </form>
+                            <button class="btn btn-light btn-sm mt-3 text-primary float-end" data-bs-toggle="modal"
+                                data-bs-target="#termsModal">
+                                শর্তসমূহ
+                            </button>
                         </div>
                     </div>
-
-                    <small class="form-text text-muted ">
-                        <span class="text-danger ps-2" style="font-style: italic;">
-                            ভূমি ব্যবহার ছাড়পত্রের জন্য আবেদিত জমির প্রয়োজনীয় মূল কাগজপত্র / দলিলাদি Scan
-                            (স্ক্যান) করে আবশ্যিকভাবে PDF ফরম্যাটে আবেদনের সাথে জমা প্রদান করতে হবে |
-                        </span>
-                    </small>
+                </div>
             </div>
-            <a href="noc-registration-next.html">
-                <button type="button" class="btn btn-primary w-100 mt-2">Next</button>
-            </a>
-
-            </form>
-            <button class="btn btn-light btn-sm mt-3 text-primary float-end" data-bs-toggle="modal"
-                data-bs-target="#termsModal">
-                শর্তসমূহ
-            </button>
         </div>
 
-    </div>
 
-
-    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h6 class="modal-title text-primary" id="termsModalLabel">আবশ্যিকভাবে পালনীয় শর্তসমূহ</h6>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- ✅ Success Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center">
+                    <div class="modal-header bg-success text-white">
+                        <h5 class="modal-title w-100" id="successModalLabel">✅ সফল!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="text-success fw-bold">Submit Success Full 🎉</h4>
+                        <p>আপনার তথ্য সফলভাবে জমা দেওয়া হয়েছে।</p>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <ul>
-                        <li>আবেদনকারীর পূর্ণ নাম ও স্বাক্ষর আবশ্যক।</li>
-                        <li>আবেদনপত্র পরিষ্কার পরিচ্ছন্ন হতে হবে, ঘষামাজা/ফ্লুইড ব্যবহার করা যাবে না।</li>
-                        <li>জমির দলিলের ১টি ফটোকপি জমা দিতে হবে।</li>
-                        <li>আর.এস/নামজারি খতিয়ানের ১টি ফটোকপি জমা দিতে হবে।</li>
-                        <li>নামজারির ডুপ্লিকেট কার্বন রশিদের ১টি ফটোকপি জমা দিতে হবে।</li>
-                        <li>হাল খাজনা রসিদের ১টি ফটোকপি জমা দিতে হবে।</li>
-                        <li>মৌজা নকশার ১টি ফটোকপি জমা দিতে হবে এবং আবেদনকৃত দাগ লাল কালি দিয়ে চিহ্নিত করতে হবে।</li>
-                        <li>জমির অবস্থানের হাত নকশা/স্কেচ ম্যাপ আবশ্যক।</li>
-                        <li>জাতীয় পরিচয়পত্র/জন্ম সনদের ১টি ফটোকপি জমা দিতে হবে।</li>
-                        <li>ত্রিশ কার্যদিবসের মধ্যে আবেদন চূড়ান্তভাবে নিষ্পত্তি করা হবে।</li>
-                        <li>অসম্পূর্ণ বা ভুল তথ্য সংবলিত আবেদন বাতিল করা হবে।</li>
-                        <li>সব দলিল স্ক্যান করে PDF ফরম্যাটে জমা দিতে হবে:</li>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="main-content app-content mt-5">
+            <div class="container-fluid mt-5 form-pd">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center mt-3">
+                        <h4>পেমেন্ট আবেদন ফর্ম</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">পে-অর্ডার/ ব্যাংক ড্রাফট নং:</label>
+                                <input type="text" class="form-control" placeholder="পে-অর্ডার/ ব্যাংক ড্রাফট নং লিখুন">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">ব্যাংকের নাম:</label>
+                                <input type="text" class="form-control" placeholder="ব্যাংকের নাম লিখুন">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">টাকার পরিমাণ ১৫% ভ্যাট হিসেবে:</label>
+                                <input type="number" class="form-control" placeholder="১৫% ভ্যাট লিখুন">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">এ-চালান নং/ চালান নং:</label>
+                                <input type="text" class="form-control" placeholder="এ-চালান নং লিখুন">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">শাখার নাম:</label>
+                                <input type="text" class="form-control" placeholder="শাখার নাম লিখুন">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">তারিখ:</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="declaration">
+                                <label class="form-check-label" for="declaration">আমি ঘোষণা করছি যে, উপরের সকল তথ্য
+                                    সঠিক</label>
+                            </div>
+                            <button type="button" class="btn btn-success w-100" data-bs-toggle="modal"
+                                data-bs-target="#successModal">
+                                জমা দিন
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title text-primary" id="termsModalLabel">আবশ্যিকভাবে পালনীয় শর্তসমূহ</h6>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
                         <ul>
-                            <li>মূল দলিল/সার্টিফাইড দলিল</li>
-                            <li>মূল খারিজ খতিয়ান/নামজারি খতিয়ান</li>
-                            <li>নামজারির ডুপ্লিকেট কার্বন রশিদ (DCR)</li>
-                            <li>হাল খাজনা রশিদ</li>
-                            <li>জাতীয় পরিচয়পত্র (NID)/জন্ম সনদ</li>
-                            <li>মৌজা ম্যাপে চিহ্নিত জমির অবস্থান</li>
-                            <li>জমির অবস্থান নকশা (Location Map)</li>
+                            <li>আবেদনকারীর পূর্ণ নাম ও স্বাক্ষর আবশ্যক।</li>
+                            <li>আবেদনপত্র পরিষ্কার পরিচ্ছন্ন হতে হবে, ঘষামাজা/ফ্লুইড ব্যবহার করা যাবে না।</li>
+                            <li>জমির দলিলের ১টি ফটোকপি জমা দিতে হবে।</li>
+                            <li>আর.এস/নামজারি খতিয়ানের ১টি ফটোকপি জমা দিতে হবে।</li>
+                            <li>নামজারির ডুপ্লিকেট কার্বন রশিদের ১টি ফটোকপি জমা দিতে হবে।</li>
+                            <li>হাল খাজনা রসিদের ১টি ফটোকপি জমা দিতে হবে।</li>
+                            <li>মৌজা নকশার ১টি ফটোকপি জমা দিতে হবে এবং আবেদনকৃত দাগ লাল কালি দিয়ে চিহ্নিত করতে হবে।</li>
+                            <li>জমির অবস্থানের হাত নকশা/স্কেচ ম্যাপ আবশ্যক।</li>
+                            <li>জাতীয় পরিচয়পত্র/জন্ম সনদের ১টি ফটোকপি জমা দিতে হবে।</li>
+                            <li>ত্রিশ কার্যদিবসের মধ্যে আবেদন চূড়ান্তভাবে নিষ্পত্তি করা হবে।</li>
+                            <li>অসম্পূর্ণ বা ভুল তথ্য সংবলিত আবেদন বাতিল করা হবে।</li>
+                            <li>সব দলিল স্ক্যান করে PDF ফরম্যাটে জমা দিতে হবে:</li>
+                            <ul>
+                                <li>মূল দলিল/সার্টিফাইড দলিল</li>
+                                <li>মূল খারিজ খতিয়ান/নামজারি খতিয়ান</li>
+                                <li>নামজারির ডুপ্লিকেট কার্বন রশিদ (DCR)</li>
+                                <li>হাল খাজনা রশিদ</li>
+                                <li>জাতীয় পরিচয়পত্র (NID)/জন্ম সনদ</li>
+                                <li>মৌজা ম্যাপে চিহ্নিত জমির অবস্থান</li>
+                                <li>জমির অবস্থান নকশা (Location Map)</li>
+                            </ul>
                         </ul>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- end user table form tanvir -->
+        <!-- end user table form tanvir -->
 
-    <!-- END SEARCH-MODAL -->
-    <footer class="footer mt-auto py-3 bg-white text-center">
-        <div class="container">
-            <span class="text-muted"> All rights reserved ©<span id="year"></span> <a href="javascript:void(0);"
-                    class="text-dark fw-semibold"></a>rajIT Solutions
-                Ltd.<span class="">Design</span> & Developed
-                <a href="javascript:void(0);">
-                    <span class="fw-semibold text- text-decoration-underline"> by rajIT Team.</span>
-                </a>
-            </span>
-        </div>
-    </footer>
+        <!-- END SEARCH-MODAL -->
+        <footer class="footer mt-auto py-3 bg-white text-center">
+            <div class="container">
+                <span class="text-muted"> All rights reserved ©<span id="year"></span> <a href="javascript:void(0);"
+                        class="text-dark fw-semibold"></a>rajIT Solutions
+                    Ltd.<span class="">Design</span> & Developed
+                    <a href="javascript:void(0);">
+                        <span class="fw-semibold text- text-decoration-underline"> by rajIT Team.</span>
+                    </a>
+                </span>
+            </div>
+        </footer>
 
-    <div id="responsive-overlay"></div>
+        <div id="responsive-overlay"></div>
 
-    <!-- POPPER JS -->
-    <script src="../assets/libs/%40popperjs/core/umd/popper.min.js"></script>
+        <!-- POPPER JS -->
+        <script src="../assets/libs/%40popperjs/core/umd/popper.min.js"></script>
 
-    <!-- BOOTSTRAP JS -->
-    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- BOOTSTRAP JS -->
+        <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- NODE WAVES JS -->
-    <script src="../assets/libs/node-waves/waves.min.js"></script>
+        <!-- NODE WAVES JS -->
+        <script src="../assets/libs/node-waves/waves.min.js"></script>
 
-    <!-- SIMPLEBAR JS -->
-    <script src="../assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="../assets/js/simplebar.js"></script>
+        <!-- SIMPLEBAR JS -->
+        <script src="../assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="../assets/js/simplebar.js"></script>
 
-    <!-- COLOR PICKER JS -->
-    <script src="../assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
+        <!-- COLOR PICKER JS -->
+        <script src="../assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
 
-    <!-- DEFAULTMENU JS -->
-    <script src="../assets/js/defaultmenu.js"></script>
+        <!-- DEFAULTMENU JS -->
+        <script src="../assets/js/defaultmenu.js"></script>
 
-    <!-- JSVECTOR MAPS JS -->
-    <script src="../assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
-    <script src="../assets/libs/jsvectormap/maps/world-merc.js"></script>
+        <!-- JSVECTOR MAPS JS -->
+        <script src="../assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+        <script src="../assets/libs/jsvectormap/maps/world-merc.js"></script>
 
-    <!-- APEX CHARTS JS -->
-    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+        <!-- APEX CHARTS JS -->
+        <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
 
-    <!-- CHARTJS CHART JS -->
-    <script src="../assets/libs/chart.js/chart.min.js"></script>
+        <!-- CHARTJS CHART JS -->
+        <script src="../assets/libs/chart.js/chart.min.js"></script>
 
-    <!-- CRM-Dashboard -->
-    <script src="../assets/js/crm-dashboard.js"></script>
+        <!-- CRM-Dashboard -->
+        <script src="../assets/js/crm-dashboard.js"></script>
 
-    <!-- STICKY JS -->
-    <script src="../assets/js/sticky.js"></script>
+        <!-- STICKY JS -->
+        <script src="../assets/js/sticky.js"></script>
 
-    <!-- CUSTOM JS -->
-    <script src="../assets/js/custom.js"></script>
+        <!-- CUSTOM JS -->
+        <script src="../assets/js/custom.js"></script>
 
-    <!-- CUSTOM-SWITCHER JS -->
-    <script src="../assets/js/custom-switcher.js"></script>
+        <!-- CUSTOM-SWITCHER JS -->
+        <script src="../assets/js/custom-switcher.js"></script>
 </body>
 
 </html>

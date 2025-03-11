@@ -131,6 +131,20 @@
 }
 
 /* start tanvir start*/
+
+.sub-dropdown {
+                            display: none;
+                        }
+                    
+                        /* Show corresponding sub-dropdown when radio is selected */
+                        #dropdown1:checked~.mt-3 #sub1,
+                        #dropdown2:checked~.mt-3 #sub2,
+                        #dropdown3:checked~.mt-3 #sub3,
+                        #dropdown4:checked~.mt-3 #sub4,
+                        #dropdown5:checked~.mt-3 #sub5 {
+                            display: block;
+                        }
+
 .mrg {
   margin: 0px !important;
 }

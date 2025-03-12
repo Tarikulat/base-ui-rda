@@ -890,8 +890,172 @@
     </aside>
         <!-- tanvir start table -->
 
+<section class="main-content app-content mt-4 mb-3">
+    <div class="container-fluid mt-5">
+        <!-- Topbar Section -->
+        <header class="bg-white py-3 shadow-sm rounded mt-4 px-4">
+            <div class="topbar d-flex justify-content-between align-items-center">
+
+                <!-- Application List Button -->
+                <div>
+                    <a href="officer-noc-reports.html">
+                        <button class="btn btn-primary d-flex align-items-center gap-2 px-3 py-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="tabler-icon tabler-icon-mail">
+                                <path d="M3 8l9 6 9-6"></path>
+                                <path d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2"></path>
+                                <path d="M3 8v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8"></path>
+                            </svg>
+                            <span>Application List</span>
+                        </button>
+                    </a>
+                </div>
+                <!-- Search Box -->
+                <div class="search-box">
+                    <input type="text" class="form-control rounded-pill px-3 shadow-sm"
+                        placeholder="🔍 Search here by applicant id or name.......">
+                </div>
+                <!-- Profile Button -->
+                <div>
+                    <a href="noc-reports.html">
+                        <button class="btn btn-outline-primary px-4 py-2 shadow-sm">
+                            Profile
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="col-md-12">
+            <div class="container mt-3">
+                <div class="table-responsive shadow-sm rounded-3 bg-white p-3">
+                    <table class="table table-hover table-bordered text-center align-middle">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>ক্রমিক নং</th>
+                                <th>আবেদনকারীর নাম</th>
+                                <th>আবেদনকারীর বিষয়</th>
+                                <!-- <th>ডিপার্টমেন্ট</th> -->
+                                <th>প্রেরক এবং প্রাপক</th>
+                                <th>সিদ্ধান্ত</th>
+                                <th>তারিখ</th>
+                                <th>ফরওয়ার্ড</th>
+                                <th>দেখুন</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>3345</td>
+                                <td>ফারহান হোসেন</td>
+                                <td>সরকারি সফটওয়্যার ব্যবস্থাপনা</td>
+                                <!-- <td>NOC (Land Use Approval Department)</td> -->
+                                <td><strong>প্রেরক:</strong> শামীম <strong> প্রাপক:</strong> রিয়া আক্তার
+                                </td>
+                                <td class="text-primary">বিধি মোতাবেক ব্যবস্থা নিন</td>
+                                <td>২৫/১২/২৫</td>
+                                <td><button class="btn btn-info btn-sm ms-2" data-bs-toggle="modal"
+                                        data-bs-target="#formModal">
+                                        <i class="fas fa-share"></i> ফরওয়ার্ড
+                                    </button></td>
+                                <td><a href="officer-noc-reports-6.html">
+                                        <button class="btn btn-primary btn-sm ms-2">
+                                            <i class="fas fa-eye"></i> দেখুন
+                                        </button>
+                                    </a></td>
+                            </tr>
+                            <tr>
+                                <td>5678</td>
+                                <td>জাহিদুল ইসলাম</td>
+                                <td>অর্থনৈতিক গবেষণা</td>
+                                <!-- <td>Property (Plot Allocation Approval)</td> -->
+                                <td><strong>প্রেরক:</strong> মেহেদী<strong> প্রাপক:</strong> সানজিদা আক্তার</td>
+                                <td class="text-primary">বিধি মোতাবেক ব্যবস্থা নিন</td>
+                                <td>২৬/১২/২৫</td>
+                                <td><button class="btn btn-info btn-sm ms-2" data-bs-toggle="modal"
+                                        data-bs-target="#formModal">
+                                        <i class="fas fa-share"></i> ফরওয়ার্ড
+                                    </button></td>
+                                <td><a href="officer-noc-reports-7.html">
+                                        <button class="btn btn-primary btn-sm ms-2">
+                                            <i class="fas fa-eye"></i> দেখুন
+                                        </button>
+                                    </a></td>
+                            </tr>
+                            <tr>
+                                <td>7890</td>
+                                <td>আলমগীর হোসেন</td>
+                                <td>আইটি প্রকল্প পরিকল্পনা</td>
+                                <!-- <td>Market (Shop Allocation)</td> -->
+                                <td><strong>প্রেরক:</strong> রহমান <strong> প্রাপক:</strong> মারিয়া সুলতানা</td>
+                                <td class="text-primary">বিধি মোতাবেক ব্যবস্থা নিন</td>
+                                <td>২৭/১২/২৫</td>
+                                <td><button class="btn btn-info btn-sm ms-2" data-bs-toggle="modal"
+                                        data-bs-target="#formModal">
+                                        <i class="fas fa-share"></i> ফরওয়ার্ড
+                                    </button></td>
+                                <td><a href="officer-noc-reports-8.html">
+                                        <button class="btn btn-primary btn-sm ms-2">
+                                            <i class="fas fa-eye"></i> দেখুন
+                                        </button>
+                                    </a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- application Modal -->
+        <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content form-pd">
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient" class="form-label">প্ৰাপক</label>
+                                <input type="text" class="form-control" id="recipient" placeholder="প্রাপকের নাম লিখুন">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">জ্ঞাতার্থে</label>
+                                <input type="text" class="form-control" id="subject" placeholder="জ্ঞাতার্থে  লিখুন">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">দৃষ্টি আকর্ষ</label>
+                                <input type="text" class="form-control" id="subject" placeholder=" লিখুন">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="note" class="form-label">নোট লিখুন</label>
+                                <textarea class="form-control" id="note" rows="3"
+                                    placeholder="এখানে নোট লিখুন"></textarea>
+                            </div>
+
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary">সাবমিট করুন</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+        <!-- ...................... -->
+
         <!-- Modal -->
-        <div class="modal fade" id="rdaFormModal" tabindex="-1" aria-labelledby="rdaFormModalLabel" aria-hidden="true">
+        <!-- <div class="modal fade" id="rdaFormModal" tabindex="-1" aria-labelledby="rdaFormModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content form-pd">
                     <div class="modal-header mt-3">
@@ -983,9 +1147,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <section class="main-content app-content mt-5">
+        <!-- <section class="main-content app-content mt-5">
             <div class="container-fluid">
                 <div class="container my-4">
                     <div class="row">
@@ -1135,7 +1299,7 @@
             </div>
             </div>
             </div>
-        </section>
+        </section> -->
         <!-- end user table form tanvir -->
    
 

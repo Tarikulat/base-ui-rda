@@ -643,6 +643,9 @@
                                     <a href="javascript:void(0);">Pages</a>
                                 </li>
                                 <li class="slide">
+                                    <a href="noc-registration.html" class="side-menu__item">Noc Registration</a>
+                                </li>
+                                <!-- <li class="slide">
                                     <a href="application-4.html" class="side-menu__item">Shop Transfer</a>
                                 </li>
                                 <li class="slide">
@@ -656,7 +659,7 @@
                                 </li>
                                 <li class="slide">
                                     <a href="application-8.html" class="side-menu__item">Occupancy Certificate</a>
-                                </li>
+                                </li> -->
                                 <!-- <li class="slide">
                                                                                     <a href="application-1.html" class="side-menu__item">RDA Application</a>
                                                                                 </li>
@@ -794,301 +797,124 @@
                             <div class="card shadow-sm border-0 p-3">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <h5 class="text-success fw-bold">Application List</h5>
-
-                                    <div class="col-md-3 text-end">
-                                        <a href="officer-noc-reports-1.html">
-                                            <button class="btn btn-secondary">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="tabler-icon tabler-icon-mail">
-                                                    <path d="M3 8l9 6 9-6"></path>
-                                                    <path d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2"></path>
-                                                    <path d="M3 8v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8"></path>
-                                                </svg> View More
-                                            </button>
-                                        </a>
+                                    <div class="search-box">
+                                        <input type="text" class="form-control rounded-pill px-3 shadow-sm"
+                                            placeholder="🔍 Search here by applicant id or name.......">
                                     </div>
 
+                                    <!-- <div class="col-md-3 text-end"> -->
+                                        <a href="officer-noc-reports-7.html">
+                                            <button class="btn btn-light btn-sm">
+                                               More
+                                            </button>
+                                        </a>
+                                    <!-- </div> -->
+
                                 </div>
-                                <div class="table-responsive">
+                                <div class="table-responsive mt-3">
                                     <table class="table table-hover table-bordered text-center align-middle">
                                         <thead class="table-primary">
                                             <tr>
-                                                <th>আবেদন নাম্বার</th>
+                                                <th>ক্রমিক নং</th>
                                                 <th>আবেদনকারীর নাম</th>
-                                                <th>আবেদনের ধরন</th>
-                                                <th>জমার তারিখ</th>
-                                                <th>স্ট্যাটাস</th>
+                                                <th>আবেদনকারীর বিষয়</th>
+                                                <!-- <th>ডিপার্টমেন্ট</th> -->
+                                                <!-- <th>প্রেরক এবং প্রাপক</th> -->
+                                                <th>সিদ্ধান্ত</th>
+                                                <th>তারিখ</th>
+                                                <th>ফরওয়ার্ড</th>
+                                                <th>দেখুন</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                    
                                             <tr>
-                                                <td>56789</td>
-                                                <td>রফিকুল ইসলাম</td>
-                                                <td>ব্যক্তিগত</td>
-                                                <td>১৫/০২/২০২৫</td>
-                                                <td><span class="badge bg-warning text-dark">Processing</span></td>
+                                                <td>3345</td>
+                                                <td>ফারহান হোসেন</td>
+                                                <td>সরকারি সফটওয়্যার ব্যবস্থাপনা</td>
+                                                <!-- <td>NOC (Land Use Approval Department)</td> -->
+                                                <!-- <td><strong>প্রেরক:</strong> শামীম <strong> প্রাপক:</strong> রিয়া আক্তার
+                                                </td> -->
+                                                <td class="text-primary">বিধি মোতাবেক ব্যবস্থা নিন</td>
+                                                <td>২৫/১২/২৫</td>
+                                                <td><button class="btn btn-info btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#formModal">
+                                                        <i class="fas fa-share"></i> ফরওয়ার্ড
+                                                    </button></td>
+                                                <td><a href="officer-noc-reports-6.html">
+                                                        <button class="btn btn-primary btn-sm ms-2">
+                                                            <i class="fas fa-eye"></i> দেখুন
+                                                        </button>
+                                                    </a></td>
                                             </tr>
                                             <tr>
-                                                <td>56790</td>
-                                                <td>সাইফুল ইসলাম</td>
-                                                <td>বাণিজ্যিক</td>
-                                                <td>১০/০২/২০২৫</td>
-                                                <td><span class="badge bg-success">Approved</span></td>
+                                                <td>5678</td>
+                                                <td>জাহিদুল ইসলাম</td>
+                                                <td>অর্থনৈতিক গবেষণা</td>
+                                                <!-- <td>Property (Plot Allocation Approval)</td> -->
+                                                <!-- <td><strong>প্রেরক:</strong> মেহেদী<strong> প্রাপক:</strong> সানজিদা আক্তার</td> -->
+                                                <td class="text-primary">বিধি মোতাবেক ব্যবস্থা নিন</td>
+                                                <td>২৬/১২/২৫</td>
+                                                <td><button class="btn btn-info btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#formModal">
+                                                        <i class="fas fa-share"></i> ফরওয়ার্ড
+                                                    </button></td>
+                                                <td><a href="officer-noc-reports-6.html">
+                                                        <button class="btn btn-primary btn-sm ms-2">
+                                                            <i class="fas fa-eye"></i> দেখুন
+                                                        </button>
+                                                    </a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7890</td>
+                                                <td>আলমগীর হোসেন</td>
+                                                <td>আইটি প্রকল্প পরিকল্পনা</td>
+                                                <!-- <td>Market (Shop Allocation)</td> -->
+                                                <!-- <td><strong>প্রেরক:</strong> রহমান <strong> প্রাপক:</strong> মারিয়া সুলতানা</td> -->
+                                                <td class="text-primary">বিধি মোতাবেক ব্যবস্থা নিন</td>
+                                                <td>২৭/১২/২৫</td>
+                                                <td><button class="btn btn-info btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#formModal">
+                                                        <i class="fas fa-share"></i> ফরওয়ার্ড
+                                                    </button></td>
+                                                <td><a href="officer-noc-reports-6.html">
+                                                    <button class="btn btn-primary btn-sm ms-2">
+                                                        <i class="fas fa-eye"></i> দেখুন
+                                                    </button>
+                                                </a></td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
 
-                            <!-- Assign Officer Modal nichyr a gulo bad hoye jabe-->
-                            <div class="modal fade" id="assignOfficerModal" tabindex="-1"
-                                aria-labelledby="assignOfficerModalLabel" aria-hidden="true">
+                            <!-- application Modal -->
+                            <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-primary" id="assignOfficerModalLabel">অফিসার
-                                                নির্বাচন করুন
-                                            </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
+                                    <div class="modal-content form-pd">
                                         <div class="modal-body">
-                                            <p class="fw-bold">যে অফিসারদের কাছে আবেদন পাঠানো হবে নির্বাচন করুন:</p>
                                             <form>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="officer1">
-                                                    <label class="form-check-label" for="officer1">জনাব আরিফুর রহমান
-                                                        (সহকারী
-                                                        প্রকৌশলী)</label>
+                                                <div class="mb-3">
+                                                    <label for="recipient" class="form-label">প্ৰাপক</label>
+                                                    <input type="text" class="form-control" id="recipient" placeholder="প্রাপকের নাম লিখুন">
                                                 </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="officer2">
-                                                    <label class="form-check-label" for="officer2">জনাব আব্দুল করিম
-                                                        (প্রকল্প
-                                                        ব্যবস্থাপক)</label>
+                            
+                                                <div class="mb-3">
+                                                    <label for="subject" class="form-label">জ্ঞাতার্থে</label>
+                                                    <input type="text" class="form-control" id="subject" placeholder="জ্ঞাতার্থে  লিখুন">
                                                 </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="officer3">
-                                                    <label class="form-check-label" for="officer3">জনাব মাহমুদুল হাসান
-                                                        (নির্বাহী
-                                                        প্রকৌশলী)</label>
+                            
+                                                <div class="mb-3">
+                                                    <label for="subject" class="form-label">দৃষ্টি আকর্ষ</label>
+                                                    <input type="text" class="form-control" id="subject" placeholder=" লিখুন">
                                                 </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="officer4">
-                                                    <label class="form-check-label" for="officer4">জনাব সালমান কবির
-                                                        (সিনিয়র
-                                                        সহকারী পরিচালক)</label>
+                            
+                                                <div class="mb-3">
+                                                    <label for="note" class="form-label">নোট লিখুন</label>
+                                                    <textarea class="form-control" id="note" rows="3" placeholder="এখানে নোট লিখুন"></textarea>
                                                 </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="officer5">
-                                                    <label class="form-check-label" for="officer5">জনাব রাশেদুল ইসলাম
-                                                        (চীফ
-                                                        ইঞ্জিনিয়ার)</label>
+                            
+                                                <div class="text-end">
+                                                    <button type="submit" class="btn btn-primary">সাবমিট করুন</button>
                                                 </div>
-                                                <div class="mb-3 mt-3">
-                                                    <label for="note" class="form-label">নোট (প্রয়োজনীয় নির্দেশনা
-                                                        লিখুন):</label>
-                                                    <textarea class="form-control" id="note" rows="3"
-                                                        placeholder="অতিরিক্ত তথ্য লিখুন..."></textarea>
-                                                </div>
-
-                                                <button type="submit" class="btn btn-success w-100">Submit</button>
                                             </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Attachment Modal -->
-                            <div class="modal fade" id="attachmentModal" tabindex="-1"
-                                aria-labelledby="attachmentModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-primary" id="attachmentModalLabel">সংযুক্ত
-                                                ফাইলসমূহ</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <ul class="list-group">
-                                                <li
-                                                    class="list-group-item d-flex justify-content-between align-items-center">
-                                                    আবেদনপত্র (PDF)
-                                                    <div>
-                                                        <a href="#" target="_blank" class="btn btn-sm btn-secondary"><i
-                                                                class="fas fa-eye"></i> ভিউ</a>
-                                                        <a href="#" download class="btn btn-sm btn-primary"><i
-                                                                class="fas fa-download"></i> ডাউনলোড</a>
-                                                    </div>
-                                                </li>
-                                                <li
-                                                    class="list-group-item d-flex justify-content-between align-items-center">
-                                                    জমির দলিল (PDF)
-                                                    <div>
-                                                        <a href="#" target="_blank" class="btn btn-sm btn-secondary"><i
-                                                                class="fas fa-eye"></i> ভিউ</a>
-                                                        <a href="#" download class="btn btn-sm btn-primary"><i
-                                                                class="fas fa-download"></i> ডাউনলোড</a>
-                                                    </div>
-                                                </li>
-                                                <li
-                                                    class="list-group-item d-flex justify-content-between align-items-center">
-                                                    জাতীয় পরিচয়পত্র (Image)
-                                                    <div>
-                                                        <a href="#" target="_blank" class="btn btn-sm btn-secondary"><i
-                                                                class="fas fa-eye"></i> ভিউ</a>
-                                                        <a href="#" download class="btn btn-sm btn-primary"><i
-                                                                class="fas fa-download"></i> ডাউনলোড</a>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Email Modal -->
-                            <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-primary" id="emailModalLabel">📧 একটি পত্র লিখুন
-                                            </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p class="fw-bold">পত্র লেখার জন্য তথ্য পূর্ণ করুন:</p>
-
-                                            <!-- Email Content -->
-                                            <div class="container-fluid">
-                                                <div class="email-container p-4">
-                                                    <div class="email-header text-center mb-4">
-                                                        <div class="d-flex justify-content-between">
-                                                            <p class="text-start p-1">প্রাপক:
-                                                                <input type="email" class="form-control w-45"
-                                                                    placeholder="প্রাপকের নাম">
-                                                            </p>
-                                                            <p class="text-start p-1">প্রেরক:
-                                                                <input type="email" class="form-control w-45"
-                                                                    placeholder="আপনার নাম">
-                                                            </p>
-                                                            <p class="text-start p-1">তারিখ:
-                                                                <input type="date" class="form-control w-45">
-                                                            </p>
-                                                        </div>
-                                                        <p class="text-start">বিষয়:
-                                                            <input type="text" class="form-control"
-                                                                placeholder="পত্র বিষয় লিখুন">
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="email-body" contenteditable="true" class="form-control">
-                                                        <p></p>
-                                                        <p>
-
-                                                        </p>
-                                                        <p>
-
-                                                        </p>
-                                                        <p>
-
-                                                        </p>
-                                                        <p>
-                                                            <br>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="আপনার নাম">
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="text-end mt-4">
-                                                        <button class="btn btn-success">📩 পাঠান</button>
-                                                        <button class="btn btn-danger">❌ বাতিল</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End of Email Content -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Paragraph Modal -->
-                            <div class="modal fade" id="paragraphModal" tabindex="-1"
-                                aria-labelledby="paragraphModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-primary" id="paragraphModalLabel">অনুচ্ছেদ তৈরি
-                                                করুন</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p class="fw-bold">অনুচ্ছেদ লেখার জন্য নিচে তথ্য পূর্ণ করুন:</p>
-
-                                            <!-- Text Editor Container -->
-                                            <div class="container-fluid">
-                                                <div class="container">
-                                                    <div class="editor-container">
-                                                        <h4>📝 নতুন অনুচ্ছেদ</h4>
-
-                                                        <div class="editor-toolbar d-flex flex-wrap gap-2">
-                                                            <button class="btn btn-light"><b>B</b></button>
-                                                            <button class="btn btn-light"><i>I</i></button>
-                                                            <button class="btn btn-light"><u>U</u></button>
-                                                            <button class="btn btn-light">⬅</button>
-                                                            <button class="btn btn-light">⬛</button>
-                                                            <button class="btn btn-light">➡</button>
-
-                                                            <select class="form-select form-select-sm w-auto">
-                                                                <option selected>Font Size</option>
-                                                                <option value="12px">Small</option>
-                                                                <option value="16px">Normal</option>
-                                                                <option value="20px">Large</option>
-                                                                <option value="24px">Extra Large</option>
-                                                            </select>
-
-                                                            <input type="color" class="form-control form-control-color"
-                                                                title="Font Color">
-                                                            <button class="btn btn-light">🖍 Highlight</button>
-                                                            <button class="btn btn-light">• Bullet List</button>
-                                                            <button class="btn btn-light">1. Number List</button>
-
-                                                            <!-- Forward Button with Dropdown -->
-                                                            <div class="btn-group">
-                                                                <button class="btn btn-light dropdown-toggle"
-                                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                                    ➡️ Forward
-                                                                </button>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a class="dropdown-item" href="#">রাজশাহী
-                                                                            কর্তৃপক্ষ</a></li>
-                                                                    <li><a class="dropdown-item" href="#">নির্বাচন
-                                                                            কমিশন</a></li>
-                                                                    <li><a class="dropdown-item" href="#">বাংলাদেশ
-                                                                            ব্যাংক</a></li>
-                                                                    <li><a class="dropdown-item" href="#">প্রকৌশল
-                                                                            বিশ্ববিদ্যালয়</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="editor-content" contenteditable="true"></div>
-
-                                                        <div class="mt-3 text-end">
-                                                            <button class="btn btn-success">সংরক্ষণ করুন</button>
-                                                            <button class="btn btn-danger">বাতিল করুন</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End of Text Editor -->
                                         </div>
                                     </div>
                                 </div>

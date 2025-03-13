@@ -685,7 +685,7 @@
                                                                                 <li class="slide">
                                                                                     <a href="application-report.html" class="side-menu__item">Applications Reports</a>
                                                                                 </li> -->
-                            
+
                             </ul>
 
                         </li>
@@ -894,125 +894,229 @@
                 </div>
 
                 <form class="mt-5">
-                    <div class="mb-3 row">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="new_form">
+                        <label class="form-check-label text-success" for="new_form">সরকার কর্তৃক অনুমোদিত হলে চেক মার্কে
+                            ক্লিক করুন </label>
+                    </div>
+
+                    <div class="mb-1 row mt-2">
                         <div class="col-md-6">
-                            <label class="form-label ps-3 d-flex align-items-center">
-                                ১. আবেদনকারী/ আবেদনকারীগণের নাম *
-                                <button type="button" class="btn btn-info ms-2"
-                                    style="font-size: 10px; padding: 2px 5px;">+</button>
-                            </label>
-                            <input type="text" class="form-control" required>
+                            <div class="mb-3">
+                                <label class="form-label d-flex align-items-center w-100">
+                                    <span class="ps-2">১. আবেদনকারী/ আবেদনকারীগণের নাম *
+                                        (একাধিক আবেদনকারীর ক্ষেত্রে এখানে যোগ করুন)</span>
+                                    <button type="button" class="btn btn-primary btn-sm ms-auto">
+                                        +
+                                    </button>
+                                </label>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="নাম লিখুন" required>
+                                    <label for="name">আবেদনকারীর নাম লিখুন</label>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <label class="form-label ps-3">২. পিতা/ স্বামীর নাম *</label>
-                            <input type="text" class="form-control" required>
+
+                        <div class="col-md-3 mt-3">
+                            <label class="form-label ps-3"> পিতার নাম *</label>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="father_name" placeholder="পিতার নাম লিখুন"
+                                    required>
+                                <label for="father_name">পিতার নাম লিখুন</label>
+                            </div>
+
                         </div>
-                        <div class="col-md-2">
-                            <label class="form-label ps-3">(NID) *</label>
+                        <div class="col-md-3 mt-3">
+                            <label class="form-label ps-3">জাতীয় পরিচয় পত্র / জন্ম নিবন্ধনের সনদ *</label>
                             <div class="input-group">
                                 <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
                             </div>
                         </div>
+
                     </div>
 
-                    <div class="mb-3 row">
+                    <div class="mb-1 row">
                         <div class="col-md-6">
-                            <label class="form-label ps-3">৩. ক) বর্তমান ঠিকানা * </label><span>(পত্র যোগাযোগের
+                            <label class="form-label ps-3">২. ক) বর্তমান ঠিকানা * </label><span>(পত্র যোগাযোগের
                                 জন্য):</span>
-                            <input type="text" class="form-control" id="current_holding"
-                                placeholder="হোল্ডিং নং (প্রযোজ্য ক্ষেত্রে)" required
-                                oninput="if(same_address.checked) permanent_holding.value = this.value">
-                            <input type="text" class="form-control mt-2" id="current_village"
-                                placeholder="গ্রাম/ মহল্লা" required
-                                oninput="if(same_address.checked) permanent_village.value = this.value">
-                            <input type="text" class="form-control mt-2" id="current_post" placeholder="ডাকঘর" required
-                                oninput="if(same_address.checked) permanent_post.value = this.value">
-                            <input type="text" class="form-control mt-2" id="current_upazila" placeholder="উপজেলা/ থানা"
-                                required oninput="if(same_address.checked) permanent_upazila.value = this.value">
-                            <input type="text" class="form-control mt-2" id="current_district" placeholder="জেলা"
-                                required oninput="if(same_address.checked) permanent_district.value = this.value">
-                            <input type="text" class="form-control mt-2" placeholder="মোবাইল নম্বর" required>
-                            <input type="text" class="form-control mt-2" placeholder="ই-মেইল আইডি" required>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="current_holding"
+                                    placeholder="হোল্ডিং নং (প্রযোজ্য ক্ষেত্রে)" required>
+                                <label for="current_holding">হোল্ডিং নং (প্রযোজ্য ক্ষেত্রে)</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="current_village" placeholder="গ্রাম/ মহল্লা"
+                                    required>
+                                <label for="current_village">গ্রাম/ মহল্লা</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="current_post" placeholder="ডাকঘর" required>
+                                <label for="current_post">ডাকঘর</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="current_upazila" placeholder="উপজেলা/ থানা"
+                                    required>
+                                <label for="current_upazila">উপজেলা/ থানা</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="current_district" placeholder="জেলা"
+                                    required>
+                                <label for="current_district">জেলা</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="mobile" placeholder="মোবাইল নম্বর" required>
+                                <label for="mobile">মোবাইল নম্বর</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="ই-মেইল আইডি" required>
+                                <label for="email">ই-মেইল আইডি</label>
+                            </div>
+
                         </div>
 
                         <div class="col-md-6">
                             <label class="form-label ps-3">খ) স্থায়ী ঠিকানা *</label>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="same_address" onchange="
-                                permanent_holding.disabled  = !this.checked;
-                                permanent_village.disabled  = !this.checked;
-                                permanent_post.disabled     = !this.checked;
-                                permanent_upazila.disabled  = !this.checked;
-                                permanent_district.disabled = !this.checked;
-                            ">
+                                <input type="checkbox" class="form-check-input" id="same_address">
                                 <label class="form-check-label" for="same_address">বর্তমান ঠিকানার অনুরূপ হলে চেক মার্কে
                                     ক্লিক করুন</label>
                             </div>
-                            <input type="text" class="form-control mt-2" id="permanent_holding"
-                                placeholder="হোল্ডিং নং (প্রযোজ্য ক্ষেত্রে)" required disabled>
-                            <input type="text" class="form-control mt-2" id="permanent_village"
-                                placeholder="গ্রাম/ মহল্লা" required disabled>
-                            <input type="text" class="form-control mt-2" id="permanent_post" placeholder="ডাকঘর"
-                                required disabled>
-                            <input type="text" class="form-control mt-2" id="permanent_upazila"
-                                placeholder="উপজেলা/ থানা" required disabled>
-                            <input type="text" class="form-control mt-2" id="permanent_district" placeholder="জেলা"
-                                required disabled>
 
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="permanent_holding"
+                                    placeholder="হোল্ডিং নং (প্রযোজ্য ক্ষেত্রে)" required>
+                                <label for="permanent_holding">হোল্ডিং নং (প্রযোজ্য ক্ষেত্রে)</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="permanent_village"
+                                    placeholder="গ্রাম/ মহল্লা" required>
+                                <label for="permanent_village">গ্রাম/ মহল্লা</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="permanent_post" placeholder="ডাকঘর"
+                                    required>
+                                <label for="permanent_post">ডাকঘর</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="permanent_upazila"
+                                    placeholder="উপজেলা/ থানা" required>
+                                <label for="permanent_upazila">উপজেলা/ থানা</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="permanent_district" placeholder="জেলা"
+                                    required>
+                                <label for="permanent_district">জেলা</label>
+                            </div>
                         </div>
                     </div>
 
                     <div class="row">
                         <!-- Left Side: Land Details Section -->
-                        <label class="form-label ps-3">৪. যে জমির জন্য ছাড়পত্র পেতে ইচ্ছুক তার তফসীল</label>
-
+                        <label class="form-label ps-3 fw-bold">৩. যে জমির জন্য ছাড়পত্র পেতে ইচ্ছুক তার তফসীল</label>
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <input type="text" class="form-control mt-2" placeholder="(ক) মৌজা/ এলাকার নাম"
-                                            required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="text" class="form-control mt-2"
-                                            placeholder="(খ) জে, এল, নং/ সেক্টর নং" required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="text" class="form-control mt-2"
-                                            placeholder="(গ) রাস্তার নাম/ নং (যদি থাকে)" required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="text" class="form-control mt-2"
-                                            placeholder="(ঘ) আর, এস, দাগ নং/ প্লট নং" required>
-                                    </div>
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="district_name" required>
+                                        <option selected disabled>জেলার নাম নির্বাচন করুন</option>
+                                        <option value="rajshahi">রাজশাহী</option>
+                                        <option value="chapai_nawabganj">চাঁপাইনবাবগঞ্জ</option>
+                                        <option value="naogaon">নওগাঁ</option>
+                                        <option value="natore">নাটোর</option>
+                                        <option value="pabna">পাবনা</option>
+                                        <option value="bogura">বগুড়া</option>
+                                        <option value="joypurhat">জয়পুরহাট</option>
+                                        <option value="sirajganj">সিরাজগঞ্জ</option>
+                                    </select>
+                                    <label for="district_name">(ক) জেলার নাম</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="thana_name" required>
+                                        <option selected disabled>উপজেলা/ থানা নির্বাচন করুন</option>
+                                        <option value="paba">পবা</option>
+                                        <option value="godagari">গোদাগাড়ী</option>
+                                        <option value="tanore">তানোর</option>
+                                        <option value="mohonpur">মোহনপুর</option>
+                                        <option value="bagha">বাঘা</option>
+                                    </select>
+                                    <label for="thana_name">(খ) উপজেলা/ থানা নাম</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="mouza_area_name" required>
+                                        <option selected disabled>মৌজা/ এলাকার নাম নির্বাচন করুন</option>
+                                        <option value="saheb_bazar">সাহেব বাজার</option>
+                                        <option value="ghoramara">ঘোড়ামারা</option>
+                                        <option value="shiroil">শিরোইল</option>
+                                        <option value="ranibazar">রানীবাজার</option>
+                                        <option value="udayonagar">উদয়নগর</option>
+                                    </select>
+                                    <label for="mouza_area_name">(গ) মৌজা/ এলাকার নাম</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="rs_plot_no"
+                                        placeholder="(ঘ) আর, এস, দাগ নং/ প্লট নং" required>
+                                    <label for="rs_plot_no">(ঘ) আর, এস, দাগ নং/ প্লট নং</label>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Right Side: Land Use Section -->
                         <div class="col-md-6">
-                            <div>
-                                <input type="text" class="form-control mt-2" placeholder="(ঙ) থানার নাম" required>
-                            </div>
-                            <div>
-                                <input type="text" class="form-control mt-2" placeholder="(চ) জেলার নাম" required>
-                            </div>
-                            <div>
-                                <input type="text" class="form-control mt-2"
-                                    placeholder="(ছ) দাখিলকৃত খতিয়ানে উল্লিখিত জমির শ্রেণি" required>
-                            </div>
                             <div class="mb-3">
-                                <input type="number" class="form-control mt-2"
-                                    placeholder="(জ) জমির পরিমাণ: এবং-শতাংশ/ শতক" required>
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="land_class" required>
+                                        <option selected disabled>জমির শ্রেণি নির্বাচন করুন</option>
+                                        <option value="বসতভিটা">বসতভিটা</option>
+                                        <option value="কৃষিজমি">কৃষিজমি</option>
+                                        <option value="পুকুর">পুকুর</option>
+                                        <option value="বাগান">বাগান</option>
+                                        <option value="খাসজমি">খাসজমি</option>
+                                    </select>
+                                    <label for="land_class">(ঙ) দাখিলকৃত খতিয়ানে উল্লিখিত জমির শ্রেণি</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="jl_sector_no"
+                                        placeholder="(খ) জে, এল, নং/ সেক্টর নং" required>
+                                    <label for="jl_sector_no">(চ) জে, এল, নং/ সেক্টর নং</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="road_name"
+                                        placeholder="(গ) রাস্তার নাম/ নং (যদি থাকে)" required>
+                                    <label for="road_name">(ছ) রাস্তার নাম/ নং (যদি থাকে)</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="land_area"
+                                        placeholder="(জ) জমির পরিমাণ: শতক" required>
+                                    <label for="land_area">(জ) জমির পরিমাণ (খতিয়ান অনুযায়ী): শতাংশ </label>
+                                </div>
                             </div>
                         </div>
                     </div>
+
 
                     <div class="row">
                         <!-- Left Side: Documents Section -->
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <label class="form-label ps-3">৫. আবেদনকৃত জমি বর্তমানে কি হিসেবে ব্যবহৃত হচ্ছে
+                                <label class="form-label ps-3">৪. আবেদনকৃত জমি বর্তমানে কি হিসেবে ব্যবহৃত হচ্ছে
                                     *</label>
                                 <select class="form-select" required>
                                     <option selected>নির্বাচন করুন</option>
@@ -1027,7 +1131,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label ps-3">৬. আবেদনকৃত জমি ভবিষ্যতে কি হিসেবে ব্যবহৃত হবে *</label>
+                                <label class="form-label ps-3">৫. আবেদনকৃত জমি ভবিষ্যতে কি হিসেবে ব্যবহৃত হবে *</label>
                                 <select class="form-select" required>
                                     <option selected>নির্বাচন করুন</option>
                                     <option>আবাসিক</option>
@@ -1050,20 +1154,27 @@
                             </div>
 
                             <div class="mb-2">
-                                <label class="form-label ps-3">৭. মূল দলিল/ সার্টিফাইড মূল দলিল এর স্ক্যান কপি *</label>
-                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
+                                <label class="form-label ps-3">
+                                    ৬. মূল দলিল/ সার্টিফাইড মূল দলিল এর স্ক্যান কপি *
+                                    <span class="ms-2 text-primary">file1.pdf</span>
+                                    <span class="ms-2 text-primary">file2.pdf</span>
+                                    <span class="ms-2 text-primary">file3.pdf</span>
+                                </label>
+                                <small class="text-danger ps-2">সর্বোচ্চ অনুমোদিত ফাইল সাইজ: 2MB প্রতি ফাইল</small>
+
+                                <!-- ফাইল ইনপুট ফিল্ড -->
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required multiple
+                                    id="fileInput">
+
+                                <!-- আপলোড হওয়া ফাইলের নাম দেখানোর জন্য -->
+                                <div class="mt-2" id="fileDisplayContainer">
+                                    <div class="d-flex flex-wrap" id="fileIconsContainer"></div>
+                                </div>
                             </div>
 
-                            <div class="mb-2">
-                                <label class="form-label ps-3">৮. মূল খারিজ খতিয়ান/ নামজারি খতিয়ান এর স্ক্যান কপি
-                                    *</label>
-                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
-                            </div>
-
 
                             <div class="mb-2">
-                                <label class="form-label ps-3">৯. মূল নামজারির ডুপ্লিকেট কার্বন রশিদ (DCR) এর স্ক্যান
-                                    কপি
+                                <label class="form-label ps-3">৭. মূল খারিজ খতিয়ান/ নামজারি খতিয়ান এর স্ক্যান কপি
                                     *</label>
                                 <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
                             </div>
@@ -1072,12 +1183,18 @@
                         <!-- Right Side: Documents Section -->
                         <div class="col-md-6">
                             <div class="mb-2">
-                                <label class="form-label ps-3">১০. মূল হাল খাজনা রশিদ এর স্ক্যান কপি *</label>
+                                <label class="form-label ps-3">৮. মূল নামজারির ডুপ্লিকেট কার্বন রশিদ (DCR) এর স্ক্যান
+                                    কপি
+                                    *</label>
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label ps-3">৯. মূল হাল খাজনা রশিদ এর স্ক্যান কপি *</label>
                                 <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
                             </div>
 
                             <div class="mb-2">
-                                <label class="form-label ps-3">১১. মৌজা ম্যাপে আবেদিত দাগে জমির অবস্থান চিহ্নিতকরণ (A4
+                                <label class="form-label ps-3">১০. মৌজা ম্যাপে আবেদিত দাগে জমির অবস্থান চিহ্নিতকরণ (A4
                                     সাইজ
                                     -এ) এর স্ক্যান কপি
                                     *</label>
@@ -1085,23 +1202,25 @@
                             </div>
 
                             <div class="mb-2">
-                                <label class="form-label ps-3">১২. আবেদিত জমির অবস্থান নকশা (Location Map) / হাত নকশা এর
+                                <label class="form-label ps-3">১১. আবেদিত জমির অবস্থান নকশা (Location Map) / হাত নকশা এর
                                     স্ক্যান কপি *</label>
                                 <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
                             </div>
 
-                            <div class="mb-2">
-                                <label class="form-label ps-3">১৩. প্রয়োজনে জমির মালিকানা সংক্রান্ত অথবা চাহিত অন্যান্য
-                                    সকল
-                                    তথ্যাদির মূল কপির
-                                    স্ক্যান কপি *</label>
-                                <input type="file" class="form-control" accept=".pdf,.jpg,.png" required>
+                            <div class="mb-">
+                                <label class="form-label ps-3" style="font-size: 10px;">
+                                    জাতীয় পরিচয় পত্র / জন্ম নিবন্ধনের সনদ *
+                                    <span class="ms-2 text-primary">file1.pdf</span>
+                                    <span class="ms-2 text-primary">file2.pdf</span>
+                                    <span class="ms-2 text-primary">file3.pdf</span>
+                                </label>
                             </div>
+
                         </div>
                     </div>
 
                     <small class="form-text text-muted ">
-                        <span class="text-danger ps-2" style="font-style: italic;">
+                        <span class="text-inf ps-2" style="font-style: italic;">
                             ভূমি ব্যবহার ছাড়পত্রের জন্য আবেদিত জমির প্রয়োজনীয় মূল কাগজপত্র / দলিলাদি Scan
                             (স্ক্যান) করে আবশ্যিকভাবে PDF ফরম্যাটে আবেদনের সাথে জমা প্রদান করতে হবে |
                         </span>

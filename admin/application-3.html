@@ -918,20 +918,57 @@
                         </div>
                         <div class="col-md-6">
                             <h6>২। যোগাযোগের ঠিকানা</h6>
+                        <div class="mb-3">
+                            <label class="form-label">জেলা</label>
+                            <select class="form-control" required>
+                                <option value="">জেলা নির্বাচন করুন</option>
+                                <option value="district1">রাজশাহী</option>
+                                <option value="district2">চাঁপাইনবাবগঞ্জ</option>
+                                <option value="district3">নওগাঁ</option>
+                                <option value="district4">বগুড়া</option>
+                                <option value="district5">পাবনা</option>
+                                <option value="district6">কুষ্টিয়া</option>
+                                <option value="district7">ঝিনাইদহ</option>
+                                <option value="district8">মেহেরপুর</option>
+                                <option value="district9">কুষ্টিয়া</option>
+                                <option value="district10">সিরাজগঞ্জ</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">থানা</label>
+                            <select class="form-control" required>
+                                <option value="">থানা নির্বাচন করুন</option>
+                                <option value="thana1">রাজশাহী সদর</option>
+                                <option value="thana2">চাঁপাইনবাবগঞ্জ সদর</option>
+                                <option value="thana3">নওগাঁ সদর</option>
+                                <option value="thana4">বগুড়া সদর</option>
+                                <option value="thana5">পাবনা সদর</option>
+                                <option value="thana6">কুষ্টিয়া সদর</option>
+                                <option value="thana7">ঝিনাইদহ সদর</option>
+                                <option value="thana8">মেহেরপুর সদর</option>
+                                <option value="thana9">সিরাজগঞ্জ সদর</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">ডাকঘর</label>
+                            <select class="form-control" required>
+                                <option value="">ডাকঘর নির্বাচন করুন</option>
+                                <option value="postoffice1">রাজশাহী সদর ডাকঘর</option>
+                                <option value="postoffice2">চাঁপাইনবাবগঞ্জ সদর ডাকঘর</option>
+                                <option value="postoffice3">নওগাঁ সদর ডাকঘর</option>
+                                <option value="postoffice4">বগুড়া সদর ডাকঘর</option>
+                                <option value="postoffice5">পাবনা সদর ডাকঘর</option>
+                                <option value="postoffice6">কুষ্টিয়া সদর ডাকঘর</option>
+                                <option value="postoffice7">ঝিনাইদহ সদর ডাকঘর</option>
+                                <option value="postoffice8">মেহেরপুর সদর ডাকঘর</option>
+                                <option value="postoffice9">সিরাজগঞ্জ সদর ডাকঘর</option>
+                            </select>
+                        </div>
+
                             <div class="mb-3">
                                 <label class="form-label">গ্রাম/মহল্লা</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">ডাকঘর</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">থানা</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">জেলা</label>
                                 <input type="text" class="form-control">
                             </div>
                         </div>
@@ -965,10 +1002,22 @@
                                 <label class="form-label">প্লট নং</label>
                                 <input type="text" class="form-control">
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">উন্নয়নকৃত এলাকা</label>
-                                <input type="text" class="form-control">
-                            </div>
+                        <div class="mb-3">
+                            <label class="form-label">উন্নয়নকৃত এলাকা</label>
+                            <select class="form-control" required>
+                                <option value="">এলাকা নির্বাচন করুন</option>
+                                <option value="area1">রাজশাহী শহর</option>
+                                <option value="area2">চাঁপাইনবাবগঞ্জ শহর</option>
+                                <option value="area3">নওগাঁ শহর</option>
+                                <option value="area4">বগুড়া শহর</option>
+                                <option value="area5">পাবনা শহর</option>
+                                <option value="area6">কুষ্টিয়া শহর</option>
+                                <option value="area7">ঝিনাইদহ শহর</option>
+                                <option value="area8">মেহেরপুর শহর</option>
+                                <option value="area9">সিরাজগঞ্জ শহর</option>
+                            </select>
+                        </div>
+
                             <div class="mb-3">
                                 <label class="form-label">সেক্টর নং</label>
                                 <input type="text" class="form-control">
@@ -1003,20 +1052,23 @@
                         </div>
                     </div>
                     <h6>৫। অতিরিক্ত তথ্য</h6>
-                    <div class="mb-3">
+                <div class="row mb-3">
+                    <div class="col">
                         <label class="form-label">অথরাইজড অফিসারের অনুমোদন ব্যতীত পূর্বে কোন নির্মাণ করা হয়েছে?</label>
                         <select class="form-select">
                             <option>হ্যাঁ</option>
                             <option>না</option>
                         </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="col">
                         <label class="form-label">ইমারত নির্মাণ আইন ১৯৫২ এর অধীনে মামলা হয়েছে?</label>
                         <select class="form-select">
                             <option>হ্যাঁ</option>
                             <option>না</option>
                         </select>
                     </div>
+                </div>
+
             <a href="noc-registration-next.html">
                 <button type="button" class="btn btn-primary w-100 mt-2">Next</button>
             </a>

@@ -1244,11 +1244,20 @@
                     </div>
                     <div class="modal-body">
                         <form>
-                            <div class="mb-3">
-                                <label for="recipient" class="form-label">প্ৰাপক</label>
-                                <input type="text" class="form-control" id="recipient" value=""
-                                    placeholder="প্রাপকের নাম লিখুন">
-                            </div>
+                        <div class="mb-3">
+                            <label for="recipient" class="form-label">প্ৰাপক</label>
+                            <select class="form-control" id="recipient">
+                                <option value="">প্রাপকের নাম নির্বাচন করুন</option>
+                                <option value="officer1">মোহাম্মদ হোসেন - প্রশাসন বিভাগ</option>
+                                <option value="officer2">রাশেদা পারভীন - পরিকল্পনা বিভাগ</option>
+                                <option value="officer3">সাইফুল ইসলাম - হিসাব বিভাগ</option>
+                                <option value="officer4">তানভীর আহমেদ - প্রকৌশল বিভাগ</option>
+                                <option value="officer5">জাকির হোসেন - গবেষণা ও উন্নয়ন বিভাগ</option>
+                                <option value="officer6">ফারহানা ইয়াসমিন - প্রশিক্ষণ বিভাগ</option>
+                                <option value="officer7">আব্দুল করিম - তথ্য প্রযুক্তি বিভাগ</option>
+                            </select>
+                        </div>
+
                             <div class="mb-3">
                                 <label for="subject" class="form-label">জ্ঞাতার্থে</label>
                                 <input type="text" class="form-control" id="subject" value="জমি ব্যবহারের জন্য আবেদন"

@@ -685,7 +685,7 @@
                                                                                 <li class="slide">
                                                                                     <a href="application-report.html" class="side-menu__item">Applications Reports</a>
                                                                                 </li> -->
-                            
+
                             </ul>
 
                         </li>
@@ -906,21 +906,41 @@
                         <!-- Left Column -->
                         <div class="col-6">
                             <div class="mb-3">
-                                <label class="form-label">আমি</label>
+                                <label class="form-label">নাম</label>
+                                <input type="text" class="form-control" placeholder="আপনার নাম লিখুন" required>
+                            </div>
+
+                            <div class="mb-0">
+                                <label class="form-label">বর্তমান ঠিকানা</label>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">জেলা</label>
                                 <select class="form-select" required>
-                                    <option value="">একটি নির্বাচন করুন</option>
-                                    <option value="প্রকৌশলী">প্রকৌশলী</option>
-                                    <option value="স্থপতি">স্থপতি</option>
-                                    <option value="ডিপ্লোমা প্রকৌশলী">ডিপ্লোমা প্রকৌশলী</option>
-                                    <option value="ডিপ্লোমা স্থপতি">ডিপ্লোমা স্থপতি</option>
+                                    <option value="">জেলা নির্বাচন করুন</option>
+                                    <option value="রাজশাহী">রাজশাহী</option>
+                                </select>
+                                <label class="form-label mt-2">উপজেলা/থানা</label>
+                                <select class="form-select" required>
+                                    <option value="">উপজেলা/থানা নির্বাচন করুন</option>
+                                    <option value="রাজশাহী সদর">রাজশাহী সদর</option>
+                                    <option value="পবা">পবা</option>
+                                    <option value="চারঘাট">চারঘাট</option>
+                                </select>
+                                <label class="form-label mt-2">ডাকঘর</label>
+                                <select class="form-select" required>
+                                    <option value="">ডাকঘর নির্বাচন করুন</option>
+                                    <option value="রাজশাহী জিপিও">রাজশাহী জিপিও</option>
+                                    <option value="কাদিরগঞ্জ">কাদিরগঞ্জ</option>
+                                </select>
+                                <label class="form-label mt-2">গ্রাম/মহল্লা</label>
+                                <select class="form-select" required>
+                                    <option value="">গ্রাম/মহল্লা নির্বাচন করুন</option>
+                                    <option value="গোরহাঙ্গা">গোরহাঙ্গা</option>
+                                    <option value="সাহেব বাজার">সাহেব বাজার</option>
                                 </select>
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">স্থায়ী ঠিকানা</label>
-                                <input type="text" class="form-control" placeholder="স্থায়ী ঠিকানা লিখুন" required>
-                            </div>
-                           
-                           
+
                             <div class="mb-3">
                                 <label class="form-label">মোবাইল নম্বর</label>
                                 <input type="text" class="form-control" placeholder="মোবাইল নম্বর লিখুন" required>
@@ -930,86 +950,74 @@
                                 <input type="email" class="form-control" placeholder="আপনার ই-মেইল লিখুন" required>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">আয়কর পরিচিতি নং</label>
-                                <input type="text" class="form-control" placeholder="আয়কর পরিচিতি নম্বর লিখুন"
+                                <label class="form-label">পাসওয়ার্ড</label>
+                                <input type="password" class="form-control" placeholder="আপনার পাসওয়ার্ড লিখুন" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">জাতীয় পরিচয় নং</label>
+                                <input type="text" class="form-control" placeholder="জাতীয় পরিচয়পত্র নম্বর লিখুন"
                                     required>
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">আবেদনকৃত কাজের ধরণ</label>
-                                <select class="form-select" required>
-                                    <option value="">একটি নির্বাচন করুন</option>
-                                    <option value="ভূমি জরিপ প্রতিবেদন">ভূমি জরিপ প্রতিবেদন</option>
-                                    <option value="মাটি পরীক্ষা প্রতিবেদন">মাটি পরীক্ষা প্রতিবেদন</option>
-                                    <option value="ইমারতের স্থাপত্য নকশা ">ইমারতের স্থাপত্য নকশা</option>
-                                    <option value="কাঠামোগত নকশা">ইমারতের কাঠামোগত নকশা</option>
-                                    <option value="প্লাম্বিং ডিজাইন">ইমারতের প্লাম্বিং ডিজাইন</option>
-                                    <option value="ইলেকট্রিক্যাল ডিজাইন">মেকানিক্যাল ডিজাইন</option>
-                                    <option value="ইলেকট্রিক্যাল ডিজাইন">ইলেকট্রিক্যাল ডিজাইন</option>
-                                    <option value="নির্মাণ তদারকি">নির্মাণ তদারকি</option>
-                                    <option value="যান্ত্রিক ডিজাইন">ইমারত ভেঙ্গে ফেলা/ অপসারণ</option>
-                                    <option value="যান্ত্রিক ডিজাইন">কাজ সম্পন্নের প্রতিবেদন</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">সংশ্লিষ্ট শিক্ষাগত যোগ্যতার সনদপত্রের সত্যায়িত কপি</label>
-                                <input type="file" class="form-control" required>
-                            </div>
+                           
                         </div>
 
                         <!-- Right Column -->
                         <div class="col-6">
-                            <!-- <div class="mb-3">
-                                <label class="form-label">আরডিএ তালিকাভুক্তি নং</label>
-                                <input type="text" class="form-control" placeholder="আরডিএ তালিকাভুক্তি নম্বর লিখুন"
-                                    required>
-                            </div> -->
-                            <div class="mb-3">
-                                <label class="form-label">জাতীয় পরিচয় নং</label>
-                                <input type="text" class="form-control" placeholder="জাতীয় পরিচয়পত্র নম্বর লিখুন" required>
+
+                        <div class="mb-3">
+                            <label class="form-label">আপনি কোন পেশার অন্তর্গত</label>
+                            <select class="form-select" required>
+                                <option value="" selected hidden>নির্বাচন করুন</option>
+                                <option value="প্রকৌশলী">প্রকৌশলী</option>
+                                <option value="স্থপতি">স্থপতি</option>
+                                <option value="ডিপ্লোমা প্রকৌশলী">ডিপ্লোমা প্রকৌশলী</option>
+                                <option value="ডিপ্লোমা স্থপতি">ডিপ্লোমা স্থপতি</option>
+                            </select>
+                        </div>
+
+                            <div class="mb-0">
+                                <label class="form-label mt-0">স্থায়ী ঠিকানা</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="same_address">
+                                <label class="form-check-label" for="same_address">বর্তমান ঠিকানার অনুরূপ হলে চেক মার্কে
+                                    ক্লিক করুন</label>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">বর্তমান ঠিকানা</label>
-                                <input type="text" class="form-control" placeholder="বর্তমান ঠিকানা লিখুন" required>
+                                <label class="form-label">জেলা</label>
+                                <select class="form-select" required>
+                                    <option value="">জেলা নির্বাচন করুন</option>
+                                    <option value="রাজশাহী">রাজশাহী</option>
+                                </select>
+                                <label class="form-label mt-2">উপজেলা/থানা</label>
+                                <select class="form-select" required>
+                                    <option value="">উপজেলা/থানা নির্বাচন করুন</option>
+                                    <option value="রাজশাহী সদর">রাজশাহী সদর</option>
+                                    <option value="পবা">পবা</option>
+                                    <option value="চারঘাট">চারঘাট</option>
+                                </select>
+                                <label class="form-label mt-2">ডাকঘর</label>
+                                <select class="form-select" required>
+                                    <option value="">ডাকঘর নির্বাচন করুন</option>
+                                    <option value="রাজশাহী জিপিও">রাজশাহী জিপিও</option>
+                                    <option value="কাদিরগঞ্জ">কাদিরগঞ্জ</option>
+                                </select>
+                                <label class="form-label mt-2">গ্রাম/মহল্লা</label>
+                                <select class="form-select" required>
+                                    <option value="">গ্রাম/মহল্লা নির্বাচন করুন</option>
+                                    <option value="গোরহাঙ্গা">গোরহাঙ্গা</option>
+                                    <option value="সাহেব বাজার">সাহেব বাজার</option>
+                                </select>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">প্রফেশনাল মেম্বারশীপ নং</label>
                                 <input type="text" class="form-control" placeholder="প্রফেশনাল মেম্বারশীপ নম্বর লিখুন"
                                     required>
                             </div>
-                            <!-- <div class="mb-3">
-                                <label class="form-label">ডিগ্রি/কোর্স</label>
-                                <input type="text" class="form-control" placeholder="ডিগ্রি/কোর্স লিখুন" required>
-                            </div>
                             <div class="mb-3">
-                                <label class="form-label">স্পেশালাইজেশন</label>
-                                <input type="text" class="form-control" placeholder="স্পেশালাইজেশন লিখুন" required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">শিক্ষা প্রতিষ্ঠান</label>
-                                <input type="text" class="form-control" placeholder="শিক্ষা প্রতিষ্ঠান লিখুন" required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">পাশের বছর</label>
-                                <input type="text" class="form-control" placeholder="পাশের বছর লিখুন" required>
-                            </div> -->
-
-                            <div class="row">
-                                <div class="col-6 mb-3">
-                                    <label class="form-label">ডিগ্রি/কোর্স</label>
-                                    <input type="text" class="form-control" placeholder="ডিগ্রি/কোর্স লিখুন" required>
-                                </div>
-                                <div class="col-6 mb-3">
-                                    <label class="form-label">স্পেশালাইজেশন</label>
-                                    <input type="text" class="form-control" placeholder="স্পেশালাইজেশন লিখুন" required>
-                                </div>
-                                <div class="col-6 mb-3">
-                                    <label class="form-label">শিক্ষা প্রতিষ্ঠান</label>
-                                    <input type="text" class="form-control" placeholder="শিক্ষা প্রতিষ্ঠান লিখুন" required>
-                                </div>
-                                <div class="col-6 mb-3">
-                                    <label class="form-label">পাশের বছর</label>
-                                    <input type="text" class="form-control" placeholder="পাশের বছর লিখুন" required>
-                                </div>
+                                <label class="form-label">আয়কর পরিচিতি নং</label>
+                                <input type="text" class="form-control" placeholder="আয়কর পরিচিতি নম্বর লিখুন" required>
                             </div>
 
                             <div class="mb-3">
@@ -1042,11 +1050,39 @@
                                 <label class="form-label">আয়কর পরিচিতি সনদের সত্যায়িত কপি</label>
                                 <input type="file" class="form-control" required>
                             </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">নমুনা অনুসারে ৩০০ টাকার নন-জুডিশিয়াল ষ্ট্যাম্পে
+                                    অঙ্গিকারনামা</label>
+                                <input type="file" class="form-control" required>
+                            </div>
                         </div>
 
                         <!-- Right Column ...-->
                         <div class="col-6">
-                           
+
+                            <div class="mb-3">
+                                <label class="form-label">আবেদনকৃত কাজের ধরণ</label>
+                                <select class="form-select" required>
+                                    <option value="">একটি নির্বাচন করুন</option>
+                                    <option value="ভূমি জরিপ প্রতিবেদন">ভূমি জরিপ প্রতিবেদন</option>
+                                    <option value="মাটি পরীক্ষা প্রতিবেদন">মাটি পরীক্ষা প্রতিবেদন</option>
+                                    <option value="ইমারতের স্থাপত্য নকশা ">ইমারতের স্থাপত্য নকশা</option>
+                                    <option value="কাঠামোগত নকশা">ইমারতের কাঠামোগত নকশা</option>
+                                    <option value="প্লাম্বিং ডিজাইন">ইমারতের প্লাম্বিং ডিজাইন</option>
+                                    <option value="ইলেকট্রিক্যাল ডিজাইন">মেকানিক্যাল ডিজাইন</option>
+                                    <option value="ইলেকট্রিক্যাল ডিজাইন">ইলেকট্রিক্যাল ডিজাইন</option>
+                                    <option value="নির্মাণ তদারকি">নির্মাণ তদারকি</option>
+                                    <option value="যান্ত্রিক ডিজাইন">ইমারত ভেঙ্গে ফেলা/ অপসারণ</option>
+                                    <option value="যান্ত্রিক ডিজাইন">কাজ সম্পন্নের প্রতিবেদন</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">সংশ্লিষ্ট শিক্ষাগত যোগ্যতার সনদপত্রের সত্যায়িত কপি</label>
+                                <input type="file" class="form-control" required>
+                            </div>
+
                             <div class="mb-3">
                                 <label class="form-label">সংশ্লিষ্ট কাজে অভিজ্ঞতার প্রমাণপত্র</label>
                                 <input type="file" class="form-control" required>
@@ -1058,26 +1094,60 @@
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">নমুনা অনুসারে ৩০০ টাকার নন-জুডিশিয়াল ষ্ট্যাম্পে
-                                    অঙ্গিকারনামা</label>
-                                <input type="file" class="form-control" required>
-                            </div>
-
-                            <div class="mb-3">
                                 <label class="form-label">জীবন-বৃত্তান্ত</label>
                                 <input type="file" class="form-control">
                             </div>
-
-                            <!-- <div class="mb-3">
-                        <label class="form-label">চেয়ান, রাজশাহী উন্নয়ন কর্তৃপক্ষের অনুকূলে ৫০০০ টাকার ব্যাংক ড্রাফট</label>
-                        <input type="file" class="form-control" required>
-                        </div> -->
                         </div>
                     </div>
+                  
+                        <div class="row mt-1 mb-2">
+                            <!-- <label class="form-label">শিক্ষাগত যোগ্যতা : (উপযুক্ত সনদপত্র/প্রমানপত্র সংযুক্ত করা হলো)</label> -->
+                         
+                            <div class="col-md-3">
+                                <label class="form-label">ডিগ্রি/কোর্স</label>
+                                <select class="form-select" name="degree[]">
+                                <option selected>সিলেক্ট করুন</option>
+                                    <option>মাস্টার্স</option>
+                                    <option>ডিপ্লোমা</option>
+                                    <option>এইচএসসি</option>
+                                    <option>এসএসসি</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">স্পেশালাইজেশন</label>
+                                <select class="form-select" name="specialization[]">
+                                <option selected>সিলেক্ট করুন</option>
+                                    <option>ম্যাথমেটিকস</option>
+                                    <option>ফিজিক্স</option>
+                                    <option>অর্থনীতি</option>
+                                    <option>মনোবিজ্ঞান</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">শিক্ষা প্রতিষ্ঠান</label>
+                                <select class="form-select" name="institution[]">
+                                <option selected>সিলেক্ট করুন</option>
+                                    <option>খুলনা বিশ্ববিদ্যালয়</option>
+                                    <option>চট্টগ্রাম বিশ্ববিদ্যালয়</option>
+                                    <option>রাজশাহী বিশ্ববিদ্যালয়</option>
+                                    <option>বরিশাল বিশ্ববিদ্যালয়</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">পাশের বছর</label>
+                                <select class="form-select" name="year[]">
+                                <option selected>সিলেক্ট করুন</option>
+                                    <option>২০২২</option>
+                                    <option>২০২১</option>
+                                    <option>২০২০</option>
+                                    <option>২০১৯</option>
+                                </select>
+                            </div>
+                        </div>
 
-                    <a href="noc-registration-next.html">
-                        <button type="button" class="btn btn-primary w-100 mt-2">Next</button>
-                    </a>
+                        <a href="noc-registration-next.html">
+                            <button type="button" class="btn btn-primary w-100 mt-2">Next</button>
+                        </a>
                 </form>
 
             </div>

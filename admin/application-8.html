@@ -911,11 +911,43 @@
                                 <input type="text" class="form-control" id="applicantName" placeholder="আবেদনকারীর নাম"
                                     required>
                             </div>
-                            <div class="mb-3">
+                            <!-- <div class="mb-3">
                                 <label for="applicantAddress" class="form-label">ঠিকানা</label>
                                 <input type="text" class="form-control" id="applicantAddress"
                                     placeholder="আবেদনকারীর ঠিকানা" required>
+                            </div> -->
+
+                            <div class="mb-0">
+                                <label class="form-label">বর্তমান ঠিকানা</label>
                             </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">জেলা</label>
+                                <select class="form-select" required>
+                                    <option value="">জেলা নির্বাচন করুন</option>
+                                    <option value="রাজশাহী">রাজশাহী</option>
+                                </select>
+                                <label class="form-label mt-2">উপজেলা/থানা</label>
+                                <select class="form-select" required>
+                                    <option value="">উপজেলা/থানা নির্বাচন করুন</option>
+                                    <option value="রাজশাহী সদর">রাজশাহী সদর</option>
+                                    <option value="পবা">পবা</option>
+                                    <option value="চারঘাট">চারঘাট</option>
+                                </select>
+                                <label class="form-label mt-2">ডাকঘর</label>
+                                <select class="form-select" required>
+                                    <option value="">ডাকঘর নির্বাচন করুন</option>
+                                    <option value="রাজশাহী জিপিও">রাজশাহী জিপিও</option>
+                                    <option value="কাদিরগঞ্জ">কাদিরগঞ্জ</option>
+                                </select>
+                                <label class="form-label mt-2">গ্রাম/মহল্লা</label>
+                                <select class="form-select" required>
+                                    <option value="">গ্রাম/মহল্লা নির্বাচন করুন</option>
+                                    <option value="গোরহাঙ্গা">গোরহাঙ্গা</option>
+                                    <option value="সাহেব বাজার">সাহেব বাজার</option>
+                                </select>
+                            </div>
+
                             <div class="mb-3">
                                 <label for="applicantPhone" class="form-label">ফোন নম্বর</label>
                                 <input type="text" class="form-control" id="applicantPhone"
@@ -936,10 +968,23 @@
                                 <input type="text" class="form-control" id="municipality"
                                     placeholder="সিটি কর্পোরেশন/পৌরসভা/ইউনিয়ন" required>
                             </div>
-                            <div class="mb-3">
-                                <label for="mouzaName" class="form-label">মৌজার নাম</label>
-                                <input type="text" class="form-control" id="mouzaName" placeholder="মৌজার নাম" required>
-                            </div>
+                        <div class="mb-3">
+                            <label for="mouzaName" class="form-label">মৌজার নাম</label>
+                            <select class="form-select" id="mouzaName" required>
+                                <option value="" selected disabled hidden>মৌজার নাম নির্বাচন করুন</option>
+                                <option value="পুরানাপাড়া">পুরানাপাড়া</option>
+                                <option value="বড়বাড়ী">বড়বাড়ী</option>
+                                <option value="লালচানপুর">লালচানপুর</option>
+                                <option value="দশমাইল">দশমাইল</option>
+                                <option value="গোরা বাজার">গোরা বাজার</option>
+                                <option value="শালবাগান">শালবাগান</option>
+                                <option value="সাহেববাড়ি">সাহেববাড়ি</option>
+                                <option value="পতিসর">পতিসর</option>
+                                <option value="কাহালু">কাহালু</option>
+                                <option value="বটতলা">বটতলা</option>
+                            </select>
+                        </div>
+
 
                         </div>
 
@@ -954,6 +999,41 @@
                                 </select>
                             </div>
 
+                            <div class="mb-0">
+                                <label class="form-label mt-0">স্থায়ী ঠিকানা</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="same_address">
+                                <label class="form-check-label" for="same_address">বর্তমান ঠিকানার অনুরূপ হলে চেক মার্কে
+                                    ক্লিক করুন</label>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">জেলা</label>
+                                <select class="form-select" required>
+                                    <option value="">জেলা নির্বাচন করুন</option>
+                                    <option value="রাজশাহী">রাজশাহী</option>
+                                </select>
+                                <label class="form-label mt-2">উপজেলা/থানা</label>
+                                <select class="form-select" required>
+                                    <option value="">উপজেলা/থানা নির্বাচন করুন</option>
+                                    <option value="রাজশাহী সদর">রাজশাহী সদর</option>
+                                    <option value="পবা">পবা</option>
+                                    <option value="চারঘাট">চারঘাট</option>
+                                </select>
+                                <label class="form-label mt-2">ডাকঘর</label>
+                                <select class="form-select" required>
+                                    <option value="">ডাকঘর নির্বাচন করুন</option>
+                                    <option value="রাজশাহী জিপিও">রাজশাহী জিপিও</option>
+                                    <option value="কাদিরগঞ্জ">কাদিরগঞ্জ</option>
+                                </select>
+                                <label class="form-label mt-2">গ্রাম/মহল্লা</label>
+                                <select class="form-select" required>
+                                    <option value="">গ্রাম/মহল্লা নির্বাচন করুন</option>
+                                    <option value="গোরহাঙ্গা">গোরহাঙ্গা</option>
+                                    <option value="সাহেব বাজার">সাহেব বাজার</option>
+                                </select>
+                            </div>
+
                             <div class="mb-3">
                                 <label for="plotSize" class="form-label">জমি/ প্লটের পরিমাপ</label>
                                 <input type="text" class="form-control" id="plotSize" placeholder="জমি/ প্লটের পরিমাপ"
@@ -964,11 +1044,6 @@
                                 <input type="text" class="form-control" id="existingBuilding"
                                     placeholder="বিদ্যমান ভবনের বিবরণ" required>
                             </div>
-                            <div class="mb-3">
-                                <label for="thana" class="form-label">থানা</label>
-                                <input type="text" class="form-control" id="thana" placeholder="থানা" required>
-                            </div>
-
                             <div class="mb-3">
                                 <label for="rsDag" class="form-label">আরএস দাগ নং</label>
                                 <input type="text" class="form-control" id="rsDag" placeholder="আরএস দাগ নং" required>
@@ -1009,11 +1084,19 @@
                                 </select>
                             </div>
 
-                            <div class="mb-3">
-                                <label for="partialFloorArea" class="form-label">ব্যবহারের ধরণ</label>
-                                <input type="text" class="form-control" id="partialFloorArea"
-                                    placeholder="ব্যবহারের ধরণ ">
-                            </div>
+                        <div class="mb-3">
+                            <label for="partialFloorArea" class="form-label">ব্যবহারের ধরণ</label>
+                            <select class="form-select" id="partialFloorArea" required>
+                                <option value="" selected disabled hidden>ব্যবহারের ধরণ নির্বাচন করুন</option>
+                                <option value="বাস">বাস</option>
+                                <option value="অফিস">অফিস</option>
+                                <option value="দোকান">দোকান</option>
+                                <option value="গুদাম">গুদাম</option>
+                                <option value="শিক্ষা প্রতিষ্ঠান">শিক্ষা প্রতিষ্ঠান</option>
+                                <option value="হোটেল">হোটেল</option>
+                            </select>
+                        </div>
+
                             <div class="mb-3">
                                 <label for="partialFloorArea" class="form-label">আংশিক সমাপ্ত (ব.মি.)</label>
                                 <input type="text" class="form-control" id="partialFloorArea"

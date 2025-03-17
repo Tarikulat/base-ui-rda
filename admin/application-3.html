@@ -1048,7 +1048,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <div class="col-md-6">
                             <h6>২। যে জমিতে ইমারত নির্মাণ করা হবে তার বিবরণ</h6>
@@ -1072,8 +1072,6 @@
                                 <label class="form-label ms-2">দাগ নং (আর এস)</label>
                                 <input type="text" class="form-control">
                             </div>
-                        </div>
-                        <div class="col-md-6 mt-3">
                             <div class="mb-3">
                                 <label class="form-label ms-2">উন্নয়নকৃত এলাকা</label>
                                 <select class="form-control" required>
@@ -1089,6 +1087,8 @@
                                     <option value="area9">সিরাজগঞ্জ শহর</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
 
                             <div class="mb-3">
                                 <label class="form-label ms-2">সেক্টর নং</label>
@@ -1115,38 +1115,126 @@
 
                     <div class="row mt-2">
                         <div class="col-md-6">
-                            <h6>৪। ইমারতের বিবরণ</h6>
+                            <h6 class="mt-2">৩। প্রস্তাবিত ইমারতের ব্যবহারের ধরণ</h6>
+                            <!-- <h6>৩। প্রস্তাবিত ইমারতের ব্যবহারের ধরণ</h6> -->
                             <div class="mb-3">
-                                <label class="form-label ms-2">ব্যবহারের ধরণ</label>
                                 <select class="form-select">
+                                    <option value="">নির্বাচন করুন</option>
                                     <option>আবাসিক</option>
                                     <option>বাণিজ্যিক</option>
-                                    <option>এন ও সি</option>
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label ms-2">সর্বমোট আচ্ছাদিত স্থান (বর্গমিটার)</label>
-                                <input type="number" class="form-control">
+                                <label class="form-label ms-2">এন ও সি</label>
+                                <input type="text" class="form-control">
                             </div>
+
                         </div>
-                        <div class="col-md-6 mt-4">
+                        <div class="col-md-6">
                             <div class="mb-3">
-                                <label class="form-label ms-2">উত্তর সীমানা হতে (মিটার)</label>
-                                <input type="number" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label ms-2">দক্ষিণ সীমানা হতে (মিটার)</label>
+                                <label class="form-label ms-2">সর্বমোট আচ্ছাদিত স্থান (বর্গমিটার)</label>
                                 <input type="number" class="form-control">
                             </div>
                         </div>
                     </div>
 
 
-                    <h6 class="mt-3">৬। ইমারত দ্বারা সাইটের যে পরিমাণ স্থান আচ্ছাদিত হবে তার বিশদ বিবরণঃ</h6>
+                    <h6 class="mt-3"> ৪। সাইটের বিবরণ: <span style="font-size: 12px;"> (ক) সাইটের চৌহদ্দী (বাহুর
+                            পরিমাপ)</span></h6>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="mb-3">
-                                <label class="form-label ms-2">সর্বমোট আচ্ছাদিত ইমারত (বর্গমিটার)</label>
+                                <label class="form-label ms-2">উত্তর বাহু (মিটার)</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label ms-2">দক্ষিণ বাহু (মিটার)</label>
+                                <input type="number" class="form-control">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label ms-2">উত্তর পার্শ্বে (তলা ইমারত)</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label ms-2">দক্ষিণ পার্শ্বে (তলা ইমারত)</label>
+                                <input type="number" class="form-control">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label ms-2">পূর্ব বাহু (মিটার)</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label ms-2">পশ্চিম বাহু (মিটার)</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label ms-2">পূর্ব পার্শ্বে (তলা ইমারত)</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label ms-2">পশ্চিম পার্শ্বে (তলা ইমারত)</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <p class=""> (খ) সাইটের নিকটস্থ রাস্তার বিবরণ </p>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label ms-2">(১) বিস্তার/চওড়া (মিটার)</label>
+                                <input type="number" class="form-control">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label ms-2">(২) প্রধান রাস্তা হতে দুরত্ব (মিটার) </label>
+                                <input type="number" class="form-control">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label ms-2">(৩) ধরণ (মিটার)</label>
+                                <input type="number" class="form-control">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="mb-3">
+                                <label class="form-label ms-2">(৪) মৌজা ম্যাপে/দলিলে বর্ণিত</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <p class=""> (গ) প্রস্তাবিত স্থান</p>
+                        <div class="mb-3">
+                            <label class="form-label ms-2">সীমানা প্রাচীর (দ্বারা চিহ্নিত)</label>
+                            <input type="number" class="form-control">
+                        </div>
+                    </div>
+
+
+                    <h6 class="mt-3">৫। ইমারত দ্বারা সাইটের যে পরিমাণ স্থান আচ্ছাদিত হবে তার বিশদ বিবরণঃ</h6>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label ms-2">(ক) সর্বমোট আচ্ছাদিত ইমারত (বর্গমিটার)</label>
                                 <input type="number" class="form-control">
                             </div>
                             <div class="mb-3">
@@ -1229,28 +1317,37 @@
                                 <label class="form-label ms-2">১৬তম তলা (বর্গমিটার)</label>
                                 <input type="number" class="form-control">
                             </div>
+                            <div class="mb-3">
+                                <label class="form-label ms-2">অন্যান্য তলা (বর্গমিটার)</label>
+                                <input type="number" class="form-control">
+                            </div>
 
                         </div>
                     </div>
 
-
-                    <h6 class="mt-3"> প্রস্তাবিত ইমারতের বিভিন্ন দিকে ন্যূনতম যে পরিমাণ স্থান উন্মুক্ত রাখা হবে:</h6>
+                    <label class="form-label ms-2">(খ) প্রস্তাবিত ইমারতের বিভিন্ন দিকে ন্যূনতম যে পরিমান স্থান উন্মুক্ত
+                        রাখা হবে</label>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-3">
                             <div class="mb-3">
                                 <label class="form-label ms-2">উত্তর সীমানা হতে (মিটার)</label>
                                 <input type="number" class="form-control">
                             </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label ms-2">দক্ষিণ সীমানা হতে (মিটার)</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
                             <div class="mb-3">
                                 <label class="form-label ms-2">পূর্ব সীমানা হতে (মিটার)</label>
                                 <input type="number" class="form-control">
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label class="form-label ms-2">দক্ষিণ সীমানা হতে (মিটার)</label>
-                                <input type="number" class="form-control">
-                            </div>
+                        <div class="col-md-3">
                             <div class="mb-3">
                                 <label class="form-label ms-2">পশ্চিম সীমানা হতে (মিটার)</label>
                                 <input type="number" class="form-control">
@@ -1258,36 +1355,49 @@
                         </div>
                     </div>
 
-                    <h6 class="mt-2">৭। সাইটে পূর্ব নির্মিত ইমারতের (যদি থাকে) বিবরণ</h6>
+                    <h6 class="mt-3">৬। সাইটে পূর্ব নির্মিত ইমারতের (যদি থাকে) বিবরণ</h6>
                     <div class="row">
+                        <!-- Left Side (All Inputs Except "যদি ভাঙ্গতে হয়, তবে তার বিবরণ") -->
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <label class="form-label ms-2">পূর্ব নির্মিত ইমারতের সংখ্যা ও তলা</label>
-                                <input type="text" class="form-control">
+                                <label class="form-label">পূর্ব নির্মিত ইমারতের সংখ্যা</label>
+                                <input type="number" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label ms-2">প্রস্তাবিত ইমারত নির্মাণ হলে পূর্ব নির্মিত ইমারতের কোন
-                                    অংশ
-                                    ভাংগতে হবে কি?</label>
-                                <select class="form-select">
-                                    <option>হ্যাঁ</option>
-                                    <option>না</option>
-                                </select>
+                                <label class="form-label">পূর্ব নির্মিত ইমারতের তলা সংখ্যা</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">পূর্ব নির্মিত ইমারত দ্বারা বেষ্টিত স্থানের পরিমাণ (বর্গমিটার)</label>
+                                <input type="number" class="form-control">
                             </div>
                         </div>
+                    
+                        <!-- Right Side (Only "যদি ভাঙ্গতে হয়, তবে তার বিবরণ") -->
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <label class="form-label ms-2">যদি ভাঙ্গতে হয়, তবে তার বিবরণ</label>
-                                <input type="text" class="form-control">
+                                <label class="form-label">পূর্ব নির্মিত ইমারতের কোন অংশ ভাংগতে হবে কি-না?</label>
+                                <select class="form-control">
+                                    <option value="">নির্বাচন করুন</option>
+                                    <option value="yes">হ্যাঁ</option>
+                                    <option value="no">না</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">যদি ভাঙ্গতে হয়, তবে তার বিবরণ</label>
+                                <textarea class="form-control" rows="3"></textarea>
                             </div>
                         </div>
                     </div>
 
-                    <h6 class="mt-2">৮। প্রস্তাবিত সাইটে বিভিন্ন সেবা-সুযোগের বিবরণ</h6>
+
+
+                    <h6 class="mt-2">৭। প্রস্তাবিত সাইটে বিভিন্ন সেবা-সুযোগের বিবরণ</h6>
                     <div class="row">
                         <div class="col-md-3">
                             <label class="form-label ms-2">বিদ্যুৎ লাইন আছে কি-না?</label>
                             <select class="form-select">
+                                <option value="">নির্বাচন করুন</option>
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
@@ -1295,6 +1405,7 @@
                         <div class="col-md-3">
                             <label class="form-label ms-2">গ্যাস সরবরাহ লাইন আছে কি-না?</label>
                             <select class="form-select">
+                                <option value="">নির্বাচন করুন</option>
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
@@ -1302,6 +1413,7 @@
                         <div class="col-md-3">
                             <label class="form-label ms-2">পানি সরবরাহ লাইন আছে কি-না?</label>
                             <select class="form-select">
+                                <option value="">নির্বাচন করুন</option>
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
@@ -1309,111 +1421,126 @@
                         <div class="col-md-3">
                             <label class="form-label ms-2">পয়ঃনিষ্কাশন লাইন আছে কি-না?</label>
                             <select class="form-select">
+                                <option value="">নির্বাচন করুন</option>
                                 <option>হ্যাঁ</option>
                                 <option>না</option>
                             </select>
                         </div>
                     </div>
 
-                    <!-- <div class="row">
-                        <div class="col-md-6 mt-3">
-                            <h6>৯। পূর্বে কোন ইমারত নির্মাণ আইন ১৯৫২ এর অধীনে নোটিশ/নির্দেশ জারি হয়েছে কি?</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="mt-4">৮। অথরাইজড অফিসারের অনুমোদন ব্যতীত পূর্বে ইমারত নির্মাণ করা হয়েছে কি-না?
+                            </h6>
                             <div class="mb-3">
-                                <input type="text" class="form-control">
+                                <select class="form-control">
+                                    <option value="">নির্বাচন করুন</option>
+                                    <option value="yes">হ্যাঁ</option>
+                                    <option value="no">না</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">হয়ে থাকলে ইমারত নির্মাণ আইন ১৯৫২ এর অধীনে নোটিশ / নির্দেশ
+                                    জারি হয়েছে
+                                    কি-না?</label>
+                                <select class="form-control">
+                                    <option value="">নির্বাচন করুন</option>
+                                    <option value="yes">হ্যাঁ</option>
+                                    <option value="no">না</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">যদি নোটিশ / নির্দেশ জারি হয়ে থাকে, তবে তার বিবরণ</label>
+                                <textarea class="form-control" rows="3"></textarea>
                             </div>
                         </div>
-
-                        <div class="col-md-6 mt-3">
-                            <h6>১০। প্রস্তাবিত স্থানে ইমারত নির্মাণের কারণে কোন মামলা দায়ের করা হয়েছে কি?</h6>
+                        <div class="col-md-6 mt-4">
                             <div class="mb-3">
-                                <input type="text" class="form-control">
+                                <h6 class="mt-4">৯। প্রস্তাবিত স্থানে ইমারত নির্মাণের কারণে আবেদনকারীর
+                                    বিরুদ্ধে
+                                    মামলা হয়েছে
+                                    কি-না?</h6>
+                                <select class="form-control">
+                                    <option value="">নির্বাচন করুন</option>
+                                    <option value="yes">হ্যাঁ</option>
+                                    <option value="no">না</option>
+                                </select>
                             </div>
-                        </div>
-                    </div> -->
 
-                    <h6>৫। অতিরিক্ত তথ্য</h6>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label class="form-label ms-2">অথরাইজড অফিসারের অনুমোদন ব্যতীত পূর্বে কোন নির্মাণ করা
-                                হয়েছে?</label>
-                            <select class="form-select">
-                                <option>হ্যাঁ</option>
-                                <option>না</option>
-                            </select>
-                        </div>
-                        <div class="col">
-                            <label class="form-label ms-2">ইমারত নির্মাণ আইন ১৯৫২ এর অধীনে মামলা হয়েছে?</label>
-                            <select class="form-select">
-                                <option>হ্যাঁ</option>
-                                <option>না</option>
-                            </select>
+                            <div class="mb-3">
+                                <label class="form-label">যদি মামলা হয়ে থাকে, তবে তার বিবরণ</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
                         </div>
                     </div>
 
-                    <a href="noc-registration-next.html">
-                        <button type="button" class="btn btn-primary w-100 mt-2">Next</button>
-                    </a>
-                </form>
             </div>
+
+
+            <a href="noc-registration-next.html">
+                <button type="button" class="btn btn-primary w-100 mt-2">Next</button>
+            </a>
+            </form>
         </div>
+    </div>
 
-        <!-- end user table form tanvir -->
+    <!-- end user table form tanvir -->
 
-        <!-- END SEARCH-MODAL -->
-        <footer class="footer mt-auto py-3 bg-white text-center">
-            <div class="container">
-                <span class="text-muted"> All rights reserved ©<span id="year"></span> <a href="javascript:void(0);"
-                        class="text-dark fw-semibold"></a>rajIT Solutions
-                    Ltd.<span class="">Design</span> & Developed
-                    <a href="javascript:void(0);">
-                        <span class="fw-semibold text- text-decoration-underline"> by rajIT Team.</span>
-                    </a>
-                </span>
-            </div>
-        </footer>
+    <!-- END SEARCH-MODAL -->
+    <footer class="footer mt-auto py-3 bg-white text-center">
+        <div class="container">
+            <span class="text-muted"> All rights reserved ©<span id="year"></span> <a href="javascript:void(0);"
+                    class="text-dark fw-semibold"></a>rajIT Solutions
+                Ltd.<span class="">Design</span> & Developed
+                <a href="javascript:void(0);">
+                    <span class="fw-semibold text- text-decoration-underline"> by rajIT Team.</span>
+                </a>
+            </span>
+        </div>
+    </footer>
 
-        <div id="responsive-overlay"></div>
+    <div id="responsive-overlay"></div>
 
-        <!-- POPPER JS -->
-        <script src="../assets/libs/%40popperjs/core/umd/popper.min.js"></script>
+    <!-- POPPER JS -->
+    <script src="../assets/libs/%40popperjs/core/umd/popper.min.js"></script>
 
-        <!-- BOOTSTRAP JS -->
-        <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- NODE WAVES JS -->
-        <script src="../assets/libs/node-waves/waves.min.js"></script>
+    <!-- NODE WAVES JS -->
+    <script src="../assets/libs/node-waves/waves.min.js"></script>
 
-        <!-- SIMPLEBAR JS -->
-        <script src="../assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="../assets/js/simplebar.js"></script>
+    <!-- SIMPLEBAR JS -->
+    <script src="../assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="../assets/js/simplebar.js"></script>
 
-        <!-- COLOR PICKER JS -->
-        <script src="../assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
+    <!-- COLOR PICKER JS -->
+    <script src="../assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
 
-        <!-- DEFAULTMENU JS -->
-        <script src="../assets/js/defaultmenu.js"></script>
+    <!-- DEFAULTMENU JS -->
+    <script src="../assets/js/defaultmenu.js"></script>
 
-        <!-- JSVECTOR MAPS JS -->
-        <script src="../assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
-        <script src="../assets/libs/jsvectormap/maps/world-merc.js"></script>
+    <!-- JSVECTOR MAPS JS -->
+    <script src="../assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+    <script src="../assets/libs/jsvectormap/maps/world-merc.js"></script>
 
-        <!-- APEX CHARTS JS -->
-        <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+    <!-- APEX CHARTS JS -->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
 
-        <!-- CHARTJS CHART JS -->
-        <script src="../assets/libs/chart.js/chart.min.js"></script>
+    <!-- CHARTJS CHART JS -->
+    <script src="../assets/libs/chart.js/chart.min.js"></script>
 
-        <!-- CRM-Dashboard -->
-        <script src="../assets/js/crm-dashboard.js"></script>
+    <!-- CRM-Dashboard -->
+    <script src="../assets/js/crm-dashboard.js"></script>
 
-        <!-- STICKY JS -->
-        <script src="../assets/js/sticky.js"></script>
+    <!-- STICKY JS -->
+    <script src="../assets/js/sticky.js"></script>
 
-        <!-- CUSTOM JS -->
-        <script src="../assets/js/custom.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="../assets/js/custom.js"></script>
 
-        <!-- CUSTOM-SWITCHER JS -->
-        <script src="../assets/js/custom-switcher.js"></script>
+    <!-- CUSTOM-SWITCHER JS -->
+    <script src="../assets/js/custom-switcher.js"></script>
 </body>
 
 </html>

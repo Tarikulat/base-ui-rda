@@ -1134,13 +1134,32 @@
                         </div>
                     </div>
 
-                    <a href="noc-registration-next.html">
-                        <button type="button" class="btn btn-primary w-100 mt-2">Next</button>
-                    </a>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#successModal">
+                        Next
+                    </button>
+                </div>
                 </form>
             </div>
         </div>
 
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center">
+                    <div class="modal-header bg-success text-white">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../assets/images/img/pay.jpg" alt="Bkash Logo" class="img-fluid mb-3"
+                            style="width: 200px; height: auto; max-width: 100%;">
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#termsModalok">OK</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
         <!-- end user table form tanvir -->
 
         <!-- END SEARCH-MODAL -->
